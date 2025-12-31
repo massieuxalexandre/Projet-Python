@@ -3,6 +3,7 @@ import requests
 import re
 import smtplib
 from email.mime.text import MIMEText
+import pandas as pd
 
 
 # Etape 1 : Extraction des Flux RSS
