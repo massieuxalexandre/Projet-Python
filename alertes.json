@@ -180,12 +180,6 @@
         "date": "Fri, 19 Dec 2025 00:00:00 +0000"
     },
     {
-        "titre": "Bulletin d'actualité CERTFR-2025-ACT-056 (22 décembre 2025)",
-        "description": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR dans le cadre d'une analyse de risques pour prioriser l'application des...",
-        "lien": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-056/",
-        "date": "Mon, 22 Dec 2025 00:00:00 +0000"
-    },
-    {
         "titre": "Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025)",
         "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
         "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/",
@@ -214,12 +208,6 @@
         "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
         "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/",
         "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Bulletin d'actualité CERTFR-2025-ACT-057 (29 décembre 2025)",
-        "description": "Ce bulletin d'actualité du CERT-FR revient sur les vulnérabilités significatives de la semaine passée pour souligner leurs criticités. Il ne remplace pas l'analyse de l'ensemble des avis et alertes publiés par le CERT-FR dans le cadre d'une analyse de risques pour prioriser l'application des...",
-        "lien": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2025-ACT-057/",
-        "date": "Mon, 29 Dec 2025 00:00:00 +0000"
     },
     {
         "titre": "Multiples vulnérabilités dans Moxa NPort (31 décembre 2025)",
