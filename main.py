@@ -16,7 +16,7 @@ def extraire_rss():
     url_rss = "https://www.cert.ssi.gouv.fr/feed/"
     rss_feed = feedparser.parse(url_rss)
     for entry in rss_feed.entries:
-        if "avis" in entry.link or "alerte" in entry.link: # garder que avis et alertes car actualités bug
+        if "avis" in entry.link or "alerte" in entry.link: # garder que avis et alertes 
             alertes.append({
                 "titre": entry.title,
                 "description": entry.description,
@@ -69,23 +69,23 @@ def enrichir_cve(cve_list):
             response = requests.get(url_api_cve)
             data = response.json()
             # Extraire la description
-            description = data["containers"]["cna"]["descriptions"][0]["value"]
+            description = data.get("containers", {}).get("cna", {}).get("descriptions", [{}])[0].get("value")
             # Extraire le score CVSS
             #ATTENTION tous les CVE ne contiennent pas nécessairement ce champ, gérez l’exception,
             #ou peut etre au lieu de cvssV3_0 c’est cvssV3_1 ou autre clé
-            cvss_score =data["containers"]["cna"]["metrics"][0]["cvssV3_1"]["baseScore"]
+            cvss_score = data.get("containers", {}).get("cna", {}).get("metrics", [{}])[0].get("cvssV3_1", {}).get("baseScore")
             cwe = "Non disponible"
             cwe_desc="Non disponible"
-            problemtype = data["containers"]["cna"].get("problemTypes", {})
+            problemtype = data.get("containers", {}).get("cna", {}).get("problemTypes", {})
             if problemtype and "descriptions" in problemtype[0]:
                 cwe = problemtype[0]["descriptions"][0].get("cweId", "Non disponible")
                 cwe_desc=problemtype[0]["descriptions"][0].get("description", "Non disponible")
             # Extraire les produits affectés
-            affected = data["containers"]["cna"]["affected"]
+            affected = data.get("containers", {}).get("cna", {}).get("affected", [])
             for product in affected:
-                vendor = product["vendor"]
-                product_name = product["product"]
-                versions = [v["version"] for v in product["versions"] if v["status"] == "affected"]
+                vendor = product.get("vendor", "")
+                product_name = product.get("product", "")
+                versions = [v["version"] for v in product.get("versions", []) if v.get("status", "") == "affected"]
                 print(f"Éditeur : {vendor}, Produit : {product_name}, Versions : {', '.join(versions)}")
             # Afficher les résultats
             # print(f"CVE : {cve_id}")
