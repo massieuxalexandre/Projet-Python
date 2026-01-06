@@ -15,6 +15,7 @@ def from_json(filename):
 def to_json(data, filename):
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+    return True
 
 
 # Etape 1 : Extraction des Flux RSS
@@ -28,6 +29,7 @@ def extraire_rss():
         if "avis" in entry.link or "alerte" in entry.link: # garder que avis et alertes 
             alertes.append({
                 "titre": entry.title,
+                # "type": "Alerte" if "alerte" in entry.link else "Avis",
                 "description": entry.description,
                 "lien": entry.link,
                 "date": entry.published
@@ -64,66 +66,65 @@ def extraire_cve_alertes(alertes):
 def enrichir_cve(cve_list):
     cve_enrichi = []
     for cve in cve_list:
-        for cve_id in cve:
-            url_api_cve = f"https://cveawg.mitre.org/api/cve/{cve_id}"
-            response = requests.get(url_api_cve)
-            data = response.json()
-            # Extraire la description
-            description = data.get("containers", {}).get("cna", {}).get("descriptions", [{}])[0].get("value")
-            # Extraire le score CVSS
-            #ATTENTION tous les CVE ne contiennent pas nécessairement ce champ, gérez l’exception,
-            #ou peut etre au lieu de cvssV3_0 c’est cvssV3_1 ou autre clé
-            cvss_score = data.get("containers", {}).get("cna", {}).get("metrics", [{}])[0].get("cvssV3_1", {}).get("baseScore")
-            cwe = "Non disponible"
-            cwe_desc="Non disponible"
-            problemtype = data.get("containers", {}).get("cna", {}).get("problemTypes", {})
-            if problemtype and "descriptions" in problemtype[0]:
-                cwe = problemtype[0]["descriptions"][0].get("cweId", "Non disponible")
-                cwe_desc=problemtype[0]["descriptions"][0].get("description", "Non disponible")
-            # Extraire les produits affectés
-            affected = data.get("containers", {}).get("cna", {}).get("affected", [])
-            for product in affected:
-                vendor = product.get("vendor", "")
-                product_name = product.get("product", "")
-                versions = [v["version"] for v in product.get("versions", []) if v.get("status", "") == "affected"]
-                print(f"Éditeur : {vendor}, Produit : {product_name}, Versions : {', '.join(versions)}")
-            # Afficher les résultats
+        cve_id = cve[0]
+        url_api_cve = f"https://cveawg.mitre.org/api/cve/{cve_id}"
+        response = requests.get(url_api_cve)
+        data = response.json()
+        # Extraire la description
+        description = data.get("containers", {}).get("cna", {}).get("descriptions", [{}])[0].get("value")
+        # Extraire le score CVSS
+        #ATTENTION tous les CVE ne contiennent pas nécessairement ce champ, gérez l’exception,
+        #ou peut etre au lieu de cvssV3_0 c’est cvssV3_1 ou autre clé
+        cvss_score = data.get("containers", {}).get("cna", {}).get("metrics", [{}])[0].get("cvssV3_1", {}).get("baseScore")
+        cwe = "Non disponible"
+        cwe_desc="Non disponible"
+        problemtype = data.get("containers", {}).get("cna", {}).get("problemTypes", {})
+        if problemtype and "descriptions" in problemtype[0]:
+            cwe = problemtype[0]["descriptions"][0].get("cweId", "Non disponible")
+            cwe_desc=problemtype[0]["descriptions"][0].get("description", "Non disponible")
+        # Extraire les produits affectés
+        affected = data.get("containers", {}).get("cna", {}).get("affected", [])
+        for product in affected:
+            vendor = product.get("vendor", "")
+            product_name = product.get("product", "")
+            versions = [v["version"] for v in product.get("versions", []) if v.get("status", "") == "affected"]
+            # print(f"Éditeur : {vendor}, Produit : {product_name}, Versions : {', '.join(versions)}")
+        # Afficher les résultats
+        # print(f"CVE : {cve_id}")
+        # print(f"Description : {description}")
+        # print(f"Score CVSS : {cvss_score}")
+        # print(f"Type CWE : {cwe}")
+        # print(f"CWE Description : {cwe_desc}")
+
+
+        url_api_epss = f"https://api.first.org/data/v1/epss?cve={cve_id}"
+        # Requête GET pour récupérer les données JSON
+        response = requests.get(url_api_epss)
+        data = response.json()
+        # Extraire le score EPSS
+        epss_data = data.get("data", [])
+        if epss_data:
+            epss_score = epss_data[0]["epss"]
             # print(f"CVE : {cve_id}")
-            # print(f"Description : {description}")
-            # print(f"Score CVSS : {cvss_score}")
-            # print(f"Type CWE : {cwe}")
-            # print(f"CWE Description : {cwe_desc}")
-
-
-            url_api_epss = f"https://api.first.org/data/v1/epss?cve={cve_id}"
-            # Requête GET pour récupérer les données JSON
-            response = requests.get(url_api_epss)
-            data = response.json()
-            # Extraire le score EPSS
-            epss_data = data.get("data", [])
-            if epss_data:
-                epss_score = epss_data[0]["epss"]
-                # print(f"CVE : {cve_id}")
-                # print(f"Score EPSS : {epss_score}")
-            else:
-                # print(f"Aucun score EPSS trouvé pour {cve_id}")
-                epss_score = None
-                
+            # print(f"Score EPSS : {epss_score}")
+        else:
+            # print(f"Aucun score EPSS trouvé pour {cve_id}")
+            epss_score = None
             
-            cve_enrichi.append({
-                "cve_id": cve_id,
-                "description": description,
-                "cvss_score": cvss_score,
-                "cwe": cwe,
-                "cwe_desc": cwe_desc,
-                "epss_score": epss_score,
-                "editeur": vendor,
-                "produit": product_name,
-                "versions_affectees": versions
-            })
+        
+        cve_enrichi.append({
+            "cve_id": cve_id,
+            "description": description,
+            "cvss_score": cvss_score,
+            "cwe": cwe,
+            "cwe_desc": cwe_desc,
+            "epss_score": epss_score,
+            "editeur": vendor,
+            "produit": product_name,
+            "versions_affectees": versions
+        })
     
     return cve_enrichi
-
 
 
 
@@ -132,15 +133,41 @@ def enrichir_cve(cve_list):
 def condolider_donnees(alertes, cve_enrichi):
     alertes_enrichies = []
 
-    for alerte, cve_donnee in zip(alertes, cve_enrichi):
-        alertes_enrichies.append(zip(alerte, cve_donnee))
+    for i in range(len(alertes)):
+        alertes_enrichies.append({
+            "alerte": alertes[i],
+            "cve_enrichi": cve_enrichi[i]
+        })
 
-    # enregistrer les alertes dans un JSON
     to_json(alertes_enrichies, 'alertes_enrichies.json')
 
-    return True
+    return alertes_enrichies
 
+def dataframe_alertes(alertes_enrichies):
+    rows = []
+    for key in alertes_enrichies:
+        alerte_info = key["alerte"]
+        cve_info = key["cve_enrichi"]
+        row = {
+            "Titre du bulletin (ANSSI)": alerte_info["titre"],
+            "Lien Alerte": alerte_info["lien"],
+            "Date de publication": alerte_info["date"],
+            "Identifiant CVE": cve_info["cve_id"],
+            "Description CVE": cve_info["description"],
+            "Score CVSS": cve_info["cvss_score"],
+            "Type CWE": cve_info["cwe"],
+            "Description CWE": cve_info["cwe_desc"],
+            "Score EPSS": cve_info["epss_score"],
+            "Éditeur": cve_info["editeur"],
+            "Produit": cve_info["produit"],
+            "Versions Affectées": ", ".join(cve_info["versions_affectees"])
+        }
+        rows.append(row)
+    
+    df = pd.DataFrame(rows)
+    df.to_csv('alertes_enrichies.csv', index=False)
 
+    return df
 
 # Etape 6 : Génération d'alertess et notification email
 
@@ -157,15 +184,22 @@ def send_email(to_email, subject, body):
     server.sendmail(from_email, to_email, msg.as_string())
     server.quit()
 
+    return True
+
 
 # alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
 alertes = from_json("alertes.json") # pour charger les aloertes localement
-ref_cves, cve_list = extraire_cve_alertes(alertes)
+# ref_cves, cve_list = extraire_cve_alertes(alertes)
 
 
-cve_enrichi = enrichir_cve(cve_list)
+# cve_enrichi = enrichir_cve(cve_list)
 
-condolider_donnees(alertes, cve_enrichi)
+# alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
+alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
+
+df_alertes = dataframe_alertes(alertes_enrichies)
+# print(df_alertes)
+
 
  
 # send_email("destinataire@email.com", "alertes CVE critique", "Mettez à jour votre serveur Apache immédiatement.")
