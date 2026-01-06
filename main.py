@@ -6,6 +6,15 @@ from email.mime.text import MIMEText
 import pandas as pd
 import json
 
+# lien avec les json
+def from_json(filename):
+    with open(filename, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+def to_json(data, filename):
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 # Etape 1 : Extraction des Flux RSS
@@ -25,18 +34,9 @@ def extraire_rss():
             })
 
     # enregistrer les alertes dans un JSON
-    with open('alertes.json', 'w', encoding='utf-8') as f:
-        json.dump(alertes, f, ensure_ascii=False, indent=4)
+    to_json(alertes, 'alertes.json')
 
     return alertes
-
-
-def charger_alertes_json():
-    with open('alertes.json', 'r', encoding='utf-8') as f:
-        alertes = json.load(f)
-    return alertes
-
-
 
 
 # Etape 2 : Extraction des CVE
@@ -131,14 +131,14 @@ def enrichir_cve(cve_list):
 # Etape 4 : Consolidation des données
 def condolider_donnees(alertes, cve_enrichi):
     alertes_enrichies = []
+
     for alerte, cve_donnee in zip(alertes, cve_enrichi):
         alertes_enrichies.append(zip(alerte, cve_donnee))
 
     # enregistrer les alertes dans un JSON
-    with open('alertes_enrichies.json', 'w', encoding='utf-8') as f:
-        json.dump(alertes_enrichies, f, ensure_ascii=False, indent=4)
+    to_json(alertes_enrichies, 'alertes_enrichies.json')
 
-    return alertes_enrichies
+    return True
 
 
 
@@ -159,12 +159,13 @@ def send_email(to_email, subject, body):
 
 
 # alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
-alertes = charger_alertes_json() # pour charger les aloertes localement
-
+alertes = from_json("alertes.json") # pour charger les aloertes localement
 ref_cves, cve_list = extraire_cve_alertes(alertes)
 
 
 cve_enrichi = enrichir_cve(cve_list)
+
+condolider_donnees(alertes, cve_enrichi)
 
  
 # send_email("destinataire@email.com", "alertes CVE critique", "Mettez à jour votre serveur Apache immédiatement.")
