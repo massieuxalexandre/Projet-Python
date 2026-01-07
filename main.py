@@ -24,17 +24,18 @@ def to_json(data, filename):
 # fonction à utiliser de temps en temps pour ne pas spammer le site
 def extraire_rss():
     alertes = []
-    url_rss = "https://www.cert.ssi.gouv.fr/feed/"
-    rss_feed = feedparser.parse(url_rss)
+    url_rss = "https://www.cert.ssi.gouv.fr/avis/feed/"
+    headers = {'User-Agent': 'Mozilla/5.0'} # pour pas être ban de leur site
+    response = requests.get(url_rss, headers=headers, timeout=10)
+    rss_feed = feedparser.parse(response.content)
     for entry in rss_feed.entries:
-        if "avis" in entry.link or "alerte" in entry.link: # garder que avis et alertes 
-            alertes.append({
-                "titre": entry.title,
-                # "type": "Alerte" if "alerte" in entry.link else "Avis",
-                "description": entry.description,
-                "lien": entry.link,
-                "date": entry.published
-            })
+        alertes.append({
+            "titre": entry.title,
+            "type": "Alerte" if "alerte" in entry.link else "Avis",
+            "description": entry.description,
+            "lien": entry.link,
+            "date": entry.published
+        })
 
     # enregistrer les alertes dans un JSON
     to_json(alertes, 'alertes.json')
@@ -171,6 +172,8 @@ def dataframe_alertes(alertes_enrichies):
         cve_info = key["cve_enrichi"]
         row = {
             "Titre Alerte": alerte_info["titre"],
+            "Type Alerte": alerte_info["type"],
+            "Description Alerte": alerte_info["description"],
             "Lien Alerte": alerte_info["lien"],
             "Date Alerte": alerte_info["date"],
             "CVE ID": cve_info["cve_id"],
@@ -209,7 +212,8 @@ def send_email(to_email, subject, body):
 
 
 def alerter(alertes_enrichies):
-    emails = ["julien.martrenchard@gmail.com", "massieuxalexandre@gmail.com", "mamouniissam69@gmail.com"]
+    # emails = ["julien.martrenchard@gmail.com", "massieuxalexandre@gmail.com", "mamouniissam69@gmail.com"]
+    emails = ["massieuxalexandre@gmail.com"] 
     for key in alertes_enrichies:
         if datetime.strptime(key["alerte"]["date"], "%a, %d %b %Y %H:%M:%S %z") >= datetime.now(timezone.utc) - timedelta(days=1):
             cve_details = "\n".join(f"{cle}: {val}" for cle, val in key['cve_enrichi'].items())
@@ -224,17 +228,16 @@ def alerter(alertes_enrichies):
 
 
 
-# alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
-alertes = from_json("alertes.json") # pour charger les aloertes localement
-# ref_cves, cve_list = extraire_cve_alertes(alertes)
+alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
+# alertes = from_json("alertes.json") # pour charger les aloertes localement
+ref_cves, cve_list = extraire_cve_alertes(alertes)
 
 
-# cve_enrichi = enrichir_cve(cve_list)
+cve_enrichi = enrichir_cve(cve_list)
 
-# alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
-alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
+alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
+# alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
 
 df_alertes = dataframe_alertes(alertes_enrichies)
-# print(df_alertes)
 
 alerter(alertes_enrichies)

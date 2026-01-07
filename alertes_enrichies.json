@@ -2,6 +2,7 @@
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans MISP (08 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans MISP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1076/",
             "date": "Mon, 08 Dec 2025 00:00:00 +0000"
@@ -24,79 +25,32 @@
     },
     {
         "alerte": {
-            "titre": "Multiples vulnérabilités dans Google Chrome (11 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1096/",
+            "titre": "Vulnérabilité dans les produits Mitel (11 décembre 2025)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans les produits Mitel. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1097/",
             "date": "Thu, 11 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-14372",
-            "description": "Use after free in Password Manager in Google Chrome prior to 143.0.7499.110 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-            "cwe": "CWE-416",
-            "nature de la faille": "Use after free",
+            "cve_id": "CVE-2025-67823",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000400000",
-            "gravite_epss": "Faible",
-            "editeur": "Google",
-            "produit": "Chrome",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "MISP",
+            "produit": "MISP",
             "versions_affectees": [
-                "143.0.7499.110"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Microsoft Edge (12 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1103/",
-            "date": "Fri, 12 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14372",
-            "description": "Use after free in Password Manager in Google Chrome prior to 143.0.7499.110 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
-            "cwe": "CWE-416",
-            "nature de la faille": "Use after free",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000400000",
-            "gravite_epss": "Faible",
-            "editeur": "Google",
-            "produit": "Chrome",
-            "versions_affectees": [
-                "143.0.7499.110"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Elastic (15 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1112/",
-            "date": "Mon, 15 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-37731",
-            "description": "Improper Authentication in Elasticsearch PKI realm can lead to user impersonation via specially crafted client certificates. A malicious actor would need to have such a crafted client certificate signed by a legitimate, trusted Certificate Authority.",
-            "cwe": "CWE-287",
-            "nature de la faille": "CWE-287 Improper Authentication",
-            "cvss_score": 6.8,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000360000",
-            "gravite_epss": "Faible",
-            "editeur": "Elastic",
-            "produit": "Elasticsearch",
-            "versions_affectees": [
-                "7.0.0",
-                "8.0.0",
-                "9.0.0",
-                "9.2.0"
+                "0"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans Roundcube (15 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans Roundcube. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1111/",
             "date": "Mon, 15 Dec 2025 00:00:00 +0000"
@@ -120,164 +74,32 @@
     },
     {
         "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Apple (15 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Apple. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance. Apple indique que les vulnérabilités CVE-2025-14174 et...",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1110/",
-            "date": "Mon, 15 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-43527",
-            "description": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Tahoe 26.2, macOS Sequoia 15.7.3. An app may be able to gain root privileges.",
-            "cwe": "Non disponible",
-            "nature de la faille": "An app may be able to gain root privileges",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000110000",
-            "gravite_epss": "Faible",
-            "editeur": "Apple",
-            "produit": "macOS",
-            "versions_affectees": [
-                "unspecified"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Tenable Nessus (16 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans Tenable Nessus. Elles permettent à un attaquant de provoquer un déni de service à distance et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1114/",
-            "date": "Tue, 16 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-10911",
-            "description": "A use-after-free vulnerability was found in libxslt while parsing xsl nodes that may lead to the dereference of expired pointers and application crash.",
-            "cwe": "CWE-825",
-            "nature de la faille": "Expired Pointer Dereference",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000160000",
-            "gravite_epss": "Faible",
-            "editeur": "Red Hat",
-            "produit": "Red Hat OpenShift Container Platform 4",
-            "versions_affectees": []
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Moodle (16 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans Moodle. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une injection de code indirecte à distance (XSS) et un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1113/",
-            "date": "Tue, 16 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-67853",
-            "description": null,
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "Red Hat",
-            "produit": "Red Hat OpenShift Container Platform 4",
-            "versions_affectees": []
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Trend Micro Apex One (16 décembre 2025)",
-            "description": "Une vulnérabilité a été découverte dans Trend Micro Apex One. Elle permet à un attaquant de provoquer une exécution de code arbitraire.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1115/",
-            "date": "Tue, 16 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-49844",
-            "description": "Redis is an open source, in-memory database that persists on disk. Versions 8.2.1 and below allow an authenticated user to use a specially crafted Lua script to manipulate the garbage collector, trigger a use-after-free and potentially lead to remote code execution. The problem exists in all versions of Redis with Lua scripting. This issue is fixed in version 8.2.2. To workaround this issue without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to restrict EVAL and EVALSHA commands.",
-            "cwe": "CWE-416",
-            "nature de la faille": "CWE-416: Use After Free",
-            "cvss_score": 10,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.059740000",
-            "gravite_epss": "Faible",
-            "editeur": "redis",
-            "produit": "redis",
-            "versions_affectees": [
-                "< 8.2.2"
-            ]
-        }
-    },
-    {
-        "alerte": {
             "titre": "Multiples vulnérabilités dans Google Chrome (17 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1116/",
             "date": "Wed, 17 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-14766",
-            "description": "Out of bounds read and write in V8 in Google Chrome prior to 143.0.7499.147 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-            "cwe": "Non disponible",
-            "nature de la faille": "Out of bounds read and write",
+            "cve_id": "CVE-2025-14765",
+            "description": "Use after free in WebGPU in Google Chrome prior to 143.0.7499.147 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+            "cwe": "CWE-416",
+            "nature de la faille": "Use after free",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000800000",
+            "epss_score": "0.001010000",
             "gravite_epss": "Faible",
             "editeur": "Google",
             "produit": "Chrome",
             "versions_affectees": [
                 "143.0.7499.147"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Synology (17 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1119/",
-            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-66593",
-            "description": null,
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "Google",
-            "produit": "Chrome",
-            "versions_affectees": [
-                "143.0.7499.147"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Mozilla Firefox (17 décembre 2025)",
-            "description": "Une vulnérabilité a été découverte dans Mozilla Firefox. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1118/",
-            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14744",
-            "description": "Unicode RTLO characters could allow malicious websites to spoof filenames in the downloads UI for Firefox for iOS, potentially tricking users into saving files of an unexpected file type. This vulnerability affects Firefox for iOS < 144.0.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000280000",
-            "gravite_epss": "Faible",
-            "editeur": "Mozilla",
-            "produit": "Firefox for iOS",
-            "versions_affectees": [
-                "unspecified"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans GLPI (17 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans GLPI. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et un contournement de la politique de sécurité.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1117/",
             "date": "Wed, 17 Dec 2025 00:00:00 +0000"
@@ -300,30 +122,56 @@
     },
     {
         "alerte": {
-            "titre": "Vulnérabilité dans Sonicwall Secure Mobile Access (18 décembre 2025)",
-            "description": "Une vulnérabilité a été découverte dans Sonicwall Secure Mobile Access. Elle permet à un attaquant de provoquer une élévation de privilèges. Sonicwall indique que cette vulnérabilité est exploitée conjointement avec la vulnérabilité CVE-2025-23006 qui permet une exécution de code arbitraire à...",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1121/",
-            "date": "Thu, 18 Dec 2025 00:00:00 +0000"
+            "titre": "Vulnérabilité dans Mozilla Firefox (17 décembre 2025)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Mozilla Firefox. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1118/",
+            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-23006",
-            "description": "Pre-authentication deserialization of untrusted data vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) and Central Management Console (CMC), which in specific conditions could potentially enable a remote unauthenticated attacker to execute arbitrary OS commands.",
-            "cwe": "CWE-502",
-            "nature de la faille": "CWE-502 Deserialization of Untrusted Data",
+            "cve_id": "CVE-2025-14744",
+            "description": "Unicode RTLO characters could allow malicious websites to spoof filenames in the downloads UI for Firefox for iOS, potentially tricking users into saving files of an unexpected file type. This vulnerability affects Firefox for iOS < 144.0.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.520660000",
-            "gravite_epss": "Élevée",
-            "editeur": "SonicWall",
-            "produit": "SMA1000",
+            "epss_score": "0.000280000",
+            "gravite_epss": "Faible",
+            "editeur": "Mozilla",
+            "produit": "Firefox for iOS",
             "versions_affectees": [
-                "12.4.3-02804 (platform-hotfix) and earlier versions."
+                "unspecified"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Synology (17 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1119/",
+            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-66593",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Mozilla",
+            "produit": "Firefox for iOS",
+            "versions_affectees": [
+                "unspecified"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Vulnérabilité dans les produits Cisco (18 décembre 2025)",
+            "type": "Avis",
             "description": "Une vulnérabilité a été découverte dans les produits Cisco. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance avec les droits administrateurs. Cisco indique que cette vulnérabilité est activement exploitée et fournit des recommandations dans son bulletin de...",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1120/",
             "date": "Thu, 18 Dec 2025 00:00:00 +0000"
@@ -371,23 +219,49 @@
     },
     {
         "alerte": {
+            "titre": "Vulnérabilité dans Sonicwall Secure Mobile Access (18 décembre 2025)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Sonicwall Secure Mobile Access. Elle permet à un attaquant de provoquer une élévation de privilèges. Sonicwall indique que cette vulnérabilité est exploitée conjointement avec la vulnérabilité CVE-2025-23006 qui permet une exécution de code arbitraire à...",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1121/",
+            "date": "Thu, 18 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-23006",
+            "description": "Pre-authentication deserialization of untrusted data vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) and Central Management Console (CMC), which in specific conditions could potentially enable a remote unauthenticated attacker to execute arbitrary OS commands.",
+            "cwe": "CWE-502",
+            "nature de la faille": "CWE-502 Deserialization of Untrusted Data",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.520660000",
+            "gravite_epss": "Élevée",
+            "editeur": "SonicWall",
+            "produit": "SMA1000",
+            "versions_affectees": [
+                "12.4.3-02804 (platform-hotfix) and earlier versions."
+            ]
+        }
+    },
+    {
+        "alerte": {
             "titre": "Multiples vulnérabilités dans Mattermost Server (18 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans Mattermost Server. Elles permettent à un attaquant de provoquer des problèmes de sécurité non spécifiés par l'éditeur.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1122/",
             "date": "Thu, 18 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-12689",
-            "description": "Mattermost versions 11.0.x <= 11.0.4, 10.12.x <= 10.12.2, 10.11.x <= 10.11.6 fail to check WebSocket request field for proper UTF-8 format, which allows attacker to crash Calls plug-in via sending malformed request.",
-            "cwe": "CWE-1287",
-            "nature de la faille": "CWE-1287: Improper Validation of Specified Type of Input",
-            "cvss_score": 6.5,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000710000",
+            "cve_id": "CVE-2025-14273",
+            "description": "Mattermost versions 11.1.x <= 11.1.0, 11.0.x <= 11.0.5, 10.12.x <= 10.12.3, 10.11.x <= 10.11.7 with the Jira plugin enabled and Mattermost Jira plugin versions <=4.4.0 fail to enforce authentication and issue-key path restrictions in the Jira plugin, which allows an unauthenticated attacker who knows a valid user ID to issue authenticated GET and POST requests to the Jira server via crafted plugin payloads that spoof the user ID and inject arbitrary issue key paths. Mattermost Advisory ID: MMSA-2025-00555",
+            "cwe": "CWE-303",
+            "nature de la faille": "CWE-303: Incorrect Implementation of Authentication Algorithm",
+            "cvss_score": 7.2,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000820000",
             "gravite_epss": "Faible",
             "editeur": "Mattermost",
             "produit": "Mattermost",
             "versions_affectees": [
+                "11.1.0",
                 "11.0.0",
                 "10.12.0",
                 "10.11.0"
@@ -396,180 +270,59 @@
     },
     {
         "alerte": {
-            "titre": "Multiples vulnérabilités dans PHP (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/",
+            "titre": "Multiples vulnérabilités dans les produits Elastic (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1123/",
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-14180",
-            "description": "In PHP versions 8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1 when using the PDO PostgreSQL driver with PDO::ATTR_EMULATE_PREPARES enabled, an invalid character sequence (such as \\x99) in a prepared statement parameter may cause the quoting function PQescapeStringConn to return NULL, leading to a null pointer dereference in pdo_parse_params() function. This may lead to crashes (segmentation fault) and affect the availability of the target server.",
-            "cwe": "CWE-476",
-            "nature de la faille": "CWE-476 NULL Pointer Dereference",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000580000",
+            "cve_id": "CVE-2025-68389",
+            "description": "Allocation of Resources Without Limits or Throttling (CWE-770) in Kibana can allow a low-privileged authenticated user to cause Excessive Allocation (CAPEC-130) of computing resources and a denial of service (DoS) of the Kibana process via a crafted HTTP request.",
+            "cwe": "CWE-770",
+            "nature de la faille": "CWE-770 Allocation of Resources Without Limits or Throttling",
+            "cvss_score": 6.5,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.002020000",
             "gravite_epss": "Faible",
-            "editeur": "PHP Group",
-            "produit": "PHP",
+            "editeur": "Elastic",
+            "produit": "Kibana",
             "versions_affectees": [
-                "8.1.*",
-                "8.2.*",
-                "8.3.*",
-                "8.4.*",
-                "8.5.*"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2023-53393",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/mlx5: Fix mlx5_ib_get_hw_stats when used for device\n\nCurrently, when mlx5_ib_get_hw_stats() is used for device (port_num = 0),\nthere is a special handling in order to use the correct counters, but,\nport_num is being passed down the stack without any change.  Also, some\nfunctions assume that port_num >=1. As a result, the following oops can\noccur.\n\n BUG: unable to handle page fault for address: ffff89510294f1a8\n #PF: supervisor write access in kernel mode\n #PF: error_code(0x0002) - not-present page\n PGD 0 P4D 0\n Oops: 0002 [#1] SMP\n CPU: 8 PID: 1382 Comm: devlink Tainted: G W          6.1.0-rc4_for_upstream_base_2022_11_10_16_12 #1\n Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS rel-1.13.0-0-gf21b5a4aeb02-prebuilt.qemu.org 04/01/2014\n RIP: 0010:_raw_spin_lock+0xc/0x20\n Call Trace:\n  <TASK>\n  mlx5_ib_get_native_port_mdev+0x73/0xe0 [mlx5_ib]\n  do_get_hw_stats.constprop.0+0x109/0x160 [mlx5_ib]\n  mlx5_ib_get_hw_stats+0xad/0x180 [mlx5_ib]\n  ib_setup_device_attrs+0xf0/0x290 [ib_core]\n  ib_register_device+0x3bb/0x510 [ib_core]\n  ? atomic_notifier_chain_register+0x67/0x80\n  __mlx5_ib_add+0x2b/0x80 [mlx5_ib]\n  mlx5r_probe+0xb8/0x150 [mlx5_ib]\n  ? auxiliary_match_id+0x6a/0x90\n  auxiliary_bus_probe+0x3c/0x70\n  ? driver_sysfs_add+0x6b/0x90\n  really_probe+0xcd/0x380\n  __driver_probe_device+0x80/0x170\n  driver_probe_device+0x1e/0x90\n  __device_attach_driver+0x7d/0x100\n  ? driver_allows_async_probing+0x60/0x60\n  ? driver_allows_async_probing+0x60/0x60\n  bus_for_each_drv+0x7b/0xc0\n  __device_attach+0xbc/0x200\n  bus_probe_device+0x87/0xa0\n  device_add+0x404/0x940\n  ? dev_set_name+0x53/0x70\n  __auxiliary_device_add+0x43/0x60\n  add_adev+0x99/0xe0 [mlx5_core]\n  mlx5_attach_device+0xc8/0x120 [mlx5_core]\n  mlx5_load_one_devl_locked+0xb2/0xe0 [mlx5_core]\n  devlink_reload+0x133/0x250\n  devlink_nl_cmd_reload+0x480/0x570\n  ? devlink_nl_pre_doit+0x44/0x2b0\n  genl_family_rcv_msg_doit.isra.0+0xc2/0x110\n  genl_rcv_msg+0x180/0x2b0\n  ? devlink_nl_cmd_region_read_dumpit+0x540/0x540\n  ? devlink_reload+0x250/0x250\n  ? devlink_put+0x50/0x50\n  ? genl_family_rcv_msg_doit.isra.0+0x110/0x110\n  netlink_rcv_skb+0x54/0x100\n  genl_rcv+0x24/0x40\n  netlink_unicast+0x1f6/0x2c0\n  netlink_sendmsg+0x237/0x490\n  sock_sendmsg+0x33/0x40\n  __sys_sendto+0x103/0x160\n  ? handle_mm_fault+0x10e/0x290\n  ? do_user_addr_fault+0x1c0/0x5f0\n  __x64_sys_sendto+0x25/0x30\n  do_syscall_64+0x3d/0x90\n  entry_SYSCALL_64_after_hwframe+0x46/0xb0\n\nFix it by setting port_num to 1 in order to get device status and remove\nunused variable.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000170000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "4.16"
+                "7.0.0",
+                "8.0.0",
+                "9.0.0",
+                "9.2.0"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans Microsoft Edge (19 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1124/",
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-65046",
-            "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
-            "cwe": "Non disponible",
-            "nature de la faille": "Spoofing",
-            "cvss_score": 3.1,
-            "gravite_cvss": "Faible",
-            "epss_score": "0.000430000",
+            "cve_id": "CVE-2025-14765",
+            "description": "Use after free in WebGPU in Google Chrome prior to 143.0.7499.147 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+            "cwe": "CWE-416",
+            "nature de la faille": "Use after free",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.001010000",
             "gravite_epss": "Faible",
-            "editeur": "Microsoft",
-            "produit": "Microsoft Edge for Android",
+            "editeur": "Google",
+            "produit": "Chrome",
             "versions_affectees": [
-                "1.0.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Centreon Web (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans Centreon Web. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1127/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-43865",
-            "description": "React Router is a router for React. In versions on the 7.0 branch prior to version 7.5.2, it's possible to modify pre-rendered data by adding a header to the request. This allows to completely spoof its contents and modify all the values ​​of the data object passed to the HTML. This issue has been patched in version 7.5.2.",
-            "cwe": "CWE-345",
-            "nature de la faille": "CWE-345: Insufficient Verification of Data Authenticity",
-            "cvss_score": 8.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000510000",
-            "gravite_epss": "Faible",
-            "editeur": "remix-run",
-            "produit": "react-router",
-            "versions_affectees": [
-                ">= 7.0, < 7.5.2"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits IBM (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2022-21360",
-            "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: ImageIO). Supported versions that are affected are Oracle Java SE: 7u321, 8u311, 11.0.13, 17.0.1; Oracle GraalVM Enterprise Edition: 20.3.4 and 21.3.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.3 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L).",
-            "cwe": "Non disponible",
-            "nature de la faille": "Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition.",
-            "cvss_score": 5.3,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.001120000",
-            "gravite_epss": "Faible",
-            "editeur": "Oracle Corporation",
-            "produit": "Java SE JDK and JRE",
-            "versions_affectees": [
-                "Oracle Java SE:7u321",
-                "Oracle Java SE:8u311",
-                "Oracle Java SE:11.0.13",
-                "Oracle Java SE:17.0.1",
-                "Oracle GraalVM Enterprise Edition:20.3.4",
-                "Oracle GraalVM Enterprise Edition:21.3.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits VMware (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2024-25126",
-            "description": "Rack is a modular Ruby web server interface. Carefully crafted content type headers can cause Rack’s media type parser to take much longer than expected, leading to a possible denial of service vulnerability (ReDos 2nd degree polynomial). This vulnerability is patched in 3.0.9.1 and 2.2.8.1.",
-            "cwe": "CWE-1333",
-            "nature de la faille": "CWE-1333: Inefficient Regular Expression Complexity",
-            "cvss_score": 5.3,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.003320000",
-            "gravite_epss": "Faible",
-            "editeur": "rack",
-            "produit": "rack",
-            "versions_affectees": [
-                ">= 3.0.0, < 3.0.9.1",
-                ">= 0.4, < 2.2.8.1"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Foxit (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-66498",
-            "description": "A memory corruption vulnerability exists in the 3D annotation handling of Foxit PDF Reader due to insufficient bounds checking when parsing U3D data. When opening a PDF file containing malformed or specially crafted PRC content, out-of-bounds memory access may occur, resulting in memory corruption.",
-            "cwe": "CWE-125",
-            "nature de la faille": "CWE-125 Out-of-bounds Read",
-            "cvss_score": 5.3,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000160000",
-            "gravite_epss": "Faible",
-            "editeur": "Foxit Software Inc.",
-            "produit": "Foxit PDF Editor",
-            "versions_affectees": [
-                "Versions 2025.2.1 and earlier",
-                "Versions 14.0.1 and earlier",
-                "Versions 13.2.1 and eariler"
+                "143.0.7499.147"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Vulnérabilité dans les produits NetApp (19 décembre 2025)",
+            "type": "Avis",
             "description": "Une vulnérabilité a été découverte dans les produits NetApp. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1125/",
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
@@ -592,14 +345,161 @@
     },
     {
         "alerte": {
+            "titre": "Multiples vulnérabilités dans Centreon Web (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Centreon Web. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1127/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-43865",
+            "description": "React Router is a router for React. In versions on the 7.0 branch prior to version 7.5.2, it's possible to modify pre-rendered data by adding a header to the request. This allows to completely spoof its contents and modify all the values ​​of the data object passed to the HTML. This issue has been patched in version 7.5.2.",
+            "cwe": "CWE-345",
+            "nature de la faille": "CWE-345: Insufficient Verification of Data Authenticity",
+            "cvss_score": 8.2,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000510000",
+            "gravite_epss": "Faible",
+            "editeur": "remix-run",
+            "produit": "react-router",
+            "versions_affectees": [
+                ">= 7.0, < 7.5.2"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Mozilla Firefox (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1128/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-14861",
+            "description": "Memory safety bugs present in Firefox 146. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 146.0.1.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000450000",
+            "gravite_epss": "Faible",
+            "editeur": "Mozilla",
+            "produit": "Firefox",
+            "versions_affectees": [
+                "unspecified"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits VMware (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-12194",
+            "description": "Uncontrolled Resource Consumption vulnerability in Legion of the Bouncy Castle Inc. Bouncy Castle for Java FIPS bc-fips on All (API modules), Legion of the Bouncy Castle Inc. Bouncy Castle for Java LTS bcprov-lts8on on All (API modules) allows Excessive Allocation. This vulnerability is associated with program files core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeCFB.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeGCM.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/SHA256NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeEngine.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeCBC.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeCTR.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCFB.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeGCM.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeEngine.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCBC.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeGCMSIV.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCCM.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCTR.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA256NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA224NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA3NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHAKENativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA512NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA384NativeDigest.Java.\n\nThis issue affects Bouncy Castle for Java FIPS: from 2.1.0 through 2.1.1; Bouncy Castle for Java LTS: from 2.73.0 through 2.73.7.",
+            "cwe": "CWE-400",
+            "nature de la faille": "CWE-400 Uncontrolled Resource Consumption",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000210000",
+            "gravite_epss": "Faible",
+            "editeur": "Legion of the Bouncy Castle Inc.",
+            "produit": "Bouncy Castle for Java LTS",
+            "versions_affectees": [
+                "2.73.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Foxit (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-66497",
+            "description": "A memory corruption vulnerability exists in the 3D annotation handling of Foxit PDF Reader due to insufficient bounds checking when parsing PRC data. When opening a PDF file containing malformed or specially crafted PRC content, out-of-bounds memory access may occur, resulting in memory corruption.",
+            "cwe": "CWE-125",
+            "nature de la faille": "CWE-125 Out-of-bounds Read",
+            "cvss_score": 5.3,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000160000",
+            "gravite_epss": "Faible",
+            "editeur": "Foxit Software Inc.",
+            "produit": "Foxit PDF Editor",
+            "versions_affectees": [
+                "Versions 2025.2.1 and earlier",
+                "Versions 14.0.1 and earlier",
+                "Versions 13.2.1 and eariler"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits IBM (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2024-38827",
+            "description": "The usage of String.toLowerCase() and String.toUpperCase() has some Locale dependent exceptions that could potentially result in authorization rules not working properly.",
+            "cwe": "CWE-639",
+            "nature de la faille": "CWE-639",
+            "cvss_score": 4.8,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.003070000",
+            "gravite_epss": "Faible",
+            "editeur": "Spring by VMware Tanzu",
+            "produit": "Spring Security",
+            "versions_affectees": [
+                "5.7.0 - 5.7.13, 5.8.0 - 5.8.15, 6.0.0 - 6.0.13, 6.1.0 - 6.1.11, 6.2.0 - 6.2.7, 6.3.0 - 6.3.4, Older unsupported versions are also affected"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-39841",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: lpfc: Fix buffer free/clear order in deferred receive path\n\nFix a use-after-free window by correcting the buffer release sequence in\nthe deferred receive path. The code freed the RQ buffer first and only\nthen cleared the context pointer under the lock. Concurrent paths (e.g.,\nABTS and the repost path) also inspect and release the same pointer under\nthe lock, so the old order could lead to double-free/UAF.\n\nNote that the repost path already uses the correct pattern: detach the\npointer under the lock, then free it after dropping the lock. The\ndeferred path should do the same.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000490000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "5.1"
+            ]
+        }
+    },
+    {
+        "alerte": {
             "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/",
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-40048",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nuio_hv_generic: Let userspace take care of interrupt mask\n\nRemove the logic to set interrupt mask by default in uio_hv_generic\ndriver as the interrupt mask value is supposed to be controlled\ncompletely by the user space. If the mask bit gets changed\nby the driver, concurrently with user mode operating on the ring,\nthe mask bit may be set when it is supposed to be clear, and the\nuser-mode driver will miss an interrupt which will cause a hang.\n\nFor eg- when the driver sets inbound ring buffer interrupt mask to 1,\nthe host does not interrupt the guest on the UIO VMBus channel.\nHowever, setting the mask does not prevent the host from putting a\nmessage in the inbound ring buffer. So let’s assume that happens,\nthe host puts a message into the ring buffer but does not interrupt.\n\nSubsequently, the user space code in the guest sets the inbound ring\nbuffer interrupt mask to 0, saying “Hey, I’m ready for interrupts”.\nUser space code then calls pread() to wait for an interrupt.\nThen one of two things happens:\n\n* The host never sends another message. So the pread() waits forever.\n* The host does send another message. But because there’s already a\n  message in the ring buffer, it doesn’t generate an interrupt.\n  This is the correct behavior, because the host should only send an\n  interrupt when the inbound ring buffer transitions from empty to\n  not-empty. Adding an additional message to a ring buffer that is not\n  empty is not supposed to generate an interrupt on the guest.\n  Since the guest is waiting in pread() and not removing messages from\n  the ring buffer, the pread() waits forever.\n\nThis could be easily reproduced in hv_fcopy_uio_daemon if we delay\nsetting interrupt mask to 0.\n\nSimilarly if hv_uio_channel_cb() sets the interrupt_mask to 1,\nthere’s a race condition. Once user space empties the inbound ring\nbuffer, but before user space sets interrupt_mask to 0, the host could\nput another message in the ring buffer but it wouldn’t interrupt.\nThen the next pread() would hang.\n\nFix these by removing all instances where interrupt_mask is changed,\nwhile keeping the one in set_event() unchanged to enable userspace\ncontrol the interrupt mask by writing 0/1 to /dev/uioX.",
+            "cve_id": "CVE-2025-40021",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing: dynevent: Add a missing lockdown check on dynevent\n\nSince dynamic_events interface on tracefs is compatible with\nkprobe_events and uprobe_events, it should also check the lockdown\nstatus and reject if it is set.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
@@ -609,36 +509,14 @@
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.10"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-40167",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\next4: detect invalid INLINE_DATA + EXTENTS flag combination\n\nsyzbot reported a BUG_ON in ext4_es_cache_extent() when opening a verity\nfile on a corrupted ext4 filesystem mounted without a journal.\n\nThe issue is that the filesystem has an inode with both the INLINE_DATA\nand EXTENTS flags set:\n\n    EXT4-fs error (device loop0): ext4_cache_extents:545: inode #15:\n    comm syz.0.17: corrupted extent tree: lblk 0 < prev 66\n\nInvestigation revealed that the inode has both flags set:\n    DEBUG: inode 15 - flag=1, i_inline_off=164, has_inline=1, extents_flag=1\n\nThis is an invalid combination since an inode should have either:\n- INLINE_DATA: data stored directly in the inode\n- EXTENTS: data stored in extent-mapped blocks\n\nHaving both flags causes ext4_has_inline_data() to return true, skipping\nextent tree validation in __ext4_iget(). The unvalidated out-of-order\nextents then trigger a BUG_ON in ext4_es_cache_extent() due to integer\nunderflow when calculating hole sizes.\n\nFix this by detecting this invalid flag combination early in ext4_iget()\nand rejecting the corrupted inode.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000510000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "3.8"
+                "5.4"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans MongoDB Server (19 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans MongoDB Server. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1134/",
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
@@ -670,154 +548,14 @@
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/",
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39866",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs: writeback: fix use-after-free in __mark_inode_dirty()\n\nAn use-after-free issue occurred when __mark_inode_dirty() get the\nbdi_writeback that was in the progress of switching.\n\nCPU: 1 PID: 562 Comm: systemd-random- Not tainted 6.6.56-gb4403bd46a8e #1\n......\npstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)\npc : __mark_inode_dirty+0x124/0x418\nlr : __mark_inode_dirty+0x118/0x418\nsp : ffffffc08c9dbbc0\n........\nCall trace:\n __mark_inode_dirty+0x124/0x418\n generic_update_time+0x4c/0x60\n file_modified+0xcc/0xd0\n ext4_buffered_write_iter+0x58/0x124\n ext4_file_write_iter+0x54/0x704\n vfs_write+0x1c0/0x308\n ksys_write+0x74/0x10c\n __arm64_sys_write+0x1c/0x28\n invoke_syscall+0x48/0x114\n el0_svc_common.constprop.0+0xc0/0xe0\n do_el0_svc+0x1c/0x28\n el0_svc+0x40/0xe4\n el0t_64_sync_handler+0x120/0x12c\n el0t_64_sync+0x194/0x198\n\nRoot cause is:\n\nsystemd-random-seed                         kworker\n----------------------------------------------------------------------\n___mark_inode_dirty                     inode_switch_wbs_work_fn\n\n  spin_lock(&inode->i_lock);\n  inode_attach_wb\n  locked_inode_to_wb_and_lock_list\n     get inode->i_wb\n     spin_unlock(&inode->i_lock);\n     spin_lock(&wb->list_lock)\n  spin_lock(&inode->i_lock)\n  inode_io_list_move_locked\n  spin_unlock(&wb->list_lock)\n  spin_unlock(&inode->i_lock)\n                                    spin_lock(&old_wb->list_lock)\n                                      inode_do_switch_wbs\n                                        spin_lock(&inode->i_lock)\n                                        inode->i_wb = new_wb\n                                        spin_unlock(&inode->i_lock)\n                                    spin_unlock(&old_wb->list_lock)\n                                    wb_put_many(old_wb, nr_switched)\n                                      cgwb_release\n                                      old wb released\n  wb_wakeup_delayed() accesses wb,\n  then trigger the use-after-free\n  issue\n\nFix this race condition by holding inode spinlock until\nwb_wakeup_delayed() finished.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000530000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "4.2"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Mozilla Firefox (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1128/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14861",
-            "description": "Memory safety bugs present in Firefox 146. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 146.0.1.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000450000",
-            "gravite_epss": "Faible",
-            "editeur": "Mozilla",
-            "produit": "Firefox",
-            "versions_affectees": [
-                "unspecified"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Elastic (19 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1123/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-68385",
-            "description": "Improper neutralization of input during web page generation ('Cross-site Scripting') (CWE-79) allows an authenticated user to embed a malicious script in content that will be served to web browsers causing cross-site scripting (XSS) (CAPEC-63) via a method in Vega bypassing a previous Vega XSS mitigation.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
-            "cvss_score": 7.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000330000",
-            "gravite_epss": "Faible",
-            "editeur": "Elastic",
-            "produit": "Kibana",
-            "versions_affectees": [
-                "7.0.0",
-                "8.0.0",
-                "9.0.0",
-                "9.2.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-62164",
-            "description": "vLLM is an inference and serving engine for large language models (LLMs). From versions 0.10.2 to before 0.11.1, a memory corruption vulnerability could lead to a crash (denial-of-service) and potentially remote code execution (RCE), exists in the Completions API endpoint. When processing user-supplied prompt embeddings, the endpoint loads serialized tensors using torch.load() without sufficient validation. Due to a change introduced in PyTorch 2.8.0, sparse tensor integrity checks are disabled by default. As a result, maliciously crafted tensors can bypass internal bounds checks and trigger an out-of-bounds memory write during the call to to_dense(). This memory corruption can crash vLLM and potentially lead to code execution on the server hosting vLLM. This issue has been patched in version 0.11.1.",
-            "cwe": "CWE-20",
-            "nature de la faille": "CWE-20: Improper Input Validation",
-            "cvss_score": 8.8,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.003410000",
-            "gravite_epss": "Faible",
-            "editeur": "vllm-project",
-            "produit": "vllm",
-            "versions_affectees": [
-                ">= 0.10.2, < 0.11.1"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2022-50545",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nr6040: Fix kmemleak in probe and remove\n\nThere is a memory leaks reported by kmemleak:\n\n  unreferenced object 0xffff888116111000 (size 2048):\n    comm \"modprobe\", pid 817, jiffies 4294759745 (age 76.502s)\n    hex dump (first 32 bytes):\n      00 c4 0a 04 81 88 ff ff 08 10 11 16 81 88 ff ff  ................\n      08 10 11 16 81 88 ff ff 00 00 00 00 00 00 00 00  ................\n    backtrace:\n      [<ffffffff815bcd82>] kmalloc_trace+0x22/0x60\n      [<ffffffff827e20ee>] phy_device_create+0x4e/0x90\n      [<ffffffff827e6072>] get_phy_device+0xd2/0x220\n      [<ffffffff827e7844>] mdiobus_scan+0xa4/0x2e0\n      [<ffffffff827e8be2>] __mdiobus_register+0x482/0x8b0\n      [<ffffffffa01f5d24>] r6040_init_one+0x714/0xd2c [r6040]\n      ...\n\nThe problem occurs in probe process as follows:\n  r6040_init_one:\n    mdiobus_register\n      mdiobus_scan    <- alloc and register phy_device,\n                         the reference count of phy_device is 3\n    r6040_mii_probe\n      phy_connect     <- connect to the first phy_device,\n                         so the reference count of the first\n                         phy_device is 4, others are 3\n    register_netdev   <- fault inject succeeded, goto error handling path\n\n    // error handling path\n    err_out_mdio_unregister:\n      mdiobus_unregister(lp->mii_bus);\n    err_out_mdio:\n      mdiobus_free(lp->mii_bus);    <- the reference count of the first\n                                       phy_device is 1, it is not released\n                                       and other phy_devices are released\n  // similarly, the remove process also has the same problem\n\nThe root cause is traced to the phy_device is not disconnected when\nremoves one r6040 device in r6040_remove_one() or on error handling path\nafter r6040_mii probed successfully. In r6040_mii_probe(), a net ethernet\ndevice is connected to the first PHY device of mii_bus, in order to\nnotify the connected driver when the link status changes, which is the\ndefault behavior of the PHY infrastructure to handle everything.\nTherefore the phy_device should be disconnected when removes one r6040\ndevice or on error handling path.\n\nFix it by adding phy_disconnect() when removes one r6040 device or on\nerror handling path after r6040_mii probed successfully.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000490000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "2.6.36"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits IBM (26 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2015-8392",
-            "description": "PCRE before 8.38 mishandles certain instances of the (?| substring, which allows remote attackers to cause a denial of service (unintended recursion and buffer overflow) or possibly have unspecified other impact via a crafted regular expression, as demonstrated by a JavaScript RegExp object encountered by Konqueror, a related issue to CVE-2015-8384 and CVE-2015-8395.",
-            "cwe": "Non disponible",
-            "nature de la faille": "n/a",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.081350000",
-            "gravite_epss": "Faible",
-            "editeur": "n/a",
-            "produit": "n/a",
-            "versions_affectees": [
-                "n/a"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025)",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-39757",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nALSA: usb-audio: Validate UAC3 cluster segment descriptors\n\nUAC3 class segment descriptors need to be verified whether their sizes\nmatch with the declared lengths and whether they fit with the\nallocated buffer sizes, too.  Otherwise malicious firmware may lead to\nthe unexpected OOB accesses.",
+            "cve_id": "CVE-2025-39766",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: Make cake_enqueue return NET_XMIT_CN when past buffer_limit\n\nThe following setup can trigger a WARNING in htb_activate due to\nthe condition: !cl->leaf.q->q.qlen\n\ntc qdisc del dev lo root\ntc qdisc add dev lo root handle 1: htb default 1\ntc class add dev lo parent 1: classid 1:1 \\\n       htb rate 64bit\ntc qdisc add dev lo parent 1:1 handle f: \\\n       cake memlimit 1b\nping -I lo -f -c1 -s64 -W0.001 127.0.0.1\n\nThis is because the low memlimit leads to a low buffer_limit, which\ncauses packet dropping. However, cake_enqueue still returns\nNET_XMIT_SUCCESS, causing htb_enqueue to call htb_activate with an\nempty child qdisc. We should return NET_XMIT_CN when packets are\ndropped from the same tin and flow.\n\nI do not believe return value of NET_XMIT_CN is necessary for packet\ndrops in the case of ack filtering, as that is meant to optimize\nperformance, not to signal congestion.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
@@ -833,30 +571,181 @@
     },
     {
         "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-40315",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: gadget: f_fs: Fix epfile null pointer access after ep enable.\n\nA race condition occurs when ffs_func_eps_enable() runs concurrently\nwith ffs_data_reset(). The ffs_data_clear() called in ffs_data_reset()\nsets ffs->epfiles to NULL before resetting ffs->eps_count to 0, leading\nto a NULL pointer dereference when accessing epfile->ep in\nffs_func_eps_enable() after successful usb_ep_enable().\n\nThe ffs->epfiles pointer is set to NULL in both ffs_data_clear() and\nffs_data_close() functions, and its modification is protected by the\nspinlock ffs->eps_lock. And the whole ffs_func_eps_enable() function\nis also protected by ffs->eps_lock.\n\nThus, add NULL pointer handling for ffs->epfiles in the\nffs_func_eps_enable() function to fix issues",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000320000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "5.17"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans PHP (19 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/",
+            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-14178",
+            "description": "In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, a heap buffer overflow occurs in array_merge() when the total element count of packed arrays exceeds 32-bit limits or HT_MAX_SIZE, due to an integer overflow in the precomputation of element counts using zend_hash_num_elements(). This may lead to memory corruption or crashes and affect the integrity and availability of the target server.",
+            "cwe": "CWE-787",
+            "nature de la faille": "CWE-787 Out-of-bounds Write",
+            "cvss_score": 6.5,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000520000",
+            "gravite_epss": "Faible",
+            "editeur": "PHP Group",
+            "produit": "PHP",
+            "versions_affectees": [
+                "8.1.*",
+                "8.2.*",
+                "8.3.*",
+                "8.4.*",
+                "8.5.*"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits IBM (26 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/",
+            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2021-23440",
+            "description": "This affects the package set-value before <2.0.1, >=3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Prototype Pollution",
+            "cvss_score": 7.3,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000660000",
+            "gravite_epss": "Faible",
+            "editeur": "n/a",
+            "produit": "set-value",
+            "versions_affectees": [
+                "<2.0.1",
+                ">=3.0.0 <4.0.1"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/",
+            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-22869",
+            "description": "SSH servers which implement file transfer protocols are vulnerable to a denial of service attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted.",
+            "cwe": "Non disponible",
+            "nature de la faille": "CWE-770: Allocation of Resources Without Limits or Throttling",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.002150000",
+            "gravite_epss": "Faible",
+            "editeur": "golang.org/x/crypto",
+            "produit": "golang.org/x/crypto/ssh",
+            "versions_affectees": [
+                "0"
+            ]
+        }
+    },
+    {
+        "alerte": {
             "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/",
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-49935",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nACPI: PAD: fix crash in exit_round_robin()\n\nThe kernel occasionally crashes in cpumask_clear_cpu(), which is called\nwithin exit_round_robin(), because when executing clear_bit(nr, addr) with\nnr set to 0xffffffff, the address calculation may cause misalignment within\nthe memory, leading to access to an invalid memory address.\n\n----------\nBUG: unable to handle kernel paging request at ffffffffe0740618\n        ...\nCPU: 3 PID: 2919323 Comm: acpi_pad/14 Kdump: loaded Tainted: G           OE  X --------- -  - 4.18.0-425.19.2.el8_7.x86_64 #1\n        ...\nRIP: 0010:power_saving_thread+0x313/0x411 [acpi_pad]\nCode: 89 cd 48 89 d3 eb d1 48 c7 c7 55 70 72 c0 e8 64 86 b0 e4 c6 05 0d a1 02 00 01 e9 bc fd ff ff 45 89 e4 42 8b 04 a5 20 82 72 c0 <f0> 48 0f b3 05 f4 9c 01 00 42 c7 04 a5 20 82 72 c0 ff ff ff ff 31\nRSP: 0018:ff72a5d51fa77ec8 EFLAGS: 00010202\nRAX: 00000000ffffffff RBX: ff462981e5d8cb80 RCX: 0000000000000000\nRDX: 0000000000000000 RSI: 0000000000000246 RDI: 0000000000000246\nRBP: ff46297556959d80 R08: 0000000000000382 R09: ff46297c8d0f38d8\nR10: 0000000000000000 R11: 0000000000000001 R12: 000000000000000e\nR13: 0000000000000000 R14: ffffffffffffffff R15: 000000000000000e\nFS:  0000000000000000(0000) GS:ff46297a800c0000(0000) knlGS:0000000000000000\nCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\nCR2: ffffffffe0740618 CR3: 0000007e20410004 CR4: 0000000000771ee0\nDR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000\nDR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400\nPKRU: 55555554\nCall Trace:\n ? acpi_pad_add+0x120/0x120 [acpi_pad]\n kthread+0x10b/0x130\n ? set_kthread_struct+0x50/0x50\n ret_from_fork+0x1f/0x40\n        ...\nCR2: ffffffffe0740618\n\ncrash> dis -lr ffffffffc0726923\n        ...\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 114\n0xffffffffc0726918 <power_saving_thread+776>:\tmov    %r12d,%r12d\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 325\n0xffffffffc072691b <power_saving_thread+779>:\tmov    -0x3f8d7de0(,%r12,4),%eax\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./arch/x86/include/asm/bitops.h: 80\n0xffffffffc0726923 <power_saving_thread+787>:\tlock btr %rax,0x19cf4(%rip)        # 0xffffffffc0740620 <pad_busy_cpus_bits>\n\ncrash> px tsk_in_cpu[14]\n$66 = 0xffffffff\n\ncrash> px 0xffffffffc072692c+0x19cf4\n$99 = 0xffffffffc0740620\n\ncrash> sym 0xffffffffc0740620\nffffffffc0740620 (b) pad_busy_cpus_bits [acpi_pad]\n\ncrash> px pad_busy_cpus_bits[0]\n$42 = 0xfffc0\n----------\n\nTo fix this, ensure that tsk_in_cpu[tsk_index] != -1 before calling\ncpumask_clear_cpu() in exit_round_robin(), just as it is done in\nround_robin_cpu().\n\n[ rjw: Subject edit, avoid updates to the same value ]",
+            "cve_id": "CVE-2024-53090",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nafs: Fix lock recursion\n\nafs_wake_up_async_call() can incur lock recursion.  The problem is that it\nis called from AF_RXRPC whilst holding the ->notify_lock, but it tries to\ntake a ref on the afs_call struct in order to pass it to a work queue - but\nif the afs_call is already queued, we then have an extraneous ref that must\nbe put... calling afs_put_call() may call back down into AF_RXRPC through\nrxrpc_kernel_shutdown_call(), however, which might try taking the\n->notify_lock again.\n\nThis case isn't very common, however, so defer it to a workqueue.  The oops\nlooks something like:\n\n  BUG: spinlock recursion on CPU#0, krxrpcio/7001/1646\n   lock: 0xffff888141399b30, .magic: dead4ead, .owner: krxrpcio/7001/1646, .owner_cpu: 0\n  CPU: 0 UID: 0 PID: 1646 Comm: krxrpcio/7001 Not tainted 6.12.0-rc2-build3+ #4351\n  Hardware name: ASUS All Series/H97-PLUS, BIOS 2306 10/09/2014\n  Call Trace:\n   <TASK>\n   dump_stack_lvl+0x47/0x70\n   do_raw_spin_lock+0x3c/0x90\n   rxrpc_kernel_shutdown_call+0x83/0xb0\n   afs_put_call+0xd7/0x180\n   rxrpc_notify_socket+0xa0/0x190\n   rxrpc_input_split_jumbo+0x198/0x1d0\n   rxrpc_input_data+0x14b/0x1e0\n   ? rxrpc_input_call_packet+0xc2/0x1f0\n   rxrpc_input_call_event+0xad/0x6b0\n   rxrpc_input_packet_on_conn+0x1e1/0x210\n   rxrpc_input_packet+0x3f2/0x4d0\n   rxrpc_io_thread+0x243/0x410\n   ? __pfx_rxrpc_io_thread+0x10/0x10\n   kthread+0xcf/0xe0\n   ? __pfx_kthread+0x10/0x10\n   ret_from_fork+0x24/0x40\n   ? __pfx_kthread+0x10/0x10\n   ret_from_fork_asm+0x1a/0x30\n   </TASK>",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000180000",
+            "epss_score": "0.000040000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "2.6.32"
+                "4.15"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/",
+            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-40021",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing: dynevent: Add a missing lockdown check on dynevent\n\nSince dynamic_events interface on tracefs is compatible with\nkprobe_events and uprobe_events, it should also check the lockdown\nstatus and reject if it is set.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000530000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "5.4"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/",
+            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-38729",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nALSA: usb-audio: Validate UAC3 power domain descriptors, too\n\nUAC3 power domain descriptors need to be verified with its variable\nbLength for avoiding the unexpected OOB accesses by malicious\nfirmware, too.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000640000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "4.17"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans Moxa NPort (31 décembre 2025)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans Moxa NPort. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1142/",
             "date": "Wed, 31 Dec 2025 00:00:00 +0000"
@@ -880,45 +769,250 @@
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/",
             "date": "Fri, 02 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2023-53676",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: target: iscsi: Fix buffer overflow in lio_target_nacl_info_show()\n\nThe function lio_target_nacl_info_show() uses sprintf() in a loop to print\ndetails for every iSCSI connection in a session without checking for the\nbuffer length. With enough iSCSI connections it's possible to overflow the\nbuffer provided by configfs and corrupt the memory.\n\nThis patch replaces sprintf() with sysfs_emit_at() that checks for buffer\nboundries.",
+            "cve_id": "CVE-2025-40040",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/ksm: fix flag-dropping behavior in ksm_madvise\n\nsyzkaller discovered the following crash: (kernel BUG)\n\n[   44.607039] ------------[ cut here ]------------\n[   44.607422] kernel BUG at mm/userfaultfd.c:2067!\n[   44.608148] Oops: invalid opcode: 0000 [#1] SMP DEBUG_PAGEALLOC KASAN NOPTI\n[   44.608814] CPU: 1 UID: 0 PID: 2475 Comm: reproducer Not tainted 6.16.0-rc6 #1 PREEMPT(none)\n[   44.609635] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014\n[   44.610695] RIP: 0010:userfaultfd_release_all+0x3a8/0x460\n\n<snip other registers, drop unreliable trace>\n\n[   44.617726] Call Trace:\n[   44.617926]  <TASK>\n[   44.619284]  userfaultfd_release+0xef/0x1b0\n[   44.620976]  __fput+0x3f9/0xb60\n[   44.621240]  fput_close_sync+0x110/0x210\n[   44.622222]  __x64_sys_close+0x8f/0x120\n[   44.622530]  do_syscall_64+0x5b/0x2f0\n[   44.622840]  entry_SYSCALL_64_after_hwframe+0x76/0x7e\n[   44.623244] RIP: 0033:0x7f365bb3f227\n\nKernel panics because it detects UFFD inconsistency during\nuserfaultfd_release_all().  Specifically, a VMA which has a valid pointer\nto vma->vm_userfaultfd_ctx, but no UFFD flags in vma->vm_flags.\n\nThe inconsistency is caused in ksm_madvise(): when user calls madvise()\nwith MADV_UNMEARGEABLE on a VMA that is registered for UFFD in MINOR mode,\nit accidentally clears all flags stored in the upper 32 bits of\nvma->vm_flags.\n\nAssuming x86_64 kernel build, unsigned long is 64-bit and unsigned int and\nint are 32-bit wide.  This setup causes the following mishap during the &=\n~VM_MERGEABLE assignment.\n\nVM_MERGEABLE is a 32-bit constant of type unsigned int, 0x8000'0000. \nAfter ~ is applied, it becomes 0x7fff'ffff unsigned int, which is then\npromoted to unsigned long before the & operation.  This promotion fills\nupper 32 bits with leading 0s, as we're doing unsigned conversion (and\neven for a signed conversion, this wouldn't help as the leading bit is 0).\n& operation thus ends up AND-ing vm_flags with 0x0000'0000'7fff'ffff\ninstead of intended 0xffff'ffff'7fff'ffff and hence accidentally clears\nthe upper 32-bits of its value.\n\nFix it by changing `VM_MERGEABLE` constant to unsigned long, using the\nBIT() macro.\n\nNote: other VM_* flags are not affected: This only happens to the\nVM_MERGEABLE flag, as the other VM_* flags are all constants of type int\nand after ~ operation, they end up with leading 1 and are thus converted\nto unsigned long with leading 1s.\n\nNote 2:\nAfter commit 31defc3b01d9 (\"userfaultfd: remove (VM_)BUG_ON()s\"), this is\nno longer a kernel BUG, but a WARNING at the same place:\n\n[   45.595973] WARNING: CPU: 1 PID: 2474 at mm/userfaultfd.c:2067\n\nbut the root-cause (flag-drop) remains the same.\n\n[akpm@linux-foundation.org: rust bindgen wasn't able to handle BIT(), from Miguel]",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000450000",
+            "epss_score": "0.000530000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "3.1"
+                "5.13"
             ]
         }
     },
     {
         "alerte": {
             "titre": "Multiples vulnérabilités dans les produits IBM (02 janvier 2026)",
+            "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
             "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0002/",
             "date": "Fri, 02 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2023-6378",
-            "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
-            "cwe": "Non disponible",
-            "nature de la faille": "Denial-of-service using poisoned data",
-            "cvss_score": 7.1,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.006130000",
+            "cve_id": "CVE-2025-48795",
+            "description": "Apache CXF stores large stream based messages as temporary files on the local filesystem. A bug was introduced which means that the entire temporary file is read into memory and then logged. An attacker might be able to exploit this to cause a denial of service attack by causing an out of memory exception. In addition, it is possible to configure CXF to encrypt temporary files to prevent sensitive credentials from being cached unencrypted on the local filesystem, however this bug means that the cached files are written out to logs unencrypted.\n\nUsers are recommended to upgrade to versions 3.5.11, 3.6.6, 4.0.7 or 4.1.1, which fixes this issue.",
+            "cwe": "CWE-400",
+            "nature de la faille": "CWE-400 Uncontrolled Resource Consumption",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000680000",
             "gravite_epss": "Faible",
-            "editeur": "QOS.CH Sarl",
-            "produit": "logback",
-            "versions_affectees": []
+            "editeur": "Apache Software Foundation",
+            "produit": "Apache CXF",
+            "versions_affectees": [
+                "3.5.10",
+                "3.6.5",
+                "4.0.6",
+                "4.1.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Qnap (05 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/",
+            "date": "Mon, 05 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-9110",
+            "description": "An exposure of sensitive system information to an unauthorized control sphere vulnerability has been reported to affect several QNAP operating system versions. The remote attackers can then exploit the vulnerability to read application data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.8.3332 build 20251128 and later\nQuTS hero h5.2.8.3321 build 20251117 and later\nQuTS hero h5.3.1.3250 build 20250912 and later",
+            "cwe": "CWE-497",
+            "nature de la faille": "CWE-497",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000420000",
+            "gravite_epss": "Faible",
+            "editeur": "QNAP Systems Inc.",
+            "produit": "QuTS hero",
+            "versions_affectees": [
+                "h5.2.x",
+                "h5.3.x"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans MariaDB (05 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans MariaDB. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0004/",
+            "date": "Mon, 05 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-13699",
+            "description": "MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MariaDB. Interaction with the mariadb-dump utility is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of view names. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-27000.",
+            "cwe": "CWE-22",
+            "nature de la faille": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.001240000",
+            "gravite_epss": "Faible",
+            "editeur": "MariaDB",
+            "produit": "MariaDB",
+            "versions_affectees": [
+                "11.8.3"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Centreon Open Tickets (06 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Centreon Open Tickets. Elles permettent à un attaquant de provoquer une injection SQL (SQLi) et une injection de code indirecte à distance (XSS).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0005/",
+            "date": "Tue, 06 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-54890",
+            "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (Hostgroup configuration page) allows Stored \n\nXSS by users with elevated privileges.This issue affects Infra Monitoring: from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19, from 23.10.0 before 23.10.29.",
+            "cwe": "CWE-79",
+            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
+            "cvss_score": 6.8,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000200000",
+            "gravite_epss": "Faible",
+            "editeur": "Centreon",
+            "produit": "Infra Monitoring",
+            "versions_affectees": [
+                "24.10.0",
+                "24.04.0",
+                "23.10.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/",
+            "date": "Tue, 06 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-59469",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Centreon",
+            "produit": "Infra Monitoring",
+            "versions_affectees": [
+                "24.10.0",
+                "24.04.0",
+                "23.10.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Stormshield Network Security (06 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0007/",
+            "date": "Tue, 06 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-31115",
+            "description": "XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",
+            "cwe": "CWE-366",
+            "nature de la faille": "CWE-366: Race Condition within a Thread",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000770000",
+            "gravite_epss": "Faible",
+            "editeur": "tukaani-project",
+            "produit": "xz",
+            "versions_affectees": [
+                ">= 5.3.3alpha, < 5.8.1"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Joomla! (07 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Joomla!. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0008/",
+            "date": "Wed, 07 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-63082",
+            "description": "Lack of input filtering leads to an XSS vector in the HTML filter code related to data URLs in img tags.",
+            "cwe": "CWE-79",
+            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000430000",
+            "gravite_epss": "Faible",
+            "editeur": "Joomla! Project",
+            "produit": "Joomla! CMS",
+            "versions_affectees": [
+                "4.0.0-5.4.1",
+                "6.0.0-6.0.1"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Google Chrome (07 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0009/",
+            "date": "Wed, 07 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0628",
+            "description": "Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)",
+            "cwe": "Non disponible",
+            "nature de la faille": "Insufficient policy enforcement",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000080000",
+            "gravite_epss": "Faible",
+            "editeur": "Google",
+            "produit": "Chrome",
+            "versions_affectees": [
+                "143.0.7499.192"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Curl (07 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/",
+            "date": "Wed, 07 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-15224",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Google",
+            "produit": "Chrome",
+            "versions_affectees": [
+                "143.0.7499.192"
+            ]
         }
     }
 ]
