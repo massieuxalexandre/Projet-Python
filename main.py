@@ -5,6 +5,7 @@ import smtplib
 from email.mime.text import MIMEText
 import pandas as pd
 import json
+from datetime import datetime, timedelta, timezone
 
 # lien avec les json
 def from_json(filename):
@@ -62,6 +63,34 @@ def extraire_cve_alertes(alertes):
 
 
 # Etape 3 : Enrichissement des CVE
+def gravite_cvss(score):
+    if score is None:
+        return "Non disponible"
+    elif 0 <= float(score) < 4.0:
+        return "Faible"
+    elif 4.0 <= float(score) < 7.0:
+        return "Moyenne"
+    elif 7.0 <= float(score) < 9.0:
+        return "Élevée"
+    elif 9.0 <= float(score) <= 10.0:
+        return "Critique"
+    else:
+        return "Non disponible"
+
+def gravite_epss(score):
+    if score is None:
+        return "Non disponible"
+    elif 0 <= float(score) < 0.2:
+        return "Faible"
+    elif 0.2 <= float(score) < 0.5:
+        return "Moyenne"
+    elif 0.5 <= float(score) < 0.8:
+        return "Élevée"
+    elif 0.8 <= float(score) <= 1.0:
+        return "Critique"
+    else:
+        return "Non disponible"
+
 
 def enrichir_cve(cve_list):
     cve_enrichi = []
@@ -88,13 +117,6 @@ def enrichir_cve(cve_list):
             vendor = product.get("vendor", "")
             product_name = product.get("product", "")
             versions = [v["version"] for v in product.get("versions", []) if v.get("status", "") == "affected"]
-            # print(f"Éditeur : {vendor}, Produit : {product_name}, Versions : {', '.join(versions)}")
-        # Afficher les résultats
-        # print(f"CVE : {cve_id}")
-        # print(f"Description : {description}")
-        # print(f"Score CVSS : {cvss_score}")
-        # print(f"Type CWE : {cwe}")
-        # print(f"CWE Description : {cwe_desc}")
 
 
         url_api_epss = f"https://api.first.org/data/v1/epss?cve={cve_id}"
@@ -105,20 +127,19 @@ def enrichir_cve(cve_list):
         epss_data = data.get("data", [])
         if epss_data:
             epss_score = epss_data[0]["epss"]
-            # print(f"CVE : {cve_id}")
-            # print(f"Score EPSS : {epss_score}")
         else:
-            # print(f"Aucun score EPSS trouvé pour {cve_id}")
             epss_score = None
             
         
         cve_enrichi.append({
             "cve_id": cve_id,
             "description": description,
-            "cvss_score": cvss_score,
             "cwe": cwe,
-            "cwe_desc": cwe_desc,
+            "nature de la faille": cwe_desc,
+            "cvss_score": cvss_score,
+            "gravite_cvss": gravite_cvss(cvss_score),
             "epss_score": epss_score,
+            "gravite_epss": gravite_epss(epss_score),
             "editeur": vendor,
             "produit": product_name,
             "versions_affectees": versions
@@ -149,18 +170,20 @@ def dataframe_alertes(alertes_enrichies):
         alerte_info = key["alerte"]
         cve_info = key["cve_enrichi"]
         row = {
-            "Titre du bulletin (ANSSI)": alerte_info["titre"],
+            "Titre Alerte": alerte_info["titre"],
             "Lien Alerte": alerte_info["lien"],
-            "Date de publication": alerte_info["date"],
-            "Identifiant CVE": cve_info["cve_id"],
+            "Date Alerte": alerte_info["date"],
+            "CVE ID": cve_info["cve_id"],
             "Description CVE": cve_info["description"],
+            "CWE": cve_info["cwe"],
+            "Nature de la faille": cve_info["nature de la faille"],
             "Score CVSS": cve_info["cvss_score"],
-            "Type CWE": cve_info["cwe"],
-            "Description CWE": cve_info["cwe_desc"],
+            "Gravité CVSS": cve_info["gravite_cvss"],
             "Score EPSS": cve_info["epss_score"],
+            "Gravité EPSS": cve_info["gravite_epss"],
             "Éditeur": cve_info["editeur"],
             "Produit": cve_info["produit"],
-            "Versions Affectées": ", ".join(cve_info["versions_affectees"])
+            "Versions Affectées": ", ".join(cve_info["versions_affectees"]) if cve_info["versions_affectees"] else "Non disponible"
         }
         rows.append(row)
     
@@ -172,8 +195,8 @@ def dataframe_alertes(alertes_enrichies):
 # Etape 6 : Génération d'alertess et notification email
 
 def send_email(to_email, subject, body):
-    from_email = "votre_email@gmail.com"
-    password = "mot_de_passe_application"
+    from_email = "projet.info92@gmail.com"
+    password = "hfphdjyiddkfyqvv"
     msg = MIMEText(body)
     msg['From'] = from_email
     msg['To'] = to_email
@@ -184,7 +207,21 @@ def send_email(to_email, subject, body):
     server.sendmail(from_email, to_email, msg.as_string())
     server.quit()
 
+
+def alerter(alertes_enrichies):
+    emails = ["julien.martrenchard@gmail.com", "massieuxalexandre@gmail.com", "mamouniissam69@gmail.com"]
+    for key in alertes_enrichies:
+        if datetime.strptime(key["alerte"]["date"], "%a, %d %b %Y %H:%M:%S %z") >= datetime.now(timezone.utc) - timedelta(days=1):
+            cve_details = "\n".join(f"{cle}: {val}" for cle, val in key['cve_enrichi'].items())
+            for email in emails:
+                send_email(email, key["alerte"]["titre"], f"Une alerte de sécurité a été détectée : {key['alerte']['description']}\n\nLien : {key['alerte']['lien']}\n\nDétails CVE :\n\n{cve_details}")
+
     return True
+
+
+
+
+
 
 
 # alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
@@ -200,6 +237,4 @@ alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alert
 df_alertes = dataframe_alertes(alertes_enrichies)
 # print(df_alertes)
 
-
- 
-# send_email("destinataire@email.com", "alertes CVE critique", "Mettez à jour votre serveur Apache immédiatement.")
+alerter(alertes_enrichies)
