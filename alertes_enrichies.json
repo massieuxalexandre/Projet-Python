@@ -74,325 +74,6 @@
     },
     {
         "alerte": {
-            "titre": "Multiples vulnérabilités dans Google Chrome (17 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1116/",
-            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14765",
-            "description": "Use after free in WebGPU in Google Chrome prior to 143.0.7499.147 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-            "cwe": "CWE-416",
-            "nature de la faille": "Use after free",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.001010000",
-            "gravite_epss": "Faible",
-            "editeur": "Google",
-            "produit": "Chrome",
-            "versions_affectees": [
-                "143.0.7499.147"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans GLPI (17 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans GLPI. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS) et un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1117/",
-            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-59935",
-            "description": "GLPI is a free asset and IT management software package. Starting in version 10.0.0 and prior to version 10.0.21, an unauthenticated user can store an XSS payload through the inventory endpoint. Users should upgrade to 10.0.21 to receive a patch.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
-            "cvss_score": 6.5,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000870000",
-            "gravite_epss": "Faible",
-            "editeur": "glpi-project",
-            "produit": "glpi",
-            "versions_affectees": [
-                ">= 10.0.0, < 10.0.21"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Mozilla Firefox (17 décembre 2025)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans Mozilla Firefox. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1118/",
-            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14744",
-            "description": "Unicode RTLO characters could allow malicious websites to spoof filenames in the downloads UI for Firefox for iOS, potentially tricking users into saving files of an unexpected file type. This vulnerability affects Firefox for iOS < 144.0.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000280000",
-            "gravite_epss": "Faible",
-            "editeur": "Mozilla",
-            "produit": "Firefox for iOS",
-            "versions_affectees": [
-                "unspecified"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Synology (17 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Synology. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1119/",
-            "date": "Wed, 17 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-66593",
-            "description": null,
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "Mozilla",
-            "produit": "Firefox for iOS",
-            "versions_affectees": [
-                "unspecified"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans les produits Cisco (18 décembre 2025)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans les produits Cisco. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance avec les droits administrateurs. Cisco indique que cette vulnérabilité est activement exploitée et fournit des recommandations dans son bulletin de...",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1120/",
-            "date": "Thu, 18 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-20393",
-            "description": "Cisco is aware of a potential vulnerability.&nbsp; Cisco is currently investigating and&nbsp;will update these details as appropriate&nbsp;as more information becomes available.",
-            "cwe": "CWE-20",
-            "nature de la faille": "Improper Input Validation",
-            "cvss_score": 10,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.067660000",
-            "gravite_epss": "Faible",
-            "editeur": "Cisco",
-            "produit": "Cisco Secure Email and Web Manager",
-            "versions_affectees": [
-                "13.6.2-023",
-                "13.6.2-078",
-                "13.0.0-249",
-                "13.0.0-277",
-                "13.8.1-052",
-                "13.8.1-068",
-                "13.8.1-074",
-                "14.0.0-404",
-                "12.8.1-002",
-                "14.1.0-227",
-                "13.6.1-201",
-                "14.2.0-203",
-                "14.2.0-212",
-                "12.8.1-021",
-                "13.8.1-108",
-                "14.2.0-224",
-                "14.3.0-120",
-                "15.0.0-334",
-                "15.5.1-024",
-                "15.5.1-029",
-                "15.5.2-005",
-                "16.0.0-195",
-                "15.5.3-017",
-                "16.0.1-010",
-                "15.0.1-035",
-                "16.0.2-088"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Sonicwall Secure Mobile Access (18 décembre 2025)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans Sonicwall Secure Mobile Access. Elle permet à un attaquant de provoquer une élévation de privilèges. Sonicwall indique que cette vulnérabilité est exploitée conjointement avec la vulnérabilité CVE-2025-23006 qui permet une exécution de code arbitraire à...",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1121/",
-            "date": "Thu, 18 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-23006",
-            "description": "Pre-authentication deserialization of untrusted data vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) and Central Management Console (CMC), which in specific conditions could potentially enable a remote unauthenticated attacker to execute arbitrary OS commands.",
-            "cwe": "CWE-502",
-            "nature de la faille": "CWE-502 Deserialization of Untrusted Data",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.520660000",
-            "gravite_epss": "Élevée",
-            "editeur": "SonicWall",
-            "produit": "SMA1000",
-            "versions_affectees": [
-                "12.4.3-02804 (platform-hotfix) and earlier versions."
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Mattermost Server (18 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Mattermost Server. Elles permettent à un attaquant de provoquer des problèmes de sécurité non spécifiés par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1122/",
-            "date": "Thu, 18 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14273",
-            "description": "Mattermost versions 11.1.x <= 11.1.0, 11.0.x <= 11.0.5, 10.12.x <= 10.12.3, 10.11.x <= 10.11.7 with the Jira plugin enabled and Mattermost Jira plugin versions <=4.4.0 fail to enforce authentication and issue-key path restrictions in the Jira plugin, which allows an unauthenticated attacker who knows a valid user ID to issue authenticated GET and POST requests to the Jira server via crafted plugin payloads that spoof the user ID and inject arbitrary issue key paths. Mattermost Advisory ID: MMSA-2025-00555",
-            "cwe": "CWE-303",
-            "nature de la faille": "CWE-303: Incorrect Implementation of Authentication Algorithm",
-            "cvss_score": 7.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000820000",
-            "gravite_epss": "Faible",
-            "editeur": "Mattermost",
-            "produit": "Mattermost",
-            "versions_affectees": [
-                "11.1.0",
-                "11.0.0",
-                "10.12.0",
-                "10.11.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Elastic (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1123/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-68389",
-            "description": "Allocation of Resources Without Limits or Throttling (CWE-770) in Kibana can allow a low-privileged authenticated user to cause Excessive Allocation (CAPEC-130) of computing resources and a denial of service (DoS) of the Kibana process via a crafted HTTP request.",
-            "cwe": "CWE-770",
-            "nature de la faille": "CWE-770 Allocation of Resources Without Limits or Throttling",
-            "cvss_score": 6.5,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.002020000",
-            "gravite_epss": "Faible",
-            "editeur": "Elastic",
-            "produit": "Kibana",
-            "versions_affectees": [
-                "7.0.0",
-                "8.0.0",
-                "9.0.0",
-                "9.2.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Microsoft Edge (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1124/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14765",
-            "description": "Use after free in WebGPU in Google Chrome prior to 143.0.7499.147 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-            "cwe": "CWE-416",
-            "nature de la faille": "Use after free",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.001010000",
-            "gravite_epss": "Faible",
-            "editeur": "Google",
-            "produit": "Chrome",
-            "versions_affectees": [
-                "143.0.7499.147"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans les produits NetApp (19 décembre 2025)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans les produits NetApp. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1125/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2007-2768",
-            "description": "OpenSSH, when using OPIE (One-Time Passwords in Everything) for PAM, allows remote attackers to determine the existence of certain user accounts, which displays a different response if the user account exists and is configured to use one-time passwords (OTP), a similar issue to CVE-2007-2243.",
-            "cwe": "Non disponible",
-            "nature de la faille": "n/a",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.001190000",
-            "gravite_epss": "Faible",
-            "editeur": "n/a",
-            "produit": "n/a",
-            "versions_affectees": [
-                "n/a"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Centreon Web (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Centreon Web. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1127/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-43865",
-            "description": "React Router is a router for React. In versions on the 7.0 branch prior to version 7.5.2, it's possible to modify pre-rendered data by adding a header to the request. This allows to completely spoof its contents and modify all the values ​​of the data object passed to the HTML. This issue has been patched in version 7.5.2.",
-            "cwe": "CWE-345",
-            "nature de la faille": "CWE-345: Insufficient Verification of Data Authenticity",
-            "cvss_score": 8.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000510000",
-            "gravite_epss": "Faible",
-            "editeur": "remix-run",
-            "produit": "react-router",
-            "versions_affectees": [
-                ">= 7.0, < 7.5.2"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Mozilla Firefox (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1128/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14861",
-            "description": "Memory safety bugs present in Firefox 146. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 146.0.1.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000450000",
-            "gravite_epss": "Faible",
-            "editeur": "Mozilla",
-            "produit": "Firefox",
-            "versions_affectees": [
-                "unspecified"
-            ]
-        }
-    },
-    {
-        "alerte": {
             "titre": "Multiples vulnérabilités dans les produits VMware (19 décembre 2025)",
             "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
@@ -400,18 +81,19 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-12194",
-            "description": "Uncontrolled Resource Consumption vulnerability in Legion of the Bouncy Castle Inc. Bouncy Castle for Java FIPS bc-fips on All (API modules), Legion of the Bouncy Castle Inc. Bouncy Castle for Java LTS bcprov-lts8on on All (API modules) allows Excessive Allocation. This vulnerability is associated with program files core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeCFB.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeGCM.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/SHA256NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeEngine.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeCBC.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/fips/AESNativeCTR.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCFB.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeGCM.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeEngine.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCBC.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeGCMSIV.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCCM.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/engines/AESNativeCTR.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA256NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA224NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA3NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHAKENativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA512NativeDigest.Java, core/src/main/jdk1.9/org/bouncycastle/crypto/digests/SHA384NativeDigest.Java.\n\nThis issue affects Bouncy Castle for Java FIPS: from 2.1.0 through 2.1.1; Bouncy Castle for Java LTS: from 2.73.0 through 2.73.7.",
-            "cwe": "CWE-400",
-            "nature de la faille": "CWE-400 Uncontrolled Resource Consumption",
+            "cve_id": "CVE-2024-3044",
+            "description": "Unchecked script execution in Graphic on-click binding in affected LibreOffice versions allows an attacker to create a document which without prompt will execute scripts built-into LibreOffice on clicking a graphic. Such scripts were previously deemed trusted but are now deemed untrusted.",
+            "cwe": "CWE-356",
+            "nature de la faille": "CWE-356 Product UI does not Warn User of Unsafe Actions",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000210000",
+            "epss_score": "0.023550000",
             "gravite_epss": "Faible",
-            "editeur": "Legion of the Bouncy Castle Inc.",
-            "produit": "Bouncy Castle for Java LTS",
+            "editeur": "The Document Foundation",
+            "produit": "LibreOffice",
             "versions_affectees": [
-                "2.73.0"
+                "7.6",
+                "24.2"
             ]
         }
     },
@@ -424,20 +106,19 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-66497",
-            "description": "A memory corruption vulnerability exists in the 3D annotation handling of Foxit PDF Reader due to insufficient bounds checking when parsing PRC data. When opening a PDF file containing malformed or specially crafted PRC content, out-of-bounds memory access may occur, resulting in memory corruption.",
-            "cwe": "CWE-125",
-            "nature de la faille": "CWE-125 Out-of-bounds Read",
-            "cvss_score": 5.3,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000160000",
-            "gravite_epss": "Faible",
-            "editeur": "Foxit Software Inc.",
-            "produit": "Foxit PDF Editor",
+            "cve_id": "CVE-2025-57779",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "The Document Foundation",
+            "produit": "LibreOffice",
             "versions_affectees": [
-                "Versions 2025.2.1 and earlier",
-                "Versions 14.0.1 and earlier",
-                "Versions 13.2.1 and eariler"
+                "7.6",
+                "24.2"
             ]
         }
     },
@@ -450,18 +131,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-38827",
-            "description": "The usage of String.toLowerCase() and String.toUpperCase() has some Locale dependent exceptions that could potentially result in authorization rules not working properly.",
-            "cwe": "CWE-639",
-            "nature de la faille": "CWE-639",
-            "cvss_score": 4.8,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.003070000",
+            "cve_id": "CVE-2025-38351",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86/hyper-v: Skip non-canonical addresses during PV TLB flush\n\nIn KVM guests with Hyper-V hypercalls enabled, the hypercalls\nHVCALL_FLUSH_VIRTUAL_ADDRESS_LIST and HVCALL_FLUSH_VIRTUAL_ADDRESS_LIST_EX\nallow a guest to request invalidation of portions of a virtual TLB.\nFor this, the hypercall parameter includes a list of GVAs that are supposed\nto be invalidated.\n\nHowever, when non-canonical GVAs are passed, there is currently no\nfiltering in place and they are eventually passed to checked invocations of\nINVVPID on Intel / INVLPGA on AMD.  While AMD's INVLPGA silently ignores\nnon-canonical addresses (effectively a no-op), Intel's INVVPID explicitly\nsignals VM-Fail and ultimately triggers the WARN_ONCE in invvpid_error():\n\n  invvpid failed: ext=0x0 vpid=1 gva=0xaaaaaaaaaaaaa000\n  WARNING: CPU: 6 PID: 326 at arch/x86/kvm/vmx/vmx.c:482\n  invvpid_error+0x91/0xa0 [kvm_intel]\n  Modules linked in: kvm_intel kvm 9pnet_virtio irqbypass fuse\n  CPU: 6 UID: 0 PID: 326 Comm: kvm-vm Not tainted 6.15.0 #14 PREEMPT(voluntary)\n  RIP: 0010:invvpid_error+0x91/0xa0 [kvm_intel]\n  Call Trace:\n    vmx_flush_tlb_gva+0x320/0x490 [kvm_intel]\n    kvm_hv_vcpu_flush_tlb+0x24f/0x4f0 [kvm]\n    kvm_arch_vcpu_ioctl_run+0x3013/0x5810 [kvm]\n\nHyper-V documents that invalid GVAs (those that are beyond a partition's\nGVA space) are to be ignored.  While not completely clear whether this\nruling also applies to non-canonical GVAs, it is likely fine to make that\nassumption, and manual testing on Azure confirms \"real\" Hyper-V interprets\nthe specification in the same way.\n\nSkip non-canonical GVAs when processing the list of address to avoid\ntripping the INVVPID failure.  Alternatively, KVM could filter out \"bad\"\nGVAs before inserting into the FIFO, but practically speaking the only\ndownside of pushing validation to the final processing is that doing so\nis suboptimal for the guest, and no well-behaved guest will request TLB\nflushes for non-canonical addresses.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000190000",
             "gravite_epss": "Faible",
-            "editeur": "Spring by VMware Tanzu",
-            "produit": "Spring Security",
+            "editeur": "Linux",
+            "produit": "Linux",
             "versions_affectees": [
-                "5.7.0 - 5.7.13, 5.8.0 - 5.8.15, 6.0.0 - 6.0.13, 6.1.0 - 6.1.11, 6.2.0 - 6.2.7, 6.3.0 - 6.3.4, Older unsupported versions are also affected"
+                "6.2"
             ]
         }
     },
@@ -474,18 +155,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39841",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: lpfc: Fix buffer free/clear order in deferred receive path\n\nFix a use-after-free window by correcting the buffer release sequence in\nthe deferred receive path. The code freed the RQ buffer first and only\nthen cleared the context pointer under the lock. Concurrent paths (e.g.,\nABTS and the repost path) also inspect and release the same pointer under\nthe lock, so the old order could lead to double-free/UAF.\n\nNote that the repost path already uses the correct pattern: detach the\npointer under the lock, then free it after dropping the lock. The\ndeferred path should do the same.",
+            "cve_id": "CVE-2023-53322",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Wait for io return on terminate rport\n\nSystem crash due to use after free.\nCurrent code allows terminate_rport_io to exit before making\nsure all IOs has returned. For FCP-2 device, IO's can hang\non in HW because driver has not tear down the session in FW at\nfirst sign of cable pull. When dev_loss_tmo timer pops,\nterminate_rport_io is called and upper layer is about to\nfree various resources. Terminate_rport_io trigger qla to do\nthe final cleanup, but the cleanup might not be fast enough where it\nleave qla still holding on to the same resource.\n\nWait for IO's to return to upper layer before resources are freed.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000490000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.1"
+                "2.6.34"
             ]
         }
     },
@@ -498,18 +179,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-40021",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing: dynevent: Add a missing lockdown check on dynevent\n\nSince dynamic_events interface on tracefs is compatible with\nkprobe_events and uprobe_events, it should also check the lockdown\nstatus and reject if it is set.",
+            "cve_id": "CVE-2025-40086",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/xe: Don't allow evicting of BOs in same VM in array of VM binds\n\nAn array of VM binds can potentially evict other buffer objects (BOs)\nwithin the same VM under certain conditions, which may lead to NULL\npointer dereferences later in the bind pipeline. To prevent this, clear\nthe allow_res_evict flag in the xe_bo_validate call.\n\nv2:\n - Invert polarity of no_res_evict (Thomas)\n - Add comment in code explaining issue (Thomas)\n\n(cherry picked from commit 8b9ba8d6d95fe75fed6b0480bb03da4b321bea08)",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000530000",
+            "epss_score": "0.000270000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.4"
+                "6.8"
             ]
         }
     },
@@ -528,7 +209,7 @@
             "nature de la faille": "CWE-130: Improper Handling of Length Parameter Inconsistency",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.683250000",
+            "epss_score": "0.696220000",
             "gravite_epss": "Élevée",
             "editeur": "MongoDB Inc.",
             "produit": "MongoDB Server",
@@ -554,18 +235,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39766",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: Make cake_enqueue return NET_XMIT_CN when past buffer_limit\n\nThe following setup can trigger a WARNING in htb_activate due to\nthe condition: !cl->leaf.q->q.qlen\n\ntc qdisc del dev lo root\ntc qdisc add dev lo root handle 1: htb default 1\ntc class add dev lo parent 1: classid 1:1 \\\n       htb rate 64bit\ntc qdisc add dev lo parent 1:1 handle f: \\\n       cake memlimit 1b\nping -I lo -f -c1 -s64 -W0.001 127.0.0.1\n\nThis is because the low memlimit leads to a low buffer_limit, which\ncauses packet dropping. However, cake_enqueue still returns\nNET_XMIT_SUCCESS, causing htb_enqueue to call htb_activate with an\nempty child qdisc. We should return NET_XMIT_CN when packets are\ndropped from the same tin and flow.\n\nI do not believe return value of NET_XMIT_CN is necessary for packet\ndrops in the case of ack filtering, as that is meant to optimize\nperformance, not to signal congestion.",
+            "cve_id": "CVE-2025-39676",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla4xxx: Prevent a potential error pointer dereference\n\nThe qla4xxx_get_ep_fwdb() function is supposed to return NULL on error,\nbut qla4xxx_ep_connect() returns error pointers.  Propagating the error\npointers will lead to an Oops in the caller, so change the error pointers\nto NULL.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000490000",
+            "epss_score": "0.000220000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.19"
+                "3.2"
             ]
         }
     },
@@ -578,18 +259,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-40315",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: gadget: f_fs: Fix epfile null pointer access after ep enable.\n\nA race condition occurs when ffs_func_eps_enable() runs concurrently\nwith ffs_data_reset(). The ffs_data_clear() called in ffs_data_reset()\nsets ffs->epfiles to NULL before resetting ffs->eps_count to 0, leading\nto a NULL pointer dereference when accessing epfile->ep in\nffs_func_eps_enable() after successful usb_ep_enable().\n\nThe ffs->epfiles pointer is set to NULL in both ffs_data_clear() and\nffs_data_close() functions, and its modification is protected by the\nspinlock ffs->eps_lock. And the whole ffs_func_eps_enable() function\nis also protected by ffs->eps_lock.\n\nThus, add NULL pointer handling for ffs->epfiles in the\nffs_func_eps_enable() function to fix issues",
+            "cve_id": "CVE-2025-39883",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/memory-failure: fix VM_BUG_ON_PAGE(PagePoisoned(page)) when unpoison memory\n\nWhen I did memory failure tests, below panic occurs:\n\npage dumped because: VM_BUG_ON_PAGE(PagePoisoned(page))\nkernel BUG at include/linux/page-flags.h:616!\nOops: invalid opcode: 0000 [#1] PREEMPT SMP NOPTI\nCPU: 3 PID: 720 Comm: bash Not tainted 6.10.0-rc1-00195-g148743902568 #40\nRIP: 0010:unpoison_memory+0x2f3/0x590\nRSP: 0018:ffffa57fc8787d60 EFLAGS: 00000246\nRAX: 0000000000000037 RBX: 0000000000000009 RCX: ffff9be25fcdc9c8\nRDX: 0000000000000000 RSI: 0000000000000027 RDI: ffff9be25fcdc9c0\nRBP: 0000000000300000 R08: ffffffffb4956f88 R09: 0000000000009ffb\nR10: 0000000000000284 R11: ffffffffb4926fa0 R12: ffffe6b00c000000\nR13: ffff9bdb453dfd00 R14: 0000000000000000 R15: fffffffffffffffe\nFS:  00007f08f04e4740(0000) GS:ffff9be25fcc0000(0000) knlGS:0000000000000000\nCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\nCR2: 0000564787a30410 CR3: 000000010d4e2000 CR4: 00000000000006f0\nCall Trace:\n <TASK>\n unpoison_memory+0x2f3/0x590\n simple_attr_write_xsigned.constprop.0.isra.0+0xb3/0x110\n debugfs_attr_write+0x42/0x60\n full_proxy_write+0x5b/0x80\n vfs_write+0xd5/0x540\n ksys_write+0x64/0xe0\n do_syscall_64+0xb9/0x1d0\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\nRIP: 0033:0x7f08f0314887\nRSP: 002b:00007ffece710078 EFLAGS: 00000246 ORIG_RAX: 0000000000000001\nRAX: ffffffffffffffda RBX: 0000000000000009 RCX: 00007f08f0314887\nRDX: 0000000000000009 RSI: 0000564787a30410 RDI: 0000000000000001\nRBP: 0000564787a30410 R08: 000000000000fefe R09: 000000007fffffff\nR10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000009\nR13: 00007f08f041b780 R14: 00007f08f0417600 R15: 00007f08f0416a00\n </TASK>\nModules linked in: hwpoison_inject\n---[ end trace 0000000000000000 ]---\nRIP: 0010:unpoison_memory+0x2f3/0x590\nRSP: 0018:ffffa57fc8787d60 EFLAGS: 00000246\nRAX: 0000000000000037 RBX: 0000000000000009 RCX: ffff9be25fcdc9c8\nRDX: 0000000000000000 RSI: 0000000000000027 RDI: ffff9be25fcdc9c0\nRBP: 0000000000300000 R08: ffffffffb4956f88 R09: 0000000000009ffb\nR10: 0000000000000284 R11: ffffffffb4926fa0 R12: ffffe6b00c000000\nR13: ffff9bdb453dfd00 R14: 0000000000000000 R15: fffffffffffffffe\nFS:  00007f08f04e4740(0000) GS:ffff9be25fcc0000(0000) knlGS:0000000000000000\nCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\nCR2: 0000564787a30410 CR3: 000000010d4e2000 CR4: 00000000000006f0\nKernel panic - not syncing: Fatal exception\nKernel Offset: 0x31c00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)\n---[ end Kernel panic - not syncing: Fatal exception ]---\n\nThe root cause is that unpoison_memory() tries to check the PG_HWPoison\nflags of an uninitialized page.  So VM_BUG_ON_PAGE(PagePoisoned(page)) is\ntriggered.  This can be reproduced by below steps:\n\n1.Offline memory block:\n\n echo offline > /sys/devices/system/memory/memory12/state\n\n2.Get offlined memory pfn:\n\n page-types -b n -rlN\n\n3.Write pfn to unpoison-pfn\n\n echo <pfn> > /sys/kernel/debug/hwpoison/unpoison-pfn\n\nThis scenario can be identified by pfn_to_online_page() returning NULL. \nAnd ZONE_DEVICE pages are never expected, so we can simply fail if\npfn_to_online_page() == NULL to fix the bug.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000320000",
+            "epss_score": "0.000710000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.17"
+                "4.13"
             ]
         }
     },
@@ -608,7 +289,7 @@
             "nature de la faille": "CWE-787 Out-of-bounds Write",
             "cvss_score": 6.5,
             "gravite_cvss": "Moyenne",
-            "epss_score": "0.000520000",
+            "epss_score": "0.000560000",
             "gravite_epss": "Faible",
             "editeur": "PHP Group",
             "produit": "PHP",
@@ -630,19 +311,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2021-23440",
-            "description": "This affects the package set-value before <2.0.1, >=3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Prototype Pollution",
-            "cvss_score": 7.3,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000660000",
+            "cve_id": "CVE-2023-38727",
+            "description": "IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.5, 11.1, and 11.5 is vulnerable to denial of service with a specially crafted SQL statement.  IBM X-Force ID:  262257.",
+            "cwe": "CWE-20",
+            "nature de la faille": "CWE-20 Improper Input Validation",
+            "cvss_score": 5.3,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.001230000",
             "gravite_epss": "Faible",
-            "editeur": "n/a",
-            "produit": "set-value",
+            "editeur": "IBM",
+            "produit": "Db2 for Linux, UNIX and Windows",
             "versions_affectees": [
-                "<2.0.1",
-                ">=3.0.0 <4.0.1"
+                "10.5, 11.1, 11.5"
             ]
         }
     },
@@ -655,18 +335,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-22869",
-            "description": "SSH servers which implement file transfer protocols are vulnerable to a denial of service attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted.",
+            "cve_id": "CVE-2025-22874",
+            "description": "Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.",
             "cwe": "Non disponible",
-            "nature de la faille": "CWE-770: Allocation of Resources Without Limits or Throttling",
+            "nature de la faille": "CWE-295: Improper Certificate Validation",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.002150000",
+            "epss_score": "0.000160000",
             "gravite_epss": "Faible",
-            "editeur": "golang.org/x/crypto",
-            "produit": "golang.org/x/crypto/ssh",
+            "editeur": "Go standard library",
+            "produit": "crypto/x509",
             "versions_affectees": [
-                "0"
+                "1.24.0-0"
             ]
         }
     },
@@ -679,18 +359,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-53090",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nafs: Fix lock recursion\n\nafs_wake_up_async_call() can incur lock recursion.  The problem is that it\nis called from AF_RXRPC whilst holding the ->notify_lock, but it tries to\ntake a ref on the afs_call struct in order to pass it to a work queue - but\nif the afs_call is already queued, we then have an extraneous ref that must\nbe put... calling afs_put_call() may call back down into AF_RXRPC through\nrxrpc_kernel_shutdown_call(), however, which might try taking the\n->notify_lock again.\n\nThis case isn't very common, however, so defer it to a workqueue.  The oops\nlooks something like:\n\n  BUG: spinlock recursion on CPU#0, krxrpcio/7001/1646\n   lock: 0xffff888141399b30, .magic: dead4ead, .owner: krxrpcio/7001/1646, .owner_cpu: 0\n  CPU: 0 UID: 0 PID: 1646 Comm: krxrpcio/7001 Not tainted 6.12.0-rc2-build3+ #4351\n  Hardware name: ASUS All Series/H97-PLUS, BIOS 2306 10/09/2014\n  Call Trace:\n   <TASK>\n   dump_stack_lvl+0x47/0x70\n   do_raw_spin_lock+0x3c/0x90\n   rxrpc_kernel_shutdown_call+0x83/0xb0\n   afs_put_call+0xd7/0x180\n   rxrpc_notify_socket+0xa0/0x190\n   rxrpc_input_split_jumbo+0x198/0x1d0\n   rxrpc_input_data+0x14b/0x1e0\n   ? rxrpc_input_call_packet+0xc2/0x1f0\n   rxrpc_input_call_event+0xad/0x6b0\n   rxrpc_input_packet_on_conn+0x1e1/0x210\n   rxrpc_input_packet+0x3f2/0x4d0\n   rxrpc_io_thread+0x243/0x410\n   ? __pfx_rxrpc_io_thread+0x10/0x10\n   kthread+0xcf/0xe0\n   ? __pfx_kthread+0x10/0x10\n   ret_from_fork+0x24/0x40\n   ? __pfx_kthread+0x10/0x10\n   ret_from_fork_asm+0x1a/0x30\n   </TASK>",
+            "cve_id": "CVE-2024-49935",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nACPI: PAD: fix crash in exit_round_robin()\n\nThe kernel occasionally crashes in cpumask_clear_cpu(), which is called\nwithin exit_round_robin(), because when executing clear_bit(nr, addr) with\nnr set to 0xffffffff, the address calculation may cause misalignment within\nthe memory, leading to access to an invalid memory address.\n\n----------\nBUG: unable to handle kernel paging request at ffffffffe0740618\n        ...\nCPU: 3 PID: 2919323 Comm: acpi_pad/14 Kdump: loaded Tainted: G           OE  X --------- -  - 4.18.0-425.19.2.el8_7.x86_64 #1\n        ...\nRIP: 0010:power_saving_thread+0x313/0x411 [acpi_pad]\nCode: 89 cd 48 89 d3 eb d1 48 c7 c7 55 70 72 c0 e8 64 86 b0 e4 c6 05 0d a1 02 00 01 e9 bc fd ff ff 45 89 e4 42 8b 04 a5 20 82 72 c0 <f0> 48 0f b3 05 f4 9c 01 00 42 c7 04 a5 20 82 72 c0 ff ff ff ff 31\nRSP: 0018:ff72a5d51fa77ec8 EFLAGS: 00010202\nRAX: 00000000ffffffff RBX: ff462981e5d8cb80 RCX: 0000000000000000\nRDX: 0000000000000000 RSI: 0000000000000246 RDI: 0000000000000246\nRBP: ff46297556959d80 R08: 0000000000000382 R09: ff46297c8d0f38d8\nR10: 0000000000000000 R11: 0000000000000001 R12: 000000000000000e\nR13: 0000000000000000 R14: ffffffffffffffff R15: 000000000000000e\nFS:  0000000000000000(0000) GS:ff46297a800c0000(0000) knlGS:0000000000000000\nCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\nCR2: ffffffffe0740618 CR3: 0000007e20410004 CR4: 0000000000771ee0\nDR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000\nDR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400\nPKRU: 55555554\nCall Trace:\n ? acpi_pad_add+0x120/0x120 [acpi_pad]\n kthread+0x10b/0x130\n ? set_kthread_struct+0x50/0x50\n ret_from_fork+0x1f/0x40\n        ...\nCR2: ffffffffe0740618\n\ncrash> dis -lr ffffffffc0726923\n        ...\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 114\n0xffffffffc0726918 <power_saving_thread+776>:\tmov    %r12d,%r12d\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 325\n0xffffffffc072691b <power_saving_thread+779>:\tmov    -0x3f8d7de0(,%r12,4),%eax\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./arch/x86/include/asm/bitops.h: 80\n0xffffffffc0726923 <power_saving_thread+787>:\tlock btr %rax,0x19cf4(%rip)        # 0xffffffffc0740620 <pad_busy_cpus_bits>\n\ncrash> px tsk_in_cpu[14]\n$66 = 0xffffffff\n\ncrash> px 0xffffffffc072692c+0x19cf4\n$99 = 0xffffffffc0740620\n\ncrash> sym 0xffffffffc0740620\nffffffffc0740620 (b) pad_busy_cpus_bits [acpi_pad]\n\ncrash> px pad_busy_cpus_bits[0]\n$42 = 0xfffc0\n----------\n\nTo fix this, ensure that tsk_in_cpu[tsk_index] != -1 before calling\ncpumask_clear_cpu() in exit_round_robin(), just as it is done in\nround_robin_cpu().\n\n[ rjw: Subject edit, avoid updates to the same value ]",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000040000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.15"
+                "2.6.32"
             ]
         }
     },
@@ -703,18 +383,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-40021",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing: dynevent: Add a missing lockdown check on dynevent\n\nSince dynamic_events interface on tracefs is compatible with\nkprobe_events and uprobe_events, it should also check the lockdown\nstatus and reject if it is set.",
+            "cve_id": "CVE-2025-40207",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-subdev: Fix alloc failure check in v4l2_subdev_call_state_try()\n\nv4l2_subdev_call_state_try() macro allocates a subdev state with\n__v4l2_subdev_state_alloc(), but does not check the returned value. If\n__v4l2_subdev_state_alloc fails, it returns an ERR_PTR, and that would\ncause v4l2_subdev_call_state_try() to crash.\n\nAdd proper error handling to v4l2_subdev_call_state_try().",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000530000",
+            "epss_score": "0.000260000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.4"
+                "6.0"
             ]
         }
     },
@@ -727,18 +407,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-38729",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nALSA: usb-audio: Validate UAC3 power domain descriptors, too\n\nUAC3 power domain descriptors need to be verified with its variable\nbLength for avoiding the unexpected OOB accesses by malicious\nfirmware, too.",
+            "cve_id": "CVE-2023-53322",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Wait for io return on terminate rport\n\nSystem crash due to use after free.\nCurrent code allows terminate_rport_io to exit before making\nsure all IOs has returned. For FCP-2 device, IO's can hang\non in HW because driver has not tear down the session in FW at\nfirst sign of cable pull. When dev_loss_tmo timer pops,\nterminate_rport_io is called and upper layer is about to\nfree various resources. Terminate_rport_io trigger qla to do\nthe final cleanup, but the cleanup might not be fast enough where it\nleave qla still holding on to the same resource.\n\nWait for IO's to return to upper layer before resources are freed.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000640000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.17"
+                "2.6.34"
             ]
         }
     },
@@ -751,18 +431,18 @@
             "date": "Wed, 31 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-1977",
-            "description": "The NPort 6100-G2/6200-G2 Series is affected by an execution with unnecessary privileges vulnerability (CVE-2025-1977) that allows an authenticated user with read-only access to perform unauthorized configuration changes through the MCC (Moxa CLI Configuration) tool. The issue can be exploited remotely over the network with low-attack complexity and no user interaction but requires specific system conditions or configurations to be present. Successful exploitation may result in changes to device settings that were not intended to be permitted for the affected user role, potentially leading to a high impact on the confidentiality, integrity, and availability of the device. No impact on other systems has been identified.",
-            "cwe": "CWE-250",
-            "nature de la faille": "CWE-250: Execution with Unnecessary Privileges",
+            "cve_id": "CVE-2025-15017",
+            "description": "A vulnerability exists in serial device servers where active debug code remains enabled in the UART interface. An attacker with physical access to the device can directly connect to the UART interface and, without authentication, user interaction, or execution conditions, gain unauthorized access to internal debug functionality. Exploitation is low complexity and allows an attacker to execute privileged operations and access sensitive system resources, resulting in a high impact to the confidentiality, integrity, and availability of the affected device. No security impact to external or dependent systems has been identified.",
+            "cwe": "CWE-489",
+            "nature de la faille": "CWE-489: Active Debug Code",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000700000",
+            "epss_score": "0.000450000",
             "gravite_epss": "Faible",
             "editeur": "Moxa",
-            "produit": "NPort 6100-G2/6200-G2 Series",
+            "produit": "NPort IA5000-G2 Series",
             "versions_affectees": [
-                "1.0.0"
+                "1.0"
             ]
         }
     },
@@ -799,21 +479,18 @@
             "date": "Fri, 02 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-48795",
-            "description": "Apache CXF stores large stream based messages as temporary files on the local filesystem. A bug was introduced which means that the entire temporary file is read into memory and then logged. An attacker might be able to exploit this to cause a denial of service attack by causing an out of memory exception. In addition, it is possible to configure CXF to encrypt temporary files to prevent sensitive credentials from being cached unencrypted on the local filesystem, however this bug means that the cached files are written out to logs unencrypted.\n\nUsers are recommended to upgrade to versions 3.5.11, 3.6.6, 4.0.7 or 4.1.1, which fixes this issue.",
+            "cve_id": "CVE-2024-47554",
+            "description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
             "cwe": "CWE-400",
             "nature de la faille": "CWE-400 Uncontrolled Resource Consumption",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000680000",
+            "epss_score": "0.001730000",
             "gravite_epss": "Faible",
             "editeur": "Apache Software Foundation",
-            "produit": "Apache CXF",
+            "produit": "Apache Commons IO",
             "versions_affectees": [
-                "3.5.10",
-                "3.6.5",
-                "4.0.6",
-                "4.1.0"
+                "2.0"
             ]
         }
     },
@@ -826,13 +503,13 @@
             "date": "Mon, 05 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-9110",
-            "description": "An exposure of sensitive system information to an unauthorized control sphere vulnerability has been reported to affect several QNAP operating system versions. The remote attackers can then exploit the vulnerability to read application data.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.8.3332 build 20251128 and later\nQuTS hero h5.2.8.3321 build 20251117 and later\nQuTS hero h5.3.1.3250 build 20250912 and later",
-            "cwe": "CWE-497",
-            "nature de la faille": "CWE-497",
+            "cve_id": "CVE-2025-52863",
+            "description": "A buffer overflow vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains a user account, they can then exploit the vulnerability to modify memory or crash processes.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.7.3256 build 20250913 and later\nQuTS hero h5.2.7.3256 build 20250913 and later\nQuTS hero h5.3.0.3192 build 20250716 and later",
+            "cwe": "CWE-120",
+            "nature de la faille": "CWE-120",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000420000",
+            "epss_score": "0.001070000",
             "gravite_epss": "Faible",
             "editeur": "QNAP Systems Inc.",
             "produit": "QuTS hero",
@@ -875,16 +552,16 @@
             "date": "Tue, 06 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-54890",
-            "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (Hostgroup configuration page) allows Stored \n\nXSS by users with elevated privileges.This issue affects Infra Monitoring: from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19, from 23.10.0 before 23.10.29.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
-            "cvss_score": 6.8,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000200000",
+            "cve_id": "CVE-2025-12514",
+            "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Centreon Infra Monitoring - Open-tickets (Notification rules configuration parameters, Open tickets modules) allows \n\nSQL Injection to user with elevated privileges.This issue affects Infra Monitoring - Open-tickets: from 24.10.0 before 24.10.5, from 24.04.0 before 24.04.5, from 23.10.0 before 23.10.4.",
+            "cwe": "CWE-89",
+            "nature de la faille": "CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+            "cvss_score": 7.2,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000240000",
             "gravite_epss": "Faible",
             "editeur": "Centreon",
-            "produit": "Infra Monitoring",
+            "produit": "Infra Monitoring - Open-tickets",
             "versions_affectees": [
                 "24.10.0",
                 "24.04.0",
@@ -901,20 +578,18 @@
             "date": "Tue, 06 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-59469",
-            "description": null,
+            "cve_id": "CVE-2025-59468",
+            "description": "This vulnerability allows a Backup Administrator to perform remote code execution (RCE) as the postgres user by sending a\r\nmalicious password parameter.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "Centreon",
-            "produit": "Infra Monitoring",
+            "cvss_score": 9,
+            "gravite_cvss": "Critique",
+            "epss_score": "0.002250000",
+            "gravite_epss": "Faible",
+            "editeur": "Veeam",
+            "produit": "Backup and Recovery",
             "versions_affectees": [
-                "24.10.0",
-                "24.04.0",
-                "23.10.0"
+                "13.0.0"
             ]
         }
     },
@@ -982,7 +657,7 @@
             "nature de la faille": "Insufficient policy enforcement",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000080000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Google",
             "produit": "Chrome",
@@ -1000,7 +675,148 @@
             "date": "Wed, 07 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-15224",
+            "cve_id": "CVE-2025-15079",
+            "description": "When doing SSH-based transfers using either SCP or SFTP, and setting the\nknown_hosts file, libcurl could still mistakenly accept connecting to hosts\n*not present* in the specified file if they were added as recognized in the\nlibssh *global* known_hosts file.",
+            "cwe": "Non disponible",
+            "nature de la faille": "CWE-297 Improper Validation of Certificate with Host Mismatch",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000310000",
+            "gravite_epss": "Faible",
+            "editeur": "curl",
+            "produit": "curl",
+            "versions_affectees": [
+                "8.17.0",
+                "8.16.0",
+                "8.15.0",
+                "8.14.1",
+                "8.14.0",
+                "8.13.0",
+                "8.12.1",
+                "8.12.0",
+                "8.11.1",
+                "8.11.0",
+                "8.10.1",
+                "8.10.0",
+                "8.9.1",
+                "8.9.0",
+                "8.8.0",
+                "8.7.1",
+                "8.7.0",
+                "8.6.0",
+                "8.5.0",
+                "8.4.0",
+                "8.3.0",
+                "8.2.1",
+                "8.2.0",
+                "8.1.2",
+                "8.1.1",
+                "8.1.0",
+                "8.0.1",
+                "8.0.0",
+                "7.88.1",
+                "7.88.0",
+                "7.87.0",
+                "7.86.0",
+                "7.85.0",
+                "7.84.0",
+                "7.83.1",
+                "7.83.0",
+                "7.82.0",
+                "7.81.0",
+                "7.80.0",
+                "7.79.1",
+                "7.79.0",
+                "7.78.0",
+                "7.77.0",
+                "7.76.1",
+                "7.76.0",
+                "7.75.0",
+                "7.74.0",
+                "7.73.0",
+                "7.72.0",
+                "7.71.1",
+                "7.71.0",
+                "7.70.0",
+                "7.69.1",
+                "7.69.0",
+                "7.68.0",
+                "7.67.0",
+                "7.66.0",
+                "7.65.3",
+                "7.65.2",
+                "7.65.1",
+                "7.65.0",
+                "7.64.1",
+                "7.64.0",
+                "7.63.0",
+                "7.62.0",
+                "7.61.1",
+                "7.61.0",
+                "7.60.0",
+                "7.59.0",
+                "7.58.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Google Android (08 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Google Android. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0011/",
+            "date": "Thu, 08 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-54957",
+            "description": "An issue was discovered in Dolby UDC 4.5 through 4.13. A crash of the DD+ decoder process can occur when a malformed DD+ bitstream is processed. When Evolution data is processed by evo_priv.c from the DD+ bitstream, the decoder writes that data into a buffer. The length calculation for a write can overflow due to an integer wraparound. This can lead to the allocated buffer being too small, and the out-of-bounds check of the subsequent write to be ineffective, leading to an out-of-bounds write.",
+            "cwe": "Non disponible",
+            "nature de la faille": "n/a",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000470000",
+            "gravite_epss": "Faible",
+            "editeur": "n/a",
+            "produit": "n/a",
+            "versions_affectees": [
+                "n/a"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0012/",
+            "date": "Thu, 08 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-69260",
+            "description": "A message out-of-bounds read vulnerability in Trend Micro Apex Central could allow a remote attacker to create a denial-of-service condition on affected installations.\r\n\r\nPlease note: authentication is not required in order to exploit this vulnerability.",
+            "cwe": "CWE-346",
+            "nature de la faille": "CWE-346: Origin Validation Error",
+            "cvss_score": 7.5,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000870000",
+            "gravite_epss": "Faible",
+            "editeur": "Trend Micro, Inc.",
+            "produit": "Trend Micro Apex Central",
+            "versions_affectees": [
+                "2019 (14.0)"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Tenable Nessus Agent (08 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Tenable Nessus Agent. Elle permet à un attaquant de provoquer une élévation de privilèges.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0013/",
+            "date": "Thu, 08 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-36640",
             "description": null,
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
@@ -1008,10 +824,230 @@
             "gravite_cvss": "Non disponible",
             "epss_score": null,
             "gravite_epss": "Non disponible",
-            "editeur": "Google",
-            "produit": "Chrome",
+            "editeur": "Trend Micro, Inc.",
+            "produit": "Trend Micro Apex Central",
             "versions_affectees": [
-                "143.0.7499.192"
+                "2019 (14.0)"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans GitLab (08 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0014/",
+            "date": "Thu, 08 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-11246",
+            "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 15.4 before 18.5.5, 18.6 before 18.6.3, and 18.7 before 18.7.1 that could have allowed an authenticated user with specific permissions to remove all project runners from unrelated projects by manipulating GraphQL runner associations.",
+            "cwe": "CWE-1220",
+            "nature de la faille": "CWE-1220: Insufficient Granularity of Access Control",
+            "cvss_score": 5.4,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000140000",
+            "gravite_epss": "Faible",
+            "editeur": "GitLab",
+            "produit": "GitLab",
+            "versions_affectees": [
+                "15.4",
+                "18.6",
+                "18.7"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Centreon (08 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Centreon. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0015/",
+            "date": "Thu, 08 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-15026",
+            "description": "Missing Authentication for Critical Function vulnerability in Centreon Infra Monitoring centreon-awie (Awie import module) allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Infra Monitoring: from 25.10.0 before 25.10.2, from 24.10.0 before 24.10.3, from 24.04.0 before 24.04.3.",
+            "cwe": "CWE-306",
+            "nature de la faille": "CWE-306 Missing Authentication for Critical Function",
+            "cvss_score": 9.8,
+            "gravite_cvss": "Critique",
+            "epss_score": "0.000310000",
+            "gravite_epss": "Faible",
+            "editeur": "Centreon",
+            "produit": "Infra Monitoring",
+            "versions_affectees": [
+                "25.10.0",
+                "24.10.0",
+                "24.04.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans les produits Moxa (09 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans les produits Moxa. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0016/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2023-38408",
+            "description": "The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) NOTE: this issue exists because of an incomplete fix for CVE-2016-10009.",
+            "cwe": "Non disponible",
+            "nature de la faille": "n/a",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.687490000",
+            "gravite_epss": "Élevée",
+            "editeur": "n/a",
+            "produit": "n/a",
+            "versions_affectees": [
+                "n/a"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (09 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une exécution de code arbitraire, un contournement de la politique de sécurité et un déni de service.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0017/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2023-53322",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Wait for io return on terminate rport\n\nSystem crash due to use after free.\nCurrent code allows terminate_rport_io to exit before making\nsure all IOs has returned. For FCP-2 device, IO's can hang\non in HW because driver has not tear down the session in FW at\nfirst sign of cable pull. When dev_loss_tmo timer pops,\nterminate_rport_io is called and upper layer is about to\nfree various resources. Terminate_rport_io trigger qla to do\nthe final cleanup, but the cleanup might not be fast enough where it\nleave qla still holding on to the same resource.\n\nWait for IO's to return to upper layer before resources are freed.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000170000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "2.6.34"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (09 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0018/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2024-49935",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nACPI: PAD: fix crash in exit_round_robin()\n\nThe kernel occasionally crashes in cpumask_clear_cpu(), which is called\nwithin exit_round_robin(), because when executing clear_bit(nr, addr) with\nnr set to 0xffffffff, the address calculation may cause misalignment within\nthe memory, leading to access to an invalid memory address.\n\n----------\nBUG: unable to handle kernel paging request at ffffffffe0740618\n        ...\nCPU: 3 PID: 2919323 Comm: acpi_pad/14 Kdump: loaded Tainted: G           OE  X --------- -  - 4.18.0-425.19.2.el8_7.x86_64 #1\n        ...\nRIP: 0010:power_saving_thread+0x313/0x411 [acpi_pad]\nCode: 89 cd 48 89 d3 eb d1 48 c7 c7 55 70 72 c0 e8 64 86 b0 e4 c6 05 0d a1 02 00 01 e9 bc fd ff ff 45 89 e4 42 8b 04 a5 20 82 72 c0 <f0> 48 0f b3 05 f4 9c 01 00 42 c7 04 a5 20 82 72 c0 ff ff ff ff 31\nRSP: 0018:ff72a5d51fa77ec8 EFLAGS: 00010202\nRAX: 00000000ffffffff RBX: ff462981e5d8cb80 RCX: 0000000000000000\nRDX: 0000000000000000 RSI: 0000000000000246 RDI: 0000000000000246\nRBP: ff46297556959d80 R08: 0000000000000382 R09: ff46297c8d0f38d8\nR10: 0000000000000000 R11: 0000000000000001 R12: 000000000000000e\nR13: 0000000000000000 R14: ffffffffffffffff R15: 000000000000000e\nFS:  0000000000000000(0000) GS:ff46297a800c0000(0000) knlGS:0000000000000000\nCS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\nCR2: ffffffffe0740618 CR3: 0000007e20410004 CR4: 0000000000771ee0\nDR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000\nDR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400\nPKRU: 55555554\nCall Trace:\n ? acpi_pad_add+0x120/0x120 [acpi_pad]\n kthread+0x10b/0x130\n ? set_kthread_struct+0x50/0x50\n ret_from_fork+0x1f/0x40\n        ...\nCR2: ffffffffe0740618\n\ncrash> dis -lr ffffffffc0726923\n        ...\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 114\n0xffffffffc0726918 <power_saving_thread+776>:\tmov    %r12d,%r12d\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 325\n0xffffffffc072691b <power_saving_thread+779>:\tmov    -0x3f8d7de0(,%r12,4),%eax\n/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./arch/x86/include/asm/bitops.h: 80\n0xffffffffc0726923 <power_saving_thread+787>:\tlock btr %rax,0x19cf4(%rip)        # 0xffffffffc0740620 <pad_busy_cpus_bits>\n\ncrash> px tsk_in_cpu[14]\n$66 = 0xffffffff\n\ncrash> px 0xffffffffc072692c+0x19cf4\n$99 = 0xffffffffc0740620\n\ncrash> sym 0xffffffffc0740620\nffffffffc0740620 (b) pad_busy_cpus_bits [acpi_pad]\n\ncrash> px pad_busy_cpus_bits[0]\n$42 = 0xfffc0\n----------\n\nTo fix this, ensure that tsk_in_cpu[tsk_index] != -1 before calling\ncpumask_clear_cpu() in exit_round_robin(), just as it is done in\nround_robin_cpu().\n\n[ rjw: Subject edit, avoid updates to the same value ]",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000170000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "2.6.32"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (09 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0019/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2024-53093",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme-multipath: defer partition scanning\n\nWe need to suppress the partition scan from occuring within the\ncontroller's scan_work context. If a path error occurs here, the IO will\nwait until a path becomes available or all paths are torn down, but that\naction also occurs within scan_work, so it would deadlock. Defer the\npartion scan to a different context that does not block scan_work.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000140000",
+            "gravite_epss": "Faible",
+            "editeur": "Linux",
+            "produit": "Linux",
+            "versions_affectees": [
+                "4.15"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits IBM (09 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0020/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-36000",
+            "description": "IBM WebSphere Application Server Liberty 17.0.0.3 through 25.0.0.8 \n\nis vulnerable to stored cross-site scripting. This vulnerability allows a privileged user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+            "cwe": "CWE-79",
+            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
+            "cvss_score": 4.4,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000150000",
+            "gravite_epss": "Faible",
+            "editeur": "IBM",
+            "produit": "WebSphere Application Server Liberty",
+            "versions_affectees": [
+                "17.0.0.3"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Microsoft Edge (09 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Microsoft Edge. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0021/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-62224",
+            "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge for Android allows an authorized attacker to perform spoofing over a network.",
+            "cwe": "CWE-451",
+            "nature de la faille": "CWE-451: User Interface (UI) Misrepresentation of Critical Information",
+            "cvss_score": 5.5,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000620000",
+            "gravite_epss": "Faible",
+            "editeur": "Microsoft",
+            "produit": "Microsoft Edge for Android",
+            "versions_affectees": [
+                "1.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Microsoft (09 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0022/",
+            "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-11964",
+            "description": "On Windows only, if libpcap needs to convert a Windows error message to UTF-8 and the message includes characters that UTF-8 represents using 4 bytes, utf_16le_to_utf_8_truncated() can write data beyond the end of the provided buffer.",
+            "cwe": "CWE-787",
+            "nature de la faille": "CWE-787 Out-of-bounds Write",
+            "cvss_score": 1.9,
+            "gravite_cvss": "Faible",
+            "epss_score": "0.000150000",
+            "gravite_epss": "Faible",
+            "editeur": "The Tcpdump Group",
+            "produit": "libpcap",
+            "versions_affectees": [
+                "1.10.0"
             ]
         }
     }
