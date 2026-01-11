@@ -172,10 +172,10 @@ def dataframe_alertes(alertes_enrichies):
         cve_info = key["cve_enrichi"]
         row = {
             "Titre Alerte": alerte_info["titre"],
-            "Type Alerte": alerte_info["type"],
-            "Description Alerte": alerte_info["description"],
-            "Lien Alerte": alerte_info["lien"],
-            "Date Alerte": alerte_info["date"],
+            "Type": alerte_info["type"],
+            "Description": alerte_info["description"],
+            "Lien": alerte_info["lien"],
+            "Date": alerte_info["date"],
             "CVE ID": cve_info["cve_id"],
             "Description CVE": cve_info["description"],
             "CWE": cve_info["cwe"],
@@ -232,55 +232,70 @@ def alerter(alertes_enrichies, type_alerte, seuil_gravite_cvss, emails):
 
 
 
-# alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
+
+
+
+
+print("Extraction des alertes...")
+alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
 # alertes = from_json("alertes.json") # pour charger les aloertes localement
-# ref_cves, cve_list = extraire_cve_alertes(alertes)
+print("Extraction des CVE des alertes...")
+ref_cves, cve_list = extraire_cve_alertes(alertes)
 
+print("Enrichissement des CVE...")
+cve_enrichi = enrichir_cve(cve_list)
 
-# cve_enrichi = enrichir_cve(cve_list)
-
-# alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
-alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
+print("Consolidation des données et creéation du dataframe...")
+alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
+# alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
 
 df_alertes = dataframe_alertes(alertes_enrichies)
 
+while True:
+    emails = []
+    print("Choisissez le type d'alerte à recevoir :")
+    print("1. Quotidiennes")
+    print("2. Niveau de gravité")
+    print("3. Quitter")
+    choix = input()
+    if choix == "3":
+        print("Au revoir")
+        break
 
-emails = []
-print("Choisissez le type d'alerte à recevoir :")
-print("1. Quotidiennes")
-print("2. Niveau de gravité")
-choix = input()
-print()
-print("Quel est votre adresse email ?")
-email = input()
-print()
-emails.append(email)
-
-reponse = "1"
-while reponse == "1":
-    print("Voulez vous inscrire un autre mail ?")
-    print("1. Oui")
-    print("2. Non")
-    reponse = input()
-    print()
-    if reponse == "1":
+    elif choix in ["1", "2"]:
+        print()
         print("Quel est votre adresse email ?")
         email = input()
         print()
         emails.append(email)
+
+        reponse = "1"
+        while reponse == "1":
+            print("Voulez vous inscrire un autre mail ?")
+            print("1. Oui")
+            print("2. Non")
+            reponse = input()
+            print()
+            if reponse == "1":
+                print("Quel est votre adresse email ?")
+                email = input()
+                print()
+                emails.append(email)
+            else:
+                break
+            
+        if choix == "1":
+            alerter(alertes_enrichies, "quotidiennes", None, emails)
+            break
+
+        elif choix == "2":
+            print("A partir de quel seuil de gravité CVSS voulez-vous recevoir les alertes ? (0.0 à 10.0)")
+            seuil = float(input())
+            print()
+            alerter(alertes_enrichies, "niveau_gravite", seuil, emails)
+            break
+
     else:
-        break
-    
-if choix == "1":
-    alerter(alertes_enrichies, "quotidiennes", None, emails)
-
-
-
-elif choix == "2":
-    print("A partir de quel seuil de gravité CVSS voulez-vous recevoir les alertes ? (0.0 à 10.0)")
-    seuil = float(input())
-    print()
-    alerter(alertes_enrichies, "niveau_gravite", seuil, emails)
-
-else:
-    print("Choix invalide. Veuillez entrer 1 ou 2.")
+        print()
+        print("Choix invalide. Veuillez entrer 1, 2, ou 3.")
+        print()

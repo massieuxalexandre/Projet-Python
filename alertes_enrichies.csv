@@ -1,315 +1,403 @@
-Titre Alerte,Type Alerte,Description Alerte,Lien Alerte,Date Alerte,CVE ID,Description CVE,CWE,Nature de la faille,Score CVSS,Gravité CVSS,Score EPSS,Gravité EPSS,Éditeur,Produit,Versions Affectées
+Titre Alerte,Type,Description,Lien,Date,CVE ID,Description CVE,CWE,Nature de la faille,Score CVSS,Gravité CVSS,Score EPSS,Gravité EPSS,Éditeur,Produit,Versions Affectées
 Multiples vulnérabilités dans MISP (08 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans MISP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1076/,"Mon, 08 Dec 2025 00:00:00 +0000",CVE-2025-67906,"In MISP before 2.5.28, app/View/Elements/Workflows/executionPath.ctp allows XSS in the workflow execution path.",CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),5.4,Moyenne,0.000350000,Faible,MISP,MISP,0
 Vulnérabilité dans les produits Mitel (11 décembre 2025),Avis,Une vulnérabilité a été découverte dans les produits Mitel. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1097/,"Thu, 11 Dec 2025 00:00:00 +0000",CVE-2025-67823,,Non disponible,Non disponible,,Non disponible,,Non disponible,MISP,MISP,0
-Multiples vulnérabilités dans Roundcube (15 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans Roundcube. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1111/,"Mon, 15 Dec 2025 00:00:00 +0000",CVE-2025-68460,Roundcube Webmail before 1.5.12 and 1.6 before 1.6.12 is prone to a information disclosure vulnerability in the HTML style sanitizer.,CWE-116,CWE-116 Improper Encoding or Escaping of Output,7.2,Élevée,0.000480000,Faible,Roundcube,Webmail,"0, 1.6.0"
-Multiples vulnérabilités dans les produits VMware (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2024-3044,Unchecked script execution in Graphic on-click binding in affected LibreOffice versions allows an attacker to create a document which without prompt will execute scripts built-into LibreOffice on clicking a graphic. Such scripts were previously deemed trusted but are now deemed untrusted.,CWE-356,CWE-356 Product UI does not Warn User of Unsafe Actions,,Non disponible,0.023550000,Faible,The Document Foundation,LibreOffice,"7.6, 24.2"
-Multiples vulnérabilités dans les produits Foxit (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-57779,,Non disponible,Non disponible,,Non disponible,,Non disponible,The Document Foundation,LibreOffice,"7.6, 24.2"
-Multiples vulnérabilités dans les produits IBM (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-38351,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans Roundcube (15 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans Roundcube. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1111/,"Mon, 15 Dec 2025 00:00:00 +0000",CVE-2025-68461,Roundcube Webmail before 1.5.12 and 1.6 before 1.6.12 is prone to a Cross-Site-Scripting (XSS) vulnerability via the animate tag in an SVG document.,CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),7.2,Élevée,0.000420000,Faible,Roundcube,Webmail,"0, 1.6.0"
+Multiples vulnérabilités dans les produits VMware (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-66030,"Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. An Integer Overflow vulnerability in node-forge versions 1.3.1 and below enables remote, unauthenticated attackers to craft ASN.1 structures containing OIDs with oversized arcs. These arcs may be decoded as smaller, trusted OIDs due to 32-bit bitwise truncation, enabling the bypass of downstream OID-based security decisions. This issue has been patched in version 1.3.2.",CWE-190,CWE-190: Integer Overflow or Wraparound,,Non disponible,0.000400000,Faible,digitalbazaar,forge,< 1.3.2
+Multiples vulnérabilités dans les produits Foxit (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-66493,"A use-after-free vulnerability exists in the AcroForm handling of Foxit PDF Reader and Foxit PDF Editor before 2025.2.1,14.0.1 and 13.2.1 
 
-KVM: x86/hyper-v: Skip non-canonical addresses during PV TLB flush
+on Windows
 
-In KVM guests with Hyper-V hypercalls enabled, the hypercalls
-HVCALL_FLUSH_VIRTUAL_ADDRESS_LIST and HVCALL_FLUSH_VIRTUAL_ADDRESS_LIST_EX
-allow a guest to request invalidation of portions of a virtual TLB.
-For this, the hypercall parameter includes a list of GVAs that are supposed
-to be invalidated.
+. When opening a PDF containing specially crafted JavaScript, a pointer to memory that has already been freed may be accessed or dereferenced, potentially allowing a remote attacker to execute arbitrary code.",CWE-416,CWE-416 Use After Free,7.8,Élevée,0.000480000,Faible,Foxit Software Inc.,Foxit PDF Reader,"Versions 2025.2.1 and earlier, Versions 14.0.1 and earlier, Versions 13.2.1 and earlier"
+Multiples vulnérabilités dans les produits IBM (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-55182,"A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",Non disponible,Deserialization of Untrusted Data (CWE-502),10.0,Critique,0.534640000,Élevée,Meta,react-server-dom-parcel,"19.0.0, 19.1.0, 19.2.0"
+Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-39697,"In the Linux kernel, the following vulnerability has been resolved:
 
-However, when non-canonical GVAs are passed, there is currently no
-filtering in place and they are eventually passed to checked invocations of
-INVVPID on Intel / INVLPGA on AMD.  While AMD's INVLPGA silently ignores
-non-canonical addresses (effectively a no-op), Intel's INVVPID explicitly
-signals VM-Fail and ultimately triggers the WARN_ONCE in invvpid_error():
+NFS: Fix a race when updating an existing write
 
-  invvpid failed: ext=0x0 vpid=1 gva=0xaaaaaaaaaaaaa000
-  WARNING: CPU: 6 PID: 326 at arch/x86/kvm/vmx/vmx.c:482
-  invvpid_error+0x91/0xa0 [kvm_intel]
-  Modules linked in: kvm_intel kvm 9pnet_virtio irqbypass fuse
-  CPU: 6 UID: 0 PID: 326 Comm: kvm-vm Not tainted 6.15.0 #14 PREEMPT(voluntary)
-  RIP: 0010:invvpid_error+0x91/0xa0 [kvm_intel]
-  Call Trace:
-    vmx_flush_tlb_gva+0x320/0x490 [kvm_intel]
-    kvm_hv_vcpu_flush_tlb+0x24f/0x4f0 [kvm]
-    kvm_arch_vcpu_ioctl_run+0x3013/0x5810 [kvm]
+After nfs_lock_and_join_requests() tests for whether the request is
+still attached to the mapping, nothing prevents a call to
+nfs_inode_remove_request() from succeeding until we actually lock the
+page group.
+The reason is that whoever called nfs_inode_remove_request() doesn't
+necessarily have a lock on the page group head.
 
-Hyper-V documents that invalid GVAs (those that are beyond a partition's
-GVA space) are to be ignored.  While not completely clear whether this
-ruling also applies to non-canonical GVAs, it is likely fine to make that
-assumption, and manual testing on Azure confirms ""real"" Hyper-V interprets
-the specification in the same way.
+So in order to avoid races, let's take the page group lock earlier in
+nfs_lock_and_join_requests(), and hold it across the removal of the
+request in nfs_inode_remove_request().",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,4.14
+Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-40188,"In the Linux kernel, the following vulnerability has been resolved:
 
-Skip non-canonical GVAs when processing the list of address to avoid
-tripping the INVVPID failure.  Alternatively, KVM could filter out ""bad""
-GVAs before inserting into the FIFO, but practically speaking the only
-downside of pushing validation to the final processing is that doing so
-is suboptimal for the guest, and no well-behaved guest will request TLB
-flushes for non-canonical addresses.",Non disponible,Non disponible,,Non disponible,0.000190000,Faible,Linux,Linux,6.2
-Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2023-53322,"In the Linux kernel, the following vulnerability has been resolved:
+pwm: berlin: Fix wrong register in suspend/resume
 
-scsi: qla2xxx: Wait for io return on terminate rport
-
-System crash due to use after free.
-Current code allows terminate_rport_io to exit before making
-sure all IOs has returned. For FCP-2 device, IO's can hang
-on in HW because driver has not tear down the session in FW at
-first sign of cable pull. When dev_loss_tmo timer pops,
-terminate_rport_io is called and upper layer is about to
-free various resources. Terminate_rport_io trigger qla to do
-the final cleanup, but the cleanup might not be fast enough where it
-leave qla still holding on to the same resource.
-
-Wait for IO's to return to upper layer before resources are freed.",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,2.6.34
-Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-40086,"In the Linux kernel, the following vulnerability has been resolved:
-
-drm/xe: Don't allow evicting of BOs in same VM in array of VM binds
-
-An array of VM binds can potentially evict other buffer objects (BOs)
-within the same VM under certain conditions, which may lead to NULL
-pointer dereferences later in the bind pipeline. To prevent this, clear
-the allow_res_evict flag in the xe_bo_validate call.
-
-v2:
- - Invert polarity of no_res_evict (Thomas)
- - Add comment in code explaining issue (Thomas)
-
-(cherry picked from commit 8b9ba8d6d95fe75fed6b0480bb03da4b321bea08)",Non disponible,Non disponible,,Non disponible,0.000270000,Faible,Linux,Linux,6.8
+The 'enable' register should be BERLIN_PWM_EN rather than
+BERLIN_PWM_ENABLE, otherwise, the driver accesses wrong address, there
+will be cpu exception then kernel panic during suspend/resume.",Non disponible,Non disponible,,Non disponible,0.000510000,Faible,Linux,Linux,4.9
 Multiples vulnérabilités dans MongoDB Server (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans MongoDB Server. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1134/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-14847,"Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all MongoDB Server v7.0 prior to 7.0.28 versions, MongoDB Server v8.0 versions prior to 8.0.17, MongoDB Server v8.2 versions prior to 8.2.3, MongoDB Server v6.0 versions prior to 6.0.27, MongoDB Server v5.0 versions prior to 5.0.32, MongoDB Server v4.4 versions prior to 4.4.30, MongoDB Server v4.2 versions greater than or equal to 4.2.0, MongoDB Server v4.0 versions greater than or equal to 4.0.0, and MongoDB Server v3.6 versions greater than or equal to 3.6.0.",CWE-130,CWE-130: Improper Handling of Length Parameter Inconsistency,,Non disponible,0.696220000,Élevée,MongoDB Inc.,MongoDB Server,"8.2, 8.0, 7.0, 6.0, 5.0, 4.4, 4.2, 4.0, 3.6"
-Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-39676,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-38568,"In the Linux kernel, the following vulnerability has been resolved:
 
-scsi: qla4xxx: Prevent a potential error pointer dereference
+net/sched: mqprio: fix stack out-of-bounds write in tc entry parsing
 
-The qla4xxx_get_ep_fwdb() function is supposed to return NULL on error,
-but qla4xxx_ep_connect() returns error pointers.  Propagating the error
-pointers will lead to an Oops in the caller, so change the error pointers
-to NULL.",Non disponible,Non disponible,,Non disponible,0.000220000,Faible,Linux,Linux,3.2
-Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-39883,"In the Linux kernel, the following vulnerability has been resolved:
+TCA_MQPRIO_TC_ENTRY_INDEX is validated using
+NLA_POLICY_MAX(NLA_U32, TC_QOPT_MAX_QUEUE), which allows the value
+TC_QOPT_MAX_QUEUE (16). This leads to a 4-byte out-of-bounds stack
+write in the fp[] array, which only has room for 16 elements (0–15).
 
-mm/memory-failure: fix VM_BUG_ON_PAGE(PagePoisoned(page)) when unpoison memory
+Fix this by changing the policy to allow only up to TC_QOPT_MAX_QUEUE - 1.",Non disponible,Non disponible,,Non disponible,0.000230000,Faible,Linux,Linux,6.4
+Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-39996,"In the Linux kernel, the following vulnerability has been resolved:
 
-When I did memory failure tests, below panic occurs:
+media: b2c2: Fix use-after-free causing by irq_check_work in flexcop_pci_remove
 
-page dumped because: VM_BUG_ON_PAGE(PagePoisoned(page))
-kernel BUG at include/linux/page-flags.h:616!
-Oops: invalid opcode: 0000 [#1] PREEMPT SMP NOPTI
-CPU: 3 PID: 720 Comm: bash Not tainted 6.10.0-rc1-00195-g148743902568 #40
-RIP: 0010:unpoison_memory+0x2f3/0x590
-RSP: 0018:ffffa57fc8787d60 EFLAGS: 00000246
-RAX: 0000000000000037 RBX: 0000000000000009 RCX: ffff9be25fcdc9c8
-RDX: 0000000000000000 RSI: 0000000000000027 RDI: ffff9be25fcdc9c0
-RBP: 0000000000300000 R08: ffffffffb4956f88 R09: 0000000000009ffb
-R10: 0000000000000284 R11: ffffffffb4926fa0 R12: ffffe6b00c000000
-R13: ffff9bdb453dfd00 R14: 0000000000000000 R15: fffffffffffffffe
-FS:  00007f08f04e4740(0000) GS:ffff9be25fcc0000(0000) knlGS:0000000000000000
-CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-CR2: 0000564787a30410 CR3: 000000010d4e2000 CR4: 00000000000006f0
+The original code uses cancel_delayed_work() in flexcop_pci_remove(), which
+does not guarantee that the delayed work item irq_check_work has fully
+completed if it was already running. This leads to use-after-free scenarios
+where flexcop_pci_remove() may free the flexcop_device while irq_check_work
+is still active and attempts to dereference the device.
+
+A typical race condition is illustrated below:
+
+CPU 0 (remove)                         | CPU 1 (delayed work callback)
+flexcop_pci_remove()                   | flexcop_pci_irq_check_work()
+  cancel_delayed_work()                |
+  flexcop_device_kfree(fc_pci->fc_dev) |
+                                       |   fc = fc_pci->fc_dev; // UAF
+
+This is confirmed by a KASAN report:
+
+==================================================================
+BUG: KASAN: slab-use-after-free in __run_timer_base.part.0+0x7d7/0x8c0
+Write of size 8 at addr ffff8880093aa8c8 by task bash/135
+...
 Call Trace:
- <TASK>
- unpoison_memory+0x2f3/0x590
- simple_attr_write_xsigned.constprop.0.isra.0+0xb3/0x110
- debugfs_attr_write+0x42/0x60
- full_proxy_write+0x5b/0x80
- vfs_write+0xd5/0x540
- ksys_write+0x64/0xe0
- do_syscall_64+0xb9/0x1d0
+ <IRQ>
+ dump_stack_lvl+0x55/0x70
+ print_report+0xcf/0x610
+ ? __run_timer_base.part.0+0x7d7/0x8c0
+ kasan_report+0xb8/0xf0
+ ? __run_timer_base.part.0+0x7d7/0x8c0
+ __run_timer_base.part.0+0x7d7/0x8c0
+ ? __pfx___run_timer_base.part.0+0x10/0x10
+ ? __pfx_read_tsc+0x10/0x10
+ ? ktime_get+0x60/0x140
+ ? lapic_next_event+0x11/0x20
+ ? clockevents_program_event+0x1d4/0x2a0
+ run_timer_softirq+0xd1/0x190
+ handle_softirqs+0x16a/0x550
+ irq_exit_rcu+0xaf/0xe0
+ sysvec_apic_timer_interrupt+0x70/0x80
+ </IRQ>
+...
+
+Allocated by task 1:
+ kasan_save_stack+0x24/0x50
+ kasan_save_track+0x14/0x30
+ __kasan_kmalloc+0x7f/0x90
+ __kmalloc_noprof+0x1be/0x460
+ flexcop_device_kmalloc+0x54/0xe0
+ flexcop_pci_probe+0x1f/0x9d0
+ local_pci_probe+0xdc/0x190
+ pci_device_probe+0x2fe/0x470
+ really_probe+0x1ca/0x5c0
+ __driver_probe_device+0x248/0x310
+ driver_probe_device+0x44/0x120
+ __driver_attach+0xd2/0x310
+ bus_for_each_dev+0xed/0x170
+ bus_add_driver+0x208/0x500
+ driver_register+0x132/0x460
+ do_one_initcall+0x89/0x300
+ kernel_init_freeable+0x40d/0x720
+ kernel_init+0x1a/0x150
+ ret_from_fork+0x10c/0x1a0
+ ret_from_fork_asm+0x1a/0x30
+
+Freed by task 135:
+ kasan_save_stack+0x24/0x50
+ kasan_save_track+0x14/0x30
+ kasan_save_free_info+0x3a/0x60
+ __kasan_slab_free+0x3f/0x50
+ kfree+0x137/0x370
+ flexcop_device_kfree+0x32/0x50
+ pci_device_remove+0xa6/0x1d0
+ device_release_driver_internal+0xf8/0x210
+ pci_stop_bus_device+0x105/0x150
+ pci_stop_and_remove_bus_device_locked+0x15/0x30
+ remove_store+0xcc/0xe0
+ kernfs_fop_write_iter+0x2c3/0x440
+ vfs_write+0x871/0xd70
+ ksys_write+0xee/0x1c0
+ do_syscall_64+0xac/0x280
  entry_SYSCALL_64_after_hwframe+0x77/0x7f
-RIP: 0033:0x7f08f0314887
-RSP: 002b:00007ffece710078 EFLAGS: 00000246 ORIG_RAX: 0000000000000001
-RAX: ffffffffffffffda RBX: 0000000000000009 RCX: 00007f08f0314887
-RDX: 0000000000000009 RSI: 0000564787a30410 RDI: 0000000000000001
-RBP: 0000564787a30410 R08: 000000000000fefe R09: 000000007fffffff
-R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000009
-R13: 00007f08f041b780 R14: 00007f08f0417600 R15: 00007f08f0416a00
- </TASK>
-Modules linked in: hwpoison_inject
----[ end trace 0000000000000000 ]---
-RIP: 0010:unpoison_memory+0x2f3/0x590
-RSP: 0018:ffffa57fc8787d60 EFLAGS: 00000246
-RAX: 0000000000000037 RBX: 0000000000000009 RCX: ffff9be25fcdc9c8
-RDX: 0000000000000000 RSI: 0000000000000027 RDI: ffff9be25fcdc9c0
-RBP: 0000000000300000 R08: ffffffffb4956f88 R09: 0000000000009ffb
-R10: 0000000000000284 R11: ffffffffb4926fa0 R12: ffffe6b00c000000
-R13: ffff9bdb453dfd00 R14: 0000000000000000 R15: fffffffffffffffe
-FS:  00007f08f04e4740(0000) GS:ffff9be25fcc0000(0000) knlGS:0000000000000000
-CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-CR2: 0000564787a30410 CR3: 000000010d4e2000 CR4: 00000000000006f0
-Kernel panic - not syncing: Fatal exception
-Kernel Offset: 0x31c00000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
----[ end Kernel panic - not syncing: Fatal exception ]---
+...
 
-The root cause is that unpoison_memory() tries to check the PG_HWPoison
-flags of an uninitialized page.  So VM_BUG_ON_PAGE(PagePoisoned(page)) is
-triggered.  This can be reproduced by below steps:
+Replace cancel_delayed_work() with cancel_delayed_work_sync() to ensure
+that the delayed work item is properly canceled and any executing delayed
+work has finished before the device memory is deallocated.
 
-1.Offline memory block:
+This bug was initially identified through static analysis. To reproduce
+and test it, I simulated the B2C2 FlexCop PCI device in QEMU and introduced
+artificial delays within the flexcop_pci_irq_check_work() function to
+increase the likelihood of triggering the bug.",Non disponible,Non disponible,,Non disponible,0.000710000,Faible,Linux,Linux,2.6.29
+Multiples vulnérabilités dans PHP (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-14180,"In PHP versions 8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1 when using the PDO PostgreSQL driver with PDO::ATTR_EMULATE_PREPARES enabled, an invalid character sequence (such as \x99) in a prepared statement parameter may cause the quoting function PQescapeStringConn to return NULL, leading to a null pointer dereference in pdo_parse_params() function. This may lead to crashes (segmentation fault) and affect the availability of the target server.",CWE-476,CWE-476 NULL Pointer Dereference,,Non disponible,0.000530000,Faible,PHP Group,PHP,"8.1.*, 8.2.*, 8.3.*, 8.4.*, 8.5.*"
+Multiples vulnérabilités dans les produits IBM (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-55182,"A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",Non disponible,Deserialization of Untrusted Data (CWE-502),10.0,Critique,0.534640000,Élevée,Meta,react-server-dom-parcel,"19.0.0, 19.1.0, 19.2.0"
+Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2024-7254,"Any project that parses untrusted Protocol Buffers data containing an arbitrary number of nested groups / series of SGROUP tags can corrupted by exceeding the stack limit i.e. StackOverflow. Parsing nested groups as unknown fields with DiscardUnknownFieldsParser or Java Protobuf Lite parser, or against Protobuf map fields, creates unbounded recursions that can be abused by an attacker.",CWE-400,CWE-400 Uncontrolled Resource Consumption,,Non disponible,0.000850000,Faible,Google,google-protobuf [JRuby Gem],"0, 0, 0"
+Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2022-49390,"In the Linux kernel, the following vulnerability has been resolved:
 
- echo offline > /sys/devices/system/memory/memory12/state
+macsec: fix UAF bug for real_dev
 
-2.Get offlined memory pfn:
+Create a new macsec device but not get reference to real_dev. That can
+not ensure that real_dev is freed after macsec. That will trigger the
+UAF bug for real_dev as following:
 
- page-types -b n -rlN
-
-3.Write pfn to unpoison-pfn
-
- echo <pfn> > /sys/kernel/debug/hwpoison/unpoison-pfn
-
-This scenario can be identified by pfn_to_online_page() returning NULL. 
-And ZONE_DEVICE pages are never expected, so we can simply fail if
-pfn_to_online_page() == NULL to fix the bug.",Non disponible,Non disponible,,Non disponible,0.000710000,Faible,Linux,Linux,4.13
-Multiples vulnérabilités dans PHP (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-14178,"In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, a heap buffer overflow occurs in array_merge() when the total element count of packed arrays exceeds 32-bit limits or HT_MAX_SIZE, due to an integer overflow in the precomputation of element counts using zend_hash_num_elements(). This may lead to memory corruption or crashes and affect the integrity and availability of the target server.",CWE-787,CWE-787 Out-of-bounds Write,6.5,Moyenne,0.000560000,Faible,PHP Group,PHP,"8.1.*, 8.2.*, 8.3.*, 8.4.*, 8.5.*"
-Multiples vulnérabilités dans les produits IBM (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2023-38727,"IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.5, 11.1, and 11.5 is vulnerable to denial of service with a specially crafted SQL statement.  IBM X-Force ID:  262257.",CWE-20,CWE-20 Improper Input Validation,5.3,Moyenne,0.001230000,Faible,IBM,"Db2 for Linux, UNIX and Windows","10.5, 11.1, 11.5"
-Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-22874,"Calling Verify with a VerifyOptions.KeyUsages that contains ExtKeyUsageAny unintentionally disabledpolicy validation. This only affected certificate chains which contain policy graphs, which are rather uncommon.",Non disponible,CWE-295: Improper Certificate Validation,,Non disponible,0.000160000,Faible,Go standard library,crypto/x509,1.24.0-0
-Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2024-49935,"In the Linux kernel, the following vulnerability has been resolved:
-
-ACPI: PAD: fix crash in exit_round_robin()
-
-The kernel occasionally crashes in cpumask_clear_cpu(), which is called
-within exit_round_robin(), because when executing clear_bit(nr, addr) with
-nr set to 0xffffffff, the address calculation may cause misalignment within
-the memory, leading to access to an invalid memory address.
-
-----------
-BUG: unable to handle kernel paging request at ffffffffe0740618
-        ...
-CPU: 3 PID: 2919323 Comm: acpi_pad/14 Kdump: loaded Tainted: G           OE  X --------- -  - 4.18.0-425.19.2.el8_7.x86_64 #1
-        ...
-RIP: 0010:power_saving_thread+0x313/0x411 [acpi_pad]
-Code: 89 cd 48 89 d3 eb d1 48 c7 c7 55 70 72 c0 e8 64 86 b0 e4 c6 05 0d a1 02 00 01 e9 bc fd ff ff 45 89 e4 42 8b 04 a5 20 82 72 c0 <f0> 48 0f b3 05 f4 9c 01 00 42 c7 04 a5 20 82 72 c0 ff ff ff ff 31
-RSP: 0018:ff72a5d51fa77ec8 EFLAGS: 00010202
-RAX: 00000000ffffffff RBX: ff462981e5d8cb80 RCX: 0000000000000000
-RDX: 0000000000000000 RSI: 0000000000000246 RDI: 0000000000000246
-RBP: ff46297556959d80 R08: 0000000000000382 R09: ff46297c8d0f38d8
-R10: 0000000000000000 R11: 0000000000000001 R12: 000000000000000e
-R13: 0000000000000000 R14: ffffffffffffffff R15: 000000000000000e
-FS:  0000000000000000(0000) GS:ff46297a800c0000(0000) knlGS:0000000000000000
-CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-CR2: ffffffffe0740618 CR3: 0000007e20410004 CR4: 0000000000771ee0
-DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
-DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
-PKRU: 55555554
+==================================================================
+BUG: KASAN: use-after-free in macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662
 Call Trace:
- ? acpi_pad_add+0x120/0x120 [acpi_pad]
- kthread+0x10b/0x130
- ? set_kthread_struct+0x50/0x50
- ret_from_fork+0x1f/0x40
-        ...
-CR2: ffffffffe0740618
+ ...
+ macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662
+ dev_get_iflink+0x73/0xe0 net/core/dev.c:637
+ default_operstate net/core/link_watch.c:42 [inline]
+ rfc2863_policy+0x233/0x2d0 net/core/link_watch.c:54
+ linkwatch_do_dev+0x2a/0x150 net/core/link_watch.c:161
 
-crash> dis -lr ffffffffc0726923
-        ...
-/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 114
-0xffffffffc0726918 <power_saving_thread+776>:	mov    %r12d,%r12d
-/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 325
-0xffffffffc072691b <power_saving_thread+779>:	mov    -0x3f8d7de0(,%r12,4),%eax
-/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./arch/x86/include/asm/bitops.h: 80
-0xffffffffc0726923 <power_saving_thread+787>:	lock btr %rax,0x19cf4(%rip)        # 0xffffffffc0740620 <pad_busy_cpus_bits>
+Allocated by task 22209:
+ ...
+ alloc_netdev_mqs+0x98/0x1100 net/core/dev.c:10549
+ rtnl_create_link+0x9d7/0xc00 net/core/rtnetlink.c:3235
+ veth_newlink+0x20e/0xa90 drivers/net/veth.c:1748
 
-crash> px tsk_in_cpu[14]
-$66 = 0xffffffff
+Freed by task 8:
+ ...
+ kfree+0xd6/0x4d0 mm/slub.c:4552
+ kvfree+0x42/0x50 mm/util.c:615
+ device_release+0x9f/0x240 drivers/base/core.c:2229
+ kobject_cleanup lib/kobject.c:673 [inline]
+ kobject_release lib/kobject.c:704 [inline]
+ kref_put include/linux/kref.h:65 [inline]
+ kobject_put+0x1c8/0x540 lib/kobject.c:721
+ netdev_run_todo+0x72e/0x10b0 net/core/dev.c:10327
 
-crash> px 0xffffffffc072692c+0x19cf4
-$99 = 0xffffffffc0740620
+After commit faab39f63c1f (""net: allow out-of-order netdev unregistration"")
+and commit e5f80fcf869a (""ipv6: give an IPv6 dev to blackhole_netdev""), we
+can add dev_hold_track() in macsec_dev_init() and dev_put_track() in
+macsec_free_netdev() to fix the problem.",Non disponible,Non disponible,,Non disponible,0.000360000,Faible,Linux,Linux,5.4
+Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-39944,"In the Linux kernel, the following vulnerability has been resolved:
 
-crash> sym 0xffffffffc0740620
-ffffffffc0740620 (b) pad_busy_cpus_bits [acpi_pad]
+octeontx2-pf: Fix use-after-free bugs in otx2_sync_tstamp()
 
-crash> px pad_busy_cpus_bits[0]
-$42 = 0xfffc0
-----------
+The original code relies on cancel_delayed_work() in otx2_ptp_destroy(),
+which does not ensure that the delayed work item synctstamp_work has fully
+completed if it was already running. This leads to use-after-free scenarios
+where otx2_ptp is deallocated by otx2_ptp_destroy(), while synctstamp_work
+remains active and attempts to dereference otx2_ptp in otx2_sync_tstamp().
+Furthermore, the synctstamp_work is cyclic, the likelihood of triggering
+the bug is nonnegligible.
 
-To fix this, ensure that tsk_in_cpu[tsk_index] != -1 before calling
-cpumask_clear_cpu() in exit_round_robin(), just as it is done in
-round_robin_cpu().
+A typical race condition is illustrated below:
 
-[ rjw: Subject edit, avoid updates to the same value ]",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,2.6.32
-Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-40207,"In the Linux kernel, the following vulnerability has been resolved:
+CPU 0 (cleanup)           | CPU 1 (delayed work callback)
+otx2_remove()             |
+  otx2_ptp_destroy()      | otx2_sync_tstamp()
+    cancel_delayed_work() |
+    kfree(ptp)            |
+                          |   ptp = container_of(...); //UAF
+                          |   ptp-> //UAF
 
-media: v4l2-subdev: Fix alloc failure check in v4l2_subdev_call_state_try()
+This is confirmed by a KASAN report:
 
-v4l2_subdev_call_state_try() macro allocates a subdev state with
-__v4l2_subdev_state_alloc(), but does not check the returned value. If
-__v4l2_subdev_state_alloc fails, it returns an ERR_PTR, and that would
-cause v4l2_subdev_call_state_try() to crash.
+BUG: KASAN: slab-use-after-free in __run_timer_base.part.0+0x7d7/0x8c0
+Write of size 8 at addr ffff88800aa09a18 by task bash/136
+...
+Call Trace:
+ <IRQ>
+ dump_stack_lvl+0x55/0x70
+ print_report+0xcf/0x610
+ ? __run_timer_base.part.0+0x7d7/0x8c0
+ kasan_report+0xb8/0xf0
+ ? __run_timer_base.part.0+0x7d7/0x8c0
+ __run_timer_base.part.0+0x7d7/0x8c0
+ ? __pfx___run_timer_base.part.0+0x10/0x10
+ ? __pfx_read_tsc+0x10/0x10
+ ? ktime_get+0x60/0x140
+ ? lapic_next_event+0x11/0x20
+ ? clockevents_program_event+0x1d4/0x2a0
+ run_timer_softirq+0xd1/0x190
+ handle_softirqs+0x16a/0x550
+ irq_exit_rcu+0xaf/0xe0
+ sysvec_apic_timer_interrupt+0x70/0x80
+ </IRQ>
+...
+Allocated by task 1:
+ kasan_save_stack+0x24/0x50
+ kasan_save_track+0x14/0x30
+ __kasan_kmalloc+0x7f/0x90
+ otx2_ptp_init+0xb1/0x860
+ otx2_probe+0x4eb/0xc30
+ local_pci_probe+0xdc/0x190
+ pci_device_probe+0x2fe/0x470
+ really_probe+0x1ca/0x5c0
+ __driver_probe_device+0x248/0x310
+ driver_probe_device+0x44/0x120
+ __driver_attach+0xd2/0x310
+ bus_for_each_dev+0xed/0x170
+ bus_add_driver+0x208/0x500
+ driver_register+0x132/0x460
+ do_one_initcall+0x89/0x300
+ kernel_init_freeable+0x40d/0x720
+ kernel_init+0x1a/0x150
+ ret_from_fork+0x10c/0x1a0
+ ret_from_fork_asm+0x1a/0x30
 
-Add proper error handling to v4l2_subdev_call_state_try().",Non disponible,Non disponible,,Non disponible,0.000260000,Faible,Linux,Linux,6.0
-Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2023-53322,"In the Linux kernel, the following vulnerability has been resolved:
+Freed by task 136:
+ kasan_save_stack+0x24/0x50
+ kasan_save_track+0x14/0x30
+ kasan_save_free_info+0x3a/0x60
+ __kasan_slab_free+0x3f/0x50
+ kfree+0x137/0x370
+ otx2_ptp_destroy+0x38/0x80
+ otx2_remove+0x10d/0x4c0
+ pci_device_remove+0xa6/0x1d0
+ device_release_driver_internal+0xf8/0x210
+ pci_stop_bus_device+0x105/0x150
+ pci_stop_and_remove_bus_device_locked+0x15/0x30
+ remove_store+0xcc/0xe0
+ kernfs_fop_write_iter+0x2c3/0x440
+ vfs_write+0x871/0xd70
+ ksys_write+0xee/0x1c0
+ do_syscall_64+0xac/0x280
+ entry_SYSCALL_64_after_hwframe+0x77/0x7f
+...
 
-scsi: qla2xxx: Wait for io return on terminate rport
+Replace cancel_delayed_work() with cancel_delayed_work_sync() to ensure
+that the delayed work item is properly canceled before the otx2_ptp is
+deallocated.
 
-System crash due to use after free.
-Current code allows terminate_rport_io to exit before making
-sure all IOs has returned. For FCP-2 device, IO's can hang
-on in HW because driver has not tear down the session in FW at
-first sign of cable pull. When dev_loss_tmo timer pops,
-terminate_rport_io is called and upper layer is about to
-free various resources. Terminate_rport_io trigger qla to do
-the final cleanup, but the cleanup might not be fast enough where it
-leave qla still holding on to the same resource.
+This bug was initially identified through static analysis. To reproduce
+and test it, I simulated the OcteonTX2 PCI device in QEMU and introduced
+artificial delays within the otx2_sync_tstamp() function to increase the
+likelihood of triggering the bug.",Non disponible,Non disponible,,Non disponible,0.000390000,Faible,Linux,Linux,6.1
+Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2022-50410,"In the Linux kernel, the following vulnerability has been resolved:
 
-Wait for IO's to return to upper layer before resources are freed.",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,2.6.34
+NFSD: Protect against send buffer overflow in NFSv2 READ
+
+Since before the git era, NFSD has conserved the number of pages
+held by each nfsd thread by combining the RPC receive and send
+buffers into a single array of pages. This works because there are
+no cases where an operation needs a large RPC Call message and a
+large RPC Reply at the same time.
+
+Once an RPC Call has been received, svc_process() updates
+svc_rqst::rq_res to describe the part of rq_pages that can be
+used for constructing the Reply. This means that the send buffer
+(rq_res) shrinks when the received RPC record containing the RPC
+Call is large.
+
+A client can force this shrinkage on TCP by sending a correctly-
+formed RPC Call header contained in an RPC record that is
+excessively large. The full maximum payload size cannot be
+constructed in that case.",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,2.6.19
 Multiples vulnérabilités dans Moxa NPort (31 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans Moxa NPort. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1142/,"Wed, 31 Dec 2025 00:00:00 +0000",CVE-2025-15017,"A vulnerability exists in serial device servers where active debug code remains enabled in the UART interface. An attacker with physical access to the device can directly connect to the UART interface and, without authentication, user interaction, or execution conditions, gain unauthorized access to internal debug functionality. Exploitation is low complexity and allows an attacker to execute privileged operations and access sensitive system resources, resulting in a high impact to the confidentiality, integrity, and availability of the affected device. No security impact to external or dependent systems has been identified.",CWE-489,CWE-489: Active Debug Code,,Non disponible,0.000450000,Faible,Moxa,NPort IA5000-G2 Series,1.0
-Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2025-40040,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2023-53659,"In the Linux kernel, the following vulnerability has been resolved:
 
-mm/ksm: fix flag-dropping behavior in ksm_madvise
+iavf: Fix out-of-bounds when setting channels on remove
 
-syzkaller discovered the following crash: (kernel BUG)
+If we set channels greater during iavf_remove(), and waiting reset done
+would be timeout, then returned with error but changed num_active_queues
+directly, that will lead to OOB like the following logs. Because the
+num_active_queues is greater than tx/rx_rings[] allocated actually.
 
-[   44.607039] ------------[ cut here ]------------
-[   44.607422] kernel BUG at mm/userfaultfd.c:2067!
-[   44.608148] Oops: invalid opcode: 0000 [#1] SMP DEBUG_PAGEALLOC KASAN NOPTI
-[   44.608814] CPU: 1 UID: 0 PID: 2475 Comm: reproducer Not tainted 6.16.0-rc6 #1 PREEMPT(none)
-[   44.609635] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
-[   44.610695] RIP: 0010:userfaultfd_release_all+0x3a8/0x460
+Reproducer:
 
-<snip other registers, drop unreliable trace>
+  [root@host ~]# cat repro.sh
+  #!/bin/bash
 
-[   44.617726] Call Trace:
-[   44.617926]  <TASK>
-[   44.619284]  userfaultfd_release+0xef/0x1b0
-[   44.620976]  __fput+0x3f9/0xb60
-[   44.621240]  fput_close_sync+0x110/0x210
-[   44.622222]  __x64_sys_close+0x8f/0x120
-[   44.622530]  do_syscall_64+0x5b/0x2f0
-[   44.622840]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
-[   44.623244] RIP: 0033:0x7f365bb3f227
+  pf_dbsf=""0000:41:00.0""
+  vf0_dbsf=""0000:41:02.0""
+  g_pids=()
 
-Kernel panics because it detects UFFD inconsistency during
-userfaultfd_release_all().  Specifically, a VMA which has a valid pointer
-to vma->vm_userfaultfd_ctx, but no UFFD flags in vma->vm_flags.
+  function do_set_numvf()
+  {
+      echo 2 >/sys/bus/pci/devices/${pf_dbsf}/sriov_numvfs
+      sleep $((RANDOM%3+1))
+      echo 0 >/sys/bus/pci/devices/${pf_dbsf}/sriov_numvfs
+      sleep $((RANDOM%3+1))
+  }
 
-The inconsistency is caused in ksm_madvise(): when user calls madvise()
-with MADV_UNMEARGEABLE on a VMA that is registered for UFFD in MINOR mode,
-it accidentally clears all flags stored in the upper 32 bits of
-vma->vm_flags.
+  function do_set_channel()
+  {
+      local nic=$(ls -1 --indicator-style=none /sys/bus/pci/devices/${vf0_dbsf}/net/)
+      [ -z ""$nic"" ] && { sleep $((RANDOM%3)) ; return 1; }
+      ifconfig $nic 192.168.18.5 netmask 255.255.255.0
+      ifconfig $nic up
+      ethtool -L $nic combined 1
+      ethtool -L $nic combined 4
+      sleep $((RANDOM%3))
+  }
 
-Assuming x86_64 kernel build, unsigned long is 64-bit and unsigned int and
-int are 32-bit wide.  This setup causes the following mishap during the &=
-~VM_MERGEABLE assignment.
+  function on_exit()
+  {
+      local pid
+      for pid in ""${g_pids[@]}""; do
+          kill -0 ""$pid"" &>/dev/null && kill ""$pid"" &>/dev/null
+      done
+      g_pids=()
+  }
 
-VM_MERGEABLE is a 32-bit constant of type unsigned int, 0x8000'0000. 
-After ~ is applied, it becomes 0x7fff'ffff unsigned int, which is then
-promoted to unsigned long before the & operation.  This promotion fills
-upper 32 bits with leading 0s, as we're doing unsigned conversion (and
-even for a signed conversion, this wouldn't help as the leading bit is 0).
-& operation thus ends up AND-ing vm_flags with 0x0000'0000'7fff'ffff
-instead of intended 0xffff'ffff'7fff'ffff and hence accidentally clears
-the upper 32-bits of its value.
+  trap ""on_exit; exit"" EXIT
 
-Fix it by changing `VM_MERGEABLE` constant to unsigned long, using the
-BIT() macro.
+  while :; do do_set_numvf ; done &
+  g_pids+=($!)
+  while :; do do_set_channel ; done &
+  g_pids+=($!)
 
-Note: other VM_* flags are not affected: This only happens to the
-VM_MERGEABLE flag, as the other VM_* flags are all constants of type int
-and after ~ operation, they end up with leading 1 and are thus converted
-to unsigned long with leading 1s.
+  wait
 
-Note 2:
-After commit 31defc3b01d9 (""userfaultfd: remove (VM_)BUG_ON()s""), this is
-no longer a kernel BUG, but a WARNING at the same place:
+Result:
 
-[   45.595973] WARNING: CPU: 1 PID: 2474 at mm/userfaultfd.c:2067
-
-but the root-cause (flag-drop) remains the same.
-
-[akpm@linux-foundation.org: rust bindgen wasn't able to handle BIT(), from Miguel]",Non disponible,Non disponible,,Non disponible,0.000530000,Faible,Linux,Linux,5.13
+[ 3506.152887] iavf 0000:41:02.0: Removing device
+[ 3510.400799] ==================================================================
+[ 3510.400820] BUG: KASAN: slab-out-of-bounds in iavf_free_all_tx_resources+0x156/0x160 [iavf]
+[ 3510.400823] Read of size 8 at addr ffff88b6f9311008 by task repro.sh/55536
+[ 3510.400823]
+[ 3510.400830] CPU: 101 PID: 55536 Comm: repro.sh Kdump: loaded Tainted: G           O     --------- -t - 4.18.0 #1
+[ 3510.400832] Hardware name: Powerleader PR2008AL/H12DSi-N6, BIOS 2.0 04/09/2021
+[ 3510.400835] Call Trace:
+[ 3510.400851]  dump_stack+0x71/0xab
+[ 3510.400860]  print_address_description+0x6b/0x290
+[ 3510.400865]  ? iavf_free_all_tx_resources+0x156/0x160 [iavf]
+[ 3510.400868]  kasan_report+0x14a/0x2b0
+[ 3510.400873]  iavf_free_all_tx_resources+0x156/0x160 [iavf]
+[ 3510.400880]  iavf_remove+0x2b6/0xc70 [iavf]
+[ 3510.400884]  ? iavf_free_all_rx_resources+0x160/0x160 [iavf]
+[ 3510.400891]  ? wait_woken+0x1d0/0x1d0
+[ 3510.400895]  ? notifier_call_chain+0xc1/0x130
+[ 3510.400903]  pci_device_remove+0xa8/0x1f0
+[ 3510.400910]  device_release_driver_internal+0x1c6/0x460
+[ 3510.400916]  pci_stop_bus_device+0x101/0x150
+[ 3510.400919]  pci_stop_and_remove_bus_device+0xe/0x20
+[ 3510.400924]  pci_iov_remove_virtfn+0x187/0x420
+[ 3510.400927]  ? pci_iov_add_virtfn+0xe10/0xe10
+[ 3510.400929]  ? pci_get_subsys+0x90/0x90
+[ 3510.400932]  sriov_disable+0xed/0x3e0
+[ 3510.400936]  ? bus_find_device+0x12d/0x1a0
+[ 3510.400953]  i40e_free_vfs+0x754/0x1210 [i40e]
+[ 3510.400966]  ? i40e_reset_all_vfs+0x880/0x880 [i40e]
+[ 3510.400968]  ? pci_get_device+0x7c/0x90
+[ 3510.400970]  ? pci_get_subsys+0x90/0x90
+[ 3510.400982]  ? pci_vfs_assigned.part.7+0x144/0x210
+[ 3510.400987]  ? __mutex_lock_slowpath+0x10/0x10
+[ 3510.400996]  i40e_pci_sriov_configure+0x1fa/0x2e0 [i40e]
+[ 3510.401001]  sriov_numvfs_store+0x214/0x290
+[ 3510.401005]  ? sriov_totalvfs_show+0x30/0x30
+[ 3510.401007]  ? __mutex_lock_slowpath+0x10/0x10
+[ 3510.401011]  ? __check_object_size+0x15a/0x350
+[ 3510.401018]  kernfs_fop_write+0x280/0x3f0
+[ 3510.401022]  vfs_write+0x145/0x440
+[ 3510.401025]  ksys_write+0xab/0x160
+[ 3510.401028]  ? __ia32_sys_read+0xb0/0xb0
+[ 3510.401031]  ? fput_many+0x1a/0x120
+[ 3510.401032]  ? filp_close+0xf0/0x130
+[ 3510.401038]  do_syscall_64+0xa0/0x370
+[ 3510.401041]  ? page_fault+0x8/0x30
+[ 3510.401043]  entry_SYSCALL_64_after_hwframe+0x65/0xca
+[ 3510.401073] RIP: 0033:0x7f3a9bb842c0
+[ 3510.401079] Code: 73 01 c3 48 8b 0d d8 cb 2c 00 f7 d8 64 89 01 48 83 c8 ff c3 66 0f 1f 44 00 00 83 3d 89 24 2d 00 00 75 10 b8 01 00 00 00 0f 05 <48> 3d 
+---truncated---",Non disponible,Non disponible,,Non disponible,0.000270000,Faible,Linux,Linux,5.16
 Multiples vulnérabilités dans les produits IBM (02 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0002/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2024-47554,"Uncontrolled Resource Consumption vulnerability in Apache Commons IO.
 
 The org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.
@@ -318,115 +406,112 @@ The org.apache.commons.io.input.XmlStreamReader class may excessively consume CP
 This issue affects Apache Commons IO: from 2.0 before 2.14.0.
 
 Users are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",CWE-400,CWE-400 Uncontrolled Resource Consumption,,Non disponible,0.001730000,Faible,Apache Software Foundation,Apache Commons IO,2.0
-Multiples vulnérabilités dans les produits Qnap (05 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/,"Mon, 05 Jan 2026 00:00:00 +0000",CVE-2025-52863,"A buffer overflow vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains a user account, they can then exploit the vulnerability to modify memory or crash processes.
+Multiples vulnérabilités dans les produits Qnap (05 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/,"Mon, 05 Jan 2026 00:00:00 +0000",CVE-2025-52430,"A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.
 
 We have already fixed the vulnerability in the following versions:
 QTS 5.2.7.3256 build 20250913 and later
 QuTS hero h5.2.7.3256 build 20250913 and later
-QuTS hero h5.3.0.3192 build 20250716 and later",CWE-120,CWE-120,,Non disponible,0.001070000,Faible,QNAP Systems Inc.,QuTS hero,"h5.2.x, h5.3.x"
+QuTS hero h5.3.1.3250 build 20250912 and later",CWE-476,CWE-476,,Non disponible,0.001280000,Faible,QNAP Systems Inc.,QuTS hero,"h5.2.x, h5.3.x"
 Vulnérabilité dans MariaDB (05 janvier 2026),Avis,Une vulnérabilité a été découverte dans MariaDB. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0004/,"Mon, 05 Jan 2026 00:00:00 +0000",CVE-2025-13699,"MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MariaDB. Interaction with the mariadb-dump utility is required to exploit this vulnerability but attack vectors may vary depending on the implementation.
 
 The specific flaw exists within the handling of view names. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-27000.",CWE-22,CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'),,Non disponible,0.001240000,Faible,MariaDB,MariaDB,11.8.3
 Multiples vulnérabilités dans Centreon Open Tickets (06 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Centreon Open Tickets. Elles permettent à un attaquant de provoquer une injection SQL (SQLi) et une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0005/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-12514,"Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Centreon Infra Monitoring - Open-tickets (Notification rules configuration parameters, Open tickets modules) allows 
 
 SQL Injection to user with elevated privileges.This issue affects Infra Monitoring - Open-tickets: from 24.10.0 before 24.10.5, from 24.04.0 before 24.04.5, from 23.10.0 before 23.10.4.",CWE-89,CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'),7.2,Élevée,0.000240000,Faible,Centreon,Infra Monitoring - Open-tickets,"24.10.0, 24.04.0, 23.10.0"
-Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-59468,"This vulnerability allows a Backup Administrator to perform remote code execution (RCE) as the postgres user by sending a
-malicious password parameter.",Non disponible,Non disponible,9.0,Critique,0.002250000,Faible,Veeam,Backup and Recovery,13.0.0
+Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-59470,This vulnerability allows a Backup Operator to perform remote code execution (RCE) as the postgres user by sending a malicious interval or order parameter.,Non disponible,Non disponible,9.0,Critique,0.002250000,Faible,Veeam,Backup and Recovery,13.0.0
 Vulnérabilité dans Stormshield Network Security (06 janvier 2026),Avis,Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0007/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-31115,"XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",CWE-366,CWE-366: Race Condition within a Thread,,Non disponible,0.000770000,Faible,tukaani-project,xz,">= 5.3.3alpha, < 5.8.1"
-Multiples vulnérabilités dans Joomla! (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Joomla!. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0008/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-63082,Lack of input filtering leads to an XSS vector in the HTML filter code related to data URLs in img tags.,CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'),,Non disponible,0.000430000,Faible,Joomla! Project,Joomla! CMS,"4.0.0-5.4.1, 6.0.0-6.0.1"
+Multiples vulnérabilités dans Joomla! (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Joomla!. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0008/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-63083,Lack of output escaping leads to a XSS vector in the pagebreak plugin.,CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'),,Non disponible,0.000430000,Faible,Joomla! Project,Joomla! CMS,"3.9.0-5.4.1, 6.0.0-6.0.1"
 Vulnérabilité dans Google Chrome (07 janvier 2026),Avis,Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0009/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2026-0628,Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High),Non disponible,Insufficient policy enforcement,,Non disponible,0.000170000,Faible,Google,Chrome,143.0.7499.192
-Multiples vulnérabilités dans Curl (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-15079,"When doing SSH-based transfers using either SCP or SFTP, and setting the
-known_hosts file, libcurl could still mistakenly accept connecting to hosts
-*not present* in the specified file if they were added as recognized in the
-libssh *global* known_hosts file.",Non disponible,CWE-297 Improper Validation of Certificate with Host Mismatch,,Non disponible,0.000310000,Faible,curl,curl,"8.17.0, 8.16.0, 8.15.0, 8.14.1, 8.14.0, 8.13.0, 8.12.1, 8.12.0, 8.11.1, 8.11.0, 8.10.1, 8.10.0, 8.9.1, 8.9.0, 8.8.0, 8.7.1, 8.7.0, 8.6.0, 8.5.0, 8.4.0, 8.3.0, 8.2.1, 8.2.0, 8.1.2, 8.1.1, 8.1.0, 8.0.1, 8.0.0, 7.88.1, 7.88.0, 7.87.0, 7.86.0, 7.85.0, 7.84.0, 7.83.1, 7.83.0, 7.82.0, 7.81.0, 7.80.0, 7.79.1, 7.79.0, 7.78.0, 7.77.0, 7.76.1, 7.76.0, 7.75.0, 7.74.0, 7.73.0, 7.72.0, 7.71.1, 7.71.0, 7.70.0, 7.69.1, 7.69.0, 7.68.0, 7.67.0, 7.66.0, 7.65.3, 7.65.2, 7.65.1, 7.65.0, 7.64.1, 7.64.0, 7.63.0, 7.62.0, 7.61.1, 7.61.0, 7.60.0, 7.59.0, 7.58.0"
+Multiples vulnérabilités dans Curl (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-15224,"When doing SSH-based transfers using either SCP or SFTP, and asked to do
+public key authentication, curl would wrongly still ask and authenticate using
+a locally running SSH agent.",Non disponible,CWE-287 Improper Authentication,,Non disponible,0.000530000,Faible,curl,curl,"8.17.0, 8.16.0, 8.15.0, 8.14.1, 8.14.0, 8.13.0, 8.12.1, 8.12.0, 8.11.1, 8.11.0, 8.10.1, 8.10.0, 8.9.1, 8.9.0, 8.8.0, 8.7.1, 8.7.0, 8.6.0, 8.5.0, 8.4.0, 8.3.0, 8.2.1, 8.2.0, 8.1.2, 8.1.1, 8.1.0, 8.0.1, 8.0.0, 7.88.1, 7.88.0, 7.87.0, 7.86.0, 7.85.0, 7.84.0, 7.83.1, 7.83.0, 7.82.0, 7.81.0, 7.80.0, 7.79.1, 7.79.0, 7.78.0, 7.77.0, 7.76.1, 7.76.0, 7.75.0, 7.74.0, 7.73.0, 7.72.0, 7.71.1, 7.71.0, 7.70.0, 7.69.1, 7.69.0, 7.68.0, 7.67.0, 7.66.0, 7.65.3, 7.65.2, 7.65.1, 7.65.0, 7.64.1, 7.64.0, 7.63.0, 7.62.0, 7.61.1, 7.61.0, 7.60.0, 7.59.0, 7.58.0"
 Vulnérabilité dans Google Android (08 janvier 2026),Avis,Une vulnérabilité a été découverte dans Google Android. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0011/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-54957,"An issue was discovered in Dolby UDC 4.5 through 4.13. A crash of the DD+ decoder process can occur when a malformed DD+ bitstream is processed. When Evolution data is processed by evo_priv.c from the DD+ bitstream, the decoder writes that data into a buffer. The length calculation for a write can overflow due to an integer wraparound. This can lead to the allocated buffer being too small, and the out-of-bounds check of the subsequent write to be ineffective, leading to an out-of-bounds write.",Non disponible,n/a,,Non disponible,0.000470000,Faible,n/a,n/a,n/a
-Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0012/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-69260,"A message out-of-bounds read vulnerability in Trend Micro Apex Central could allow a remote attacker to create a denial-of-service condition on affected installations.
-
-Please note: authentication is not required in order to exploit this vulnerability.",CWE-346,CWE-346: Origin Validation Error,7.5,Élevée,0.000870000,Faible,"Trend Micro, Inc.",Trend Micro Apex Central,2019 (14.0)
+Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0012/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-69258,"A LoadLibraryEX vulnerability in Trend Micro Apex Central could allow an unauthenticated remote attacker to load an attacker-controlled DLL into a key executable, leading to execution of attacker-supplied code under the context of SYSTEM on affected installations.",CWE-290,CWE-290: Authentication Bypass by Spoofing,9.8,Critique,0.001530000,Faible,"Trend Micro, Inc.",Trend Micro Apex Central,2019 (14.0)
 Vulnérabilité dans Tenable Nessus Agent (08 janvier 2026),Avis,Une vulnérabilité a été découverte dans Tenable Nessus Agent. Elle permet à un attaquant de provoquer une élévation de privilèges.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0013/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-36640,,Non disponible,Non disponible,,Non disponible,,Non disponible,"Trend Micro, Inc.",Trend Micro Apex Central,2019 (14.0)
-Multiples vulnérabilités dans GitLab (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0014/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-11246,"GitLab has remediated an issue in GitLab CE/EE affecting all versions from 15.4 before 18.5.5, 18.6 before 18.6.3, and 18.7 before 18.7.1 that could have allowed an authenticated user with specific permissions to remove all project runners from unrelated projects by manipulating GraphQL runner associations.",CWE-1220,CWE-1220: Insufficient Granularity of Access Control,5.4,Moyenne,0.000140000,Faible,GitLab,GitLab,"15.4, 18.6, 18.7"
-Multiples vulnérabilités dans les produits Centreon (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Centreon. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0015/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-15026,"Missing Authentication for Critical Function vulnerability in Centreon Infra Monitoring centreon-awie (Awie import module) allows Accessing Functionality Not Properly Constrained by ACLs.
-
-This issue affects Infra Monitoring: from 25.10.0 before 25.10.2, from 24.10.0 before 24.10.3, from 24.04.0 before 24.04.3.",CWE-306,CWE-306 Missing Authentication for Critical Function,9.8,Critique,0.000310000,Faible,Centreon,Infra Monitoring,"25.10.0, 24.10.0, 24.04.0"
+Multiples vulnérabilités dans GitLab (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0014/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-9222,"GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2.2 before 18.5.5, 18.6 before 18.6.3, and 18.7 before 18.7.1 that could have allowed an authenticated user to achieve stored cross-site scripting by exploiting GitLab Flavored Markdown.",CWE-79,CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'),8.7,Élevée,0.000190000,Faible,GitLab,GitLab,"18.2.2, 18.6, 18.7"
+Multiples vulnérabilités dans les produits Centreon (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Centreon. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0015/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-5965,"In the backup parameters, a user with high privilege is able to concatenate custom instructions to the backup setup. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Centreon Infra Monitoring (Backup configuration in the administration setup modules) allows OS Command Injection.This issue affects Infra Monitoring: from 25.10.0 before 25.10.2, from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19.",CWE-78,CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'),7.2,Élevée,0.001550000,Faible,Centreon,Infra Monitoring,"25.10.0, 24.10.0, 24.04.0"
 Vulnérabilité dans les produits Moxa (09 janvier 2026),Avis,Une vulnérabilité a été découverte dans les produits Moxa. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0016/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2023-38408,"The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) NOTE: this issue exists because of an incomplete fix for CVE-2016-10009.",Non disponible,n/a,,Non disponible,0.687490000,Élevée,n/a,n/a,n/a
-Multiples vulnérabilités dans le noyau Linux de Red Hat (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une exécution de code arbitraire, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0017/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2023-53322,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux de Red Hat (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une exécution de code arbitraire, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0017/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-39806,"In the Linux kernel, the following vulnerability has been resolved:
 
-scsi: qla2xxx: Wait for io return on terminate rport
+HID: multitouch: fix slab out-of-bounds access in mt_report_fixup()
 
-System crash due to use after free.
-Current code allows terminate_rport_io to exit before making
-sure all IOs has returned. For FCP-2 device, IO's can hang
-on in HW because driver has not tear down the session in FW at
-first sign of cable pull. When dev_loss_tmo timer pops,
-terminate_rport_io is called and upper layer is about to
-free various resources. Terminate_rport_io trigger qla to do
-the final cleanup, but the cleanup might not be fast enough where it
-leave qla still holding on to the same resource.
+A malicious HID device can trigger a slab out-of-bounds during
+mt_report_fixup() by passing in report descriptor smaller than
+607 bytes. mt_report_fixup() attempts to patch byte offset 607
+of the descriptor with 0x25 by first checking if byte offset
+607 is 0x15 however it lacks bounds checks to verify if the
+descriptor is big enough before conducting this check. Fix
+this bug by ensuring the descriptor size is at least 608
+bytes before accessing it.
 
-Wait for IO's to return to upper layer before resources are freed.",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,2.6.34
-Multiples vulnérabilités dans le noyau Linux d'Ubuntu (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0018/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2024-49935,"In the Linux kernel, the following vulnerability has been resolved:
+Below is the KASAN splat after the out of bounds access happens:
 
-ACPI: PAD: fix crash in exit_round_robin()
+[   13.671954] ==================================================================
+[   13.672667] BUG: KASAN: slab-out-of-bounds in mt_report_fixup+0x103/0x110
+[   13.673297] Read of size 1 at addr ffff888103df39df by task kworker/0:1/10
+[   13.673297]
+[   13.673297] CPU: 0 UID: 0 PID: 10 Comm: kworker/0:1 Not tainted 6.15.0-00005-gec5d573d83f4-dirty #3
+[   13.673297] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.16.2-debian-1.16.2-1 04/04
+[   13.673297] Call Trace:
+[   13.673297]  <TASK>
+[   13.673297]  dump_stack_lvl+0x5f/0x80
+[   13.673297]  print_report+0xd1/0x660
+[   13.673297]  kasan_report+0xe5/0x120
+[   13.673297]  __asan_report_load1_noabort+0x18/0x20
+[   13.673297]  mt_report_fixup+0x103/0x110
+[   13.673297]  hid_open_report+0x1ef/0x810
+[   13.673297]  mt_probe+0x422/0x960
+[   13.673297]  hid_device_probe+0x2e2/0x6f0
+[   13.673297]  really_probe+0x1c6/0x6b0
+[   13.673297]  __driver_probe_device+0x24f/0x310
+[   13.673297]  driver_probe_device+0x4e/0x220
+[   13.673297]  __device_attach_driver+0x169/0x320
+[   13.673297]  bus_for_each_drv+0x11d/0x1b0
+[   13.673297]  __device_attach+0x1b8/0x3e0
+[   13.673297]  device_initial_probe+0x12/0x20
+[   13.673297]  bus_probe_device+0x13d/0x180
+[   13.673297]  device_add+0xe3a/0x1670
+[   13.673297]  hid_add_device+0x31d/0xa40
+[...]",Non disponible,Non disponible,,Non disponible,0.000360000,Faible,Linux,Linux,6.11
+Multiples vulnérabilités dans le noyau Linux d'Ubuntu (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0018/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2022-49390,"In the Linux kernel, the following vulnerability has been resolved:
 
-The kernel occasionally crashes in cpumask_clear_cpu(), which is called
-within exit_round_robin(), because when executing clear_bit(nr, addr) with
-nr set to 0xffffffff, the address calculation may cause misalignment within
-the memory, leading to access to an invalid memory address.
+macsec: fix UAF bug for real_dev
 
-----------
-BUG: unable to handle kernel paging request at ffffffffe0740618
-        ...
-CPU: 3 PID: 2919323 Comm: acpi_pad/14 Kdump: loaded Tainted: G           OE  X --------- -  - 4.18.0-425.19.2.el8_7.x86_64 #1
-        ...
-RIP: 0010:power_saving_thread+0x313/0x411 [acpi_pad]
-Code: 89 cd 48 89 d3 eb d1 48 c7 c7 55 70 72 c0 e8 64 86 b0 e4 c6 05 0d a1 02 00 01 e9 bc fd ff ff 45 89 e4 42 8b 04 a5 20 82 72 c0 <f0> 48 0f b3 05 f4 9c 01 00 42 c7 04 a5 20 82 72 c0 ff ff ff ff 31
-RSP: 0018:ff72a5d51fa77ec8 EFLAGS: 00010202
-RAX: 00000000ffffffff RBX: ff462981e5d8cb80 RCX: 0000000000000000
-RDX: 0000000000000000 RSI: 0000000000000246 RDI: 0000000000000246
-RBP: ff46297556959d80 R08: 0000000000000382 R09: ff46297c8d0f38d8
-R10: 0000000000000000 R11: 0000000000000001 R12: 000000000000000e
-R13: 0000000000000000 R14: ffffffffffffffff R15: 000000000000000e
-FS:  0000000000000000(0000) GS:ff46297a800c0000(0000) knlGS:0000000000000000
-CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-CR2: ffffffffe0740618 CR3: 0000007e20410004 CR4: 0000000000771ee0
-DR0: 0000000000000000 DR1: 0000000000000000 DR2: 0000000000000000
-DR3: 0000000000000000 DR6: 00000000fffe0ff0 DR7: 0000000000000400
-PKRU: 55555554
+Create a new macsec device but not get reference to real_dev. That can
+not ensure that real_dev is freed after macsec. That will trigger the
+UAF bug for real_dev as following:
+
+==================================================================
+BUG: KASAN: use-after-free in macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662
 Call Trace:
- ? acpi_pad_add+0x120/0x120 [acpi_pad]
- kthread+0x10b/0x130
- ? set_kthread_struct+0x50/0x50
- ret_from_fork+0x1f/0x40
-        ...
-CR2: ffffffffe0740618
+ ...
+ macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662
+ dev_get_iflink+0x73/0xe0 net/core/dev.c:637
+ default_operstate net/core/link_watch.c:42 [inline]
+ rfc2863_policy+0x233/0x2d0 net/core/link_watch.c:54
+ linkwatch_do_dev+0x2a/0x150 net/core/link_watch.c:161
 
-crash> dis -lr ffffffffc0726923
-        ...
-/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 114
-0xffffffffc0726918 <power_saving_thread+776>:	mov    %r12d,%r12d
-/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./include/linux/cpumask.h: 325
-0xffffffffc072691b <power_saving_thread+779>:	mov    -0x3f8d7de0(,%r12,4),%eax
-/usr/src/debug/kernel-4.18.0-425.19.2.el8_7/linux-4.18.0-425.19.2.el8_7.x86_64/./arch/x86/include/asm/bitops.h: 80
-0xffffffffc0726923 <power_saving_thread+787>:	lock btr %rax,0x19cf4(%rip)        # 0xffffffffc0740620 <pad_busy_cpus_bits>
+Allocated by task 22209:
+ ...
+ alloc_netdev_mqs+0x98/0x1100 net/core/dev.c:10549
+ rtnl_create_link+0x9d7/0xc00 net/core/rtnetlink.c:3235
+ veth_newlink+0x20e/0xa90 drivers/net/veth.c:1748
 
-crash> px tsk_in_cpu[14]
-$66 = 0xffffffff
+Freed by task 8:
+ ...
+ kfree+0xd6/0x4d0 mm/slub.c:4552
+ kvfree+0x42/0x50 mm/util.c:615
+ device_release+0x9f/0x240 drivers/base/core.c:2229
+ kobject_cleanup lib/kobject.c:673 [inline]
+ kobject_release lib/kobject.c:704 [inline]
+ kref_put include/linux/kref.h:65 [inline]
+ kobject_put+0x1c8/0x540 lib/kobject.c:721
+ netdev_run_todo+0x72e/0x10b0 net/core/dev.c:10327
 
-crash> px 0xffffffffc072692c+0x19cf4
-$99 = 0xffffffffc0740620
-
-crash> sym 0xffffffffc0740620
-ffffffffc0740620 (b) pad_busy_cpus_bits [acpi_pad]
-
-crash> px pad_busy_cpus_bits[0]
-$42 = 0xfffc0
-----------
-
-To fix this, ensure that tsk_in_cpu[tsk_index] != -1 before calling
-cpumask_clear_cpu() in exit_round_robin(), just as it is done in
-round_robin_cpu().
-
-[ rjw: Subject edit, avoid updates to the same value ]",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,2.6.32
+After commit faab39f63c1f (""net: allow out-of-order netdev unregistration"")
+and commit e5f80fcf869a (""ipv6: give an IPv6 dev to blackhole_netdev""), we
+can add dev_hold_track() in macsec_dev_init() and dev_put_track() in
+macsec_free_netdev() to fix the problem.",Non disponible,Non disponible,,Non disponible,0.000360000,Faible,Linux,Linux,5.4
 Multiples vulnérabilités dans le noyau Linux de SUSE (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0019/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2024-53093,"In the Linux kernel, the following vulnerability has been resolved:
 
 nvme-multipath: defer partition scanning
@@ -436,8 +521,6 @@ controller's scan_work context. If a path error occurs here, the IO will
 wait until a path becomes available or all paths are torn down, but that
 action also occurs within scan_work, so it would deadlock. Defer the
 partion scan to a different context that does not block scan_work.",Non disponible,Non disponible,,Non disponible,0.000140000,Faible,Linux,Linux,4.15
-Multiples vulnérabilités dans les produits IBM (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0020/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-36000,"IBM WebSphere Application Server Liberty 17.0.0.3 through 25.0.0.8 
-
-is vulnerable to stored cross-site scripting. This vulnerability allows a privileged user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),4.4,Moyenne,0.000150000,Faible,IBM,WebSphere Application Server Liberty,17.0.0.3
+Multiples vulnérabilités dans les produits IBM (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0020/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-36047,"IBM WebSphere Application Server Liberty 18.0.0.2 through 25.0.0.8 is vulnerable to a denial of service, caused by sending a specially-crafted request. A remote attacker could exploit this vulnerability to cause the server to consume memory resources.",CWE-770,CWE-770 Allocation of Resources Without Limits or Throttling,5.3,Moyenne,0.000850000,Faible,IBM,WebSphere Application Server Liberty,18.0.0.2
 Vulnérabilité dans Microsoft Edge (09 janvier 2026),Avis,Une vulnérabilité a été découverte dans Microsoft Edge. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0021/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-62224,User interface (ui) misrepresentation of critical information in Microsoft Edge for Android allows an authorized attacker to perform spoofing over a network.,CWE-451,CWE-451: User Interface (UI) Misrepresentation of Critical Information,5.5,Moyenne,0.000620000,Faible,Microsoft,Microsoft Edge for Android,1.0.0
 Multiples vulnérabilités dans les produits Microsoft (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0022/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-11964,"On Windows only, if libpcap needs to convert a Windows error message to UTF-8 and the message includes characters that UTF-8 represents using 4 bytes, utf_16le_to_utf_8_truncated() can write data beyond the end of the provided buffer.",CWE-787,CWE-787 Out-of-bounds Write,1.9,Faible,0.000150000,Faible,The Tcpdump Group,libpcap,1.10.0
