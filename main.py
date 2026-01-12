@@ -1,3 +1,4 @@
+import string
 import feedparser
 import requests
 import re
@@ -24,14 +25,27 @@ def to_json(data, filename):
 # fonction à utiliser de temps en temps pour ne pas spammer le site
 def extraire_rss():
     alertes = []
-    url_rss = "https://www.cert.ssi.gouv.fr/avis/feed/"
+    url_rss_avis = "https://www.cert.ssi.gouv.fr/avis/feed/"
+    url_rss_alerte = "https://www.cert.ssi.gouv.fr/alerte/feed/"
     headers = {'User-Agent': 'Mozilla/5.0'} # pour pas être ban de leur site
-    response = requests.get(url_rss, headers=headers, timeout=10)
-    rss_feed = feedparser.parse(response.content)
-    for entry in rss_feed.entries:
+    response_avis = requests.get(url_rss_avis, headers=headers, timeout=10)
+    rss_feed_avis = feedparser.parse(response_avis.content)
+    response_alerte = requests.get(url_rss_alerte, headers=headers, timeout=10)
+    rss_feed_alerte = feedparser.parse(response_alerte.content)
+    
+    for entry in rss_feed_avis.entries:
         alertes.append({
             "titre": entry.title,
-            "type": "Alerte" if "alerte" in entry.link else "Avis",
+            "type": "Avis",
+            "description": entry.description,
+            "lien": entry.link,
+            "date": entry.published
+        })
+
+    for entry in rss_feed_alerte.entries:
+        alertes.append({
+            "titre": entry.title,
+            "type": "Alerte",
             "description": entry.description,
             "lien": entry.link,
             "date": entry.published
@@ -52,8 +66,8 @@ def extraire_cve_alertes(alertes):
     for alerte in alertes:
         url_cve = alerte["lien"]
         url_cve += "json/"
-        response = requests.get(url_cve)
-        data = response.json()
+        response_avis = requests.get(url_cve)
+        data = response_avis.json()
         ref_cves.append(list(data["cves"]))
         cve_pattern = r"CVE-\d{4}-\d{4,7}"
         cve_list.append(list(set(re.findall(cve_pattern, str(data)))))
@@ -96,55 +110,73 @@ def gravite_epss(score):
 def enrichir_cve(cve_list):
     cve_enrichi = []
     for cve in cve_list:
-        cve_id = cve[0]
-        url_api_cve = f"https://cveawg.mitre.org/api/cve/{cve_id}"
-        response = requests.get(url_api_cve)
-        data = response.json()
-        # Extraire la description
-        description = data.get("containers", {}).get("cna", {}).get("descriptions", [{}])[0].get("value")
-        # Extraire le score CVSS
-        #ATTENTION tous les CVE ne contiennent pas nécessairement ce champ, gérez l’exception,
-        #ou peut etre au lieu de cvssV3_0 c’est cvssV3_1 ou autre clé
-        cvss_score = data.get("containers", {}).get("cna", {}).get("metrics", [{}])[0].get("cvssV3_1", {}).get("baseScore")
-        cwe = "Non disponible"
-        cwe_desc="Non disponible"
-        problemtype = data.get("containers", {}).get("cna", {}).get("problemTypes", {})
-        if problemtype and "descriptions" in problemtype[0]:
-            cwe = problemtype[0]["descriptions"][0].get("cweId", "Non disponible")
-            cwe_desc=problemtype[0]["descriptions"][0].get("description", "Non disponible")
-        # Extraire les produits affectés
-        affected = data.get("containers", {}).get("cna", {}).get("affected", [])
-        for product in affected:
-            vendor = product.get("vendor", "")
-            product_name = product.get("product", "")
-            versions = [v["version"] for v in product.get("versions", []) if v.get("status", "") == "affected"]
+        print(cve)
+        if len(cve) >= 1:
+            cve_id = cve[0]
+            url_api_cve = f"https://cveawg.mitre.org/api/cve/{cve_id}"
+            response = requests.get(url_api_cve)
+            data = response.json()
+            # Extraire la description
+            description = data.get("containers", {}).get("cna", {}).get("descriptions", [{}])[0].get("value")
+            # Extraire le score CVSS
+            #ATTENTION tous les CVE ne contiennent pas nécessairement ce champ, gérez l’exception,
+            #ou peut etre au lieu de cvssV3_0 c’est cvssV3_1 ou autre clé
+            cvss_score = data.get("containers", {}).get("cna", {}).get("metrics", [{}])[0].get("cvssV3_1", {}).get("baseScore")
+            cwe = "Non disponible"
+            cwe_desc="Non disponible"
+            problemtype = data.get("containers", {}).get("cna", {}).get("problemTypes", {})
+            if problemtype and "descriptions" in problemtype[0]:
+                cwe = problemtype[0]["descriptions"][0].get("cweId", "Non disponible")
+                cwe_desc=problemtype[0]["descriptions"][0].get("description", "Non disponible")
+            # Extraire les produits affectés
+            affected = data.get("containers", {}).get("cna", {}).get("affected", [])
+            for product in affected:
+                vendor = product.get("vendor", "")
+                product_name = product.get("product", "")
+                versions = [v["version"] for v in product.get("versions", []) if v.get("status", "") == "affected"]
 
 
-        url_api_epss = f"https://api.first.org/data/v1/epss?cve={cve_id}"
-        # Requête GET pour récupérer les données JSON
-        response = requests.get(url_api_epss)
-        data = response.json()
-        # Extraire le score EPSS
-        epss_data = data.get("data", [])
-        if epss_data:
-            epss_score = epss_data[0]["epss"]
-        else:
-            epss_score = None
+            url_api_epss = f"https://api.first.org/data/v1/epss?cve={cve_id}"
+            # Requête GET pour récupérer les données JSON
+            response_avis = requests.get(url_api_epss)
+            data = response_avis.json()
+            # Extraire le score EPSS
+            epss_data = data.get("data", [])
+            if epss_data:
+                epss_score = epss_data[0]["epss"]
+            else:
+                epss_score = None
+                
             
-        
-        cve_enrichi.append({
-            "cve_id": cve_id,
-            "description": description,
-            "cwe": cwe,
-            "nature de la faille": cwe_desc,
-            "cvss_score": cvss_score,
-            "gravite_cvss": gravite_cvss(cvss_score),
-            "epss_score": epss_score,
-            "gravite_epss": gravite_epss(epss_score),
-            "editeur": vendor,
-            "produit": product_name,
-            "versions_affectees": versions
-        })
+            cve_enrichi.append({
+                "cve_id": cve_id,
+                "description": description,
+                "cwe": cwe,
+                "nature de la faille": cwe_desc,
+                "cvss_score": cvss_score,
+                "gravite_cvss": gravite_cvss(cvss_score),
+                "epss_score": epss_score,
+                "gravite_epss": gravite_epss(epss_score),
+                "editeur": vendor,
+                "produit": product_name,
+                "versions_affectees": versions
+            })
+
+        else:
+            cve_enrichi.append({
+                "cve_id": None,
+                "description": None,
+                "cwe": None,
+                "nature de la faille": None,
+                "cvss_score": None,
+                "gravite_cvss": None,
+                "epss_score": None,
+                "gravite_epss": None,
+                "editeur": None,
+                "produit": None,
+                "versions_affectees": None
+            })
+            
     
     return cve_enrichi
 

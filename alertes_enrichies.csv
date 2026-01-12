@@ -2,292 +2,276 @@ Titre Alerte,Type,Description,Lien,Date,CVE ID,Description CVE,CWE,Nature de la 
 Multiples vulnérabilités dans MISP (08 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans MISP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1076/,"Mon, 08 Dec 2025 00:00:00 +0000",CVE-2025-67906,"In MISP before 2.5.28, app/View/Elements/Workflows/executionPath.ctp allows XSS in the workflow execution path.",CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),5.4,Moyenne,0.000350000,Faible,MISP,MISP,0
 Vulnérabilité dans les produits Mitel (11 décembre 2025),Avis,Une vulnérabilité a été découverte dans les produits Mitel. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1097/,"Thu, 11 Dec 2025 00:00:00 +0000",CVE-2025-67823,,Non disponible,Non disponible,,Non disponible,,Non disponible,MISP,MISP,0
 Multiples vulnérabilités dans Roundcube (15 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans Roundcube. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1111/,"Mon, 15 Dec 2025 00:00:00 +0000",CVE-2025-68461,Roundcube Webmail before 1.5.12 and 1.6 before 1.6.12 is prone to a Cross-Site-Scripting (XSS) vulnerability via the animate tag in an SVG document.,CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),7.2,Élevée,0.000420000,Faible,Roundcube,Webmail,"0, 1.6.0"
-Multiples vulnérabilités dans les produits VMware (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-48924,"Uncontrolled Recursion vulnerability in Apache Commons Lang.
+Multiples vulnérabilités dans les produits VMware (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-66031,"Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. An Uncontrolled Recursion vulnerability in node-forge versions 1.3.1 and below enables remote, unauthenticated attackers to craft deep ASN.1 structures that trigger unbounded recursive parsing. This leads to a Denial-of-Service (DoS) via stack exhaustion when parsing untrusted DER inputs. This issue has been patched in version 1.3.2.",CWE-674,CWE-674: Uncontrolled Recursion,,Non disponible,0.001100000,Faible,digitalbazaar,forge,< 1.3.2
+Multiples vulnérabilités dans les produits Foxit (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-13941,"A local privilege escalation vulnerability exists in the Foxit PDF Reader/Editor Update Service. During plugin installation, incorrect file system permissions are assigned to resources used by the update service. A local attacker with low privileges could modify or replace these resources, which are later executed by the service, resulting in execution of arbitrary code with SYSTEM privileges.",CWE-732,CWE-732: Incorrect Permission Assignment for Critical Resource,8.8,Élevée,0.000120000,Faible,Foxit Software Inc.,Foxit PDF Editor,"Versions 2025.2.1 and earlier, Versions 14.0.1 and earlier, Versions 13.2.1 and eariler"
+Multiples vulnérabilités dans les produits IBM (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2022-3509,"A parsing issue similar to CVE-2022-3171, but with textformat in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.",Non disponible,n/a,7.5,Élevée,0.001310000,Faible,Google,ProtocolBuffers,"3.21.0, 3.20.0, 3.19.0, 3.16.0"
+Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2023-53213,"In the Linux kernel, the following vulnerability has been resolved:
 
-This issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.
+wifi: brcmfmac: slab-out-of-bounds read in brcmf_get_assoc_ies()
 
-The methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a 
-StackOverflowError could cause an application to stop.
+Fix a slab-out-of-bounds read that occurs in kmemdup() called from
+brcmf_get_assoc_ies().
+The bug could occur when assoc_info->req_len, data from a URB provided
+by a USB device, is bigger than the size of buffer which is defined as
+WL_EXTRA_BUF_MAX.
 
-Users are recommended to upgrade to version 3.18.0, which fixes the issue.",CWE-674,CWE-674 Uncontrolled Recursion,,Non disponible,0.000160000,Faible,Apache Software Foundation,Apache Commons Lang,3.0
-Multiples vulnérabilités dans les produits Foxit (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-66494,"A use-after-free vulnerability exists in the PDF file parsing of Foxit PDF Reader before 2025.2.1, 14.0.1, and 13.2.1 on Windows. A PDF object managed by multiple parent objects could be freed while still being referenced, potentially allowing a remote attacker to execute arbitrary code.",CWE-416,CWE-416 Use After Free,7.8,Élevée,0.000480000,Faible,Foxit Software Inc.,Foxit PDF Editor,"Versions 2025.2.1 and earlier, Versions 14.0.1 and earlier, Versions 13.2.1 and eariler"
-Multiples vulnérabilités dans les produits IBM (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2022-30635,Uncontrolled recursion in Decoder.Decode in encoding/gob before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a message which contains deeply nested structures.,Non disponible,CWE-674: Uncontrolled Recursion,,Non disponible,0.000870000,Faible,Go standard library,encoding/gob,"0, 1.18.0-0"
-Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2023-53297,"In the Linux kernel, the following vulnerability has been resolved:
+Add the size check for req_len/resp_len of assoc_info.
 
-Bluetooth: L2CAP: fix ""bad unlock balance"" in l2cap_disconnect_rsp
+Found by a modified version of syzkaller.
 
-conn->chan_lock isn't acquired before l2cap_get_chan_by_scid,
-if l2cap_get_chan_by_scid returns NULL, then 'bad unlock balance'
-is triggered.",Non disponible,Non disponible,,Non disponible,0.000160000,Faible,Linux,Linux,6.3
-Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-40047,"In the Linux kernel, the following vulnerability has been resolved:
+[   46.592467][    T7] ==================================================================
+[   46.594687][    T7] BUG: KASAN: slab-out-of-bounds in kmemdup+0x3e/0x50
+[   46.596572][    T7] Read of size 3014656 at addr ffff888019442000 by task kworker/0:1/7
+[   46.598575][    T7]
+[   46.599157][    T7] CPU: 0 PID: 7 Comm: kworker/0:1 Tainted: G           O      5.14.0+ #145
+[   46.601333][    T7] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.12.1-0-ga5cab58e9a3f-prebuilt.qemu.org 04/01/2014
+[   46.604360][    T7] Workqueue: events brcmf_fweh_event_worker
+[   46.605943][    T7] Call Trace:
+[   46.606584][    T7]  dump_stack_lvl+0x8e/0xd1
+[   46.607446][    T7]  print_address_description.constprop.0.cold+0x93/0x334
+[   46.608610][    T7]  ? kmemdup+0x3e/0x50
+[   46.609341][    T7]  kasan_report.cold+0x79/0xd5
+[   46.610151][    T7]  ? kmemdup+0x3e/0x50
+[   46.610796][    T7]  kasan_check_range+0x14e/0x1b0
+[   46.611691][    T7]  memcpy+0x20/0x60
+[   46.612323][    T7]  kmemdup+0x3e/0x50
+[   46.612987][    T7]  brcmf_get_assoc_ies+0x967/0xf60
+[   46.613904][    T7]  ? brcmf_notify_vif_event+0x3d0/0x3d0
+[   46.614831][    T7]  ? lock_chain_count+0x20/0x20
+[   46.615683][    T7]  ? mark_lock.part.0+0xfc/0x2770
+[   46.616552][    T7]  ? lock_chain_count+0x20/0x20
+[   46.617409][    T7]  ? mark_lock.part.0+0xfc/0x2770
+[   46.618244][    T7]  ? lock_chain_count+0x20/0x20
+[   46.619024][    T7]  brcmf_bss_connect_done.constprop.0+0x241/0x2e0
+[   46.620019][    T7]  ? brcmf_parse_configure_security.isra.0+0x2a0/0x2a0
+[   46.620818][    T7]  ? __lock_acquire+0x181f/0x5790
+[   46.621462][    T7]  brcmf_notify_connect_status+0x448/0x1950
+[   46.622134][    T7]  ? rcu_read_lock_bh_held+0xb0/0xb0
+[   46.622736][    T7]  ? brcmf_cfg80211_join_ibss+0x7b0/0x7b0
+[   46.623390][    T7]  ? find_held_lock+0x2d/0x110
+[   46.623962][    T7]  ? brcmf_fweh_event_worker+0x19f/0xc60
+[   46.624603][    T7]  ? mark_held_locks+0x9f/0xe0
+[   46.625145][    T7]  ? lockdep_hardirqs_on_prepare+0x3e0/0x3e0
+[   46.625871][    T7]  ? brcmf_cfg80211_join_ibss+0x7b0/0x7b0
+[   46.626545][    T7]  brcmf_fweh_call_event_handler.isra.0+0x90/0x100
+[   46.627338][    T7]  brcmf_fweh_event_worker+0x557/0xc60
+[   46.627962][    T7]  ? brcmf_fweh_call_event_handler.isra.0+0x100/0x100
+[   46.628736][    T7]  ? rcu_read_lock_sched_held+0xa1/0xd0
+[   46.629396][    T7]  ? rcu_read_lock_bh_held+0xb0/0xb0
+[   46.629970][    T7]  ? lockdep_hardirqs_on_prepare+0x273/0x3e0
+[   46.630649][    T7]  process_one_work+0x92b/0x1460
+[   46.631205][    T7]  ? pwq_dec_nr_in_flight+0x330/0x330
+[   46.631821][    T7]  ? rwlock_bug.part.0+0x90/0x90
+[   46.632347][    T7]  worker_thread+0x95/0xe00
+[   46.632832][    T7]  ? __kthread_parkme+0x115/0x1e0
+[   46.633393][    T7]  ? process_one_work+0x1460/0x1460
+[   46.633957][    T7]  kthread+0x3a1/0x480
+[   46.634369][    T7]  ? set_kthread_struct+0x120/0x120
+[   46.634933][    T7]  ret_from_fork+0x1f/0x30
+[   46.635431][    T7]
+[   46.635687][    T7] Allocated by task 7:
+[   46.636151][    T7]  kasan_save_stack+0x1b/0x40
+[   46.636628][    T7]  __kasan_kmalloc+0x7c/0x90
+[   46.637108][    T7]  kmem_cache_alloc_trace+0x19e/0x330
+[   46.637696][    T7]  brcmf_cfg80211_attach+0x4a0/0x4040
+[   46.638275][    T7]  brcmf_attach+0x389/0xd40
+[   46.638739][    T7]  brcmf_usb_probe+0x12de/0x1690
+[   46.639279][    T7]  usb_probe_interface+0x2aa/0x760
+[   46.639820][    T7]  really_probe+0x205/0xb70
+[   46.640342][    T7]  __driver_probe_device+0
+---truncated---",Non disponible,Non disponible,,Non disponible,0.000160000,Faible,Linux,Linux,2.6.37
+Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-40169,"In the Linux kernel, the following vulnerability has been resolved:
 
-io_uring/waitid: always prune wait queue entry in io_waitid_wait()
+bpf: Reject negative offsets for ALU ops
 
-For a successful return, always remove our entry from the wait queue
-entry list. Previously this was skipped if a cancelation was in
-progress, but this can race with another invocation of the wait queue
-entry callback.",Non disponible,Non disponible,,Non disponible,0.000250000,Faible,Linux,Linux,6.7
+When verifying BPF programs, the check_alu_op() function validates
+instructions with ALU operations. The 'offset' field in these
+instructions is a signed 16-bit integer.
+
+The existing check 'insn->off > 1' was intended to ensure the offset is
+either 0, or 1 for BPF_MOD/BPF_DIV. However, because 'insn->off' is
+signed, this check incorrectly accepts all negative values (e.g., -1).
+
+This commit tightens the validation by changing the condition to
+'(insn->off != 0 && insn->off != 1)'. This ensures that any value
+other than the explicitly permitted 0 and 1 is rejected, hardening the
+verifier against malformed BPF programs.",Non disponible,Non disponible,,Non disponible,0.000250000,Faible,Linux,Linux,6.6
 Multiples vulnérabilités dans MongoDB Server (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans MongoDB Server. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1134/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-14847,"Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all MongoDB Server v7.0 prior to 7.0.28 versions, MongoDB Server v8.0 versions prior to 8.0.17, MongoDB Server v8.2 versions prior to 8.2.3, MongoDB Server v6.0 versions prior to 6.0.27, MongoDB Server v5.0 versions prior to 5.0.32, MongoDB Server v4.4 versions prior to 4.4.30, MongoDB Server v4.2 versions greater than or equal to 4.2.0, MongoDB Server v4.0 versions greater than or equal to 4.0.0, and MongoDB Server v3.6 versions greater than or equal to 3.6.0.",CWE-130,CWE-130: Improper Handling of Length Parameter Inconsistency,,Non disponible,0.696220000,Élevée,MongoDB Inc.,MongoDB Server,"8.2, 8.0, 7.0, 6.0, 5.0, 4.4, 4.2, 4.0, 3.6"
-Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-38439,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-39866,"In the Linux kernel, the following vulnerability has been resolved:
 
-bnxt_en: Set DMA unmap len correctly for XDP_REDIRECT
+fs: writeback: fix use-after-free in __mark_inode_dirty()
 
-When transmitting an XDP_REDIRECT packet, call dma_unmap_len_set()
-with the proper length instead of 0.  This bug triggers this warning
-on a system with IOMMU enabled:
+An use-after-free issue occurred when __mark_inode_dirty() get the
+bdi_writeback that was in the progress of switching.
 
-WARNING: CPU: 36 PID: 0 at drivers/iommu/dma-iommu.c:842 __iommu_dma_unmap+0x159/0x170
-RIP: 0010:__iommu_dma_unmap+0x159/0x170
-Code: a8 00 00 00 00 48 c7 45 b0 00 00 00 00 48 c7 45 c8 00 00 00 00 48 c7 45 a0 ff ff ff ff 4c 89 45
-b8 4c 89 45 c0 e9 77 ff ff ff <0f> 0b e9 60 ff ff ff e8 8b bf 6a 00 66 66 2e 0f 1f 84 00 00 00 00
-RSP: 0018:ff22d31181150c88 EFLAGS: 00010206
-RAX: 0000000000002000 RBX: 00000000e13a0000 RCX: 0000000000000000
-RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
-RBP: ff22d31181150cf0 R08: ff22d31181150ca8 R09: 0000000000000000
-R10: 0000000000000000 R11: ff22d311d36c9d80 R12: 0000000000001000
-R13: ff13544d10645010 R14: ff22d31181150c90 R15: ff13544d0b2bac00
-FS: 0000000000000000(0000) GS:ff13550908a00000(0000) knlGS:0000000000000000
-CS: 0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-CR2: 00005be909dacff8 CR3: 0008000173408003 CR4: 0000000000f71ef0
-PKRU: 55555554
-Call Trace:
-<IRQ>
-? show_regs+0x6d/0x80
-? __warn+0x89/0x160
-? __iommu_dma_unmap+0x159/0x170
-? report_bug+0x17e/0x1b0
-? handle_bug+0x46/0x90
-? exc_invalid_op+0x18/0x80
-? asm_exc_invalid_op+0x1b/0x20
-? __iommu_dma_unmap+0x159/0x170
-? __iommu_dma_unmap+0xb3/0x170
-iommu_dma_unmap_page+0x4f/0x100
-dma_unmap_page_attrs+0x52/0x220
-? srso_alias_return_thunk+0x5/0xfbef5
-? xdp_return_frame+0x2e/0xd0
-bnxt_tx_int_xdp+0xdf/0x440 [bnxt_en]
-__bnxt_poll_work_done+0x81/0x1e0 [bnxt_en]
-bnxt_poll+0xd3/0x1e0 [bnxt_en]",Non disponible,Non disponible,,Non disponible,0.000180000,Faible,Linux,Linux,5.3
-Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-40109,"In the Linux kernel, the following vulnerability has been resolved:
+CPU: 1 PID: 562 Comm: systemd-random- Not tainted 6.6.56-gb4403bd46a8e #1
+......
+pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+pc : __mark_inode_dirty+0x124/0x418
+lr : __mark_inode_dirty+0x118/0x418
+sp : ffffffc08c9dbbc0
+........
+Call trace:
+ __mark_inode_dirty+0x124/0x418
+ generic_update_time+0x4c/0x60
+ file_modified+0xcc/0xd0
+ ext4_buffered_write_iter+0x58/0x124
+ ext4_file_write_iter+0x54/0x704
+ vfs_write+0x1c0/0x308
+ ksys_write+0x74/0x10c
+ __arm64_sys_write+0x1c/0x28
+ invoke_syscall+0x48/0x114
+ el0_svc_common.constprop.0+0xc0/0xe0
+ do_el0_svc+0x1c/0x28
+ el0_svc+0x40/0xe4
+ el0t_64_sync_handler+0x120/0x12c
+ el0t_64_sync+0x194/0x198
 
-crypto: rng - Ensure set_ent is always present
+Root cause is:
 
-Ensure that set_ent is always set since only drbg provides it.",Non disponible,Non disponible,,Non disponible,0.000510000,Faible,Linux,Linux,5.10
-Multiples vulnérabilités dans PHP (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-67899,"uriparser through 0.9.9 allows unbounded recursion and stack consumption, as demonstrated by ParseMustBeSegmentNzNc with large input containing many commas.",CWE-674,CWE-674 Uncontrolled Recursion,2.9,Faible,0.000160000,Faible,uriparser project,uriparser,0
-Multiples vulnérabilités dans les produits IBM (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-9288,Improper Input Validation vulnerability in sha.js allows Input Data Manipulation.This issue affects sha.js: through 2.4.11.,CWE-20,CWE-20 Improper Input Validation,,Non disponible,0.000590000,Faible,,,0
+systemd-random-seed                         kworker
+----------------------------------------------------------------------
+___mark_inode_dirty                     inode_switch_wbs_work_fn
+
+  spin_lock(&inode->i_lock);
+  inode_attach_wb
+  locked_inode_to_wb_and_lock_list
+     get inode->i_wb
+     spin_unlock(&inode->i_lock);
+     spin_lock(&wb->list_lock)
+  spin_lock(&inode->i_lock)
+  inode_io_list_move_locked
+  spin_unlock(&wb->list_lock)
+  spin_unlock(&inode->i_lock)
+                                    spin_lock(&old_wb->list_lock)
+                                      inode_do_switch_wbs
+                                        spin_lock(&inode->i_lock)
+                                        inode->i_wb = new_wb
+                                        spin_unlock(&inode->i_lock)
+                                    spin_unlock(&old_wb->list_lock)
+                                    wb_put_many(old_wb, nr_switched)
+                                      cgwb_release
+                                      old wb released
+  wb_wakeup_delayed() accesses wb,
+  then trigger the use-after-free
+  issue
+
+Fix this race condition by holding inode spinlock until
+wb_wakeup_delayed() finished.",Non disponible,Non disponible,,Non disponible,0.000530000,Faible,Linux,Linux,4.2
+Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-39907,"In the Linux kernel, the following vulnerability has been resolved:
+
+mtd: rawnand: stm32_fmc2: avoid overlapping mappings on ECC buffer
+
+Avoid below overlapping mappings by using a contiguous
+non-cacheable buffer.
+
+[    4.077708] DMA-API: stm32_fmc2_nfc 48810000.nand-controller: cacheline tracking EEXIST,
+overlapping mappings aren't supported
+[    4.089103] WARNING: CPU: 1 PID: 44 at kernel/dma/debug.c:568 add_dma_entry+0x23c/0x300
+[    4.097071] Modules linked in:
+[    4.100101] CPU: 1 PID: 44 Comm: kworker/u4:2 Not tainted 6.1.82 #1
+[    4.106346] Hardware name: STMicroelectronics STM32MP257F VALID1 SNOR / MB1704 (LPDDR4 Power discrete) + MB1703 + MB1708 (SNOR MB1730) (DT)
+[    4.118824] Workqueue: events_unbound deferred_probe_work_func
+[    4.124674] pstate: 60000005 (nZCv daif -PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[    4.131624] pc : add_dma_entry+0x23c/0x300
+[    4.135658] lr : add_dma_entry+0x23c/0x300
+[    4.139792] sp : ffff800009dbb490
+[    4.143016] x29: ffff800009dbb4a0 x28: 0000000004008022 x27: ffff8000098a6000
+[    4.150174] x26: 0000000000000000 x25: ffff8000099e7000 x24: ffff8000099e7de8
+[    4.157231] x23: 00000000ffffffff x22: 0000000000000000 x21: ffff8000098a6a20
+[    4.164388] x20: ffff000080964180 x19: ffff800009819ba0 x18: 0000000000000006
+[    4.171545] x17: 6361727420656e69 x16: 6c6568636163203a x15: 72656c6c6f72746e
+[    4.178602] x14: 6f632d646e616e2e x13: ffff800009832f58 x12: 00000000000004ec
+[    4.185759] x11: 00000000000001a4 x10: ffff80000988af58 x9 : ffff800009832f58
+[    4.192916] x8 : 00000000ffffefff x7 : ffff80000988af58 x6 : 80000000fffff000
+[    4.199972] x5 : 000000000000bff4 x4 : 0000000000000000 x3 : 0000000000000000
+[    4.207128] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff0000812d2c40
+[    4.214185] Call trace:
+[    4.216605]  add_dma_entry+0x23c/0x300
+[    4.220338]  debug_dma_map_sg+0x198/0x350
+[    4.224373]  __dma_map_sg_attrs+0xa0/0x110
+[    4.228411]  dma_map_sg_attrs+0x10/0x2c
+[    4.232247]  stm32_fmc2_nfc_xfer.isra.0+0x1c8/0x3fc
+[    4.237088]  stm32_fmc2_nfc_seq_read_page+0xc8/0x174
+[    4.242127]  nand_read_oob+0x1d4/0x8e0
+[    4.245861]  mtd_read_oob_std+0x58/0x84
+[    4.249596]  mtd_read_oob+0x90/0x150
+[    4.253231]  mtd_read+0x68/0xac",Non disponible,Non disponible,,Non disponible,0.000710000,Faible,Linux,Linux,5.1
+Multiples vulnérabilités dans PHP (19 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/,"Fri, 19 Dec 2025 00:00:00 +0000",CVE-2025-14177,"In PHP versions:8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1, the getimagesize() function may leak uninitialized heap memory into the APPn segments (e.g., APP1) when reading images in multi-chunk mode (such as via php://filter). This occurs due to a bug in php_read_stream_all_chunks() that overwrites the buffer without advancing the pointer, leaving tail bytes uninitialized. This may lead to information disclosure of sensitive heap data and affect the confidentiality of the target server.",CWE-125,CWE-125 Out-of-bounds Read,,Non disponible,0.000380000,Faible,PHP Group,PHP,"8.1.*, 8.2.*, 8.3.*, 8.4.*, 8.5.*"
+Multiples vulnérabilités dans les produits IBM (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2022-3509,"A parsing issue similar to CVE-2022-3171, but with textformat in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.",Non disponible,n/a,7.5,Élevée,0.001310000,Faible,Google,ProtocolBuffers,"3.21.0, 3.20.0, 3.19.0, 3.16.0"
 Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-62164,"vLLM is an inference and serving engine for large language models (LLMs). From versions 0.10.2 to before 0.11.1, a memory corruption vulnerability could lead to a crash (denial-of-service) and potentially remote code execution (RCE), exists in the Completions API endpoint. When processing user-supplied prompt embeddings, the endpoint loads serialized tensors using torch.load() without sufficient validation. Due to a change introduced in PyTorch 2.8.0, sparse tensor integrity checks are disabled by default. As a result, maliciously crafted tensors can bypass internal bounds checks and trigger an out-of-bounds memory write during the call to to_dense(). This memory corruption can crash vLLM and potentially lead to code execution on the server hosting vLLM. This issue has been patched in version 0.11.1.",CWE-20,CWE-20: Improper Input Validation,8.8,Élevée,0.003410000,Faible,vllm-project,vllm,">= 0.10.2, < 0.11.1"
-Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2024-50067,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2024-50196,"In the Linux kernel, the following vulnerability has been resolved:
 
-uprobe: avoid out-of-bounds memory access of fetching args
+pinctrl: ocelot: fix system hang on level based interrupts
 
-Uprobe needs to fetch args into a percpu buffer, and then copy to ring
-buffer to avoid non-atomic context problem.
-
-Sometimes user-space strings, arrays can be very large, but the size of
-percpu buffer is only page size. And store_trace_args() won't check
-whether these data exceeds a single page or not, caused out-of-bounds
-memory access.
-
-It could be reproduced by following steps:
-1. build kernel with CONFIG_KASAN enabled
-2. save follow program as test.c
+The current implementation only calls chained_irq_enter() and
+chained_irq_exit() if it detects pending interrupts.
 
 ```
-\#include <stdio.h>
-\#include <stdlib.h>
-\#include <string.h>
+for (i = 0; i < info->stride; i++) {
+	uregmap_read(info->map, id_reg + 4 * i, &reg);
+	if (!reg)
+		continue;
 
-// If string length large than MAX_STRING_SIZE, the fetch_store_strlen()
-// will return 0, cause __get_data_size() return shorter size, and
-// store_trace_args() will not trigger out-of-bounds access.
-// So make string length less than 4096.
-\#define STRLEN 4093
-
-void generate_string(char *str, int n)
-{
-    int i;
-    for (i = 0; i < n; ++i)
-    {
-        char c = i % 26 + 'a';
-        str[i] = c;
-    }
-    str[n-1] = '\0';
-}
-
-void print_string(char *str)
-{
-    printf(""%s\n"", str);
-}
-
-int main()
-{
-    char tmp[STRLEN];
-
-    generate_string(tmp, STRLEN);
-    print_string(tmp);
-
-    return 0;
-}
-```
-3. compile program
-`gcc -o test test.c`
-
-4. get the offset of `print_string()`
-```
-objdump -t test | grep -w print_string
-0000000000401199 g     F .text  000000000000001b              print_string
+	chained_irq_enter(parent_chip, desc);
 ```
 
-5. configure uprobe with offset 0x1199
-```
-off=0x1199
+However, in case of GPIO pin configured in level mode and the parent
+controller configured in edge mode, GPIO interrupt might be lowered by the
+hardware. In the result, if the interrupt is short enough, the parent
+interrupt is still pending while the GPIO interrupt is cleared;
+chained_irq_enter() never gets called and the system hangs trying to
+service the parent interrupt.
 
-cd /sys/kernel/debug/tracing/
-echo ""p /root/test:${off} arg1=+0(%di):ustring arg2=\$comm arg3=+0(%di):ustring""
- > uprobe_events
-echo 1 > events/uprobes/enable
-echo 1 > tracing_on
-```
+Moving chained_irq_enter() and chained_irq_exit() outside the for loop
+ensures that they are called even when GPIO interrupt is lowered by the
+hardware.
 
-6. run `test`, and kasan will report error.
-==================================================================
-BUG: KASAN: use-after-free in strncpy_from_user+0x1d6/0x1f0
-Write of size 8 at addr ffff88812311c004 by task test/499CPU: 0 UID: 0 PID: 499 Comm: test Not tainted 6.12.0-rc3+ #18
-Hardware name: Red Hat KVM, BIOS 1.16.0-4.al8 04/01/2014
+The similar code with chained_irq_enter() / chained_irq_exit() functions
+wrapping interrupt checking loop may be found in many other drivers:
+```
+grep -r -A 10 chained_irq_enter drivers/pinctrl
+```",Non disponible,Non disponible,,Non disponible,0.000120000,Faible,Linux,Linux,4.16
+Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2025-40206,"In the Linux kernel, the following vulnerability has been resolved:
+
+netfilter: nft_objref: validate objref and objrefmap expressions
+
+Referencing a synproxy stateful object from OUTPUT hook causes kernel
+crash due to infinite recursive calls:
+
+BUG: TASK stack guard page was hit at 000000008bda5b8c (stack is 000000003ab1c4a5..00000000494d8b12)
+[...]
 Call Trace:
- <TASK>
- dump_stack_lvl+0x55/0x70
- print_address_description.constprop.0+0x27/0x310
- kasan_report+0x10f/0x120
- ? strncpy_from_user+0x1d6/0x1f0
- strncpy_from_user+0x1d6/0x1f0
- ? rmqueue.constprop.0+0x70d/0x2ad0
- process_fetch_insn+0xb26/0x1470
- ? __pfx_process_fetch_insn+0x10/0x10
- ? _raw_spin_lock+0x85/0xe0
- ? __pfx__raw_spin_lock+0x10/0x10
- ? __pte_offset_map+0x1f/0x2d0
- ? unwind_next_frame+0xc5f/0x1f80
- ? arch_stack_walk+0x68/0xf0
- ? is_bpf_text_address+0x23/0x30
- ? kernel_text_address.part.0+0xbb/0xd0
- ? __kernel_text_address+0x66/0xb0
- ? unwind_get_return_address+0x5e/0xa0
- ? __pfx_stack_trace_consume_entry+0x10/0x10
- ? arch_stack_walk+0xa2/0xf0
- ? _raw_spin_lock_irqsave+0x8b/0xf0
- ? __pfx__raw_spin_lock_irqsave+0x10/0x10
- ? depot_alloc_stack+0x4c/0x1f0
- ? _raw_spin_unlock_irqrestore+0xe/0x30
- ? stack_depot_save_flags+0x35d/0x4f0
- ? kasan_save_stack+0x34/0x50
- ? kasan_save_stack+0x24/0x50
- ? mutex_lock+0x91/0xe0
- ? __pfx_mutex_lock+0x10/0x10
- prepare_uprobe_buffer.part.0+0x2cd/0x500
- uprobe_dispatcher+0x2c3/0x6a0
- ? __pfx_uprobe_dispatcher+0x10/0x10
- ? __kasan_slab_alloc+0x4d/0x90
- handler_chain+0xdd/0x3e0
- handle_swbp+0x26e/0x3d0
- ? __pfx_handle_swbp+0x10/0x10
- ? uprobe_pre_sstep_notifier+0x151/0x1b0
- irqentry_exit_to_user_mode+0xe2/0x1b0
- asm_exc_int3+0x39/0x40
-RIP: 0033:0x401199
-Code: 01 c2 0f b6 45 fb 88 02 83 45 fc 01 8b 45 fc 3b 45 e4 7c b7 8b 45 e4 48 98 48 8d 50 ff 48 8b 45 e8 48 01 d0 ce
-RSP: 002b:00007ffdf00576a8 EFLAGS: 00000206
-RAX: 00007ffdf00576b0 RBX: 0000000000000000 RCX: 0000000000000ff2
-RDX: 0000000000000ffc RSI: 0000000000000ffd RDI: 00007ffdf00576b0
-RBP: 00007ffdf00586b0 R08: 00007feb2f9c0d20 R09: 00007feb2f9c0d20
-R10: 0000000000000001 R11: 0000000000000202 R12: 0000000000401040
-R13: 00007ffdf0058780 R14: 0000000000000000 R15: 0000000000000000
- </TASK>
+ __find_rr_leaf+0x99/0x230
+ fib6_table_lookup+0x13b/0x2d0
+ ip6_pol_route+0xa4/0x400
+ fib6_rule_lookup+0x156/0x240
+ ip6_route_output_flags+0xc6/0x150
+ __nf_ip6_route+0x23/0x50
+ synproxy_send_tcp_ipv6+0x106/0x200
+ synproxy_send_client_synack_ipv6+0x1aa/0x1f0
+ nft_synproxy_do_eval+0x263/0x310
+ nft_do_chain+0x5a8/0x5f0 [nf_tables
+ nft_do_chain_inet+0x98/0x110
+ nf_hook_slow+0x43/0xc0
+ __ip6_local_out+0xf0/0x170
+ ip6_local_out+0x17/0x70
+ synproxy_send_tcp_ipv6+0x1a2/0x200
+ synproxy_send_client_synack_ipv6+0x1aa/0x1f0
+[...]
 
-This commit enforces the buffer's maxlen less than a page-size to avoid
-store_trace_args() out-of-memory access.",Non disponible,Non disponible,,Non disponible,0.000310000,Faible,Linux,Linux,3.14
-Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2022-50280,"In the Linux kernel, the following vulnerability has been resolved:
+Implement objref and objrefmap expression validate functions.
 
-pnode: terminate at peers of source
+Currently, only NFT_OBJECT_SYNPROXY object type requires validation.
+This will also handle a jump to a chain using a synproxy object from the
+OUTPUT hook.
 
-The propagate_mnt() function handles mount propagation when creating
-mounts and propagates the source mount tree @source_mnt to all
-applicable nodes of the destination propagation mount tree headed by
-@dest_mnt.
+Now when trying to reference a synproxy object in the OUTPUT hook, nft
+will produce the following error:
 
-Unfortunately it contains a bug where it fails to terminate at peers of
-@source_mnt when looking up copies of the source mount that become
-masters for copies of the source mount tree mounted on top of slaves in
-the destination propagation tree causing a NULL dereference.
-
-Once the mechanics of the bug are understood it's easy to trigger.
-Because of unprivileged user namespaces it is available to unprivileged
-users.
-
-While fixing this bug we've gotten confused multiple times due to
-unclear terminology or missing concepts. So let's start this with some
-clarifications:
-
-* The terms ""master"" or ""peer"" denote a shared mount. A shared mount
-  belongs to a peer group.
-
-* A peer group is a set of shared mounts that propagate to each other.
-  They are identified by a peer group id. The peer group id is available
-  in @shared_mnt->mnt_group_id.
-  Shared mounts within the same peer group have the same peer group id.
-  The peers in a peer group can be reached via @shared_mnt->mnt_share.
-
-* The terms ""slave mount"" or ""dependent mount"" denote a mount that
-  receives propagation from a peer in a peer group. IOW, shared mounts
-  may have slave mounts and slave mounts have shared mounts as their
-  master. Slave mounts of a given peer in a peer group are listed on
-  that peers slave list available at @shared_mnt->mnt_slave_list.
-
-* The term ""master mount"" denotes a mount in a peer group. IOW, it
-  denotes a shared mount or a peer mount in a peer group. The term
-  ""master mount"" - or ""master"" for short - is mostly used when talking
-  in the context of slave mounts that receive propagation from a master
-  mount. A master mount of a slave identifies the closest peer group a
-  slave mount receives propagation from. The master mount of a slave can
-  be identified via @slave_mount->mnt_master. Different slaves may point
-  to different masters in the same peer group.
-
-* Multiple peers in a peer group can have non-empty ->mnt_slave_lists.
-  Non-empty ->mnt_slave_lists of peers don't intersect. Consequently, to
-  ensure all slave mounts of a peer group are visited the
-  ->mnt_slave_lists of all peers in a peer group have to be walked.
-
-* Slave mounts point to a peer in the closest peer group they receive
-  propagation from via @slave_mnt->mnt_master (see above). Together with
-  these peers they form a propagation group (see below). The closest
-  peer group can thus be identified through the peer group id
-  @slave_mnt->mnt_master->mnt_group_id of the peer/master that a slave
-  mount receives propagation from.
-
-* A shared-slave mount is a slave mount to a peer group pg1 while also
-  a peer in another peer group pg2. IOW, a peer group may receive
-  propagation from another peer group.
-
-  If a peer group pg1 is a slave to another peer group pg2 then all
-  peers in peer group pg1 point to the same peer in peer group pg2 via
-  ->mnt_master. IOW, all peers in peer group pg1 appear on the same
-  ->mnt_slave_list. IOW, they cannot be slaves to different peer groups.
-
-* A pure slave mount is a slave mount that is a slave to a peer group
-  but is not a peer in another peer group.
-
-* A propagation group denotes the set of mounts consisting of a single
-  peer group pg1 and all slave mounts and shared-slave mounts that point
-  to a peer in that peer group via ->mnt_master. IOW, all slave mounts
-  such that @slave_mnt->mnt_master->mnt_group_id is equal to
-  @shared_mnt->mnt_group_id.
-
-  The concept of a propagation group makes it easier to talk about a
-  single propagation level in a propagation tree.
-
-  For example, in propagate_mnt() the immediate peers of @dest_mnt and
-  all slaves of @dest_mnt's peer group form a propagation group pr
----truncated---",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,3.15
+synproxy_crash.nft: Error: Could not process rule: Operation not supported
+  synproxy name mysynproxy
+  ^^^^^^^^^^^^^^^^^^^^^^^^",Non disponible,Non disponible,,Non disponible,0.000250000,Faible,Linux,Linux,5.4
 Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/,"Fri, 26 Dec 2025 00:00:00 +0000",CVE-2022-50406,"In the Linux kernel, the following vulnerability has been resolved:
 
 iomap: iomap: fix memory corruption when recording errors during writeback
@@ -373,383 +357,242 @@ x2 : 0000000000000006 x1 : 000000000001dd36 x0 : 0000000000000000
 CPU: 
 ---truncated---",Non disponible,Non disponible,,Non disponible,0.000210000,Faible,Linux,Linux,4.6
 Multiples vulnérabilités dans Moxa NPort (31 décembre 2025),Avis,"De multiples vulnérabilités ont été découvertes dans Moxa NPort. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1142/,"Wed, 31 Dec 2025 00:00:00 +0000",CVE-2025-15017,"A vulnerability exists in serial device servers where active debug code remains enabled in the UART interface. An attacker with physical access to the device can directly connect to the UART interface and, without authentication, user interaction, or execution conditions, gain unauthorized access to internal debug functionality. Exploitation is low complexity and allows an attacker to execute privileged operations and access sensitive system resources, resulting in a high impact to the confidentiality, integrity, and availability of the affected device. No security impact to external or dependent systems has been identified.",CWE-489,CWE-489: Active Debug Code,,Non disponible,0.000450000,Faible,Moxa,NPort IA5000-G2 Series,1.0
-Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2022-50280,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2023-53676,"In the Linux kernel, the following vulnerability has been resolved:
 
-pnode: terminate at peers of source
+scsi: target: iscsi: Fix buffer overflow in lio_target_nacl_info_show()
 
-The propagate_mnt() function handles mount propagation when creating
-mounts and propagates the source mount tree @source_mnt to all
-applicable nodes of the destination propagation mount tree headed by
-@dest_mnt.
+The function lio_target_nacl_info_show() uses sprintf() in a loop to print
+details for every iSCSI connection in a session without checking for the
+buffer length. With enough iSCSI connections it's possible to overflow the
+buffer provided by configfs and corrupt the memory.
 
-Unfortunately it contains a bug where it fails to terminate at peers of
-@source_mnt when looking up copies of the source mount that become
-masters for copies of the source mount tree mounted on top of slaves in
-the destination propagation tree causing a NULL dereference.
-
-Once the mechanics of the bug are understood it's easy to trigger.
-Because of unprivileged user namespaces it is available to unprivileged
-users.
-
-While fixing this bug we've gotten confused multiple times due to
-unclear terminology or missing concepts. So let's start this with some
-clarifications:
-
-* The terms ""master"" or ""peer"" denote a shared mount. A shared mount
-  belongs to a peer group.
-
-* A peer group is a set of shared mounts that propagate to each other.
-  They are identified by a peer group id. The peer group id is available
-  in @shared_mnt->mnt_group_id.
-  Shared mounts within the same peer group have the same peer group id.
-  The peers in a peer group can be reached via @shared_mnt->mnt_share.
-
-* The terms ""slave mount"" or ""dependent mount"" denote a mount that
-  receives propagation from a peer in a peer group. IOW, shared mounts
-  may have slave mounts and slave mounts have shared mounts as their
-  master. Slave mounts of a given peer in a peer group are listed on
-  that peers slave list available at @shared_mnt->mnt_slave_list.
-
-* The term ""master mount"" denotes a mount in a peer group. IOW, it
-  denotes a shared mount or a peer mount in a peer group. The term
-  ""master mount"" - or ""master"" for short - is mostly used when talking
-  in the context of slave mounts that receive propagation from a master
-  mount. A master mount of a slave identifies the closest peer group a
-  slave mount receives propagation from. The master mount of a slave can
-  be identified via @slave_mount->mnt_master. Different slaves may point
-  to different masters in the same peer group.
-
-* Multiple peers in a peer group can have non-empty ->mnt_slave_lists.
-  Non-empty ->mnt_slave_lists of peers don't intersect. Consequently, to
-  ensure all slave mounts of a peer group are visited the
-  ->mnt_slave_lists of all peers in a peer group have to be walked.
-
-* Slave mounts point to a peer in the closest peer group they receive
-  propagation from via @slave_mnt->mnt_master (see above). Together with
-  these peers they form a propagation group (see below). The closest
-  peer group can thus be identified through the peer group id
-  @slave_mnt->mnt_master->mnt_group_id of the peer/master that a slave
-  mount receives propagation from.
-
-* A shared-slave mount is a slave mount to a peer group pg1 while also
-  a peer in another peer group pg2. IOW, a peer group may receive
-  propagation from another peer group.
-
-  If a peer group pg1 is a slave to another peer group pg2 then all
-  peers in peer group pg1 point to the same peer in peer group pg2 via
-  ->mnt_master. IOW, all peers in peer group pg1 appear on the same
-  ->mnt_slave_list. IOW, they cannot be slaves to different peer groups.
-
-* A pure slave mount is a slave mount that is a slave to a peer group
-  but is not a peer in another peer group.
-
-* A propagation group denotes the set of mounts consisting of a single
-  peer group pg1 and all slave mounts and shared-slave mounts that point
-  to a peer in that peer group via ->mnt_master. IOW, all slave mounts
-  such that @slave_mnt->mnt_master->mnt_group_id is equal to
-  @shared_mnt->mnt_group_id.
-
-  The concept of a propagation group makes it easier to talk about a
-  single propagation level in a propagation tree.
-
-  For example, in propagate_mnt() the immediate peers of @dest_mnt and
-  all slaves of @dest_mnt's peer group form a propagation group pr
----truncated---",Non disponible,Non disponible,,Non disponible,0.000170000,Faible,Linux,Linux,3.15
-Multiples vulnérabilités dans les produits IBM (02 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0002/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2025-48924,"Uncontrolled Recursion vulnerability in Apache Commons Lang.
-
-This issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.
-
-The methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a 
-StackOverflowError could cause an application to stop.
-
-Users are recommended to upgrade to version 3.18.0, which fixes the issue.",CWE-674,CWE-674 Uncontrolled Recursion,,Non disponible,0.000160000,Faible,Apache Software Foundation,Apache Commons Lang,3.0
-Multiples vulnérabilités dans les produits Qnap (05 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/,"Mon, 05 Jan 2026 00:00:00 +0000",CVE-2025-52863,"A buffer overflow vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains a user account, they can then exploit the vulnerability to modify memory or crash processes.
+This patch replaces sprintf() with sysfs_emit_at() that checks for buffer
+boundries.",Non disponible,Non disponible,,Non disponible,0.000450000,Faible,Linux,Linux,3.1
+Multiples vulnérabilités dans les produits IBM (02 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0002/,"Fri, 02 Jan 2026 00:00:00 +0000",CVE-2024-56339,IBM WebSphere Application Server 9.0 and WebSphere Application Server Liberty 17.0.0.3 through 25.0.0.7 could allow a remote attacker to bypass security restrictions caused by a failure to honor security configuration.,CWE-650,CWE-650,3.7,Faible,0.000220000,Faible,IBM,WebSphere Application Server Liberty,17.0.0.3
+Multiples vulnérabilités dans les produits Qnap (05 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/,"Mon, 05 Jan 2026 00:00:00 +0000",CVE-2025-52426,"A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.
 
 We have already fixed the vulnerability in the following versions:
 QTS 5.2.7.3256 build 20250913 and later
 QuTS hero h5.2.7.3256 build 20250913 and later
-QuTS hero h5.3.0.3192 build 20250716 and later",CWE-120,CWE-120,,Non disponible,0.001070000,Faible,QNAP Systems Inc.,QuTS hero,"h5.2.x, h5.3.x"
+QuTS hero h5.3.1.3250 build 20250912 and later",CWE-476,CWE-476,,Non disponible,0.001280000,Faible,QNAP Systems Inc.,QuTS hero,"h5.2.x, h5.3.x"
 Vulnérabilité dans MariaDB (05 janvier 2026),Avis,Une vulnérabilité a été découverte dans MariaDB. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0004/,"Mon, 05 Jan 2026 00:00:00 +0000",CVE-2025-13699,"MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MariaDB. Interaction with the mariadb-dump utility is required to exploit this vulnerability but attack vectors may vary depending on the implementation.
 
 The specific flaw exists within the handling of view names. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-27000.",CWE-22,CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'),,Non disponible,0.001240000,Faible,MariaDB,MariaDB,11.8.3
-Multiples vulnérabilités dans Centreon Open Tickets (06 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Centreon Open Tickets. Elles permettent à un attaquant de provoquer une injection SQL (SQLi) et une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0005/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-54890,"Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (Hostgroup configuration page) allows Stored 
+Multiples vulnérabilités dans Centreon Open Tickets (06 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Centreon Open Tickets. Elles permettent à un attaquant de provoquer une injection SQL (SQLi) et une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0005/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-12514,"Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Centreon Infra Monitoring - Open-tickets (Notification rules configuration parameters, Open tickets modules) allows 
 
-XSS by users with elevated privileges.This issue affects Infra Monitoring: from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19, from 23.10.0 before 23.10.29.",CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),6.8,Moyenne,0.000200000,Faible,Centreon,Infra Monitoring,"24.10.0, 24.04.0, 23.10.0"
-Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-59469,This vulnerability allows a Backup or Tape Operator to write files as root.,Non disponible,Non disponible,9.0,Critique,0.000380000,Faible,Veeam,Backup and Recovery,13.0.0
+SQL Injection to user with elevated privileges.This issue affects Infra Monitoring - Open-tickets: from 24.10.0 before 24.10.5, from 24.04.0 before 24.04.5, from 23.10.0 before 23.10.4.",CWE-89,CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'),7.2,Élevée,0.000240000,Faible,Centreon,Infra Monitoring - Open-tickets,"24.10.0, 24.04.0, 23.10.0"
+Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-59470,This vulnerability allows a Backup Operator to perform remote code execution (RCE) as the postgres user by sending a malicious interval or order parameter.,Non disponible,Non disponible,9.0,Critique,0.002250000,Faible,Veeam,Backup and Recovery,13.0.0
 Vulnérabilité dans Stormshield Network Security (06 janvier 2026),Avis,Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0007/,"Tue, 06 Jan 2026 00:00:00 +0000",CVE-2025-31115,"XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",CWE-366,CWE-366: Race Condition within a Thread,,Non disponible,0.000770000,Faible,tukaani-project,xz,">= 5.3.3alpha, < 5.8.1"
 Multiples vulnérabilités dans Joomla! (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Joomla!. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0008/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-63082,Lack of input filtering leads to an XSS vector in the HTML filter code related to data URLs in img tags.,CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'),,Non disponible,0.000430000,Faible,Joomla! Project,Joomla! CMS,"4.0.0-5.4.1, 6.0.0-6.0.1"
 Vulnérabilité dans Google Chrome (07 janvier 2026),Avis,Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0009/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2026-0628,Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High),Non disponible,Insufficient policy enforcement,,Non disponible,0.000170000,Faible,Google,Chrome,143.0.7499.192
-Multiples vulnérabilités dans Curl (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-5025,"libcurl supports *pinning* of the server certificate public key for HTTPS transfers. Due to an omission, this check is not performed when connecting with QUIC for HTTP/3, when the TLS backend is wolfSSL. Documentation says the option works with wolfSSL, failing to specify that it does not for QUIC and HTTP/3. Since pinning makes the transfer succeed if the pin is fine, users could unwittingly connect to an impostor server without noticing.",Non disponible,CWE-295 Improper Certificate Validation,,Non disponible,0.000190000,Faible,curl,curl,"8.13.0, 8.12.1, 8.12.0, 8.11.1, 8.11.0, 8.10.1, 8.10.0, 8.9.1, 8.9.0, 8.8.0, 8.7.1, 8.7.0, 8.6.0, 8.5.0"
+Multiples vulnérabilités dans Curl (07 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/,"Wed, 07 Jan 2026 00:00:00 +0000",CVE-2025-15224,"When doing SSH-based transfers using either SCP or SFTP, and asked to do
+public key authentication, curl would wrongly still ask and authenticate using
+a locally running SSH agent.",Non disponible,CWE-287 Improper Authentication,,Non disponible,0.000530000,Faible,curl,curl,"8.17.0, 8.16.0, 8.15.0, 8.14.1, 8.14.0, 8.13.0, 8.12.1, 8.12.0, 8.11.1, 8.11.0, 8.10.1, 8.10.0, 8.9.1, 8.9.0, 8.8.0, 8.7.1, 8.7.0, 8.6.0, 8.5.0, 8.4.0, 8.3.0, 8.2.1, 8.2.0, 8.1.2, 8.1.1, 8.1.0, 8.0.1, 8.0.0, 7.88.1, 7.88.0, 7.87.0, 7.86.0, 7.85.0, 7.84.0, 7.83.1, 7.83.0, 7.82.0, 7.81.0, 7.80.0, 7.79.1, 7.79.0, 7.78.0, 7.77.0, 7.76.1, 7.76.0, 7.75.0, 7.74.0, 7.73.0, 7.72.0, 7.71.1, 7.71.0, 7.70.0, 7.69.1, 7.69.0, 7.68.0, 7.67.0, 7.66.0, 7.65.3, 7.65.2, 7.65.1, 7.65.0, 7.64.1, 7.64.0, 7.63.0, 7.62.0, 7.61.1, 7.61.0, 7.60.0, 7.59.0, 7.58.0"
 Vulnérabilité dans Google Android (08 janvier 2026),Avis,Une vulnérabilité a été découverte dans Google Android. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0011/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-54957,"An issue was discovered in Dolby UDC 4.5 through 4.13. A crash of the DD+ decoder process can occur when a malformed DD+ bitstream is processed. When Evolution data is processed by evo_priv.c from the DD+ bitstream, the decoder writes that data into a buffer. The length calculation for a write can overflow due to an integer wraparound. This can lead to the allocated buffer being too small, and the out-of-bounds check of the subsequent write to be ineffective, leading to an out-of-bounds write.",Non disponible,n/a,,Non disponible,0.000470000,Faible,n/a,n/a,n/a
-Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0012/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-69259,"A message unchecked NULL return value vulnerability in Trend Micro Apex Central could allow a remote attacker to create a denial-of-service condition on affected installations.
+Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0012/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-69260,"A message out-of-bounds read vulnerability in Trend Micro Apex Central could allow a remote attacker to create a denial-of-service condition on affected installations.
 
-Please note: authentication is not required in order to exploit this vulnerability..",CWE-346,CWE-346: Origin Validation Error,7.5,Élevée,0.000870000,Faible,"Trend Micro, Inc.",Trend Micro Apex Central,2019 (14.0)
+Please note: authentication is not required in order to exploit this vulnerability.",CWE-346,CWE-346: Origin Validation Error,7.5,Élevée,0.000870000,Faible,"Trend Micro, Inc.",Trend Micro Apex Central,2019 (14.0)
 Vulnérabilité dans Tenable Nessus Agent (08 janvier 2026),Avis,Une vulnérabilité a été découverte dans Tenable Nessus Agent. Elle permet à un attaquant de provoquer une élévation de privilèges.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0013/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-36640,,Non disponible,Non disponible,,Non disponible,,Non disponible,"Trend Micro, Inc.",Trend Micro Apex Central,2019 (14.0)
-Multiples vulnérabilités dans GitLab (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0014/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-9222,"GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2.2 before 18.5.5, 18.6 before 18.6.3, and 18.7 before 18.7.1 that could have allowed an authenticated user to achieve stored cross-site scripting by exploiting GitLab Flavored Markdown.",CWE-79,CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'),8.7,Élevée,0.000190000,Faible,GitLab,GitLab,"18.2.2, 18.6, 18.7"
-Multiples vulnérabilités dans les produits Centreon (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Centreon. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0015/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-12511,"Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (DSM extenstio configuration modules) allows Stored XSS 
+Multiples vulnérabilités dans GitLab (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0014/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-3950,"GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.3 before 18.5.5, 18.6 before 18.6.3, and 18.7 before 18.7.1 that could have allowed a user to leak certain information by referencing specially crafted images that bypass asset proxy protection.",CWE-359,CWE-359: Exposure of Private Personal Information to an Unauthorized Actor,3.5,Faible,0.000120000,Faible,GitLab,GitLab,"10.3, 18.6, 18.7"
+Multiples vulnérabilités dans les produits Centreon (08 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits Centreon. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0015/,"Thu, 08 Jan 2026 00:00:00 +0000",CVE-2025-15026,"Missing Authentication for Critical Function vulnerability in Centreon Infra Monitoring centreon-awie (Awie import module) allows Accessing Functionality Not Properly Constrained by ACLs.
 
-to user with elevated privileges.
-
-This issue affects Infra Monitoring: from 25.10.0 before 25.10.1, from 24.10.0 before 24.10.4, from 24.04.0 before 24.04.8.",CWE-79,CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting'),6.8,Moyenne,0.000200000,Faible,Centreon,Infra Monitoring,"25.10.0, 24.10.0, 24.04.0"
+This issue affects Infra Monitoring: from 25.10.0 before 25.10.2, from 24.10.0 before 24.10.3, from 24.04.0 before 24.04.3.",CWE-306,CWE-306 Missing Authentication for Critical Function,9.8,Critique,0.000360000,Faible,Centreon,Infra Monitoring,"25.10.0, 24.10.0, 24.04.0"
 Vulnérabilité dans les produits Moxa (09 janvier 2026),Avis,Une vulnérabilité a été découverte dans les produits Moxa. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0016/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2023-38408,"The PKCS#11 feature in ssh-agent in OpenSSH before 9.3p2 has an insufficiently trustworthy search path, leading to remote code execution if an agent is forwarded to an attacker-controlled system. (Code in /usr/lib is not necessarily safe for loading into ssh-agent.) NOTE: this issue exists because of an incomplete fix for CVE-2016-10009.",Non disponible,n/a,,Non disponible,0.687490000,Élevée,n/a,n/a,n/a
-Multiples vulnérabilités dans le noyau Linux de Red Hat (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une exécution de code arbitraire, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0017/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-39982,"In the Linux kernel, the following vulnerability has been resolved:
+Multiples vulnérabilités dans le noyau Linux de Red Hat (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une exécution de code arbitraire, un contournement de la politique de sécurité et un déni de service.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0017/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2022-50406,"In the Linux kernel, the following vulnerability has been resolved:
 
-Bluetooth: hci_event: Fix UAF in hci_acl_create_conn_sync
+iomap: iomap: fix memory corruption when recording errors during writeback
 
-This fixes the following UFA in hci_acl_create_conn_sync where a
-connection still pending is command submission (conn->state == BT_OPEN)
-maybe freed, also since this also can happen with the likes of
-hci_le_create_conn_sync fix it as well:
+Every now and then I see this crash on arm64:
 
-BUG: KASAN: slab-use-after-free in hci_acl_create_conn_sync+0x5ef/0x790 net/bluetooth/hci_sync.c:6861
-Write of size 2 at addr ffff88805ffcc038 by task kworker/u11:2/9541
+Unable to handle kernel NULL pointer dereference at virtual address 00000000000000f8
+Buffer I/O error on dev dm-0, logical block 8733687, async page read
+Mem abort info:
+  ESR = 0x0000000096000006
+  EC = 0x25: DABT (current EL), IL = 32 bits
+  SET = 0, FnV = 0
+  EA = 0, S1PTW = 0
+  FSC = 0x06: level 2 translation fault
+Data abort info:
+  ISV = 0, ISS = 0x00000006
+  CM = 0, WnR = 0
+user pgtable: 64k pages, 42-bit VAs, pgdp=0000000139750000
+[00000000000000f8] pgd=0000000000000000, p4d=0000000000000000, pud=0000000000000000, pmd=0000000000000000
+Internal error: Oops: 96000006 [#1] PREEMPT SMP
+Buffer I/O error on dev dm-0, logical block 8733688, async page read
+Dumping ftrace buffer:
+Buffer I/O error on dev dm-0, logical block 8733689, async page read
+   (ftrace buffer empty)
+XFS (dm-0): log I/O error -5
+Modules linked in: dm_thin_pool dm_persistent_data
+XFS (dm-0): Metadata I/O Error (0x1) detected at xfs_trans_read_buf_map+0x1ec/0x590 [xfs] (fs/xfs/xfs_trans_buf.c:296).
+ dm_bio_prison
+XFS (dm-0): Please unmount the filesystem and rectify the problem(s)
+XFS (dm-0): xfs_imap_lookup: xfs_ialloc_read_agi() returned error -5, agno 0
+ dm_bufio dm_log_writes xfs nft_chain_nat xt_REDIRECT nf_nat nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 ip6t_REJECT
+potentially unexpected fatal signal 6.
+ nf_reject_ipv6
+potentially unexpected fatal signal 6.
+ ipt_REJECT nf_reject_ipv4
+CPU: 1 PID: 122166 Comm: fsstress Tainted: G        W          6.0.0-rc5-djwa #rc5 3004c9f1de887ebae86015f2677638ce51ee7
+ rpcsec_gss_krb5 auth_rpcgss xt_tcpudp ip_set_hash_ip ip_set_hash_net xt_set nft_compat ip_set_hash_mac ip_set nf_tables
+Hardware name: QEMU KVM Virtual Machine, BIOS 1.5.1 06/16/2021
+pstate: 60001000 (nZCv daif -PAN -UAO -TCO -DIT +SSBS BTYPE=--)
+ ip_tables
+pc : 000003fd6d7df200
+ x_tables
+lr : 000003fd6d7df1ec
+ overlay nfsv4
+CPU: 0 PID: 54031 Comm: u4:3 Tainted: G        W          6.0.0-rc5-djwa #rc5 3004c9f1de887ebae86015f2677638ce51ee7405
+Hardware name: QEMU KVM Virtual Machine, BIOS 1.5.1 06/16/2021
+Workqueue: writeback wb_workfn
+sp : 000003ffd9522fd0
+ (flush-253:0)
+pstate: 60401005 (nZCv daif +PAN -UAO -TCO -DIT +SSBS BTYPE=--)
+pc : errseq_set+0x1c/0x100
+x29: 000003ffd9522fd0 x28: 0000000000000023 x27: 000002acefeb6780
+x26: 0000000000000005 x25: 0000000000000001 x24: 0000000000000000
+x23: 00000000ffffffff x22: 0000000000000005
+lr : __filemap_set_wb_err+0x24/0xe0
+ x21: 0000000000000006
+sp : fffffe000f80f760
+x29: fffffe000f80f760 x28: 0000000000000003 x27: fffffe000f80f9f8
+x26: 0000000002523000 x25: 00000000fffffffb x24: fffffe000f80f868
+x23: fffffe000f80fbb0 x22: fffffc0180c26a78 x21: 0000000002530000
+x20: 0000000000000000 x19: 0000000000000000 x18: 0000000000000000
 
-CPU: 1 UID: 0 PID: 9541 Comm: kworker/u11:2 Not tainted 6.16.0-rc7 #3 PREEMPT(full)
-Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014
-Workqueue: hci3 hci_cmd_sync_work
-Call Trace:
- <TASK>
- dump_stack_lvl+0x189/0x250 lib/dump_stack.c:120
- print_address_description mm/kasan/report.c:378 [inline]
- print_report+0xca/0x230 mm/kasan/report.c:480
- kasan_report+0x118/0x150 mm/kasan/report.c:593
- hci_acl_create_conn_sync+0x5ef/0x790 net/bluetooth/hci_sync.c:6861
- hci_cmd_sync_work+0x210/0x3a0 net/bluetooth/hci_sync.c:332
- process_one_work kernel/workqueue.c:3238 [inline]
- process_scheduled_works+0xae1/0x17b0 kernel/workqueue.c:3321
- worker_thread+0x8a0/0xda0 kernel/workqueue.c:3402
- kthread+0x70e/0x8a0 kernel/kthread.c:464
- ret_from_fork+0x3fc/0x770 arch/x86/kernel/process.c:148
- ret_from_fork_asm+0x1a/0x30 home/kwqcheii/source/fuzzing/kernel/kasan/linux-6.16-rc7/arch/x86/entry/entry_64.S:245
- </TASK>
+x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000
+x14: 0000000000000001 x13: 0000000000470af3 x12: fffffc0058f70000
+x11: 0000000000000040 x10: 0000000000001b20 x9 : fffffe000836b288
+x8 : fffffc00eb9fd480 x7 : 0000000000f83659 x6 : 0000000000000000
+x5 : 0000000000000869 x4 : 0000000000000005 x3 : 00000000000000f8
+x20: 000003fd6d740020 x19: 000000000001dd36 x18: 0000000000000001
+x17: 000003fd6d78704c x16: 0000000000000001 x15: 000002acfac87668
+x2 : 0000000000000ffa x1 : 00000000fffffffb x0 : 00000000000000f8
+Call trace:
+ errseq_set+0x1c/0x100
+ __filemap_set_wb_err+0x24/0xe0
+ iomap_do_writepage+0x5e4/0xd5c
+ write_cache_pages+0x208/0x674
+ iomap_writepages+0x34/0x60
+ xfs_vm_writepages+0x8c/0xcc [xfs 7a861f39c43631f15d3a5884246ba5035d4ca78b]
+x14: 0000000000000000 x13: 2064656e72757465 x12: 0000000000002180
+x11: 000003fd6d8a82d0 x10: 0000000000000000 x9 : 000003fd6d8ae288
+x8 : 0000000000000083 x7 : 00000000ffffffff x6 : 00000000ffffffee
+x5 : 00000000fbad2887 x4 : 000003fd6d9abb58 x3 : 000003fd6d740020
+x2 : 0000000000000006 x1 : 000000000001dd36 x0 : 0000000000000000
+CPU: 
+---truncated---",Non disponible,Non disponible,,Non disponible,0.000210000,Faible,Linux,Linux,4.6
+Multiples vulnérabilités dans le noyau Linux d'Ubuntu (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0018/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2024-50196,"In the Linux kernel, the following vulnerability has been resolved:
 
-Allocated by task 123736:
- kasan_save_stack mm/kasan/common.c:47 [inline]
- kasan_save_track+0x3e/0x80 mm/kasan/common.c:68
- poison_kmalloc_redzone mm/kasan/common.c:377 [inline]
- __kasan_kmalloc+0x93/0xb0 mm/kasan/common.c:394
- kasan_kmalloc include/linux/kasan.h:260 [inline]
- __kmalloc_cache_noprof+0x230/0x3d0 mm/slub.c:4359
- kmalloc_noprof include/linux/slab.h:905 [inline]
- kzalloc_noprof include/linux/slab.h:1039 [inline]
- __hci_conn_add+0x233/0x1b30 net/bluetooth/hci_conn.c:939
- hci_conn_add_unset net/bluetooth/hci_conn.c:1051 [inline]
- hci_connect_acl+0x16c/0x4e0 net/bluetooth/hci_conn.c:1634
- pair_device+0x418/0xa70 net/bluetooth/mgmt.c:3556
- hci_mgmt_cmd+0x9c9/0xef0 net/bluetooth/hci_sock.c:1719
- hci_sock_sendmsg+0x6ca/0xef0 net/bluetooth/hci_sock.c:1839
- sock_sendmsg_nosec net/socket.c:712 [inline]
- __sock_sendmsg+0x219/0x270 net/socket.c:727
- sock_write_iter+0x258/0x330 net/socket.c:1131
- new_sync_write fs/read_write.c:593 [inline]
- vfs_write+0x54b/0xa90 fs/read_write.c:686
- ksys_write+0x145/0x250 fs/read_write.c:738
- do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]
- do_syscall_64+0xfa/0x3b0 arch/x86/entry/syscall_64.c:94
- entry_SYSCALL_64_after_hwframe+0x77/0x7f
+pinctrl: ocelot: fix system hang on level based interrupts
 
-Freed by task 103680:
- kasan_save_stack mm/kasan/common.c:47 [inline]
- kasan_save_track+0x3e/0x80 mm/kasan/common.c:68
- kasan_save_free_info+0x46/0x50 mm/kasan/generic.c:576
- poison_slab_object mm/kasan/common.c:247 [inline]
- __kasan_slab_free+0x62/0x70 mm/kasan/common.c:264
- kasan_slab_free include/linux/kasan.h:233 [inline]
- slab_free_hook mm/slub.c:2381 [inline]
- slab_free mm/slub.c:4643 [inline]
- kfree+0x18e/0x440 mm/slub.c:4842
- device_release+0x9c/0x1c0
- kobject_cleanup lib/kobject.c:689 [inline]
- kobject_release lib/kobject.c:720 [inline]
- kref_put include/linux/kref.h:65 [inline]
- kobject_put+0x22b/0x480 lib/kobject.c:737
- hci_conn_cleanup net/bluetooth/hci_conn.c:175 [inline]
- hci_conn_del+0x8ff/0xcb0 net/bluetooth/hci_conn.c:1173
- hci_conn_complete_evt+0x3c7/0x1040 net/bluetooth/hci_event.c:3199
- hci_event_func net/bluetooth/hci_event.c:7477 [inline]
- hci_event_packet+0x7e0/0x1200 net/bluetooth/hci_event.c:7531
- hci_rx_work+0x46a/0xe80 net/bluetooth/hci_core.c:4070
- process_one_work kernel/workqueue.c:3238 [inline]
- process_scheduled_works+0xae1/0x17b0 kernel/workqueue.c:3321
- worker_thread+0x8a0/0xda0 kernel/workqueue.c:3402
- kthread+0x70e/0x8a0 kernel/kthread.c:464
- ret_from_fork+0x3fc/0x770 arch/x86/kernel/process.c:148
- ret_from_fork_asm+0x1a/0x30 home/kwqcheii/sour
----truncated---",Non disponible,Non disponible,,Non disponible,0.000390000,Faible,Linux,Linux,5.18
-Multiples vulnérabilités dans le noyau Linux d'Ubuntu (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0018/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2024-50067,"In the Linux kernel, the following vulnerability has been resolved:
-
-uprobe: avoid out-of-bounds memory access of fetching args
-
-Uprobe needs to fetch args into a percpu buffer, and then copy to ring
-buffer to avoid non-atomic context problem.
-
-Sometimes user-space strings, arrays can be very large, but the size of
-percpu buffer is only page size. And store_trace_args() won't check
-whether these data exceeds a single page or not, caused out-of-bounds
-memory access.
-
-It could be reproduced by following steps:
-1. build kernel with CONFIG_KASAN enabled
-2. save follow program as test.c
+The current implementation only calls chained_irq_enter() and
+chained_irq_exit() if it detects pending interrupts.
 
 ```
-\#include <stdio.h>
-\#include <stdlib.h>
-\#include <string.h>
+for (i = 0; i < info->stride; i++) {
+	uregmap_read(info->map, id_reg + 4 * i, &reg);
+	if (!reg)
+		continue;
 
-// If string length large than MAX_STRING_SIZE, the fetch_store_strlen()
-// will return 0, cause __get_data_size() return shorter size, and
-// store_trace_args() will not trigger out-of-bounds access.
-// So make string length less than 4096.
-\#define STRLEN 4093
-
-void generate_string(char *str, int n)
-{
-    int i;
-    for (i = 0; i < n; ++i)
-    {
-        char c = i % 26 + 'a';
-        str[i] = c;
-    }
-    str[n-1] = '\0';
-}
-
-void print_string(char *str)
-{
-    printf(""%s\n"", str);
-}
-
-int main()
-{
-    char tmp[STRLEN];
-
-    generate_string(tmp, STRLEN);
-    print_string(tmp);
-
-    return 0;
-}
-```
-3. compile program
-`gcc -o test test.c`
-
-4. get the offset of `print_string()`
-```
-objdump -t test | grep -w print_string
-0000000000401199 g     F .text  000000000000001b              print_string
+	chained_irq_enter(parent_chip, desc);
 ```
 
-5. configure uprobe with offset 0x1199
+However, in case of GPIO pin configured in level mode and the parent
+controller configured in edge mode, GPIO interrupt might be lowered by the
+hardware. In the result, if the interrupt is short enough, the parent
+interrupt is still pending while the GPIO interrupt is cleared;
+chained_irq_enter() never gets called and the system hangs trying to
+service the parent interrupt.
+
+Moving chained_irq_enter() and chained_irq_exit() outside the for loop
+ensures that they are called even when GPIO interrupt is lowered by the
+hardware.
+
+The similar code with chained_irq_enter() / chained_irq_exit() functions
+wrapping interrupt checking loop may be found in many other drivers:
 ```
-off=0x1199
+grep -r -A 10 chained_irq_enter drivers/pinctrl
+```",Non disponible,Non disponible,,Non disponible,0.000120000,Faible,Linux,Linux,4.16
+Multiples vulnérabilités dans le noyau Linux de SUSE (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0019/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2023-53676,"In the Linux kernel, the following vulnerability has been resolved:
 
-cd /sys/kernel/debug/tracing/
-echo ""p /root/test:${off} arg1=+0(%di):ustring arg2=\$comm arg3=+0(%di):ustring""
- > uprobe_events
-echo 1 > events/uprobes/enable
-echo 1 > tracing_on
-```
+scsi: target: iscsi: Fix buffer overflow in lio_target_nacl_info_show()
 
-6. run `test`, and kasan will report error.
-==================================================================
-BUG: KASAN: use-after-free in strncpy_from_user+0x1d6/0x1f0
-Write of size 8 at addr ffff88812311c004 by task test/499CPU: 0 UID: 0 PID: 499 Comm: test Not tainted 6.12.0-rc3+ #18
-Hardware name: Red Hat KVM, BIOS 1.16.0-4.al8 04/01/2014
-Call Trace:
- <TASK>
- dump_stack_lvl+0x55/0x70
- print_address_description.constprop.0+0x27/0x310
- kasan_report+0x10f/0x120
- ? strncpy_from_user+0x1d6/0x1f0
- strncpy_from_user+0x1d6/0x1f0
- ? rmqueue.constprop.0+0x70d/0x2ad0
- process_fetch_insn+0xb26/0x1470
- ? __pfx_process_fetch_insn+0x10/0x10
- ? _raw_spin_lock+0x85/0xe0
- ? __pfx__raw_spin_lock+0x10/0x10
- ? __pte_offset_map+0x1f/0x2d0
- ? unwind_next_frame+0xc5f/0x1f80
- ? arch_stack_walk+0x68/0xf0
- ? is_bpf_text_address+0x23/0x30
- ? kernel_text_address.part.0+0xbb/0xd0
- ? __kernel_text_address+0x66/0xb0
- ? unwind_get_return_address+0x5e/0xa0
- ? __pfx_stack_trace_consume_entry+0x10/0x10
- ? arch_stack_walk+0xa2/0xf0
- ? _raw_spin_lock_irqsave+0x8b/0xf0
- ? __pfx__raw_spin_lock_irqsave+0x10/0x10
- ? depot_alloc_stack+0x4c/0x1f0
- ? _raw_spin_unlock_irqrestore+0xe/0x30
- ? stack_depot_save_flags+0x35d/0x4f0
- ? kasan_save_stack+0x34/0x50
- ? kasan_save_stack+0x24/0x50
- ? mutex_lock+0x91/0xe0
- ? __pfx_mutex_lock+0x10/0x10
- prepare_uprobe_buffer.part.0+0x2cd/0x500
- uprobe_dispatcher+0x2c3/0x6a0
- ? __pfx_uprobe_dispatcher+0x10/0x10
- ? __kasan_slab_alloc+0x4d/0x90
- handler_chain+0xdd/0x3e0
- handle_swbp+0x26e/0x3d0
- ? __pfx_handle_swbp+0x10/0x10
- ? uprobe_pre_sstep_notifier+0x151/0x1b0
- irqentry_exit_to_user_mode+0xe2/0x1b0
- asm_exc_int3+0x39/0x40
-RIP: 0033:0x401199
-Code: 01 c2 0f b6 45 fb 88 02 83 45 fc 01 8b 45 fc 3b 45 e4 7c b7 8b 45 e4 48 98 48 8d 50 ff 48 8b 45 e8 48 01 d0 ce
-RSP: 002b:00007ffdf00576a8 EFLAGS: 00000206
-RAX: 00007ffdf00576b0 RBX: 0000000000000000 RCX: 0000000000000ff2
-RDX: 0000000000000ffc RSI: 0000000000000ffd RDI: 00007ffdf00576b0
-RBP: 00007ffdf00586b0 R08: 00007feb2f9c0d20 R09: 00007feb2f9c0d20
-R10: 0000000000000001 R11: 0000000000000202 R12: 0000000000401040
-R13: 00007ffdf0058780 R14: 0000000000000000 R15: 0000000000000000
- </TASK>
+The function lio_target_nacl_info_show() uses sprintf() in a loop to print
+details for every iSCSI connection in a session without checking for the
+buffer length. With enough iSCSI connections it's possible to overflow the
+buffer provided by configfs and corrupt the memory.
 
-This commit enforces the buffer's maxlen less than a page-size to avoid
-store_trace_args() out-of-memory access.",Non disponible,Non disponible,,Non disponible,0.000310000,Faible,Linux,Linux,3.14
-Multiples vulnérabilités dans le noyau Linux de SUSE (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0019/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-40048,"In the Linux kernel, the following vulnerability has been resolved:
-
-uio_hv_generic: Let userspace take care of interrupt mask
-
-Remove the logic to set interrupt mask by default in uio_hv_generic
-driver as the interrupt mask value is supposed to be controlled
-completely by the user space. If the mask bit gets changed
-by the driver, concurrently with user mode operating on the ring,
-the mask bit may be set when it is supposed to be clear, and the
-user-mode driver will miss an interrupt which will cause a hang.
-
-For eg- when the driver sets inbound ring buffer interrupt mask to 1,
-the host does not interrupt the guest on the UIO VMBus channel.
-However, setting the mask does not prevent the host from putting a
-message in the inbound ring buffer. So let’s assume that happens,
-the host puts a message into the ring buffer but does not interrupt.
-
-Subsequently, the user space code in the guest sets the inbound ring
-buffer interrupt mask to 0, saying “Hey, I’m ready for interrupts”.
-User space code then calls pread() to wait for an interrupt.
-Then one of two things happens:
-
-* The host never sends another message. So the pread() waits forever.
-* The host does send another message. But because there’s already a
-  message in the ring buffer, it doesn’t generate an interrupt.
-  This is the correct behavior, because the host should only send an
-  interrupt when the inbound ring buffer transitions from empty to
-  not-empty. Adding an additional message to a ring buffer that is not
-  empty is not supposed to generate an interrupt on the guest.
-  Since the guest is waiting in pread() and not removing messages from
-  the ring buffer, the pread() waits forever.
-
-This could be easily reproduced in hv_fcopy_uio_daemon if we delay
-setting interrupt mask to 0.
-
-Similarly if hv_uio_channel_cb() sets the interrupt_mask to 1,
-there’s a race condition. Once user space empties the inbound ring
-buffer, but before user space sets interrupt_mask to 0, the host could
-put another message in the ring buffer but it wouldn’t interrupt.
-Then the next pread() would hang.
-
-Fix these by removing all instances where interrupt_mask is changed,
-while keeping the one in set_event() unchanged to enable userspace
-control the interrupt mask by writing 0/1 to /dev/uioX.",Non disponible,Non disponible,,Non disponible,0.000530000,Faible,Linux,Linux,4.10
-Multiples vulnérabilités dans les produits IBM (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0020/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-36047,"IBM WebSphere Application Server Liberty 18.0.0.2 through 25.0.0.8 is vulnerable to a denial of service, caused by sending a specially-crafted request. A remote attacker could exploit this vulnerability to cause the server to consume memory resources.",CWE-770,CWE-770 Allocation of Resources Without Limits or Throttling,5.3,Moyenne,0.000850000,Faible,IBM,WebSphere Application Server Liberty,18.0.0.2
+This patch replaces sprintf() with sysfs_emit_at() that checks for buffer
+boundries.",Non disponible,Non disponible,,Non disponible,0.000450000,Faible,Linux,Linux,3.1
+Multiples vulnérabilités dans les produits IBM (09 janvier 2026),Avis,"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0020/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-53066,"Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JAXP).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 7.5 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).",Non disponible,"Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data.",7.5,Élevée,0.000940000,Faible,Oracle Corporation,Oracle GraalVM Enterprise Edition,21.3.15
 Vulnérabilité dans Microsoft Edge (09 janvier 2026),Avis,Une vulnérabilité a été découverte dans Microsoft Edge. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0021/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-62224,User interface (ui) misrepresentation of critical information in Microsoft Edge for Android allows an authorized attacker to perform spoofing over a network.,CWE-451,CWE-451: User Interface (UI) Misrepresentation of Critical Information,5.5,Moyenne,0.000620000,Faible,Microsoft,Microsoft Edge for Android,1.0.0
 Multiples vulnérabilités dans les produits Microsoft (09 janvier 2026),Avis,De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0022/,"Fri, 09 Jan 2026 00:00:00 +0000",CVE-2025-11964,"On Windows only, if libpcap needs to convert a Windows error message to UTF-8 and the message includes characters that UTF-8 represents using 4 bytes, utf_16le_to_utf_8_truncated() can write data beyond the end of the provided buffer.",CWE-787,CWE-787 Out-of-bounds Write,1.9,Faible,0.000150000,Faible,The Tcpdump Group,libpcap,1.10.0
+Multiples vulnérabilités dans AMI MegaRAC (16 décembre 2022),Alerte,"Le 05 décembre 2022, trois vulnérabilités respectivement identifiées par les numéros CVE-2022-40259, CVE-2022-40242 et CVE-2022-2827 ont été signalées dans la solution d’administration à distance MegaRAC de l’éditeur AMI. La solution MegaRAC s’appuie sur un BMC (Baseboard Management Controller) :...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-014/,"Fri, 16 Dec 2022 00:00:00 +0000",CVE-2022-2827,AMI MegaRAC User Enumeration Vulnerability,CWE-200,CWE-200 Exposure of Sensitive Information to an Unauthorized Actor,7.5,Élevée,0.161080000,Faible,AMI,MegaRAC SPx13,0
+Vulnérabilité dans les produits Fortinet (13 juin 2023),Alerte,"Le 12 juin 2023, Fortinet a publié un avis de sécurité concernant la vulnérabilité CVE-2023-27997. Celle-ci permet à un attaquant non authentifié d'exécuter du code arbitraire à distance sur des produits Fortinet qui proposent une fonctionnalité de *VPN SSL*. Dans une communication supplémentaire...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-004/,"Tue, 13 Jun 2023 00:00:00 +0000",CVE-2023-27997,"A heap-based buffer overflow vulnerability [CWE-122] in FortiOS version 7.2.4 and below, version 7.0.11 and below, version 6.4.12 and below, version 6.0.16 and below and FortiProxy version 7.2.3 and below, version 7.0.9 and below, version 2.0.12 and below, version 1.2 all versions, version 1.1 all versions SSL-VPN may allow a remote attacker to execute arbitrary code or commands via specifically crafted requests.",CWE-122,Execute unauthorized code or commands,9.2,Critique,0.899160000,Critique,Fortinet,FortiOS,"7.2.0, 7.0.0, 6.4.0, 6.2.0, 6.0.0"
+Synthèse sur l'exploitation d'une vulnérabilité dans MOVEit Transfer (05 juillet 2023),Alerte,"La découverte d'une vulnérabilité affectant le logiciel MOVEit Transfer de Progress Software, le 31 mai 2023, avait conduit le CERT-FR à publier des éléments d'information dans le bulletin d'actualité CERTFR-2023-ACT-025. L'objet de cette alerte CERTFR-2023-ALE-005 est de faire le point sur...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/,"Wed, 05 Jul 2023 00:00:00 +0000",CVE-2023-34362,"In Progress MOVEit Transfer before 2021.0.6 (13.0.6), 2021.1.4 (13.1.4), 2022.0.4 (14.0.4), 2022.1.5 (14.1.5), and 2023.0.1 (15.0.1), a SQL injection vulnerability has been found in the MOVEit Transfer web application that could allow an unauthenticated attacker to gain access to MOVEit Transfer's database. Depending on the database engine being used (MySQL, Microsoft SQL Server, or Azure SQL), an attacker may be able to infer information about the structure and contents of the database, and execute SQL statements that alter or delete database elements. NOTE: this is exploited in the wild in May and June 2023; exploitation of unpatched systems can occur via HTTP or HTTPS. All versions (e.g., 2020.0 and 2019x) before the five explicitly mentioned versions are affected, including older unsupported versions.",Non disponible,n/a,,Non disponible,0.942540000,Critique,n/a,n/a,n/a
+Vulnérabilité dans les produits Microsoft (12 juillet 2023),Alerte,"Dans le cadre de son *Patch Tuesday*, en date du 11 juillet 2023, Microsoft a indiqué l'existence d'une vulnérabilité référencée CVE-2023-36884 \[1\] au sein de plusieurs versions de Windows et produits Office. Un score CVSSv3 de 8.3 lui a été attribué. L'éditeur confirme qu'elle est activement...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-006/,"Wed, 12 Jul 2023 00:00:00 +0000",CVE-2023-36884,Windows Search Remote Code Execution Vulnerability,CWE-362,CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'),7.5,Élevée,0.932200000,Critique,Microsoft,Windows Server 2012 R2 (Server Core installation),6.3.9600.0
+[MàJ] Vulnérabilité dans Zimbra Collaboration Suite (17 juillet 2023),Alerte,"\[Mise à jour du 26 juillet 2023\] Publication du correctif de sécurité par l'éditeur Le 26 juillet 2023, l'éditeur a publié un correctif de sécurité \[1\] pour cette vulnérabilité immatriculée CVE-2023-37580. Il est donc fortement recommandé de déployer le correctif P41 pour toutes les versions...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-007/,"Mon, 17 Jul 2023 00:00:00 +0000",CVE-2023-37580,Zimbra Collaboration (ZCS) 8 before 8.8.15 Patch 41 allows XSS in the Zimbra Classic Web Client.,Non disponible,n/a,,Non disponible,0.939180000,Critique,n/a,n/a,n/a
+[MàJ] Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (19 juillet 2023),Alerte,"Le 18 juillet 2023, Citrix a publié un avis de sécurité concernant plusieurs vulnérabilités. La plus critique, dont l'identifiant CVE est CVE-2023-3519, permet à un attaquant non authentifié d'exécuter du code arbitraire à distance. L'équipement est vulnérable s'il est configuré en tant que...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-008/,"Wed, 19 Jul 2023 00:00:00 +0000",CVE-2023-3519,Unauthenticated remote code execution,CWE-94,CWE-94 Improper Control of Generation of Code ('Code Injection'),9.8,Critique,0.939930000,Critique,Citrix,NetScaler Gateway,"13.1, 13.0"
+[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (26 juillet 2023),Alerte,"\[Mise à jour du 15 septembre 2023\] Correction de la vulnérabilité CVE-2023-35082 Le 21 août 2023, l'éditeur a publié une mise à jour du bulletin complémentaire de sécurité \[3\] pour annoncer la disponibilité d'un correctif concernant la vulnérabilité CVE-2023-35082. Ce correctif est inclus...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-009/,"Wed, 26 Jul 2023 00:00:00 +0000",CVE-2023-35082,"An authentication bypass vulnerability in Ivanti EPMM 11.10 and older, allows unauthorized users to access restricted functionality or resources of the application without proper authentication. This vulnerability is unique to CVE-2023-35078 announced earlier.",Non disponible,Non disponible,,Non disponible,0.944230000,Critique,Ivanti,EPMM,11.10
+Multiples vulnérabilités dans Exim (02 octobre 2023),Alerte,"Le 27 septembre 2023, Zero Day Initiative (ZDI) a publié six avis de sécurité \[1\] concernant des vulnérabilités de type zéro-jour affectant les versions antérieures à 4.96.1 ou 4.97 de l'agent de transfert de courriels (*Mail Transfer Agent* ou *MTA*) Exim. Le 1er octobre 2023, l'éditeur a...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,"Mon, 02 Oct 2023 00:00:00 +0000",CVE-2023-42115,"Exim AUTH Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Exim. Authentication is not required to exploit this vulnerability. 
+
+The specific flaw exists within the smtp service, which listens on TCP port 25 by default. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of a buffer. An attacker can leverage this vulnerability to execute code in the context of the service account.
+. Was ZDI-CAN-17434.",CWE-787,CWE-787: Out-of-bounds Write,,Non disponible,0.729040000,Élevée,Exim,Exim,exim 4.95
+[MàJ] Multiples vulnérabilités dans Cisco IOS XE (17 octobre 2023),Alerte,\[Mise à jour du 02 novembre 2023\] La version 17.3.8a est disponible. \[Mise à jour du 31 octobre 2023\] Les détails techniques de la vulnérabilité CVE-2023-20198 sont désormais disponibles publiquement. Cette vulnérabilité était déjà massivement exploitée. Tous les équipements exposant...,https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-011/,"Tue, 17 Oct 2023 00:00:00 +0000",CVE-2023-20198,"Cisco is providing an update for the ongoing investigation into observed exploitation of the web UI feature in Cisco IOS XE Software. We are updating the list of fixed releases and adding the Software Checker. Our investigation has determined that the actors exploited two previously unknown issues. The attacker first exploited CVE-2023-20198 to gain initial access and issued a privilege 15 command to create a local user and password combination. This allowed the user to log in with normal user access. The attacker then exploited another component of the web UI feature, leveraging the new local user to elevate privilege to root and write the implant to the file system. Cisco has assigned CVE-2023-20273 to this issue. CVE-2023-20198 has been assigned a CVSS Score of 10.0. CVE-2023-20273 has been assigned a CVSS Score of 7.2. Both of these CVEs are being tracked by CSCwh87343.",CWE-420,Unprotected Alternate Channel,10.0,Critique,0.940690000,Critique,Cisco,Cisco IOS XE Software,"16.1.1, 16.1.2, 16.1.3, 16.2.1, 16.2.2, 16.3.1, 16.3.2, 16.3.3, 16.3.1a, 16.3.4, 16.3.5, 16.3.5b, 16.3.6, 16.3.7, 16.3.8, 16.3.9, 16.3.10, 16.3.11, 16.4.1, 16.4.2, 16.4.3, 16.5.1, 16.5.1a, 16.5.1b, 16.5.2, 16.5.3, 16.6.1, 16.6.2, 16.6.3, 16.6.4, 16.6.5, 16.6.4a, 16.6.5a, 16.6.6, 16.6.7, 16.6.8, 16.6.9, 16.6.10, 16.7.1, 16.7.1a, 16.7.1b, 16.7.2, 16.7.3, 16.7.4, 16.8.1, 16.8.1a, 16.8.1b, 16.8.1s, 16.8.1c, 16.8.1d, 16.8.2, 16.8.1e, 16.8.3, 16.9.1, 16.9.2, 16.9.1a, 16.9.1b, 16.9.1s, 16.9.3, 16.9.4, 16.9.3a, 16.9.5, 16.9.5f, 16.9.6, 16.9.7, 16.9.8, 16.10.1, 16.10.1a, 16.10.1b, 16.10.1s, 16.10.1c, 16.10.1e, 16.10.1d, 16.10.2, 16.10.1f, 16.10.1g, 16.10.3, 16.11.1, 16.11.1a, 16.11.1b, 16.11.2, 16.11.1s, 16.12.1, 16.12.1s, 16.12.1a, 16.12.1c, 16.12.1w, 16.12.2, 16.12.1y, 16.12.2a, 16.12.3, 16.12.8, 16.12.2s, 16.12.1x, 16.12.1t, 16.12.4, 16.12.3s, 16.12.3a, 16.12.4a, 16.12.5, 16.12.6, 16.12.1z1, 16.12.5a, 16.12.5b, 16.12.1z2, 16.12.6a, 16.12.7, 16.12.9, 16.12.10, 17.1.1, 17.1.1a, 17.1.1s, 17.1.1t, 17.1.3, 17.2.1, 17.2.1r, 17.2.1a, 17.2.1v, 17.2.2, 17.2.3, 17.3.1, 17.3.2, 17.3.3, 17.3.1a, 17.3.1w, 17.3.2a, 17.3.1x, 17.3.1z, 17.3.4, 17.3.5, 17.3.4a, 17.3.6, 17.3.4b, 17.3.4c, 17.3.5a, 17.3.5b, 17.3.7, 17.3.8, 17.4.1, 17.4.2, 17.4.1a, 17.4.1b, 17.4.2a, 17.5.1, 17.5.1a, 17.5.1b, 17.5.1c, 17.6.1, 17.6.2, 17.6.1w, 17.6.1a, 17.6.1x, 17.6.3, 17.6.1y, 17.6.1z, 17.6.3a, 17.6.4, 17.6.1z1, 17.6.5, 17.6.6, 17.7.1, 17.7.1a, 17.7.1b, 17.7.2, 17.10.1, 17.10.1a, 17.10.1b, 17.8.1, 17.8.1a, 17.9.1, 17.9.1w, 17.9.2, 17.9.1a, 17.9.1x, 17.9.1y, 17.9.3, 17.9.2a, 17.9.1x1, 17.9.3a, 17.9.4, 17.9.1y1, 17.11.1, 17.11.1a, 17.12.1, 17.12.1a, 17.11.99SW"
+[MàJ] Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (23 octobre 2023),Alerte,"\[Mise à jour du 22 novembre 2023\] L'éditeur a publié un document \[3\] le 20 novembre 2023 listant les différents journaux à analyser ainsi que les éléments à rechercher pour identifier une activité pouvant être liée à une compromission. Par ailleurs, la CISA a publié un avis de sécurité le 21...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-012/,"Mon, 23 Oct 2023 00:00:00 +0000",CVE-2023-4966,"Sensitive information disclosure in NetScaler ADC and NetScaler Gateway when configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) or AAA  virtual server.",CWE-119,CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer,9.4,Critique,0.943480000,Critique,Citrix,NetScaler Gateway,"14.1, 13.1, 13.0"
+Vulnérabilité dans Apache Struts 2 (13 décembre 2023),Alerte,"Le 4 décembre 2023, Apache a publié un avis de sécurité concernant la vulnérabilité critique CVE-2023-50164 concernant le cadriciel Struts 2. Cette vulnérabilité permet à un attaquant non authentifié de téléverser une porte dérobée sur un serveur vulnérable, et ainsi exécuter du code arbitraire à...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-013/,"Wed, 13 Dec 2023 00:00:00 +0000",CVE-2023-50164,"An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.
+Users are recommended to upgrade to versions Struts 2.5.33 or Struts 6.3.0.2 or greater to fix this issue.",CWE-552,CWE-552 Files or Directories Accessible to External Parties,,Non disponible,0.936470000,Critique,Apache Software Foundation,Apache Struts,"2.0.0, 6.0.0"
+[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways (11 janvier 2024),Alerte,"[Mise à jour du 4 mars 2024] Ivanti a publié le 29 février des recommandations de résolution pour les Ivanti Connect Secure ou Policy Secure en machine virtuelle [16]. [Mise à jour du 15 février 2024] l'éditeur a publié le 15 février des correctifs pour les versions suivantes, qui n'en...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-001/,"Thu, 11 Jan 2024 00:00:00 +0000",CVE-2024-21887,"A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",Non disponible,Non disponible,,Non disponible,0.944120000,Critique,Ivanti,IPS,"9.1R18, 22.6R1"
+[MàJ] Multiples Vulnérabilités dans GitLab (12 janvier 2024),Alerte,"\[Mise à jour du 29 janvier 2024\] Le 25 janvier 2024, l'éditeur a publié un avis de sécurité concernant plusieurs vulnérabilités affectant GitLab CE et EE. La vulnérabilité CVE-2024-0402 est considérée critique avec un score CVSSv3 de 9,9. Elle permet à un attaquant authentifié d'écrire des...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-002/,"Fri, 12 Jan 2024 00:00:00 +0000",CVE-2024-0402,"An issue has been discovered in GitLab CE/EE affecting all versions from 16.0 prior to 16.6.6, 16.7 prior to 16.7.4, and 16.8 prior to 16.8.1 which allows an authenticated user to write files to arbitrary locations on the GitLab server while creating a workspace.",CWE-22,CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'),9.9,Critique,0.393120000,Moyenne,GitLab,GitLab,"16.0, 16.6, 16.7, 16.8"
+[MàJ] Incident affectant les solutions AnyDesk (05 février 2024),Alerte,\[Mise à jour du 27 février 2024\] Le 29 janvier 2024 l'ANSSI a été alertée par le BSI que l'éditeur AnyDesk Software GmbH a été victime d'une fuite de données. Le code source des applications développées par l'éditeur ainsi que des certificats et clés privées pourraient avoir été dérobés. De...,https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-003/,"Mon, 05 Feb 2024 00:00:00 +0000",,,,,,,,,,,Non disponible
+[MàJ] Vulnérabilité dans Fortinet FortiOS (09 février 2024),Alerte,"\[Mise à jour du 19 mars 2024\] Le CERT-FR a connaissance de codes d'exploitation publics et de nouvelles tentatives d'exploitation. Le 8 février 2024, Fortinet a publié l'avis de sécurité concernant la vulnérabilité critique CVE-2024-21762 affectant le VPN SSL de FortiOS. Cette vulnérabilité...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-004/,"Fri, 09 Feb 2024 00:00:00 +0000",CVE-2024-21762,"A out-of-bounds write in Fortinet FortiOS versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, 6.0.0 through 6.0.17, FortiProxy versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.8, 7.0.0 through 7.0.14, 2.0.0 through 2.0.13, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7 allows attacker to execute unauthorized code or commands via specifically crafted requests",CWE-787,Execute unauthorized code or commands,9.6,Critique,0.929100000,Critique,Fortinet,FortiOS,"7.4.0, 7.2.0, 7.0.0, 6.4.0, 6.2.0, 6.0.0"
+[MàJ] Vulnérabilité dans Microsoft Outlook (15 février 2024),Alerte,\[Mise à jour du 15 mars 2024\] Ajout de précision concernant les défi-réponses NTLM \[Mise à jour du 22 février 2024\] Ajout de recommandations et de précisions sur le fonctionnement de la vulnérabilité. La vulnérabilité CVE-2024-21413 permet à un attaquant de contourner les mesures de sécurité...,https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-005/,"Thu, 15 Feb 2024 00:00:00 +0000",CVE-2024-21413,Microsoft Outlook Remote Code Execution Vulnerability,CWE-20,CWE-20: Improper Input Validation,9.8,Critique,0.933850000,Critique,Microsoft,Microsoft Office 2016,16.0.0
+[MàJ] Vulnérabilité dans Palo Alto Networks GlobalProtect (12 avril 2024),Alerte,"\[Mise à jour du 10 mai 2024\] Le CERT-FR est intervenu pour le traitement d'une compromission par rançongiciel au sein d'une entité française. Dans le cadre de cette attaque, la vulnérabilité a été exploitée pour ensuite réaliser une latéralisation dans le système d'information de la victime et...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-006/,"Fri, 12 Apr 2024 00:00:00 +0000",CVE-2024-3400,"A command injection as a result of arbitrary file creation vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.
+
+Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability.",CWE-77,CWE-77 Improper Neutralization of Special Elements used in a Command ('Command Injection'),10.0,Critique,0.942970000,Critique,Palo Alto Networks,Prisma Access,Non disponible
+Multiples vulnérabilités dans les produits Cisco (25 avril 2024),Alerte,"Le 24 avril 2024, Cisco a publié trois avis de sécurité concernant des vulnérabilités affectant les équipements de sécurité ASA et FTD. Deux d'entre eux concernent les vulnérabilités CVE-2024-20353 et CVE-2024-20359 qui sont activement exploitées dans le cadre d'attaques ciblées. La vulnérabilité...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-007/,"Thu, 25 Apr 2024 00:00:00 +0000",CVE-2024-20353,"A vulnerability in the management and VPN web servers for Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.
+ This vulnerability is due to incomplete error checking when parsing an HTTP header. An attacker could exploit this vulnerability by sending a crafted HTTP request to a targeted web server on a device. A successful exploit could allow the attacker to cause a DoS condition when the device reloads.",CWE-835,Loop with Unreachable Exit Condition ('Infinite Loop'),8.6,Élevée,0.195360000,Faible,Cisco,Cisco Firepower Threat Defense Software,"6.2.3, 6.2.3.1, 6.2.3.2, 6.2.3.3, 6.2.3.4, 6.2.3.5, 6.2.3.6, 6.2.3.7, 6.2.3.8, 6.2.3.10, 6.2.3.11, 6.2.3.9, 6.2.3.12, 6.2.3.13, 6.2.3.14, 6.2.3.15, 6.2.3.16, 6.2.3.17, 6.2.3.18, 6.6.0, 6.6.0.1, 6.6.1, 6.6.3, 6.6.4, 6.6.5, 6.6.5.1, 6.6.5.2, 6.6.7, 6.6.7.1, 6.4.0, 6.4.0.1, 6.4.0.3, 6.4.0.2, 6.4.0.4, 6.4.0.5, 6.4.0.6, 6.4.0.7, 6.4.0.8, 6.4.0.9, 6.4.0.10, 6.4.0.11, 6.4.0.12, 6.4.0.13, 6.4.0.14, 6.4.0.15, 6.4.0.16, 6.4.0.17, 6.7.0, 6.7.0.1, 6.7.0.2, 6.7.0.3, 7.0.0, 7.0.0.1, 7.0.1, 7.0.1.1, 7.0.2, 7.0.2.1, 7.0.3, 7.0.4, 7.0.5, 7.0.6, 7.0.6.1, 7.1.0, 7.1.0.1, 7.1.0.2, 7.1.0.3, 7.2.0, 7.2.0.1, 7.2.1, 7.2.2, 7.2.3, 7.2.4, 7.2.4.1, 7.2.5, 7.2.5.1, 7.3.0, 7.3.1, 7.3.1.1, 7.4.0, 7.4.1"
+[MàJ] Vulnérabilité dans les produits Check Point  (30 mai 2024),Alerte,"[Mise à jour du 31 mai 2024] Des preuves de concept sont désormais disponibles publiquement sur Internet. De plus, l'éditeur indique avoir détecté des tentatives de compromission à partir du 7 avril 2024. **[Publication Initiale]** Une vulnérabilité a été découverte dans les produits Check Point....",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-008/,"Thu, 30 May 2024 00:00:00 +0000",CVE-2024-24919,Potentially allowing an attacker to read certain information on Check Point Security Gateways once connected to the internet and enabled with remote Access VPN or Mobile Access Software Blades. A Security fix that mitigates this vulnerability is available.,CWE-200,CWE-200: Exposure of Sensitive Information to an Unauthorized Actor,8.6,Élevée,0.943420000,Critique,checkpoint,"Check Point Quantum Gateway, Spark Gateway and CloudGuard Network","Check Point Quantum Gateway and CloudGuard Network versions R81.20, R81.10, R81, R80.40 and Check Point Spark versions R81.10, R80.20."
+Vulnérabilité dans OpenSSH (01 juillet 2024),Alerte,"Le 1 juillet 2024, OpenSSH a publié un avis de sécurité concernant la vulnérabilité critique CVE-2024-6387. Cette vulnérabilité permet à un attaquant non authentifié d'exécuter du code arbitraire à distance avec les privilèges *root*. L'éditeur précise que les versions 8.5p1 à 9.7p1 sont...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-009/,"Mon, 01 Jul 2024 00:00:00 +0000",CVE-2024-6387,"A security regression (CVE-2006-5051) was discovered in OpenSSH's server (sshd). There is a race condition which can lead sshd to handle some signals in an unsafe manner. An unauthenticated, remote attacker may be able to trigger it by failing to authenticate within a set time period.",CWE-364,Signal Handler Race Condition,,Non disponible,0.507890000,Élevée,Red Hat,Red Hat Enterprise Linux 8,Non disponible
+Multiples vulnérabilités dans Roundcube (09 août 2024),Alerte,"Le 4 août 2024, Roundcube a publié des correctifs concernant les vulnérabilités critiques CVE-2024-42008 et CVE-2024-42009 affectant son serveur de courriel. Ces vulnérabilités permettent des injections de code indirectes à distance (XSS) qui peuvent, par exemple, conduire à la récupération du...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-010/,"Fri, 09 Aug 2024 00:00:00 +0000",CVE-2024-42009,A Cross-Site Scripting vulnerability in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.,Non disponible,n/a,,Non disponible,0.904390000,Critique,n/a,n/a,n/a
+Vulnérabilité dans SonicWall (10 septembre 2024),Alerte,"Le 22 août 2024, Sonicwall a publié un correctif concernant la vulnérabilité critique CVE-2024-40766 affectant les pare-feux Sonicwall génération 5, 6 et 7. Cette vulnérabilité, de type contrôle d'accès défaillant, permet à un attaquant de provoquer un déni de service à distance, une atteinte à...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-011/,"Tue, 10 Sep 2024 00:00:00 +0000",CVE-2024-40766,"An improper access control vulnerability has been identified in the SonicWall SonicOS management access, potentially leading to unauthorized resource access and in specific conditions, causing the firewall to crash. This issue affects SonicWall Firewall Gen 5 and Gen 6 devices, as well as Gen 7 devices running SonicOS 7.0.1-5035 and older versions.",CWE-284,CWE-284 Improper Access Control,,Non disponible,0.040210000,Faible,SonicWall,SonicOS,"5.9.2.14-12o and older versions, 6.5.4.14-109n and older versions, 7.0.1-5035 and older versions"
+[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024),Alerte,"**[Mise à jour du 10 octobre 2024]** Le 28 septembre 2024, Elastic Security Labs a publié des règles de détection au format propriétaire de l'éditeur (cf. section Documentation), qui sont confirmées par les analyses du CERT-FR pour la détection des attaques connues. **[Publication initiale]** De...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-012/,"Fri, 27 Sep 2024 00:00:00 +0000",CVE-2024-47177,,Non disponible,Non disponible,,Non disponible,,Non disponible,SonicWall,SonicOS,"5.9.2.14-12o and older versions, 6.5.4.14-109n and older versions, 7.0.1-5035 and older versions"
+Exploitations de vulnérabilités dans Ivanti Cloud Services Appliance (CSA) (22 octobre 2024),Alerte,"Ivanti a publié plusieurs avis de sécurité sur des vulnérabilités affectant CSA qui sont activement exploitées : * le 10 septembre 2024, Ivanti a publié un avis de sécurité concernant la vulnérabilité CVE-2024-8190 qui permet à un attaquant, authentifié en tant qu'administrateur, d'exécuter du...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-013/,"Tue, 22 Oct 2024 00:00:00 +0000",CVE-2024-9379,SQL injection in the admin web console of Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges to run arbitrary SQL statements.,CWE-89,CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'),6.5,Moyenne,0.817000000,Critique,Ivanti,CSA (Cloud Services Appliance),Non disponible
+[MàJ] Multiples vulnérabilités dans Fortinet FortiManager (23 octobre 2024),Alerte,"**[Mise à jour du 14 janvier 2025]** **Publication des correctifs** Le 14 janvier 2025, Fortinet a publié un avis de sécurité relatif à la vulnérabilité CVE-2024-50566 qui correspond à la vulnérabilité de type jour-zéro pour laquelle une preuve de concept a été publiée en novembre 2024. Des...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-014/,"Wed, 23 Oct 2024 00:00:00 +0000",CVE-2024-47575,"A missing authentication for critical function in FortiManager 7.6.0, FortiManager 7.4.0 through 7.4.4, FortiManager 7.2.0 through 7.2.7, FortiManager 7.0.0 through 7.0.12, FortiManager 6.4.0 through 6.4.14, FortiManager 6.2.0 through 6.2.12, Fortinet FortiManager Cloud 7.4.1 through 7.4.4, FortiManager Cloud 7.2.1 through 7.2.7, FortiManager Cloud 7.0.1 through 7.0.12, FortiManager Cloud 6.4.1 through 6.4.7 allows attacker to execute arbitrary code or commands via specially crafted requests.",CWE-306,Execute unauthorized code or commands,9.8,Critique,0.938460000,Critique,Fortinet,FortiManager,"7.6.0, 7.4.0, 7.2.0, 7.0.0, 6.4.0, 6.2.0"
+[MàJ] Multiples vulnérabilités sur l'interface d'administration des équipements Palo Alto Networks (15 novembre 2024),Alerte,"Le 8 novembre 2024, Palo Alto Networks a publié un avis de sécurité relatif à une vulnérabilité critique dans certains pare-feux Palo Alto Networks. Elle permet à un attaquant non authentifié d'exécuter du code arbitraire à distance sur l'interface d'administration des équipements. L'éditeur...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-015/,"Fri, 15 Nov 2024 00:00:00 +0000",CVE-2024-0012,"An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like  CVE-2024-9474 https://security.paloaltonetworks.com/CVE-2024-9474 .
+
+The risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .
+
+This issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.
+
+Cloud NGFW and Prisma Access are not impacted by this vulnerability.",CWE-306,CWE-306 Missing Authentication for Critical Function,,Non disponible,0.943000000,Critique,Palo Alto Networks,Prisma Access,Non disponible
+[MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025),Alerte,"Une vulnérabilité jour-zéro de type débordement de pile a été découverte dans Ivanti Connect Secure (ICS), Policy Secure (IPS), Neurons for Zero Trust Access (ZTA) gateways. Cette vulnérabilité, d'identifiant CVE-2025-0282, permet à un attaquant non authentifié de provoquer une exécution de code...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-001/,"Thu, 09 Jan 2025 00:00:00 +0000",CVE-2025-0283,"A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gateways before version 22.7R2.3 allows a local authenticated attacker to escalate their privileges.",CWE-121,CWE-121: Stack-based Buffer Overflow,7.0,Élevée,0.229900000,Moyenne,Ivanti,Neurons for ZTA gateways,Non disponible
+[MàJ] Vulnérabilité dans les produits Fortinet (14 janvier 2025),Alerte,"\[Mise à jour du 28 janvier 2025\] Une preuve de concept permettant l'exploitation de cette vulnérabilité est disponible publiquement. Le 14 janvier 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité critique CVE-2024-55591 affectant FortiOS et FortiProxy. Elle permet à un...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-002/,"Tue, 14 Jan 2025 00:00:00 +0000",CVE-2024-55591,An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS version 7.0.0 through 7.0.16 and FortiProxy version 7.0.0 through 7.0.19 and 7.2.0 through 7.2.12 allows a remote attacker to gain super-admin privileges via crafted requests to Node.js websocket module.,CWE-288,Execute unauthorized code or commands,9.6,Critique,0.936610000,Critique,Fortinet,FortiProxy,"7.2.0, 7.0.0"
+[MàJ] Vulnérabilité dans les produits Ivanti (03 avril 2025),Alerte,**\[Mise à jour du 11 avril 2025\]** Le CERT-FR a connaissance d'une preuve de concept publique permettant de provoquer une exécution de code arbitraire à distance. **[Mise à jour du 04 avril 2025]** Le CERT-FR a connaissance d'une preuve de concept publique permettant de provoquer un arrêt du...,https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-003/,"Thu, 03 Apr 2025 00:00:00 +0000",CVE-2025-22457,"A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4, and Ivanti ZTA Gateways before version 22.8R2.2 allows a remote unauthenticated attacker to achieve remote code execution.",CWE-121,CWE-121 Stack-based Buffer Overflow,9.0,Critique,0.491320000,Moyenne,Ivanti,Neurons for ZTA gateways,Non disponible
+Activités de post-exploitation dans Fortinet FortiGate (11 avril 2025),Alerte,Fortinet a publié le 10 avril 2025 un billet de blogue [1] indiquant l'utilisation d'une technique de post-exploitation qui permet une atteinte à la confidentialité des données de l'ensemble du système des équipements Fortigate affectés. Cette technique repose sur l'utilisation d'un lien...,https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-004/,"Fri, 11 Apr 2025 00:00:00 +0000",CVE-2024-21762,"A out-of-bounds write in Fortinet FortiOS versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, 6.0.0 through 6.0.17, FortiProxy versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.8, 7.0.0 through 7.0.14, 2.0.0 through 2.0.13, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7 allows attacker to execute unauthorized code or commands via specifically crafted requests",CWE-787,Execute unauthorized code or commands,9.6,Critique,0.929100000,Critique,Fortinet,FortiOS,"7.4.0, 7.2.0, 7.0.0, 6.4.0, 6.2.0, 6.0.0"
+Vulnérabilité dans SAP NetWeaver (28 avril 2025),Alerte,"Le 24 avril 2025, SAP a publié un bulletin de sécurité relatif à la vulnérabilité CVE-2025-31324 qui permet l'exécution de code arbitraire à distance pour un utilisateur non authentifié. Cette vulnérabilité est provoquée par un contournement de la politique de sécurité qui permet de télécharger...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-005/,"Mon, 28 Apr 2025 00:00:00 +0000",CVE-2025-31324,"SAP NetWeaver Visual Composer Metadata Uploader is not protected with a proper authorization, allowing unauthenticated agent to upload potentially malicious executable binaries that could severely harm the host system. This could significantly affect the confidentiality, integrity, and availability of the targeted system.",CWE-434,CWE-434: Unrestricted Upload of File with Dangerous Type,10.0,Critique,0.387270000,Moyenne,SAP_SE,SAP NetWeaver (Visual Composer development server),VCFRAMEWORK 7.50
+Vulnérabilité dans les produits Fortinet (13 mai 2025),Alerte,"Le 13 mai 2025, Fortinet a publié un avis de sécurité concernant la vulnérabilité CVE-2025-32756. Celle-ci permet à un attaquant non authentifié d'exécuter du code arbitraire à distance. L'éditeur indique que cette vulnérabilité est activement exploitée. Les exploitations constatées jusqu'ici...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-006/,"Tue, 13 May 2025 00:00:00 +0000",CVE-2025-32756,"A stack-based buffer overflow vulnerability [CWE-121] in Fortinet FortiVoice versions 7.2.0, 7.0.0 through 7.0.6, 6.4.0 through 6.4.10, FortiRecorder versions 7.2.0 through 7.2.3, 7.0.0 through 7.0.5, 6.4.0 through 6.4.5, FortiMail versions 7.6.0 through 7.6.2, 7.4.0 through 7.4.4, 7.2.0 through 7.2.7, 7.0.0 through 7.0.8, FortiNDR versions 7.6.0, 7.4.0 through 7.4.7, 7.2.0 through 7.2.4, 7.0.0 through 7.0.6, FortiCamera versions 2.1.0 through 2.1.3, 2.0 all versions, 1.1 all versions, allows a remote unauthenticated attacker to execute arbitrary code or commands via sending HTTP requests with specially crafted hash cookie.",CWE-121,Execute unauthorized code or commands,9.6,Critique,0.304720000,Moyenne,Fortinet,FortiCamera,"2.1.0, 2.0.0, 1.1.0"
+Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (EPMM) (14 mai 2025),Alerte,"[Mise à jour du 15 mai 2025] Une preuve de concept est publiquement disponible sur Internet. [Publication initiale] Le 13 mai 2025, Ivanti a publié deux avis de sécurité concernant les vulnérabilités CVE-2025-4427 et CVE-2025-4428. L'utilisation combinée de ces deux vulnérabilités permet...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-007/,"Wed, 14 May 2025 00:00:00 +0000",CVE-2025-4427,An authentication bypass in the API component of Ivanti Endpoint Manager Mobile 12.5.0.0 and prior allows attackers to access protected resources without proper credentials via the API.,CWE-288,CWE-288: Authentication Bypass Using an Alternate Path or Channel,5.3,Moyenne,0.914010000,Critique,Ivanti,Endpoint Manager Mobile,Non disponible
+[MàJ] Vulnérabilité dans Roundcube (05 juin 2025),Alerte,"[Mise à jour du 06 juin 2025] Une preuve de concept est publiquement disponible. [Publication initiale] Le 01 juin 2025, Roundcube a publié des correctifs concernant une vulnérabilité critique affectant son portail de messagerie ainsi que tous les produits l'incluant (par exemple cPanel et...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-008/,"Thu, 05 Jun 2025 00:00:00 +0000",CVE-2025-49113,"Roundcube Webmail before 1.5.10 and 1.6.x before 1.6.11 allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/actions/settings/upload.php, leading to PHP Object Deserialization.",CWE-502,CWE-502 Deserialization of Untrusted Data,9.9,Critique,0.918350000,Critique,Roundcube,Webmail,"0, 1.6.0"
+Multiples vulnérabilités dans Citrix NetScaler ADC et NetScaler Gateway (01 juillet 2025),Alerte,"**[Mise à jour du 17 juillet 2025]** L'éditeur a publié un lien contenant une méthode d'évaluation permettant d'identifier des tentatives d'exploitation dans les journaux applicatifs et systèmes [12]. **[Mise à jour du 7 juillet 2025]** Le 17 juin 2025, Citrix a publié un bulletin de sécurité...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-009/,"Tue, 01 Jul 2025 00:00:00 +0000",CVE-2025-6543,"Memory overflow vulnerability leading to unintended control flow and Denial of Service in NetScaler ADC and NetScaler Gateway when configured as Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server",CWE-119,CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer,,Non disponible,0.030480000,Faible,NetScaler,Gateway,"14.1, 13.1, 13.1 FIPS and NDcPP"
+[MàJ] Multiples vulnérabilités dans Microsoft SharePoint (21 juillet 2025),Alerte,"**[Mise à jour du 23 juillet 2025]** Le 20 juillet 2025, Microsoft a publié des correctifs pour une vulnérabilité de type limitation insuffisante d'un chemin d'accès à un répertoire restreint, aussi appelé *path traversal*, affectant SharePoint Enterprise Server 2016, SharePoint Server 2019 et...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-010/,"Mon, 21 Jul 2025 00:00:00 +0000",CVE-2025-53770,"Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network.
+Microsoft is aware that an exploit for CVE-2025-53770 exists in the wild.
+Microsoft is preparing and fully testing a comprehensive update to address this vulnerability.  In the meantime, please make sure that the mitigation provided in this CVE documentation is in place so that you are protected from exploitation.",CWE-502,CWE-502: Deserialization of Untrusted Data,9.8,Critique,0.896070000,Critique,Microsoft,Microsoft SharePoint Server Subscription Edition,16.0.0
+Incidents de sécurité dans les pare-feux SonicWall (05 août 2025),Alerte,"[Mise à jour du 7 août 2025] Le 6 août 2025, SonicWall a remplacé une partie de son communiqué initial pour indiquer que les incidents de sécurité évoqués étaient vraisemblablement corrélés à la vulnérabilité CVE-2024-40766. Celle-ci a fait l'objet d'un bulletin de sécurité, SNWLID-2024-0015 (cf....",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-011/,"Tue, 05 Aug 2025 00:00:00 +0000",CVE-2024-40766,"An improper access control vulnerability has been identified in the SonicWall SonicOS management access, potentially leading to unauthorized resource access and in specific conditions, causing the firewall to crash. This issue affects SonicWall Firewall Gen 5 and Gen 6 devices, as well as Gen 7 devices running SonicOS 7.0.1-5035 and older versions.",CWE-284,CWE-284 Improper Access Control,,Non disponible,0.040210000,Faible,SonicWall,SonicOS,"5.9.2.14-12o and older versions, 6.5.4.14-109n and older versions, 7.0.1-5035 and older versions"
+Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (26 août 2025),Alerte,"Le 26 août 2025, Citrix a publié un bulletin de sécurité (cf. section Documentation) concernant, entre autres, la vulnérabilité CVE-2025-7775. Celle-ci permet une exécution de code arbitraire à distance et affecte toutes les versions de Citrix NetScaler ADC et NetScaler Gateway, dans certaines...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-012/,"Tue, 26 Aug 2025 00:00:00 +0000",CVE-2025-7775,"Memory overflow vulnerability leading to Remote Code Execution and/or Denial of Service in NetScaler ADC and NetScaler Gateway when NetScaler is configured as Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server
+
+(OR)
+
+NetScaler ADC and NetScaler Gateway 13.1, 14.1, 13.1-FIPS and NDcPP: LB virtual servers of type (HTTP, SSL or HTTP_QUIC) bound with IPv6 services or servicegroups bound with IPv6 servers 
+
+(OR)
+
+NetScaler ADC and NetScaler Gateway 13.1, 14.1, 13.1-FIPS and NDcPP: LB virtual servers of type (HTTP, SSL or HTTP_QUIC) bound with DBS IPv6 services or servicegroups bound with IPv6 DBS servers
+
+(OR)
+
+CR virtual server with type HDX",CWE-119,CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer,,Non disponible,0.180050000,Faible,NetScaler,Gateway,"14.1, 13.1, 13.1 FIPS and NDcPP, 12.1 FIPS and NDcPP"
+[MàJ] Multiples vulnérabilités dans Cisco ASA et FTD (25 septembre 2025),Alerte,"**[Mise à jour du 07 novembre 2025]** Le 5 novembre 2025, Cisco a mis a jour son billet de blogue initialement publié le 25 septembre 2025 (cf. section Documentation). L'éditeur déclare avoir connaissance d'une nouvelle attaque, affectant les équipements ASA et FTD vulnérables, qui cause un déni...",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-013/,"Thu, 25 Sep 2025 00:00:00 +0000",CVE-2025-20333,"A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.
+ This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as root, possibly resulting in the complete compromise of the affected device.",CWE-120,Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'),9.9,Critique,0.086710000,Faible,Cisco,Cisco Secure Firewall Threat Defense (FTD) Software,"6.2.3, 6.2.3.1, 6.2.3.2, 6.2.3.3, 6.2.3.4, 6.2.3.5, 6.2.3.6, 6.2.3.7, 6.2.3.8, 6.2.3.10, 6.2.3.11, 6.2.3.9, 6.2.3.12, 6.2.3.13, 6.2.3.14, 6.2.3.15, 6.2.3.16, 6.2.3.17, 6.2.3.18, 6.6.0, 6.6.0.1, 6.6.1, 6.6.3, 6.6.4, 6.6.5, 6.6.5.1, 6.6.5.2, 6.6.7, 6.6.7.1, 6.6.7.2, 6.4.0, 6.4.0.1, 6.4.0.3, 6.4.0.2, 6.4.0.4, 6.4.0.5, 6.4.0.6, 6.4.0.7, 6.4.0.8, 6.4.0.9, 6.4.0.10, 6.4.0.11, 6.4.0.12, 6.4.0.13, 6.4.0.14, 6.4.0.15, 6.4.0.16, 6.4.0.17, 6.4.0.18, 7.0.0, 7.0.0.1, 7.0.1, 7.0.1.1, 7.0.2, 7.0.2.1, 7.0.3, 7.0.4, 7.0.5, 7.0.6, 7.0.6.1, 7.0.6.2, 7.0.6.3, 7.0.7, 7.0.8, 7.1.0, 7.1.0.1, 7.1.0.2, 7.1.0.3, 7.2.0, 7.2.0.1, 7.2.1, 7.2.2, 7.2.3, 7.2.4, 7.2.4.1, 7.2.5, 7.2.5.1, 7.2.6, 7.2.7, 7.2.5.2, 7.2.8, 7.2.8.1, 7.3.0, 7.3.1, 7.3.1.1, 7.3.1.2, 7.4.0, 7.4.1, 7.4.1.1, 7.4.2, 7.4.2.1, 7.4.2.2, 7.4.2.3, 7.6.0"
+[MàJ] Vulnérabilité dans React Server Components (05 décembre 2025),Alerte,**[Mise à jour du 11 décembre 2025]** Le CERT-FR a connaissance de multiples exploitations de la vulnérabilité CVE-2025-55182. Les serveurs avec une version vulnérable exposés après la publication des preuves de concept publiques du 5 décembre 2025 doivent être considérés comme compromis....,https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-014/,"Fri, 05 Dec 2025 00:00:00 +0000",CVE-2025-55182,"A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",Non disponible,Deserialization of Untrusted Data (CWE-502),10.0,Critique,0.534640000,Élevée,Meta,react-server-dom-parcel,"19.0.0, 19.1.0, 19.2.0"
