@@ -249,17 +249,17 @@ def alerter(alertes_enrichies, quotidiennes=None, seuil_gravite_cvss=None, edite
 
 
 print("Extraction des alertes...")
-# alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
+alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
 # alertes = from_json("alertes.json") # pour charger les aloertes localement
 print("Extraction des CVE des alertes...")
-# ref_cves, cve_list = extraire_cve_alertes(alertes)
+ref_cves, cve_list = extraire_cve_alertes(alertes)
 
 print("Enrichissement des CVE...")
-# cve_enrichi = enrichir_cve(cve_list)
+cve_enrichi = enrichir_cve(cve_list)
 
 print("Consolidation des données et creéation du dataframe...")
-# alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
-alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
+alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
+# alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
 
 df_alertes = dataframe_alertes(alertes_enrichies)
 
