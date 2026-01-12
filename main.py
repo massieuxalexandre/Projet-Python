@@ -109,7 +109,6 @@ def gravite_epss(score):
 def enrichir_cve(cve_list):
     cve_enrichi = []
     for cve in cve_list:
-        print(cve)
         if len(cve) >= 1:
             cve_id = cve[0]
             url_api_cve = f"https://cveawg.mitre.org/api/cve/{cve_id}"
