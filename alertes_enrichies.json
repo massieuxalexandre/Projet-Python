@@ -81,18 +81,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-66030",
-            "description": "Forge (also called `node-forge`) is a native implementation of Transport Layer Security in JavaScript. An Integer Overflow vulnerability in node-forge versions 1.3.1 and below enables remote, unauthenticated attackers to craft ASN.1 structures containing OIDs with oversized arcs. These arcs may be decoded as smaller, trusted OIDs due to 32-bit bitwise truncation, enabling the bypass of downstream OID-based security decisions. This issue has been patched in version 1.3.2.",
-            "cwe": "CWE-190",
-            "nature de la faille": "CWE-190: Integer Overflow or Wraparound",
+            "cve_id": "CVE-2025-48924",
+            "description": "Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.\n\nThe methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.",
+            "cwe": "CWE-674",
+            "nature de la faille": "CWE-674 Uncontrolled Recursion",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000400000",
+            "epss_score": "0.000160000",
             "gravite_epss": "Faible",
-            "editeur": "digitalbazaar",
-            "produit": "forge",
+            "editeur": "Apache Software Foundation",
+            "produit": "Apache Commons Lang",
             "versions_affectees": [
-                "< 1.3.2"
+                "3.0"
             ]
         }
     },
@@ -105,8 +105,8 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-66493",
-            "description": "A use-after-free vulnerability exists in the AcroForm handling of Foxit PDF Reader and Foxit PDF Editor before 2025.2.1,14.0.1 and 13.2.1 \n\non Windows\n\n. When opening a PDF containing specially crafted JavaScript, a pointer to memory that has already been freed may be accessed or dereferenced, potentially allowing a remote attacker to execute arbitrary code.",
+            "cve_id": "CVE-2025-66494",
+            "description": "A use-after-free vulnerability exists in the PDF file parsing of Foxit PDF Reader before 2025.2.1, 14.0.1, and 13.2.1 on Windows. A PDF object managed by multiple parent objects could be freed while still being referenced, potentially allowing a remote attacker to execute arbitrary code.",
             "cwe": "CWE-416",
             "nature de la faille": "CWE-416 Use After Free",
             "cvss_score": 7.8,
@@ -114,11 +114,11 @@
             "epss_score": "0.000480000",
             "gravite_epss": "Faible",
             "editeur": "Foxit Software Inc.",
-            "produit": "Foxit PDF Reader",
+            "produit": "Foxit PDF Editor",
             "versions_affectees": [
                 "Versions 2025.2.1 and earlier",
                 "Versions 14.0.1 and earlier",
-                "Versions 13.2.1 and earlier"
+                "Versions 13.2.1 and eariler"
             ]
         }
     },
@@ -131,20 +131,19 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-55182",
-            "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
+            "cve_id": "CVE-2022-30635",
+            "description": "Uncontrolled recursion in Decoder.Decode in encoding/gob before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a message which contains deeply nested structures.",
             "cwe": "Non disponible",
-            "nature de la faille": "Deserialization of Untrusted Data (CWE-502)",
-            "cvss_score": 10,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.534640000",
-            "gravite_epss": "Élevée",
-            "editeur": "Meta",
-            "produit": "react-server-dom-parcel",
+            "nature de la faille": "CWE-674: Uncontrolled Recursion",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000870000",
+            "gravite_epss": "Faible",
+            "editeur": "Go standard library",
+            "produit": "encoding/gob",
             "versions_affectees": [
-                "19.0.0",
-                "19.1.0",
-                "19.2.0"
+                "0",
+                "1.18.0-0"
             ]
         }
     },
@@ -157,18 +156,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39697",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nNFS: Fix a race when updating an existing write\n\nAfter nfs_lock_and_join_requests() tests for whether the request is\nstill attached to the mapping, nothing prevents a call to\nnfs_inode_remove_request() from succeeding until we actually lock the\npage group.\nThe reason is that whoever called nfs_inode_remove_request() doesn't\nnecessarily have a lock on the page group head.\n\nSo in order to avoid races, let's take the page group lock earlier in\nnfs_lock_and_join_requests(), and hold it across the removal of the\nrequest in nfs_inode_remove_request().",
+            "cve_id": "CVE-2023-53297",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix \"bad unlock balance\" in l2cap_disconnect_rsp\n\nconn->chan_lock isn't acquired before l2cap_get_chan_by_scid,\nif l2cap_get_chan_by_scid returns NULL, then 'bad unlock balance'\nis triggered.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000170000",
+            "epss_score": "0.000160000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.14"
+                "6.3"
             ]
         }
     },
@@ -181,18 +180,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-40188",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\npwm: berlin: Fix wrong register in suspend/resume\n\nThe 'enable' register should be BERLIN_PWM_EN rather than\nBERLIN_PWM_ENABLE, otherwise, the driver accesses wrong address, there\nwill be cpu exception then kernel panic during suspend/resume.",
+            "cve_id": "CVE-2025-40047",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/waitid: always prune wait queue entry in io_waitid_wait()\n\nFor a successful return, always remove our entry from the wait queue\nentry list. Previously this was skipped if a cancelation was in\nprogress, but this can race with another invocation of the wait queue\nentry callback.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000510000",
+            "epss_score": "0.000250000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.9"
+                "6.7"
             ]
         }
     },
@@ -237,18 +236,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-38568",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: mqprio: fix stack out-of-bounds write in tc entry parsing\n\nTCA_MQPRIO_TC_ENTRY_INDEX is validated using\nNLA_POLICY_MAX(NLA_U32, TC_QOPT_MAX_QUEUE), which allows the value\nTC_QOPT_MAX_QUEUE (16). This leads to a 4-byte out-of-bounds stack\nwrite in the fp[] array, which only has room for 16 elements (0–15).\n\nFix this by changing the policy to allow only up to TC_QOPT_MAX_QUEUE - 1.",
+            "cve_id": "CVE-2025-38439",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Set DMA unmap len correctly for XDP_REDIRECT\n\nWhen transmitting an XDP_REDIRECT packet, call dma_unmap_len_set()\nwith the proper length instead of 0.  This bug triggers this warning\non a system with IOMMU enabled:\n\nWARNING: CPU: 36 PID: 0 at drivers/iommu/dma-iommu.c:842 __iommu_dma_unmap+0x159/0x170\nRIP: 0010:__iommu_dma_unmap+0x159/0x170\nCode: a8 00 00 00 00 48 c7 45 b0 00 00 00 00 48 c7 45 c8 00 00 00 00 48 c7 45 a0 ff ff ff ff 4c 89 45\nb8 4c 89 45 c0 e9 77 ff ff ff <0f> 0b e9 60 ff ff ff e8 8b bf 6a 00 66 66 2e 0f 1f 84 00 00 00 00\nRSP: 0018:ff22d31181150c88 EFLAGS: 00010206\nRAX: 0000000000002000 RBX: 00000000e13a0000 RCX: 0000000000000000\nRDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000\nRBP: ff22d31181150cf0 R08: ff22d31181150ca8 R09: 0000000000000000\nR10: 0000000000000000 R11: ff22d311d36c9d80 R12: 0000000000001000\nR13: ff13544d10645010 R14: ff22d31181150c90 R15: ff13544d0b2bac00\nFS: 0000000000000000(0000) GS:ff13550908a00000(0000) knlGS:0000000000000000\nCS: 0010 DS: 0000 ES: 0000 CR0: 0000000080050033\nCR2: 00005be909dacff8 CR3: 0008000173408003 CR4: 0000000000f71ef0\nPKRU: 55555554\nCall Trace:\n<IRQ>\n? show_regs+0x6d/0x80\n? __warn+0x89/0x160\n? __iommu_dma_unmap+0x159/0x170\n? report_bug+0x17e/0x1b0\n? handle_bug+0x46/0x90\n? exc_invalid_op+0x18/0x80\n? asm_exc_invalid_op+0x1b/0x20\n? __iommu_dma_unmap+0x159/0x170\n? __iommu_dma_unmap+0xb3/0x170\niommu_dma_unmap_page+0x4f/0x100\ndma_unmap_page_attrs+0x52/0x220\n? srso_alias_return_thunk+0x5/0xfbef5\n? xdp_return_frame+0x2e/0xd0\nbnxt_tx_int_xdp+0xdf/0x440 [bnxt_en]\n__bnxt_poll_work_done+0x81/0x1e0 [bnxt_en]\nbnxt_poll+0xd3/0x1e0 [bnxt_en]",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000230000",
+            "epss_score": "0.000180000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "6.4"
+                "5.3"
             ]
         }
     },
@@ -261,18 +260,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39996",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: b2c2: Fix use-after-free causing by irq_check_work in flexcop_pci_remove\n\nThe original code uses cancel_delayed_work() in flexcop_pci_remove(), which\ndoes not guarantee that the delayed work item irq_check_work has fully\ncompleted if it was already running. This leads to use-after-free scenarios\nwhere flexcop_pci_remove() may free the flexcop_device while irq_check_work\nis still active and attempts to dereference the device.\n\nA typical race condition is illustrated below:\n\nCPU 0 (remove)                         | CPU 1 (delayed work callback)\nflexcop_pci_remove()                   | flexcop_pci_irq_check_work()\n  cancel_delayed_work()                |\n  flexcop_device_kfree(fc_pci->fc_dev) |\n                                       |   fc = fc_pci->fc_dev; // UAF\n\nThis is confirmed by a KASAN report:\n\n==================================================================\nBUG: KASAN: slab-use-after-free in __run_timer_base.part.0+0x7d7/0x8c0\nWrite of size 8 at addr ffff8880093aa8c8 by task bash/135\n...\nCall Trace:\n <IRQ>\n dump_stack_lvl+0x55/0x70\n print_report+0xcf/0x610\n ? __run_timer_base.part.0+0x7d7/0x8c0\n kasan_report+0xb8/0xf0\n ? __run_timer_base.part.0+0x7d7/0x8c0\n __run_timer_base.part.0+0x7d7/0x8c0\n ? __pfx___run_timer_base.part.0+0x10/0x10\n ? __pfx_read_tsc+0x10/0x10\n ? ktime_get+0x60/0x140\n ? lapic_next_event+0x11/0x20\n ? clockevents_program_event+0x1d4/0x2a0\n run_timer_softirq+0xd1/0x190\n handle_softirqs+0x16a/0x550\n irq_exit_rcu+0xaf/0xe0\n sysvec_apic_timer_interrupt+0x70/0x80\n </IRQ>\n...\n\nAllocated by task 1:\n kasan_save_stack+0x24/0x50\n kasan_save_track+0x14/0x30\n __kasan_kmalloc+0x7f/0x90\n __kmalloc_noprof+0x1be/0x460\n flexcop_device_kmalloc+0x54/0xe0\n flexcop_pci_probe+0x1f/0x9d0\n local_pci_probe+0xdc/0x190\n pci_device_probe+0x2fe/0x470\n really_probe+0x1ca/0x5c0\n __driver_probe_device+0x248/0x310\n driver_probe_device+0x44/0x120\n __driver_attach+0xd2/0x310\n bus_for_each_dev+0xed/0x170\n bus_add_driver+0x208/0x500\n driver_register+0x132/0x460\n do_one_initcall+0x89/0x300\n kernel_init_freeable+0x40d/0x720\n kernel_init+0x1a/0x150\n ret_from_fork+0x10c/0x1a0\n ret_from_fork_asm+0x1a/0x30\n\nFreed by task 135:\n kasan_save_stack+0x24/0x50\n kasan_save_track+0x14/0x30\n kasan_save_free_info+0x3a/0x60\n __kasan_slab_free+0x3f/0x50\n kfree+0x137/0x370\n flexcop_device_kfree+0x32/0x50\n pci_device_remove+0xa6/0x1d0\n device_release_driver_internal+0xf8/0x210\n pci_stop_bus_device+0x105/0x150\n pci_stop_and_remove_bus_device_locked+0x15/0x30\n remove_store+0xcc/0xe0\n kernfs_fop_write_iter+0x2c3/0x440\n vfs_write+0x871/0xd70\n ksys_write+0xee/0x1c0\n do_syscall_64+0xac/0x280\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n...\n\nReplace cancel_delayed_work() with cancel_delayed_work_sync() to ensure\nthat the delayed work item is properly canceled and any executing delayed\nwork has finished before the device memory is deallocated.\n\nThis bug was initially identified through static analysis. To reproduce\nand test it, I simulated the B2C2 FlexCop PCI device in QEMU and introduced\nartificial delays within the flexcop_pci_irq_check_work() function to\nincrease the likelihood of triggering the bug.",
+            "cve_id": "CVE-2025-40109",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: rng - Ensure set_ent is always present\n\nEnsure that set_ent is always set since only drbg provides it.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000710000",
+            "epss_score": "0.000510000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "2.6.29"
+                "5.10"
             ]
         }
     },
@@ -285,22 +284,18 @@
             "date": "Fri, 19 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-14180",
-            "description": "In PHP versions 8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1 when using the PDO PostgreSQL driver with PDO::ATTR_EMULATE_PREPARES enabled, an invalid character sequence (such as \\x99) in a prepared statement parameter may cause the quoting function PQescapeStringConn to return NULL, leading to a null pointer dereference in pdo_parse_params() function. This may lead to crashes (segmentation fault) and affect the availability of the target server.",
-            "cwe": "CWE-476",
-            "nature de la faille": "CWE-476 NULL Pointer Dereference",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000530000",
+            "cve_id": "CVE-2025-67899",
+            "description": "uriparser through 0.9.9 allows unbounded recursion and stack consumption, as demonstrated by ParseMustBeSegmentNzNc with large input containing many commas.",
+            "cwe": "CWE-674",
+            "nature de la faille": "CWE-674 Uncontrolled Recursion",
+            "cvss_score": 2.9,
+            "gravite_cvss": "Faible",
+            "epss_score": "0.000160000",
             "gravite_epss": "Faible",
-            "editeur": "PHP Group",
-            "produit": "PHP",
+            "editeur": "uriparser project",
+            "produit": "uriparser",
             "versions_affectees": [
-                "8.1.*",
-                "8.2.*",
-                "8.3.*",
-                "8.4.*",
-                "8.5.*"
+                "0"
             ]
         }
     },
@@ -313,20 +308,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-55182",
-            "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Deserialization of Untrusted Data (CWE-502)",
-            "cvss_score": 10,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.534640000",
-            "gravite_epss": "Élevée",
-            "editeur": "Meta",
-            "produit": "react-server-dom-parcel",
+            "cve_id": "CVE-2025-9288",
+            "description": "Improper Input Validation vulnerability in sha.js allows Input Data Manipulation.This issue affects sha.js: through 2.4.11.",
+            "cwe": "CWE-20",
+            "nature de la faille": "CWE-20 Improper Input Validation",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000590000",
+            "gravite_epss": "Faible",
+            "editeur": "",
+            "produit": "",
             "versions_affectees": [
-                "19.0.0",
-                "19.1.0",
-                "19.2.0"
+                "0"
             ]
         }
     },
@@ -339,20 +332,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-7254",
-            "description": "Any project that parses untrusted Protocol Buffers data containing an arbitrary number of nested groups / series of SGROUP tags can corrupted by exceeding the stack limit i.e. StackOverflow. Parsing nested groups as unknown fields with DiscardUnknownFieldsParser or Java Protobuf Lite parser, or against Protobuf map fields, creates unbounded recursions that can be abused by an attacker.",
-            "cwe": "CWE-400",
-            "nature de la faille": "CWE-400 Uncontrolled Resource Consumption",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000850000",
+            "cve_id": "CVE-2025-62164",
+            "description": "vLLM is an inference and serving engine for large language models (LLMs). From versions 0.10.2 to before 0.11.1, a memory corruption vulnerability could lead to a crash (denial-of-service) and potentially remote code execution (RCE), exists in the Completions API endpoint. When processing user-supplied prompt embeddings, the endpoint loads serialized tensors using torch.load() without sufficient validation. Due to a change introduced in PyTorch 2.8.0, sparse tensor integrity checks are disabled by default. As a result, maliciously crafted tensors can bypass internal bounds checks and trigger an out-of-bounds memory write during the call to to_dense(). This memory corruption can crash vLLM and potentially lead to code execution on the server hosting vLLM. This issue has been patched in version 0.11.1.",
+            "cwe": "CWE-20",
+            "nature de la faille": "CWE-20: Improper Input Validation",
+            "cvss_score": 8.8,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.003410000",
             "gravite_epss": "Faible",
-            "editeur": "Google",
-            "produit": "google-protobuf [JRuby Gem]",
+            "editeur": "vllm-project",
+            "produit": "vllm",
             "versions_affectees": [
-                "0",
-                "0",
-                "0"
+                ">= 0.10.2, < 0.11.1"
             ]
         }
     },
@@ -365,18 +356,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2022-49390",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmacsec: fix UAF bug for real_dev\n\nCreate a new macsec device but not get reference to real_dev. That can\nnot ensure that real_dev is freed after macsec. That will trigger the\nUAF bug for real_dev as following:\n\n==================================================================\nBUG: KASAN: use-after-free in macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662\nCall Trace:\n ...\n macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662\n dev_get_iflink+0x73/0xe0 net/core/dev.c:637\n default_operstate net/core/link_watch.c:42 [inline]\n rfc2863_policy+0x233/0x2d0 net/core/link_watch.c:54\n linkwatch_do_dev+0x2a/0x150 net/core/link_watch.c:161\n\nAllocated by task 22209:\n ...\n alloc_netdev_mqs+0x98/0x1100 net/core/dev.c:10549\n rtnl_create_link+0x9d7/0xc00 net/core/rtnetlink.c:3235\n veth_newlink+0x20e/0xa90 drivers/net/veth.c:1748\n\nFreed by task 8:\n ...\n kfree+0xd6/0x4d0 mm/slub.c:4552\n kvfree+0x42/0x50 mm/util.c:615\n device_release+0x9f/0x240 drivers/base/core.c:2229\n kobject_cleanup lib/kobject.c:673 [inline]\n kobject_release lib/kobject.c:704 [inline]\n kref_put include/linux/kref.h:65 [inline]\n kobject_put+0x1c8/0x540 lib/kobject.c:721\n netdev_run_todo+0x72e/0x10b0 net/core/dev.c:10327\n\nAfter commit faab39f63c1f (\"net: allow out-of-order netdev unregistration\")\nand commit e5f80fcf869a (\"ipv6: give an IPv6 dev to blackhole_netdev\"), we\ncan add dev_hold_track() in macsec_dev_init() and dev_put_track() in\nmacsec_free_netdev() to fix the problem.",
+            "cve_id": "CVE-2024-50067",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nuprobe: avoid out-of-bounds memory access of fetching args\n\nUprobe needs to fetch args into a percpu buffer, and then copy to ring\nbuffer to avoid non-atomic context problem.\n\nSometimes user-space strings, arrays can be very large, but the size of\npercpu buffer is only page size. And store_trace_args() won't check\nwhether these data exceeds a single page or not, caused out-of-bounds\nmemory access.\n\nIt could be reproduced by following steps:\n1. build kernel with CONFIG_KASAN enabled\n2. save follow program as test.c\n\n```\n\\#include <stdio.h>\n\\#include <stdlib.h>\n\\#include <string.h>\n\n// If string length large than MAX_STRING_SIZE, the fetch_store_strlen()\n// will return 0, cause __get_data_size() return shorter size, and\n// store_trace_args() will not trigger out-of-bounds access.\n// So make string length less than 4096.\n\\#define STRLEN 4093\n\nvoid generate_string(char *str, int n)\n{\n    int i;\n    for (i = 0; i < n; ++i)\n    {\n        char c = i % 26 + 'a';\n        str[i] = c;\n    }\n    str[n-1] = '\\0';\n}\n\nvoid print_string(char *str)\n{\n    printf(\"%s\\n\", str);\n}\n\nint main()\n{\n    char tmp[STRLEN];\n\n    generate_string(tmp, STRLEN);\n    print_string(tmp);\n\n    return 0;\n}\n```\n3. compile program\n`gcc -o test test.c`\n\n4. get the offset of `print_string()`\n```\nobjdump -t test | grep -w print_string\n0000000000401199 g     F .text  000000000000001b              print_string\n```\n\n5. configure uprobe with offset 0x1199\n```\noff=0x1199\n\ncd /sys/kernel/debug/tracing/\necho \"p /root/test:${off} arg1=+0(%di):ustring arg2=\\$comm arg3=+0(%di):ustring\"\n > uprobe_events\necho 1 > events/uprobes/enable\necho 1 > tracing_on\n```\n\n6. run `test`, and kasan will report error.\n==================================================================\nBUG: KASAN: use-after-free in strncpy_from_user+0x1d6/0x1f0\nWrite of size 8 at addr ffff88812311c004 by task test/499CPU: 0 UID: 0 PID: 499 Comm: test Not tainted 6.12.0-rc3+ #18\nHardware name: Red Hat KVM, BIOS 1.16.0-4.al8 04/01/2014\nCall Trace:\n <TASK>\n dump_stack_lvl+0x55/0x70\n print_address_description.constprop.0+0x27/0x310\n kasan_report+0x10f/0x120\n ? strncpy_from_user+0x1d6/0x1f0\n strncpy_from_user+0x1d6/0x1f0\n ? rmqueue.constprop.0+0x70d/0x2ad0\n process_fetch_insn+0xb26/0x1470\n ? __pfx_process_fetch_insn+0x10/0x10\n ? _raw_spin_lock+0x85/0xe0\n ? __pfx__raw_spin_lock+0x10/0x10\n ? __pte_offset_map+0x1f/0x2d0\n ? unwind_next_frame+0xc5f/0x1f80\n ? arch_stack_walk+0x68/0xf0\n ? is_bpf_text_address+0x23/0x30\n ? kernel_text_address.part.0+0xbb/0xd0\n ? __kernel_text_address+0x66/0xb0\n ? unwind_get_return_address+0x5e/0xa0\n ? __pfx_stack_trace_consume_entry+0x10/0x10\n ? arch_stack_walk+0xa2/0xf0\n ? _raw_spin_lock_irqsave+0x8b/0xf0\n ? __pfx__raw_spin_lock_irqsave+0x10/0x10\n ? depot_alloc_stack+0x4c/0x1f0\n ? _raw_spin_unlock_irqrestore+0xe/0x30\n ? stack_depot_save_flags+0x35d/0x4f0\n ? kasan_save_stack+0x34/0x50\n ? kasan_save_stack+0x24/0x50\n ? mutex_lock+0x91/0xe0\n ? __pfx_mutex_lock+0x10/0x10\n prepare_uprobe_buffer.part.0+0x2cd/0x500\n uprobe_dispatcher+0x2c3/0x6a0\n ? __pfx_uprobe_dispatcher+0x10/0x10\n ? __kasan_slab_alloc+0x4d/0x90\n handler_chain+0xdd/0x3e0\n handle_swbp+0x26e/0x3d0\n ? __pfx_handle_swbp+0x10/0x10\n ? uprobe_pre_sstep_notifier+0x151/0x1b0\n irqentry_exit_to_user_mode+0xe2/0x1b0\n asm_exc_int3+0x39/0x40\nRIP: 0033:0x401199\nCode: 01 c2 0f b6 45 fb 88 02 83 45 fc 01 8b 45 fc 3b 45 e4 7c b7 8b 45 e4 48 98 48 8d 50 ff 48 8b 45 e8 48 01 d0 ce\nRSP: 002b:00007ffdf00576a8 EFLAGS: 00000206\nRAX: 00007ffdf00576b0 RBX: 0000000000000000 RCX: 0000000000000ff2\nRDX: 0000000000000ffc RSI: 0000000000000ffd RDI: 00007ffdf00576b0\nRBP: 00007ffdf00586b0 R08: 00007feb2f9c0d20 R09: 00007feb2f9c0d20\nR10: 0000000000000001 R11: 0000000000000202 R12: 0000000000401040\nR13: 00007ffdf0058780 R14: 0000000000000000 R15: 0000000000000000\n </TASK>\n\nThis commit enforces the buffer's maxlen less than a page-size to avoid\nstore_trace_args() out-of-memory access.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000360000",
+            "epss_score": "0.000310000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.4"
+                "3.14"
             ]
         }
     },
@@ -389,18 +380,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39944",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nocteontx2-pf: Fix use-after-free bugs in otx2_sync_tstamp()\n\nThe original code relies on cancel_delayed_work() in otx2_ptp_destroy(),\nwhich does not ensure that the delayed work item synctstamp_work has fully\ncompleted if it was already running. This leads to use-after-free scenarios\nwhere otx2_ptp is deallocated by otx2_ptp_destroy(), while synctstamp_work\nremains active and attempts to dereference otx2_ptp in otx2_sync_tstamp().\nFurthermore, the synctstamp_work is cyclic, the likelihood of triggering\nthe bug is nonnegligible.\n\nA typical race condition is illustrated below:\n\nCPU 0 (cleanup)           | CPU 1 (delayed work callback)\notx2_remove()             |\n  otx2_ptp_destroy()      | otx2_sync_tstamp()\n    cancel_delayed_work() |\n    kfree(ptp)            |\n                          |   ptp = container_of(...); //UAF\n                          |   ptp-> //UAF\n\nThis is confirmed by a KASAN report:\n\nBUG: KASAN: slab-use-after-free in __run_timer_base.part.0+0x7d7/0x8c0\nWrite of size 8 at addr ffff88800aa09a18 by task bash/136\n...\nCall Trace:\n <IRQ>\n dump_stack_lvl+0x55/0x70\n print_report+0xcf/0x610\n ? __run_timer_base.part.0+0x7d7/0x8c0\n kasan_report+0xb8/0xf0\n ? __run_timer_base.part.0+0x7d7/0x8c0\n __run_timer_base.part.0+0x7d7/0x8c0\n ? __pfx___run_timer_base.part.0+0x10/0x10\n ? __pfx_read_tsc+0x10/0x10\n ? ktime_get+0x60/0x140\n ? lapic_next_event+0x11/0x20\n ? clockevents_program_event+0x1d4/0x2a0\n run_timer_softirq+0xd1/0x190\n handle_softirqs+0x16a/0x550\n irq_exit_rcu+0xaf/0xe0\n sysvec_apic_timer_interrupt+0x70/0x80\n </IRQ>\n...\nAllocated by task 1:\n kasan_save_stack+0x24/0x50\n kasan_save_track+0x14/0x30\n __kasan_kmalloc+0x7f/0x90\n otx2_ptp_init+0xb1/0x860\n otx2_probe+0x4eb/0xc30\n local_pci_probe+0xdc/0x190\n pci_device_probe+0x2fe/0x470\n really_probe+0x1ca/0x5c0\n __driver_probe_device+0x248/0x310\n driver_probe_device+0x44/0x120\n __driver_attach+0xd2/0x310\n bus_for_each_dev+0xed/0x170\n bus_add_driver+0x208/0x500\n driver_register+0x132/0x460\n do_one_initcall+0x89/0x300\n kernel_init_freeable+0x40d/0x720\n kernel_init+0x1a/0x150\n ret_from_fork+0x10c/0x1a0\n ret_from_fork_asm+0x1a/0x30\n\nFreed by task 136:\n kasan_save_stack+0x24/0x50\n kasan_save_track+0x14/0x30\n kasan_save_free_info+0x3a/0x60\n __kasan_slab_free+0x3f/0x50\n kfree+0x137/0x370\n otx2_ptp_destroy+0x38/0x80\n otx2_remove+0x10d/0x4c0\n pci_device_remove+0xa6/0x1d0\n device_release_driver_internal+0xf8/0x210\n pci_stop_bus_device+0x105/0x150\n pci_stop_and_remove_bus_device_locked+0x15/0x30\n remove_store+0xcc/0xe0\n kernfs_fop_write_iter+0x2c3/0x440\n vfs_write+0x871/0xd70\n ksys_write+0xee/0x1c0\n do_syscall_64+0xac/0x280\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n...\n\nReplace cancel_delayed_work() with cancel_delayed_work_sync() to ensure\nthat the delayed work item is properly canceled before the otx2_ptp is\ndeallocated.\n\nThis bug was initially identified through static analysis. To reproduce\nand test it, I simulated the OcteonTX2 PCI device in QEMU and introduced\nartificial delays within the otx2_sync_tstamp() function to increase the\nlikelihood of triggering the bug.",
+            "cve_id": "CVE-2022-50280",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\npnode: terminate at peers of source\n\nThe propagate_mnt() function handles mount propagation when creating\nmounts and propagates the source mount tree @source_mnt to all\napplicable nodes of the destination propagation mount tree headed by\n@dest_mnt.\n\nUnfortunately it contains a bug where it fails to terminate at peers of\n@source_mnt when looking up copies of the source mount that become\nmasters for copies of the source mount tree mounted on top of slaves in\nthe destination propagation tree causing a NULL dereference.\n\nOnce the mechanics of the bug are understood it's easy to trigger.\nBecause of unprivileged user namespaces it is available to unprivileged\nusers.\n\nWhile fixing this bug we've gotten confused multiple times due to\nunclear terminology or missing concepts. So let's start this with some\nclarifications:\n\n* The terms \"master\" or \"peer\" denote a shared mount. A shared mount\n  belongs to a peer group.\n\n* A peer group is a set of shared mounts that propagate to each other.\n  They are identified by a peer group id. The peer group id is available\n  in @shared_mnt->mnt_group_id.\n  Shared mounts within the same peer group have the same peer group id.\n  The peers in a peer group can be reached via @shared_mnt->mnt_share.\n\n* The terms \"slave mount\" or \"dependent mount\" denote a mount that\n  receives propagation from a peer in a peer group. IOW, shared mounts\n  may have slave mounts and slave mounts have shared mounts as their\n  master. Slave mounts of a given peer in a peer group are listed on\n  that peers slave list available at @shared_mnt->mnt_slave_list.\n\n* The term \"master mount\" denotes a mount in a peer group. IOW, it\n  denotes a shared mount or a peer mount in a peer group. The term\n  \"master mount\" - or \"master\" for short - is mostly used when talking\n  in the context of slave mounts that receive propagation from a master\n  mount. A master mount of a slave identifies the closest peer group a\n  slave mount receives propagation from. The master mount of a slave can\n  be identified via @slave_mount->mnt_master. Different slaves may point\n  to different masters in the same peer group.\n\n* Multiple peers in a peer group can have non-empty ->mnt_slave_lists.\n  Non-empty ->mnt_slave_lists of peers don't intersect. Consequently, to\n  ensure all slave mounts of a peer group are visited the\n  ->mnt_slave_lists of all peers in a peer group have to be walked.\n\n* Slave mounts point to a peer in the closest peer group they receive\n  propagation from via @slave_mnt->mnt_master (see above). Together with\n  these peers they form a propagation group (see below). The closest\n  peer group can thus be identified through the peer group id\n  @slave_mnt->mnt_master->mnt_group_id of the peer/master that a slave\n  mount receives propagation from.\n\n* A shared-slave mount is a slave mount to a peer group pg1 while also\n  a peer in another peer group pg2. IOW, a peer group may receive\n  propagation from another peer group.\n\n  If a peer group pg1 is a slave to another peer group pg2 then all\n  peers in peer group pg1 point to the same peer in peer group pg2 via\n  ->mnt_master. IOW, all peers in peer group pg1 appear on the same\n  ->mnt_slave_list. IOW, they cannot be slaves to different peer groups.\n\n* A pure slave mount is a slave mount that is a slave to a peer group\n  but is not a peer in another peer group.\n\n* A propagation group denotes the set of mounts consisting of a single\n  peer group pg1 and all slave mounts and shared-slave mounts that point\n  to a peer in that peer group via ->mnt_master. IOW, all slave mounts\n  such that @slave_mnt->mnt_master->mnt_group_id is equal to\n  @shared_mnt->mnt_group_id.\n\n  The concept of a propagation group makes it easier to talk about a\n  single propagation level in a propagation tree.\n\n  For example, in propagate_mnt() the immediate peers of @dest_mnt and\n  all slaves of @dest_mnt's peer group form a propagation group pr\n---truncated---",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000390000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "6.1"
+                "3.15"
             ]
         }
     },
@@ -413,18 +404,18 @@
             "date": "Fri, 26 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2022-50410",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nNFSD: Protect against send buffer overflow in NFSv2 READ\n\nSince before the git era, NFSD has conserved the number of pages\nheld by each nfsd thread by combining the RPC receive and send\nbuffers into a single array of pages. This works because there are\nno cases where an operation needs a large RPC Call message and a\nlarge RPC Reply at the same time.\n\nOnce an RPC Call has been received, svc_process() updates\nsvc_rqst::rq_res to describe the part of rq_pages that can be\nused for constructing the Reply. This means that the send buffer\n(rq_res) shrinks when the received RPC record containing the RPC\nCall is large.\n\nA client can force this shrinkage on TCP by sending a correctly-\nformed RPC Call header contained in an RPC record that is\nexcessively large. The full maximum payload size cannot be\nconstructed in that case.",
+            "cve_id": "CVE-2022-50406",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niomap: iomap: fix memory corruption when recording errors during writeback\n\nEvery now and then I see this crash on arm64:\n\nUnable to handle kernel NULL pointer dereference at virtual address 00000000000000f8\nBuffer I/O error on dev dm-0, logical block 8733687, async page read\nMem abort info:\n  ESR = 0x0000000096000006\n  EC = 0x25: DABT (current EL), IL = 32 bits\n  SET = 0, FnV = 0\n  EA = 0, S1PTW = 0\n  FSC = 0x06: level 2 translation fault\nData abort info:\n  ISV = 0, ISS = 0x00000006\n  CM = 0, WnR = 0\nuser pgtable: 64k pages, 42-bit VAs, pgdp=0000000139750000\n[00000000000000f8] pgd=0000000000000000, p4d=0000000000000000, pud=0000000000000000, pmd=0000000000000000\nInternal error: Oops: 96000006 [#1] PREEMPT SMP\nBuffer I/O error on dev dm-0, logical block 8733688, async page read\nDumping ftrace buffer:\nBuffer I/O error on dev dm-0, logical block 8733689, async page read\n   (ftrace buffer empty)\nXFS (dm-0): log I/O error -5\nModules linked in: dm_thin_pool dm_persistent_data\nXFS (dm-0): Metadata I/O Error (0x1) detected at xfs_trans_read_buf_map+0x1ec/0x590 [xfs] (fs/xfs/xfs_trans_buf.c:296).\n dm_bio_prison\nXFS (dm-0): Please unmount the filesystem and rectify the problem(s)\nXFS (dm-0): xfs_imap_lookup: xfs_ialloc_read_agi() returned error -5, agno 0\n dm_bufio dm_log_writes xfs nft_chain_nat xt_REDIRECT nf_nat nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 ip6t_REJECT\npotentially unexpected fatal signal 6.\n nf_reject_ipv6\npotentially unexpected fatal signal 6.\n ipt_REJECT nf_reject_ipv4\nCPU: 1 PID: 122166 Comm: fsstress Tainted: G        W          6.0.0-rc5-djwa #rc5 3004c9f1de887ebae86015f2677638ce51ee7\n rpcsec_gss_krb5 auth_rpcgss xt_tcpudp ip_set_hash_ip ip_set_hash_net xt_set nft_compat ip_set_hash_mac ip_set nf_tables\nHardware name: QEMU KVM Virtual Machine, BIOS 1.5.1 06/16/2021\npstate: 60001000 (nZCv daif -PAN -UAO -TCO -DIT +SSBS BTYPE=--)\n ip_tables\npc : 000003fd6d7df200\n x_tables\nlr : 000003fd6d7df1ec\n overlay nfsv4\nCPU: 0 PID: 54031 Comm: u4:3 Tainted: G        W          6.0.0-rc5-djwa #rc5 3004c9f1de887ebae86015f2677638ce51ee7405\nHardware name: QEMU KVM Virtual Machine, BIOS 1.5.1 06/16/2021\nWorkqueue: writeback wb_workfn\nsp : 000003ffd9522fd0\n (flush-253:0)\npstate: 60401005 (nZCv daif +PAN -UAO -TCO -DIT +SSBS BTYPE=--)\npc : errseq_set+0x1c/0x100\nx29: 000003ffd9522fd0 x28: 0000000000000023 x27: 000002acefeb6780\nx26: 0000000000000005 x25: 0000000000000001 x24: 0000000000000000\nx23: 00000000ffffffff x22: 0000000000000005\nlr : __filemap_set_wb_err+0x24/0xe0\n x21: 0000000000000006\nsp : fffffe000f80f760\nx29: fffffe000f80f760 x28: 0000000000000003 x27: fffffe000f80f9f8\nx26: 0000000002523000 x25: 00000000fffffffb x24: fffffe000f80f868\nx23: fffffe000f80fbb0 x22: fffffc0180c26a78 x21: 0000000002530000\nx20: 0000000000000000 x19: 0000000000000000 x18: 0000000000000000\n\nx17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000\nx14: 0000000000000001 x13: 0000000000470af3 x12: fffffc0058f70000\nx11: 0000000000000040 x10: 0000000000001b20 x9 : fffffe000836b288\nx8 : fffffc00eb9fd480 x7 : 0000000000f83659 x6 : 0000000000000000\nx5 : 0000000000000869 x4 : 0000000000000005 x3 : 00000000000000f8\nx20: 000003fd6d740020 x19: 000000000001dd36 x18: 0000000000000001\nx17: 000003fd6d78704c x16: 0000000000000001 x15: 000002acfac87668\nx2 : 0000000000000ffa x1 : 00000000fffffffb x0 : 00000000000000f8\nCall trace:\n errseq_set+0x1c/0x100\n __filemap_set_wb_err+0x24/0xe0\n iomap_do_writepage+0x5e4/0xd5c\n write_cache_pages+0x208/0x674\n iomap_writepages+0x34/0x60\n xfs_vm_writepages+0x8c/0xcc [xfs 7a861f39c43631f15d3a5884246ba5035d4ca78b]\nx14: 0000000000000000 x13: 2064656e72757465 x12: 0000000000002180\nx11: 000003fd6d8a82d0 x10: 0000000000000000 x9 : 000003fd6d8ae288\nx8 : 0000000000000083 x7 : 00000000ffffffff x6 : 00000000ffffffee\nx5 : 00000000fbad2887 x4 : 000003fd6d9abb58 x3 : 000003fd6d740020\nx2 : 0000000000000006 x1 : 000000000001dd36 x0 : 0000000000000000\nCPU: \n---truncated---",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000170000",
+            "epss_score": "0.000210000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "2.6.19"
+                "4.6"
             ]
         }
     },
@@ -461,18 +452,18 @@
             "date": "Fri, 02 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2023-53659",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niavf: Fix out-of-bounds when setting channels on remove\n\nIf we set channels greater during iavf_remove(), and waiting reset done\nwould be timeout, then returned with error but changed num_active_queues\ndirectly, that will lead to OOB like the following logs. Because the\nnum_active_queues is greater than tx/rx_rings[] allocated actually.\n\nReproducer:\n\n  [root@host ~]# cat repro.sh\n  #!/bin/bash\n\n  pf_dbsf=\"0000:41:00.0\"\n  vf0_dbsf=\"0000:41:02.0\"\n  g_pids=()\n\n  function do_set_numvf()\n  {\n      echo 2 >/sys/bus/pci/devices/${pf_dbsf}/sriov_numvfs\n      sleep $((RANDOM%3+1))\n      echo 0 >/sys/bus/pci/devices/${pf_dbsf}/sriov_numvfs\n      sleep $((RANDOM%3+1))\n  }\n\n  function do_set_channel()\n  {\n      local nic=$(ls -1 --indicator-style=none /sys/bus/pci/devices/${vf0_dbsf}/net/)\n      [ -z \"$nic\" ] && { sleep $((RANDOM%3)) ; return 1; }\n      ifconfig $nic 192.168.18.5 netmask 255.255.255.0\n      ifconfig $nic up\n      ethtool -L $nic combined 1\n      ethtool -L $nic combined 4\n      sleep $((RANDOM%3))\n  }\n\n  function on_exit()\n  {\n      local pid\n      for pid in \"${g_pids[@]}\"; do\n          kill -0 \"$pid\" &>/dev/null && kill \"$pid\" &>/dev/null\n      done\n      g_pids=()\n  }\n\n  trap \"on_exit; exit\" EXIT\n\n  while :; do do_set_numvf ; done &\n  g_pids+=($!)\n  while :; do do_set_channel ; done &\n  g_pids+=($!)\n\n  wait\n\nResult:\n\n[ 3506.152887] iavf 0000:41:02.0: Removing device\n[ 3510.400799] ==================================================================\n[ 3510.400820] BUG: KASAN: slab-out-of-bounds in iavf_free_all_tx_resources+0x156/0x160 [iavf]\n[ 3510.400823] Read of size 8 at addr ffff88b6f9311008 by task repro.sh/55536\n[ 3510.400823]\n[ 3510.400830] CPU: 101 PID: 55536 Comm: repro.sh Kdump: loaded Tainted: G           O     --------- -t - 4.18.0 #1\n[ 3510.400832] Hardware name: Powerleader PR2008AL/H12DSi-N6, BIOS 2.0 04/09/2021\n[ 3510.400835] Call Trace:\n[ 3510.400851]  dump_stack+0x71/0xab\n[ 3510.400860]  print_address_description+0x6b/0x290\n[ 3510.400865]  ? iavf_free_all_tx_resources+0x156/0x160 [iavf]\n[ 3510.400868]  kasan_report+0x14a/0x2b0\n[ 3510.400873]  iavf_free_all_tx_resources+0x156/0x160 [iavf]\n[ 3510.400880]  iavf_remove+0x2b6/0xc70 [iavf]\n[ 3510.400884]  ? iavf_free_all_rx_resources+0x160/0x160 [iavf]\n[ 3510.400891]  ? wait_woken+0x1d0/0x1d0\n[ 3510.400895]  ? notifier_call_chain+0xc1/0x130\n[ 3510.400903]  pci_device_remove+0xa8/0x1f0\n[ 3510.400910]  device_release_driver_internal+0x1c6/0x460\n[ 3510.400916]  pci_stop_bus_device+0x101/0x150\n[ 3510.400919]  pci_stop_and_remove_bus_device+0xe/0x20\n[ 3510.400924]  pci_iov_remove_virtfn+0x187/0x420\n[ 3510.400927]  ? pci_iov_add_virtfn+0xe10/0xe10\n[ 3510.400929]  ? pci_get_subsys+0x90/0x90\n[ 3510.400932]  sriov_disable+0xed/0x3e0\n[ 3510.400936]  ? bus_find_device+0x12d/0x1a0\n[ 3510.400953]  i40e_free_vfs+0x754/0x1210 [i40e]\n[ 3510.400966]  ? i40e_reset_all_vfs+0x880/0x880 [i40e]\n[ 3510.400968]  ? pci_get_device+0x7c/0x90\n[ 3510.400970]  ? pci_get_subsys+0x90/0x90\n[ 3510.400982]  ? pci_vfs_assigned.part.7+0x144/0x210\n[ 3510.400987]  ? __mutex_lock_slowpath+0x10/0x10\n[ 3510.400996]  i40e_pci_sriov_configure+0x1fa/0x2e0 [i40e]\n[ 3510.401001]  sriov_numvfs_store+0x214/0x290\n[ 3510.401005]  ? sriov_totalvfs_show+0x30/0x30\n[ 3510.401007]  ? __mutex_lock_slowpath+0x10/0x10\n[ 3510.401011]  ? __check_object_size+0x15a/0x350\n[ 3510.401018]  kernfs_fop_write+0x280/0x3f0\n[ 3510.401022]  vfs_write+0x145/0x440\n[ 3510.401025]  ksys_write+0xab/0x160\n[ 3510.401028]  ? __ia32_sys_read+0xb0/0xb0\n[ 3510.401031]  ? fput_many+0x1a/0x120\n[ 3510.401032]  ? filp_close+0xf0/0x130\n[ 3510.401038]  do_syscall_64+0xa0/0x370\n[ 3510.401041]  ? page_fault+0x8/0x30\n[ 3510.401043]  entry_SYSCALL_64_after_hwframe+0x65/0xca\n[ 3510.401073] RIP: 0033:0x7f3a9bb842c0\n[ 3510.401079] Code: 73 01 c3 48 8b 0d d8 cb 2c 00 f7 d8 64 89 01 48 83 c8 ff c3 66 0f 1f 44 00 00 83 3d 89 24 2d 00 00 75 10 b8 01 00 00 00 0f 05 <48> 3d \n---truncated---",
+            "cve_id": "CVE-2022-50280",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\npnode: terminate at peers of source\n\nThe propagate_mnt() function handles mount propagation when creating\nmounts and propagates the source mount tree @source_mnt to all\napplicable nodes of the destination propagation mount tree headed by\n@dest_mnt.\n\nUnfortunately it contains a bug where it fails to terminate at peers of\n@source_mnt when looking up copies of the source mount that become\nmasters for copies of the source mount tree mounted on top of slaves in\nthe destination propagation tree causing a NULL dereference.\n\nOnce the mechanics of the bug are understood it's easy to trigger.\nBecause of unprivileged user namespaces it is available to unprivileged\nusers.\n\nWhile fixing this bug we've gotten confused multiple times due to\nunclear terminology or missing concepts. So let's start this with some\nclarifications:\n\n* The terms \"master\" or \"peer\" denote a shared mount. A shared mount\n  belongs to a peer group.\n\n* A peer group is a set of shared mounts that propagate to each other.\n  They are identified by a peer group id. The peer group id is available\n  in @shared_mnt->mnt_group_id.\n  Shared mounts within the same peer group have the same peer group id.\n  The peers in a peer group can be reached via @shared_mnt->mnt_share.\n\n* The terms \"slave mount\" or \"dependent mount\" denote a mount that\n  receives propagation from a peer in a peer group. IOW, shared mounts\n  may have slave mounts and slave mounts have shared mounts as their\n  master. Slave mounts of a given peer in a peer group are listed on\n  that peers slave list available at @shared_mnt->mnt_slave_list.\n\n* The term \"master mount\" denotes a mount in a peer group. IOW, it\n  denotes a shared mount or a peer mount in a peer group. The term\n  \"master mount\" - or \"master\" for short - is mostly used when talking\n  in the context of slave mounts that receive propagation from a master\n  mount. A master mount of a slave identifies the closest peer group a\n  slave mount receives propagation from. The master mount of a slave can\n  be identified via @slave_mount->mnt_master. Different slaves may point\n  to different masters in the same peer group.\n\n* Multiple peers in a peer group can have non-empty ->mnt_slave_lists.\n  Non-empty ->mnt_slave_lists of peers don't intersect. Consequently, to\n  ensure all slave mounts of a peer group are visited the\n  ->mnt_slave_lists of all peers in a peer group have to be walked.\n\n* Slave mounts point to a peer in the closest peer group they receive\n  propagation from via @slave_mnt->mnt_master (see above). Together with\n  these peers they form a propagation group (see below). The closest\n  peer group can thus be identified through the peer group id\n  @slave_mnt->mnt_master->mnt_group_id of the peer/master that a slave\n  mount receives propagation from.\n\n* A shared-slave mount is a slave mount to a peer group pg1 while also\n  a peer in another peer group pg2. IOW, a peer group may receive\n  propagation from another peer group.\n\n  If a peer group pg1 is a slave to another peer group pg2 then all\n  peers in peer group pg1 point to the same peer in peer group pg2 via\n  ->mnt_master. IOW, all peers in peer group pg1 appear on the same\n  ->mnt_slave_list. IOW, they cannot be slaves to different peer groups.\n\n* A pure slave mount is a slave mount that is a slave to a peer group\n  but is not a peer in another peer group.\n\n* A propagation group denotes the set of mounts consisting of a single\n  peer group pg1 and all slave mounts and shared-slave mounts that point\n  to a peer in that peer group via ->mnt_master. IOW, all slave mounts\n  such that @slave_mnt->mnt_master->mnt_group_id is equal to\n  @shared_mnt->mnt_group_id.\n\n  The concept of a propagation group makes it easier to talk about a\n  single propagation level in a propagation tree.\n\n  For example, in propagate_mnt() the immediate peers of @dest_mnt and\n  all slaves of @dest_mnt's peer group form a propagation group pr\n---truncated---",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000270000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.16"
+                "3.15"
             ]
         }
     },
@@ -485,18 +476,18 @@
             "date": "Fri, 02 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-47554",
-            "description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
-            "cwe": "CWE-400",
-            "nature de la faille": "CWE-400 Uncontrolled Resource Consumption",
+            "cve_id": "CVE-2025-48924",
+            "description": "Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with commons-lang:commons-lang 2.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before 3.18.0.\n\nThe methods ClassUtils.getClass(...) can throw StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.",
+            "cwe": "CWE-674",
+            "nature de la faille": "CWE-674 Uncontrolled Recursion",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.001730000",
+            "epss_score": "0.000160000",
             "gravite_epss": "Faible",
             "editeur": "Apache Software Foundation",
-            "produit": "Apache Commons IO",
+            "produit": "Apache Commons Lang",
             "versions_affectees": [
-                "2.0"
+                "3.0"
             ]
         }
     },
@@ -509,13 +500,13 @@
             "date": "Mon, 05 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-52430",
-            "description": "A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.7.3256 build 20250913 and later\nQuTS hero h5.2.7.3256 build 20250913 and later\nQuTS hero h5.3.1.3250 build 20250912 and later",
-            "cwe": "CWE-476",
-            "nature de la faille": "CWE-476",
+            "cve_id": "CVE-2025-52863",
+            "description": "A buffer overflow vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains a user account, they can then exploit the vulnerability to modify memory or crash processes.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.7.3256 build 20250913 and later\nQuTS hero h5.2.7.3256 build 20250913 and later\nQuTS hero h5.3.0.3192 build 20250716 and later",
+            "cwe": "CWE-120",
+            "nature de la faille": "CWE-120",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.001280000",
+            "epss_score": "0.001070000",
             "gravite_epss": "Faible",
             "editeur": "QNAP Systems Inc.",
             "produit": "QuTS hero",
@@ -558,16 +549,16 @@
             "date": "Tue, 06 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-12514",
-            "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Centreon Infra Monitoring - Open-tickets (Notification rules configuration parameters, Open tickets modules) allows \n\nSQL Injection to user with elevated privileges.This issue affects Infra Monitoring - Open-tickets: from 24.10.0 before 24.10.5, from 24.04.0 before 24.04.5, from 23.10.0 before 23.10.4.",
-            "cwe": "CWE-89",
-            "nature de la faille": "CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
-            "cvss_score": 7.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000240000",
+            "cve_id": "CVE-2025-54890",
+            "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (Hostgroup configuration page) allows Stored \n\nXSS by users with elevated privileges.This issue affects Infra Monitoring: from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19, from 23.10.0 before 23.10.29.",
+            "cwe": "CWE-79",
+            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
+            "cvss_score": 6.8,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000200000",
             "gravite_epss": "Faible",
             "editeur": "Centreon",
-            "produit": "Infra Monitoring - Open-tickets",
+            "produit": "Infra Monitoring",
             "versions_affectees": [
                 "24.10.0",
                 "24.04.0",
@@ -584,13 +575,13 @@
             "date": "Tue, 06 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-59470",
-            "description": "This vulnerability allows a Backup Operator to perform remote code execution (RCE) as the postgres user by sending a malicious interval or order parameter.",
+            "cve_id": "CVE-2025-59469",
+            "description": "This vulnerability allows a Backup or Tape Operator to write files as root.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": 9,
             "gravite_cvss": "Critique",
-            "epss_score": "0.002250000",
+            "epss_score": "0.000380000",
             "gravite_epss": "Faible",
             "editeur": "Veeam",
             "produit": "Backup and Recovery",
@@ -632,8 +623,8 @@
             "date": "Wed, 07 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-63083",
-            "description": "Lack of output escaping leads to a XSS vector in the pagebreak plugin.",
+            "cve_id": "CVE-2025-63082",
+            "description": "Lack of input filtering leads to an XSS vector in the HTML filter code related to data URLs in img tags.",
             "cwe": "CWE-79",
             "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
             "cvss_score": null,
@@ -643,7 +634,7 @@
             "editeur": "Joomla! Project",
             "produit": "Joomla! CMS",
             "versions_affectees": [
-                "3.9.0-5.4.1",
+                "4.0.0-5.4.1",
                 "6.0.0-6.0.1"
             ]
         }
@@ -681,22 +672,17 @@
             "date": "Wed, 07 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-15224",
-            "description": "When doing SSH-based transfers using either SCP or SFTP, and asked to do\npublic key authentication, curl would wrongly still ask and authenticate using\na locally running SSH agent.",
+            "cve_id": "CVE-2025-5025",
+            "description": "libcurl supports *pinning* of the server certificate public key for HTTPS transfers. Due to an omission, this check is not performed when connecting with QUIC for HTTP/3, when the TLS backend is wolfSSL. Documentation says the option works with wolfSSL, failing to specify that it does not for QUIC and HTTP/3. Since pinning makes the transfer succeed if the pin is fine, users could unwittingly connect to an impostor server without noticing.",
             "cwe": "Non disponible",
-            "nature de la faille": "CWE-287 Improper Authentication",
+            "nature de la faille": "CWE-295 Improper Certificate Validation",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000530000",
+            "epss_score": "0.000190000",
             "gravite_epss": "Faible",
             "editeur": "curl",
             "produit": "curl",
             "versions_affectees": [
-                "8.17.0",
-                "8.16.0",
-                "8.15.0",
-                "8.14.1",
-                "8.14.0",
                 "8.13.0",
                 "8.12.1",
                 "8.12.0",
@@ -710,58 +696,7 @@
                 "8.7.1",
                 "8.7.0",
                 "8.6.0",
-                "8.5.0",
-                "8.4.0",
-                "8.3.0",
-                "8.2.1",
-                "8.2.0",
-                "8.1.2",
-                "8.1.1",
-                "8.1.0",
-                "8.0.1",
-                "8.0.0",
-                "7.88.1",
-                "7.88.0",
-                "7.87.0",
-                "7.86.0",
-                "7.85.0",
-                "7.84.0",
-                "7.83.1",
-                "7.83.0",
-                "7.82.0",
-                "7.81.0",
-                "7.80.0",
-                "7.79.1",
-                "7.79.0",
-                "7.78.0",
-                "7.77.0",
-                "7.76.1",
-                "7.76.0",
-                "7.75.0",
-                "7.74.0",
-                "7.73.0",
-                "7.72.0",
-                "7.71.1",
-                "7.71.0",
-                "7.70.0",
-                "7.69.1",
-                "7.69.0",
-                "7.68.0",
-                "7.67.0",
-                "7.66.0",
-                "7.65.3",
-                "7.65.2",
-                "7.65.1",
-                "7.65.0",
-                "7.64.1",
-                "7.64.0",
-                "7.63.0",
-                "7.62.0",
-                "7.61.1",
-                "7.61.0",
-                "7.60.0",
-                "7.59.0",
-                "7.58.0"
+                "8.5.0"
             ]
         }
     },
@@ -798,13 +733,13 @@
             "date": "Thu, 08 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-69258",
-            "description": "A LoadLibraryEX vulnerability in Trend Micro Apex Central could allow an unauthenticated remote attacker to load an attacker-controlled DLL into a key executable, leading to execution of attacker-supplied code under the context of SYSTEM on affected installations.",
-            "cwe": "CWE-290",
-            "nature de la faille": "CWE-290: Authentication Bypass by Spoofing",
-            "cvss_score": 9.8,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.001530000",
+            "cve_id": "CVE-2025-69259",
+            "description": "A message unchecked NULL return value vulnerability in Trend Micro Apex Central could allow a remote attacker to create a denial-of-service condition on affected installations.\r\n\r\nPlease note: authentication is not required in order to exploit this vulnerability..",
+            "cwe": "CWE-346",
+            "nature de la faille": "CWE-346: Origin Validation Error",
+            "cvss_score": 7.5,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000870000",
             "gravite_epss": "Faible",
             "editeur": "Trend Micro, Inc.",
             "produit": "Trend Micro Apex Central",
@@ -872,13 +807,13 @@
             "date": "Thu, 08 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-5965",
-            "description": "In the backup parameters, a user with high privilege is able to concatenate custom instructions to the backup setup. Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Centreon Infra Monitoring (Backup configuration in the administration setup modules) allows OS Command Injection.This issue affects Infra Monitoring: from 25.10.0 before 25.10.2, from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19.",
-            "cwe": "CWE-78",
-            "nature de la faille": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
-            "cvss_score": 7.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.001550000",
+            "cve_id": "CVE-2025-12511",
+            "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (DSM extenstio configuration modules) allows Stored XSS \n\nto user with elevated privileges.\n\nThis issue affects Infra Monitoring: from 25.10.0 before 25.10.1, from 24.10.0 before 24.10.4, from 24.04.0 before 24.04.8.",
+            "cwe": "CWE-79",
+            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
+            "cvss_score": 6.8,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000200000",
             "gravite_epss": "Faible",
             "editeur": "Centreon",
             "produit": "Infra Monitoring",
@@ -922,18 +857,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39806",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: multitouch: fix slab out-of-bounds access in mt_report_fixup()\n\nA malicious HID device can trigger a slab out-of-bounds during\nmt_report_fixup() by passing in report descriptor smaller than\n607 bytes. mt_report_fixup() attempts to patch byte offset 607\nof the descriptor with 0x25 by first checking if byte offset\n607 is 0x15 however it lacks bounds checks to verify if the\ndescriptor is big enough before conducting this check. Fix\nthis bug by ensuring the descriptor size is at least 608\nbytes before accessing it.\n\nBelow is the KASAN splat after the out of bounds access happens:\n\n[   13.671954] ==================================================================\n[   13.672667] BUG: KASAN: slab-out-of-bounds in mt_report_fixup+0x103/0x110\n[   13.673297] Read of size 1 at addr ffff888103df39df by task kworker/0:1/10\n[   13.673297]\n[   13.673297] CPU: 0 UID: 0 PID: 10 Comm: kworker/0:1 Not tainted 6.15.0-00005-gec5d573d83f4-dirty #3\n[   13.673297] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.16.2-debian-1.16.2-1 04/04\n[   13.673297] Call Trace:\n[   13.673297]  <TASK>\n[   13.673297]  dump_stack_lvl+0x5f/0x80\n[   13.673297]  print_report+0xd1/0x660\n[   13.673297]  kasan_report+0xe5/0x120\n[   13.673297]  __asan_report_load1_noabort+0x18/0x20\n[   13.673297]  mt_report_fixup+0x103/0x110\n[   13.673297]  hid_open_report+0x1ef/0x810\n[   13.673297]  mt_probe+0x422/0x960\n[   13.673297]  hid_device_probe+0x2e2/0x6f0\n[   13.673297]  really_probe+0x1c6/0x6b0\n[   13.673297]  __driver_probe_device+0x24f/0x310\n[   13.673297]  driver_probe_device+0x4e/0x220\n[   13.673297]  __device_attach_driver+0x169/0x320\n[   13.673297]  bus_for_each_drv+0x11d/0x1b0\n[   13.673297]  __device_attach+0x1b8/0x3e0\n[   13.673297]  device_initial_probe+0x12/0x20\n[   13.673297]  bus_probe_device+0x13d/0x180\n[   13.673297]  device_add+0xe3a/0x1670\n[   13.673297]  hid_add_device+0x31d/0xa40\n[...]",
+            "cve_id": "CVE-2025-39982",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: hci_event: Fix UAF in hci_acl_create_conn_sync\n\nThis fixes the following UFA in hci_acl_create_conn_sync where a\nconnection still pending is command submission (conn->state == BT_OPEN)\nmaybe freed, also since this also can happen with the likes of\nhci_le_create_conn_sync fix it as well:\n\nBUG: KASAN: slab-use-after-free in hci_acl_create_conn_sync+0x5ef/0x790 net/bluetooth/hci_sync.c:6861\nWrite of size 2 at addr ffff88805ffcc038 by task kworker/u11:2/9541\n\nCPU: 1 UID: 0 PID: 9541 Comm: kworker/u11:2 Not tainted 6.16.0-rc7 #3 PREEMPT(full)\nHardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014\nWorkqueue: hci3 hci_cmd_sync_work\nCall Trace:\n <TASK>\n dump_stack_lvl+0x189/0x250 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:378 [inline]\n print_report+0xca/0x230 mm/kasan/report.c:480\n kasan_report+0x118/0x150 mm/kasan/report.c:593\n hci_acl_create_conn_sync+0x5ef/0x790 net/bluetooth/hci_sync.c:6861\n hci_cmd_sync_work+0x210/0x3a0 net/bluetooth/hci_sync.c:332\n process_one_work kernel/workqueue.c:3238 [inline]\n process_scheduled_works+0xae1/0x17b0 kernel/workqueue.c:3321\n worker_thread+0x8a0/0xda0 kernel/workqueue.c:3402\n kthread+0x70e/0x8a0 kernel/kthread.c:464\n ret_from_fork+0x3fc/0x770 arch/x86/kernel/process.c:148\n ret_from_fork_asm+0x1a/0x30 home/kwqcheii/source/fuzzing/kernel/kasan/linux-6.16-rc7/arch/x86/entry/entry_64.S:245\n </TASK>\n\nAllocated by task 123736:\n kasan_save_stack mm/kasan/common.c:47 [inline]\n kasan_save_track+0x3e/0x80 mm/kasan/common.c:68\n poison_kmalloc_redzone mm/kasan/common.c:377 [inline]\n __kasan_kmalloc+0x93/0xb0 mm/kasan/common.c:394\n kasan_kmalloc include/linux/kasan.h:260 [inline]\n __kmalloc_cache_noprof+0x230/0x3d0 mm/slub.c:4359\n kmalloc_noprof include/linux/slab.h:905 [inline]\n kzalloc_noprof include/linux/slab.h:1039 [inline]\n __hci_conn_add+0x233/0x1b30 net/bluetooth/hci_conn.c:939\n hci_conn_add_unset net/bluetooth/hci_conn.c:1051 [inline]\n hci_connect_acl+0x16c/0x4e0 net/bluetooth/hci_conn.c:1634\n pair_device+0x418/0xa70 net/bluetooth/mgmt.c:3556\n hci_mgmt_cmd+0x9c9/0xef0 net/bluetooth/hci_sock.c:1719\n hci_sock_sendmsg+0x6ca/0xef0 net/bluetooth/hci_sock.c:1839\n sock_sendmsg_nosec net/socket.c:712 [inline]\n __sock_sendmsg+0x219/0x270 net/socket.c:727\n sock_write_iter+0x258/0x330 net/socket.c:1131\n new_sync_write fs/read_write.c:593 [inline]\n vfs_write+0x54b/0xa90 fs/read_write.c:686\n ksys_write+0x145/0x250 fs/read_write.c:738\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0xfa/0x3b0 arch/x86/entry/syscall_64.c:94\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n\nFreed by task 103680:\n kasan_save_stack mm/kasan/common.c:47 [inline]\n kasan_save_track+0x3e/0x80 mm/kasan/common.c:68\n kasan_save_free_info+0x46/0x50 mm/kasan/generic.c:576\n poison_slab_object mm/kasan/common.c:247 [inline]\n __kasan_slab_free+0x62/0x70 mm/kasan/common.c:264\n kasan_slab_free include/linux/kasan.h:233 [inline]\n slab_free_hook mm/slub.c:2381 [inline]\n slab_free mm/slub.c:4643 [inline]\n kfree+0x18e/0x440 mm/slub.c:4842\n device_release+0x9c/0x1c0\n kobject_cleanup lib/kobject.c:689 [inline]\n kobject_release lib/kobject.c:720 [inline]\n kref_put include/linux/kref.h:65 [inline]\n kobject_put+0x22b/0x480 lib/kobject.c:737\n hci_conn_cleanup net/bluetooth/hci_conn.c:175 [inline]\n hci_conn_del+0x8ff/0xcb0 net/bluetooth/hci_conn.c:1173\n hci_conn_complete_evt+0x3c7/0x1040 net/bluetooth/hci_event.c:3199\n hci_event_func net/bluetooth/hci_event.c:7477 [inline]\n hci_event_packet+0x7e0/0x1200 net/bluetooth/hci_event.c:7531\n hci_rx_work+0x46a/0xe80 net/bluetooth/hci_core.c:4070\n process_one_work kernel/workqueue.c:3238 [inline]\n process_scheduled_works+0xae1/0x17b0 kernel/workqueue.c:3321\n worker_thread+0x8a0/0xda0 kernel/workqueue.c:3402\n kthread+0x70e/0x8a0 kernel/kthread.c:464\n ret_from_fork+0x3fc/0x770 arch/x86/kernel/process.c:148\n ret_from_fork_asm+0x1a/0x30 home/kwqcheii/sour\n---truncated---",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000360000",
+            "epss_score": "0.000390000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "6.11"
+                "5.18"
             ]
         }
     },
@@ -946,18 +881,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2022-49390",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmacsec: fix UAF bug for real_dev\n\nCreate a new macsec device but not get reference to real_dev. That can\nnot ensure that real_dev is freed after macsec. That will trigger the\nUAF bug for real_dev as following:\n\n==================================================================\nBUG: KASAN: use-after-free in macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662\nCall Trace:\n ...\n macsec_get_iflink+0x5f/0x70 drivers/net/macsec.c:3662\n dev_get_iflink+0x73/0xe0 net/core/dev.c:637\n default_operstate net/core/link_watch.c:42 [inline]\n rfc2863_policy+0x233/0x2d0 net/core/link_watch.c:54\n linkwatch_do_dev+0x2a/0x150 net/core/link_watch.c:161\n\nAllocated by task 22209:\n ...\n alloc_netdev_mqs+0x98/0x1100 net/core/dev.c:10549\n rtnl_create_link+0x9d7/0xc00 net/core/rtnetlink.c:3235\n veth_newlink+0x20e/0xa90 drivers/net/veth.c:1748\n\nFreed by task 8:\n ...\n kfree+0xd6/0x4d0 mm/slub.c:4552\n kvfree+0x42/0x50 mm/util.c:615\n device_release+0x9f/0x240 drivers/base/core.c:2229\n kobject_cleanup lib/kobject.c:673 [inline]\n kobject_release lib/kobject.c:704 [inline]\n kref_put include/linux/kref.h:65 [inline]\n kobject_put+0x1c8/0x540 lib/kobject.c:721\n netdev_run_todo+0x72e/0x10b0 net/core/dev.c:10327\n\nAfter commit faab39f63c1f (\"net: allow out-of-order netdev unregistration\")\nand commit e5f80fcf869a (\"ipv6: give an IPv6 dev to blackhole_netdev\"), we\ncan add dev_hold_track() in macsec_dev_init() and dev_put_track() in\nmacsec_free_netdev() to fix the problem.",
+            "cve_id": "CVE-2024-50067",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nuprobe: avoid out-of-bounds memory access of fetching args\n\nUprobe needs to fetch args into a percpu buffer, and then copy to ring\nbuffer to avoid non-atomic context problem.\n\nSometimes user-space strings, arrays can be very large, but the size of\npercpu buffer is only page size. And store_trace_args() won't check\nwhether these data exceeds a single page or not, caused out-of-bounds\nmemory access.\n\nIt could be reproduced by following steps:\n1. build kernel with CONFIG_KASAN enabled\n2. save follow program as test.c\n\n```\n\\#include <stdio.h>\n\\#include <stdlib.h>\n\\#include <string.h>\n\n// If string length large than MAX_STRING_SIZE, the fetch_store_strlen()\n// will return 0, cause __get_data_size() return shorter size, and\n// store_trace_args() will not trigger out-of-bounds access.\n// So make string length less than 4096.\n\\#define STRLEN 4093\n\nvoid generate_string(char *str, int n)\n{\n    int i;\n    for (i = 0; i < n; ++i)\n    {\n        char c = i % 26 + 'a';\n        str[i] = c;\n    }\n    str[n-1] = '\\0';\n}\n\nvoid print_string(char *str)\n{\n    printf(\"%s\\n\", str);\n}\n\nint main()\n{\n    char tmp[STRLEN];\n\n    generate_string(tmp, STRLEN);\n    print_string(tmp);\n\n    return 0;\n}\n```\n3. compile program\n`gcc -o test test.c`\n\n4. get the offset of `print_string()`\n```\nobjdump -t test | grep -w print_string\n0000000000401199 g     F .text  000000000000001b              print_string\n```\n\n5. configure uprobe with offset 0x1199\n```\noff=0x1199\n\ncd /sys/kernel/debug/tracing/\necho \"p /root/test:${off} arg1=+0(%di):ustring arg2=\\$comm arg3=+0(%di):ustring\"\n > uprobe_events\necho 1 > events/uprobes/enable\necho 1 > tracing_on\n```\n\n6. run `test`, and kasan will report error.\n==================================================================\nBUG: KASAN: use-after-free in strncpy_from_user+0x1d6/0x1f0\nWrite of size 8 at addr ffff88812311c004 by task test/499CPU: 0 UID: 0 PID: 499 Comm: test Not tainted 6.12.0-rc3+ #18\nHardware name: Red Hat KVM, BIOS 1.16.0-4.al8 04/01/2014\nCall Trace:\n <TASK>\n dump_stack_lvl+0x55/0x70\n print_address_description.constprop.0+0x27/0x310\n kasan_report+0x10f/0x120\n ? strncpy_from_user+0x1d6/0x1f0\n strncpy_from_user+0x1d6/0x1f0\n ? rmqueue.constprop.0+0x70d/0x2ad0\n process_fetch_insn+0xb26/0x1470\n ? __pfx_process_fetch_insn+0x10/0x10\n ? _raw_spin_lock+0x85/0xe0\n ? __pfx__raw_spin_lock+0x10/0x10\n ? __pte_offset_map+0x1f/0x2d0\n ? unwind_next_frame+0xc5f/0x1f80\n ? arch_stack_walk+0x68/0xf0\n ? is_bpf_text_address+0x23/0x30\n ? kernel_text_address.part.0+0xbb/0xd0\n ? __kernel_text_address+0x66/0xb0\n ? unwind_get_return_address+0x5e/0xa0\n ? __pfx_stack_trace_consume_entry+0x10/0x10\n ? arch_stack_walk+0xa2/0xf0\n ? _raw_spin_lock_irqsave+0x8b/0xf0\n ? __pfx__raw_spin_lock_irqsave+0x10/0x10\n ? depot_alloc_stack+0x4c/0x1f0\n ? _raw_spin_unlock_irqrestore+0xe/0x30\n ? stack_depot_save_flags+0x35d/0x4f0\n ? kasan_save_stack+0x34/0x50\n ? kasan_save_stack+0x24/0x50\n ? mutex_lock+0x91/0xe0\n ? __pfx_mutex_lock+0x10/0x10\n prepare_uprobe_buffer.part.0+0x2cd/0x500\n uprobe_dispatcher+0x2c3/0x6a0\n ? __pfx_uprobe_dispatcher+0x10/0x10\n ? __kasan_slab_alloc+0x4d/0x90\n handler_chain+0xdd/0x3e0\n handle_swbp+0x26e/0x3d0\n ? __pfx_handle_swbp+0x10/0x10\n ? uprobe_pre_sstep_notifier+0x151/0x1b0\n irqentry_exit_to_user_mode+0xe2/0x1b0\n asm_exc_int3+0x39/0x40\nRIP: 0033:0x401199\nCode: 01 c2 0f b6 45 fb 88 02 83 45 fc 01 8b 45 fc 3b 45 e4 7c b7 8b 45 e4 48 98 48 8d 50 ff 48 8b 45 e8 48 01 d0 ce\nRSP: 002b:00007ffdf00576a8 EFLAGS: 00000206\nRAX: 00007ffdf00576b0 RBX: 0000000000000000 RCX: 0000000000000ff2\nRDX: 0000000000000ffc RSI: 0000000000000ffd RDI: 00007ffdf00576b0\nRBP: 00007ffdf00586b0 R08: 00007feb2f9c0d20 R09: 00007feb2f9c0d20\nR10: 0000000000000001 R11: 0000000000000202 R12: 0000000000401040\nR13: 00007ffdf0058780 R14: 0000000000000000 R15: 0000000000000000\n </TASK>\n\nThis commit enforces the buffer's maxlen less than a page-size to avoid\nstore_trace_args() out-of-memory access.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000360000",
+            "epss_score": "0.000310000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.4"
+                "3.14"
             ]
         }
     },
@@ -970,18 +905,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-53093",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme-multipath: defer partition scanning\n\nWe need to suppress the partition scan from occuring within the\ncontroller's scan_work context. If a path error occurs here, the IO will\nwait until a path becomes available or all paths are torn down, but that\naction also occurs within scan_work, so it would deadlock. Defer the\npartion scan to a different context that does not block scan_work.",
+            "cve_id": "CVE-2025-40048",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nuio_hv_generic: Let userspace take care of interrupt mask\n\nRemove the logic to set interrupt mask by default in uio_hv_generic\ndriver as the interrupt mask value is supposed to be controlled\ncompletely by the user space. If the mask bit gets changed\nby the driver, concurrently with user mode operating on the ring,\nthe mask bit may be set when it is supposed to be clear, and the\nuser-mode driver will miss an interrupt which will cause a hang.\n\nFor eg- when the driver sets inbound ring buffer interrupt mask to 1,\nthe host does not interrupt the guest on the UIO VMBus channel.\nHowever, setting the mask does not prevent the host from putting a\nmessage in the inbound ring buffer. So let’s assume that happens,\nthe host puts a message into the ring buffer but does not interrupt.\n\nSubsequently, the user space code in the guest sets the inbound ring\nbuffer interrupt mask to 0, saying “Hey, I’m ready for interrupts”.\nUser space code then calls pread() to wait for an interrupt.\nThen one of two things happens:\n\n* The host never sends another message. So the pread() waits forever.\n* The host does send another message. But because there’s already a\n  message in the ring buffer, it doesn’t generate an interrupt.\n  This is the correct behavior, because the host should only send an\n  interrupt when the inbound ring buffer transitions from empty to\n  not-empty. Adding an additional message to a ring buffer that is not\n  empty is not supposed to generate an interrupt on the guest.\n  Since the guest is waiting in pread() and not removing messages from\n  the ring buffer, the pread() waits forever.\n\nThis could be easily reproduced in hv_fcopy_uio_daemon if we delay\nsetting interrupt mask to 0.\n\nSimilarly if hv_uio_channel_cb() sets the interrupt_mask to 1,\nthere’s a race condition. Once user space empties the inbound ring\nbuffer, but before user space sets interrupt_mask to 0, the host could\nput another message in the ring buffer but it wouldn’t interrupt.\nThen the next pread() would hang.\n\nFix these by removing all instances where interrupt_mask is changed,\nwhile keeping the one in set_event() unchanged to enable userspace\ncontrol the interrupt mask by writing 0/1 to /dev/uioX.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000140000",
+            "epss_score": "0.000530000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.15"
+                "4.10"
             ]
         }
     },

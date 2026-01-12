@@ -9,12 +9,12 @@ from datetime import datetime, timedelta, timezone
 
 # lien avec les json
 def from_json(filename):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
 def to_json(data, filename):
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
@@ -211,8 +211,8 @@ def send_email(to_email, subject, body):
     server.quit()
 
 
-def alerter(alertes_enrichies, type_alerte, seuil_gravite_cvss, emails):
-    if type_alerte == "quotidiennes":
+def alerter(alertes_enrichies, quotidiennes=None, seuil_gravite_cvss=None, editeur=None, produit=None, emails=None):
+    if quotidiennes:
         for key in alertes_enrichies:
             if datetime.strptime(key["alerte"]["date"], "%a, %d %b %Y %H:%M:%S %z") == datetime.now(timezone.utc) - timedelta(days=1):
                 cve_details = "\n".join(f"{cle}: {val}" for cle, val in key['cve_enrichi'].items())
@@ -221,7 +221,7 @@ def alerter(alertes_enrichies, type_alerte, seuil_gravite_cvss, emails):
         print(f"Si des alertes ont eu lieues aujourd'hui, elles vous ont été envoyées")
 
 
-    elif type_alerte == "niveau_gravite":
+    elif seuil_gravite_cvss:
         for key in alertes_enrichies:
             if key["cve_enrichi"]["cvss_score"] is not None:
                 if float(key["cve_enrichi"]["cvss_score"]) >= seuil_gravite_cvss:
@@ -230,6 +230,22 @@ def alerter(alertes_enrichies, type_alerte, seuil_gravite_cvss, emails):
                         send_email(email, key["alerte"]["titre"], f"Une alerte de sécurité de gravité CVSS {key['cve_enrichi']['cvss_score']} a été détectée. \n\n{key['alerte']['description']}\n\nLien : {key['alerte']['lien']}\n\nDétails CVE :\n\n{cve_details}")
         print(f"Si des alertes ont un score CVSS >= à {seuil_gravite_cvss}, elles vous ont été envoyées")
 
+    elif editeur:
+        for key in alertes_enrichies:
+            if key["cve_enrichi"]["editeur"] == editeur:
+                cve_details = "\n".join(f"{cle}: {val}" for cle, val in key['cve_enrichi'].items())
+                for email in emails:
+                    send_email(email, key["alerte"]["titre"], f"Une alerte conernant l'editeur {editeur} a été détectée. \n\n{key['alerte']['description']}\n\nLien : {key['alerte']['lien']}\n\nDétails CVE :\n\n{cve_details}")
+        print(f"Si des alertes concernent l'editeur {editeur}, elles vous ont été envoyées")
+
+       
+    elif produit:
+        for key in alertes_enrichies:
+            if key["cve_enrichi"]["produit"] == produit:
+                cve_details = "\n".join(f"{cle}: {val}" for cle, val in key['cve_enrichi'].items())
+                for email in emails:
+                    send_email(email, key["alerte"]["titre"], f"Une alerte conernant le produit {produit} a été détectée. \n\n{key['alerte']['description']}\n\nLien : {key['alerte']['lien']}\n\nDétails CVE :\n\n{cve_details}")
+        print(f"Si des alertes concernent le produit {produit}, elles vous ont été envoyées")
 
 
 
@@ -237,17 +253,17 @@ def alerter(alertes_enrichies, type_alerte, seuil_gravite_cvss, emails):
 
 
 print("Extraction des alertes...")
-alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
+# alertes = extraire_rss() # a utiliser de temps en temps pour pas spammer le site
 # alertes = from_json("alertes.json") # pour charger les aloertes localement
 print("Extraction des CVE des alertes...")
-ref_cves, cve_list = extraire_cve_alertes(alertes)
+# ref_cves, cve_list = extraire_cve_alertes(alertes)
 
 print("Enrichissement des CVE...")
-cve_enrichi = enrichir_cve(cve_list)
+# cve_enrichi = enrichir_cve(cve_list)
 
 print("Consolidation des données et creéation du dataframe...")
-alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
-# alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
+# alertes_enrichies = condolider_donnees(alertes, cve_enrichi)
+alertes_enrichies = from_json("alertes_enrichies.json") # pour charger les alertes enrichies localement
 
 df_alertes = dataframe_alertes(alertes_enrichies)
 
@@ -256,43 +272,57 @@ while True:
     print("Choisissez le type d'alerte à recevoir :")
     print("1. Quotidiennes")
     print("2. Niveau de gravité")
-    print("3. Quitter")
+    print("3. Par éditeur")
+    print("4. Par produit")
+    print("5. Quitter")
     choix = input()
-    if choix == "3":
+    if choix == "5":
+        print()
         print("Au revoir")
         break
 
-    elif choix in ["1", "2"]:
+    elif choix in ["1", "2", "3", "4"]:
         print()
         print("Quel est votre adresse email ?")
         email = input()
         print()
         emails.append(email)
-
-        reponse = "1"
-        while reponse == "1":
-            print("Voulez vous inscrire un autre mail ?")
-            print("1. Oui")
-            print("2. Non")
-            reponse = input()
-            print()
-            if reponse == "1":
-                print("Quel est votre adresse email ?")
-                email = input()
-                print()
-                emails.append(email)
-            else:
-                break
             
         if choix == "1":
-            alerter(alertes_enrichies, "quotidiennes", None, emails)
-            break
+            alerter(alertes_enrichies, quotidiennes=True, emails=emails)
+            
 
         elif choix == "2":
             print("A partir de quel seuil de gravité CVSS voulez-vous recevoir les alertes ? (0.0 à 10.0)")
             seuil = float(input())
             print()
-            alerter(alertes_enrichies, "niveau_gravite", seuil, emails)
+            alerter(alertes_enrichies, seuil_gravite_cvss=seuil, emails=emails)
+            
+
+        elif choix == "3":
+            print(df_alertes.get("Éditeur").unique())
+            print()
+            print("De quel éditeur ci-dessus voulez-vous recevoir les alertes ? (copiez-collez le nom)")
+            editeur = input()
+            print()
+            alerter(alertes_enrichies, editeur=editeur, emails=emails)
+            
+
+        elif choix == "4":
+            print(df_alertes["Produit"].unique())
+            print()
+            print("De quel produit ci-dessus voulez-vous recevoir les alertes ? (copiez-collez le nom)")
+            produit = input()
+            print()
+            alerter(alertes_enrichies, produit=produit, emails=emails)
+            
+
+        print()
+        print("Voulez-vous vous inscrire à nouveau ?")
+        print("1. Oui")
+        print("2. Non")
+        inscrire = input()
+        if inscrire == "2":
             break
 
     else:
