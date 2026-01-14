@@ -1,4 +1,4 @@
-# Analyseur et Notificateur de Failles de Sécurité (CERT-FR)
+# Projet : Analyse des Avis et Alertes ANSSI avec Enrichissement des CVE
 
 Ce projet est un outil de veille cybersécurité automatisé permettant de surveiller les vulnérabilités informatiques. Il extrait les flux du CERT-FR, enrichit les données CVE via des API tierces (MITRE, FIRST.org) et permet une notification ciblée par email.
 
