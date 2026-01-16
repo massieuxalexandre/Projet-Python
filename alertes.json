@@ -1,208 +1,5 @@
 [
     {
-        "titre": "Multiples vulnérabilités dans MISP (08 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans MISP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1076/",
-        "date": "Mon, 08 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Vulnérabilité dans les produits Mitel (11 décembre 2025)",
-        "type": "Avis",
-        "description": "Une vulnérabilité a été découverte dans les produits Mitel. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1097/",
-        "date": "Thu, 11 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans Roundcube (15 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans Roundcube. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1111/",
-        "date": "Mon, 15 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans les produits VMware (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans les produits Foxit (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans les produits IBM (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans MongoDB Server (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans MongoDB Server. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1134/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans PHP (19 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/",
-        "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans les produits IBM (26 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/",
-        "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/",
-        "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/",
-        "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/",
-        "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/",
-        "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans Moxa NPort (31 décembre 2025)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans Moxa NPort. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1142/",
-        "date": "Wed, 31 Dec 2025 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/",
-        "date": "Fri, 02 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans les produits IBM (02 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0002/",
-        "date": "Fri, 02 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans les produits Qnap (05 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/",
-        "date": "Mon, 05 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Vulnérabilité dans MariaDB (05 janvier 2026)",
-        "type": "Avis",
-        "description": "Une vulnérabilité a été découverte dans MariaDB. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0004/",
-        "date": "Mon, 05 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans Centreon Open Tickets (06 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans Centreon Open Tickets. Elles permettent à un attaquant de provoquer une injection SQL (SQLi) et une injection de code indirecte à distance (XSS).",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0005/",
-        "date": "Tue, 06 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/",
-        "date": "Tue, 06 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Vulnérabilité dans Stormshield Network Security (06 janvier 2026)",
-        "type": "Avis",
-        "description": "Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0007/",
-        "date": "Tue, 06 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans Joomla! (07 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans Joomla!. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0008/",
-        "date": "Wed, 07 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Vulnérabilité dans Google Chrome (07 janvier 2026)",
-        "type": "Avis",
-        "description": "Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0009/",
-        "date": "Wed, 07 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Multiples vulnérabilités dans Curl (07 janvier 2026)",
-        "type": "Avis",
-        "description": "De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/",
-        "date": "Wed, 07 Jan 2026 00:00:00 +0000"
-    },
-    {
-        "titre": "Vulnérabilité dans Google Android (08 janvier 2026)",
-        "type": "Avis",
-        "description": "Une vulnérabilité a été découverte dans Google Android. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0011/",
-        "date": "Thu, 08 Jan 2026 00:00:00 +0000"
-    },
-    {
         "titre": "Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026)",
         "type": "Avis",
         "description": "De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
@@ -278,6 +75,209 @@
         "description": "De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
         "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0022/",
         "date": "Fri, 09 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Axis (12 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Axis. Elles permettent à un attaquant de provoquer une élévation de privilèges et un déni de service à distance.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0023/",
+        "date": "Mon, 12 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans VMware Tanzu Greenplum Backup and Restore (12 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Greenplum Backup and Restore. Elles permettent à un attaquant de provoquer un déni de service à distance et un problème de sécurité non spécifié par l'éditeur.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0024/",
+        "date": "Mon, 12 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Vulnérabilité dans Microsoft Edge (12 janvier 2026)",
+        "type": "Avis",
+        "description": "Une vulnérabilité a été découverte dans Microsoft Edge. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0025/",
+        "date": "Mon, 12 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Vulnérabilité dans Google Pixel (13 janvier 2026)",
+        "type": "Avis",
+        "description": "Une vulnérabilité a été découverte dans Google Pixel. Elle permet à un attaquant de provoquer une élévation de privilèges.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0026/",
+        "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Vulnérabilité dans NetApp ONTAP (13 janvier 2026)",
+        "type": "Avis",
+        "description": "Une vulnérabilité a été découverte dans NetApp ONTAP. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0027/",
+        "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans MariaDB (13 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans MariaDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0028/",
+        "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans VMware Tanzu Gemfire (13 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Gemfire. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une injection de requêtes illégitimes par rebond (CSRF) et un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0029/",
+        "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Vulnérabilité dans MISP (13 janvier 2026)",
+        "type": "Avis",
+        "description": "Une vulnérabilité a été découverte dans MISP. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0030/",
+        "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Google Chrome (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0040/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Elastic (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF).",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0041/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits HPE Aruba Networking (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits HPE Aruba Networking. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0042/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Siemens (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Siemens. Elles permettent à un attaquant de provoquer un déni de service à distance et un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0032/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Suricata (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Suricata. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0036/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Node.js (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Node.js. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service à distance.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0039/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Vulnérabilité dans le greffon VSCode pour Spring CLI (14 janvier 2026)",
+        "type": "Avis",
+        "description": "Une vulnérabilité a été découverte dans le greffon VSCode pour Spring CLI. Elle permet à un attaquant de provoquer une exécution de code arbitraire.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0031/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Typo3 (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Typo3. Elles permettent à un attaquant de provoquer une exécution de code arbitraire et un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0037/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Fortinet (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Fortinet. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0035/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits SAP (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0034/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Schneider Electric (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Schneider Electric. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0033/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Microsoft Office (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Office. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0043/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Microsoft Windows (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Windows. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance. Microsoft indique que la vulnérabilité CVE-2026-20805...",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0044/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Microsoft Azure (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Azure. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et une élévation de privilèges.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0045/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Microsoft (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0046/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Mozilla (14 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0038/",
+        "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Vulnérabilité dans F5 NGINX Ingress Controller (15 janvier 2026)",
+        "type": "Avis",
+        "description": "Une vulnérabilité a été découverte dans F5 NGINX Ingress Controller. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0047/",
+        "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans Wireshark (15 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans Wireshark. Elles permettent à un attaquant de provoquer un déni de service à distance.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0048/",
+        "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Palo Alto Networks (15 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Palo Alto Networks. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et un contournement de la politique de sécurité. Palo Alto Networks a connaissance d'une...",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0049/",
+        "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Juniper Networks (15 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Juniper Networks. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0050/",
+        "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+    },
+    {
+        "titre": "Multiples vulnérabilités dans les produits Mozilla (15 janvier 2026)",
+        "type": "Avis",
+        "description": "De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",
+        "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0051/",
+        "date": "Thu, 15 Jan 2026 00:00:00 +0000"
     },
     {
         "titre": "Multiples vulnérabilités dans AMI MegaRAC (16 décembre 2022)",

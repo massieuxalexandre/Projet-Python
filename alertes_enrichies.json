@@ -1,742 +1,6 @@
 [
     {
         "alerte": {
-            "titre": "Multiples vulnérabilités dans MISP (08 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans MISP. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1076/",
-            "date": "Mon, 08 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-67906",
-            "description": "In MISP before 2.5.28, app/View/Elements/Workflows/executionPath.ctp allows XSS in the workflow execution path.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
-            "cvss_score": 5.4,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000350000",
-            "gravite_epss": "Faible",
-            "editeur": "MISP",
-            "produit": "MISP",
-            "versions_affectees": [
-                "0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans les produits Mitel (11 décembre 2025)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans les produits Mitel. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1097/",
-            "date": "Thu, 11 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-67823",
-            "description": null,
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "MISP",
-            "produit": "MISP",
-            "versions_affectees": [
-                "0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Roundcube (15 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Roundcube. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1111/",
-            "date": "Mon, 15 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-68460",
-            "description": "Roundcube Webmail before 1.5.12 and 1.6 before 1.6.12 is prone to a information disclosure vulnerability in the HTML style sanitizer.",
-            "cwe": "CWE-116",
-            "nature de la faille": "CWE-116 Improper Encoding or Escaping of Output",
-            "cvss_score": 7.2,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000480000",
-            "gravite_epss": "Faible",
-            "editeur": "Roundcube",
-            "produit": "Webmail",
-            "versions_affectees": [
-                "0",
-                "1.6.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits VMware (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1129/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2024-26146",
-            "description": "Rack is a modular Ruby web server interface. Carefully crafted headers can cause header parsing in Rack to take longer than expected resulting in a possible denial of service issue. Accept and Forwarded headers are impacted. Ruby 3.2 has mitigations for this problem, so Rack applications using Ruby 3.2 or newer are unaffected. This vulnerability is fixed in 2.0.9.4, 2.1.4.4, 2.2.8.1, and 3.0.9.1.",
-            "cwe": "CWE-1333",
-            "nature de la faille": "CWE-1333: Inefficient Regular Expression Complexity",
-            "cvss_score": 5.3,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.005720000",
-            "gravite_epss": "Faible",
-            "editeur": "rack",
-            "produit": "rack",
-            "versions_affectees": [
-                ">= 3.0.0, < 3.0.9.1",
-                ">= 2.2.0, < 2.2.8.1",
-                ">= 2.1.0, < 2.1.4.4",
-                "< 2.0.9.4"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Foxit (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Foxit. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1130/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-58085",
-            "description": null,
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "rack",
-            "produit": "rack",
-            "versions_affectees": [
-                ">= 3.0.0, < 3.0.9.1",
-                ">= 2.2.0, < 2.2.8.1",
-                ">= 2.1.0, < 2.1.4.4",
-                "< 2.0.9.4"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits IBM (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1131/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2023-34055",
-            "description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": 5.3,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.002820000",
-            "gravite_epss": "Faible",
-            "editeur": "Spring",
-            "produit": "Spring Boot",
-            "versions_affectees": [
-                "2.7.0",
-                "3.0.0",
-                "3.1.0",
-                "older unsupported versions"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1132/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2023-53373",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: seqiv - Handle EBUSY correctly\n\nAs it is seqiv only handles the special return value of EINPROGERSS,\nwhich means that in all other cases it will free data related to the\nrequest.\n\nHowever, as the caller of seqiv may specify MAY_BACKLOG, we also need\nto expect EBUSY and treat it in the same way.  Otherwise backlogged\nrequests will trigger a use-after-free.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000180000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "2.6.25"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1133/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-39944",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nocteontx2-pf: Fix use-after-free bugs in otx2_sync_tstamp()\n\nThe original code relies on cancel_delayed_work() in otx2_ptp_destroy(),\nwhich does not ensure that the delayed work item synctstamp_work has fully\ncompleted if it was already running. This leads to use-after-free scenarios\nwhere otx2_ptp is deallocated by otx2_ptp_destroy(), while synctstamp_work\nremains active and attempts to dereference otx2_ptp in otx2_sync_tstamp().\nFurthermore, the synctstamp_work is cyclic, the likelihood of triggering\nthe bug is nonnegligible.\n\nA typical race condition is illustrated below:\n\nCPU 0 (cleanup)           | CPU 1 (delayed work callback)\notx2_remove()             |\n  otx2_ptp_destroy()      | otx2_sync_tstamp()\n    cancel_delayed_work() |\n    kfree(ptp)            |\n                          |   ptp = container_of(...); //UAF\n                          |   ptp-> //UAF\n\nThis is confirmed by a KASAN report:\n\nBUG: KASAN: slab-use-after-free in __run_timer_base.part.0+0x7d7/0x8c0\nWrite of size 8 at addr ffff88800aa09a18 by task bash/136\n...\nCall Trace:\n <IRQ>\n dump_stack_lvl+0x55/0x70\n print_report+0xcf/0x610\n ? __run_timer_base.part.0+0x7d7/0x8c0\n kasan_report+0xb8/0xf0\n ? __run_timer_base.part.0+0x7d7/0x8c0\n __run_timer_base.part.0+0x7d7/0x8c0\n ? __pfx___run_timer_base.part.0+0x10/0x10\n ? __pfx_read_tsc+0x10/0x10\n ? ktime_get+0x60/0x140\n ? lapic_next_event+0x11/0x20\n ? clockevents_program_event+0x1d4/0x2a0\n run_timer_softirq+0xd1/0x190\n handle_softirqs+0x16a/0x550\n irq_exit_rcu+0xaf/0xe0\n sysvec_apic_timer_interrupt+0x70/0x80\n </IRQ>\n...\nAllocated by task 1:\n kasan_save_stack+0x24/0x50\n kasan_save_track+0x14/0x30\n __kasan_kmalloc+0x7f/0x90\n otx2_ptp_init+0xb1/0x860\n otx2_probe+0x4eb/0xc30\n local_pci_probe+0xdc/0x190\n pci_device_probe+0x2fe/0x470\n really_probe+0x1ca/0x5c0\n __driver_probe_device+0x248/0x310\n driver_probe_device+0x44/0x120\n __driver_attach+0xd2/0x310\n bus_for_each_dev+0xed/0x170\n bus_add_driver+0x208/0x500\n driver_register+0x132/0x460\n do_one_initcall+0x89/0x300\n kernel_init_freeable+0x40d/0x720\n kernel_init+0x1a/0x150\n ret_from_fork+0x10c/0x1a0\n ret_from_fork_asm+0x1a/0x30\n\nFreed by task 136:\n kasan_save_stack+0x24/0x50\n kasan_save_track+0x14/0x30\n kasan_save_free_info+0x3a/0x60\n __kasan_slab_free+0x3f/0x50\n kfree+0x137/0x370\n otx2_ptp_destroy+0x38/0x80\n otx2_remove+0x10d/0x4c0\n pci_device_remove+0xa6/0x1d0\n device_release_driver_internal+0xf8/0x210\n pci_stop_bus_device+0x105/0x150\n pci_stop_and_remove_bus_device_locked+0x15/0x30\n remove_store+0xcc/0xe0\n kernfs_fop_write_iter+0x2c3/0x440\n vfs_write+0x871/0xd70\n ksys_write+0xee/0x1c0\n do_syscall_64+0xac/0x280\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n...\n\nReplace cancel_delayed_work() with cancel_delayed_work_sync() to ensure\nthat the delayed work item is properly canceled before the otx2_ptp is\ndeallocated.\n\nThis bug was initially identified through static analysis. To reproduce\nand test it, I simulated the OcteonTX2 PCI device in QEMU and introduced\nartificial delays within the otx2_sync_tstamp() function to increase the\nlikelihood of triggering the bug.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000390000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "6.1"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans MongoDB Server (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans MongoDB Server. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1134/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14847",
-            "description": "Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all MongoDB Server v7.0 prior to 7.0.28 versions, MongoDB Server v8.0 versions prior to 8.0.17, MongoDB Server v8.2 versions prior to 8.2.3, MongoDB Server v6.0 versions prior to 6.0.27, MongoDB Server v5.0 versions prior to 5.0.32, MongoDB Server v4.4 versions prior to 4.4.30, MongoDB Server v4.2 versions greater than or equal to 4.2.0, MongoDB Server v4.0 versions greater than or equal to 4.0.0, and MongoDB Server v3.6 versions greater than or equal to 3.6.0.",
-            "cwe": "CWE-130",
-            "nature de la faille": "CWE-130: Improper Handling of Length Parameter Inconsistency",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.696220000",
-            "gravite_epss": "Élevée",
-            "editeur": "MongoDB Inc.",
-            "produit": "MongoDB Server",
-            "versions_affectees": [
-                "8.2",
-                "8.0",
-                "7.0",
-                "6.0",
-                "5.0",
-                "4.4",
-                "4.2",
-                "4.0",
-                "3.6"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1135/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-38466",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf: Revert to requiring CAP_SYS_ADMIN for uprobes\n\nJann reports that uprobes can be used destructively when used in the\nmiddle of an instruction. The kernel only verifies there is a valid\ninstruction at the requested offset, but due to variable instruction\nlength cannot determine if this is an instruction as seen by the\nintended execution stream.\n\nAdditionally, Mark Rutland notes that on architectures that mix data\nin the text segment (like arm64), a similar things can be done if the\ndata word is 'mistaken' for an instruction.\n\nAs such, require CAP_SYS_ADMIN for uprobes.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000190000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "5.8"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1136/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-39987",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncan: hi311x: populate ndo_change_mtu() to prevent buffer overflow\n\nSending an PF_PACKET allows to bypass the CAN framework logic and to\ndirectly reach the xmit() function of a CAN driver. The only check\nwhich is performed by the PF_PACKET framework is to make sure that\nskb->len fits the interface's MTU.\n\nUnfortunately, because the sun4i_can driver does not populate its\nnet_device_ops->ndo_change_mtu(), it is possible for an attacker to\nconfigure an invalid MTU by doing, for example:\n\n  $ ip link set can0 mtu 9999\n\nAfter doing so, the attacker could open a PF_PACKET socket using the\nETH_P_CANXL protocol:\n\n\tsocket(PF_PACKET, SOCK_RAW, htons(ETH_P_CANXL))\n\nto inject a malicious CAN XL frames. For example:\n\n\tstruct canxl_frame frame = {\n\t\t.flags = 0xff,\n\t\t.len = 2048,\n\t};\n\nThe CAN drivers' xmit() function are calling can_dev_dropped_skb() to\ncheck that the skb is valid, unfortunately under above conditions, the\nmalicious packet is able to go through can_dev_dropped_skb() checks:\n\n  1. the skb->protocol is set to ETH_P_CANXL which is valid (the\n     function does not check the actual device capabilities).\n\n  2. the length is a valid CAN XL length.\n\nAnd so, hi3110_hard_start_xmit() receives a CAN XL frame which it is\nnot able to correctly handle and will thus misinterpret it as a CAN\nframe. The driver will consume frame->len as-is with no further\nchecks.\n\nThis can result in a buffer overflow later on in hi3110_hw_tx() on\nthis line:\n\n\tmemcpy(buf + HI3110_FIFO_EXT_DATA_OFF,\n\t       frame->data, frame->len);\n\nHere, frame->len corresponds to the flags field of the CAN XL frame.\nIn our previous example, we set canxl_frame->flags to 0xff. Because\nthe maximum expected length is 8, a buffer overflow of 247 bytes\noccurs!\n\nPopulate net_device_ops->ndo_change_mtu() to ensure that the\ninterface's MTU can not be set to anything bigger than CAN_MTU. By\nfixing the root cause, this prevents the buffer overflow.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000650000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "4.12"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans PHP (19 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans PHP. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1126/",
-            "date": "Fri, 19 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-14180",
-            "description": "In PHP versions 8.1.* before 8.1.34, 8.2.* before 8.2.30, 8.3.* before 8.3.29, 8.4.* before 8.4.16, 8.5.* before 8.5.1 when using the PDO PostgreSQL driver with PDO::ATTR_EMULATE_PREPARES enabled, an invalid character sequence (such as \\x99) in a prepared statement parameter may cause the quoting function PQescapeStringConn to return NULL, leading to a null pointer dereference in pdo_parse_params() function. This may lead to crashes (segmentation fault) and affect the availability of the target server.",
-            "cwe": "CWE-476",
-            "nature de la faille": "CWE-476 NULL Pointer Dereference",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000530000",
-            "gravite_epss": "Faible",
-            "editeur": "PHP Group",
-            "produit": "PHP",
-            "versions_affectees": [
-                "8.1.*",
-                "8.2.*",
-                "8.3.*",
-                "8.4.*",
-                "8.5.*"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits IBM (26 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1137/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2015-8394",
-            "description": "PCRE before 8.38 mishandles the (?(<digits>) and (?(R<digits>) conditions, which allows remote attackers to cause a denial of service (integer overflow) or possibly have unspecified other impact via a crafted regular expression, as demonstrated by a JavaScript RegExp object encountered by Konqueror.",
-            "cwe": "Non disponible",
-            "nature de la faille": "n/a",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.035910000",
-            "gravite_epss": "Faible",
-            "editeur": "n/a",
-            "produit": "n/a",
-            "versions_affectees": [
-                "n/a"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans VMware Tanzu Platform (26 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Platform. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1138/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2023-48022",
-            "description": "Anyscale Ray 2.6.3 and 2.8.0 allows a remote attacker to execute arbitrary code via the job submission API. NOTE: the vendor's position is that this report is irrelevant because Ray, as stated in its documentation, is not intended for use outside of a strictly controlled network environment. (Also, within that environment, customers at version 2.52.0 and later can choose to use token authentication.)",
-            "cwe": "Non disponible",
-            "nature de la faille": "n/a",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.918970000",
-            "gravite_epss": "Critique",
-            "editeur": "n/a",
-            "produit": "n/a",
-            "versions_affectees": [
-                "n/a"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (26 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1139/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-38666",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: appletalk: Fix use-after-free in AARP proxy probe\n\nThe AARP proxy‐probe routine (aarp_proxy_probe_network) sends a probe,\nreleases the aarp_lock, sleeps, then re-acquires the lock.  During that\nwindow an expire timer thread (__aarp_expire_timer) can remove and\nkfree() the same entry, leading to a use-after-free.\n\nrace condition:\n\n         cpu 0                          |            cpu 1\n    atalk_sendmsg()                     |   atif_proxy_probe_device()\n    aarp_send_ddp()                     |   aarp_proxy_probe_network()\n    mod_timer()                         |   lock(aarp_lock) // LOCK!!\n    timeout around 200ms                |   alloc(aarp_entry)\n    and then call                       |   proxies[hash] = aarp_entry\n    aarp_expire_timeout()               |   aarp_send_probe()\n                                        |   unlock(aarp_lock) // UNLOCK!!\n    lock(aarp_lock) // LOCK!!           |   msleep(100);\n    __aarp_expire_timer(&proxies[ct])   |\n    free(aarp_entry)                    |\n    unlock(aarp_lock) // UNLOCK!!       |\n                                        |   lock(aarp_lock) // LOCK!!\n                                        |   UAF aarp_entry !!\n\n==================================================================\nBUG: KASAN: slab-use-after-free in aarp_proxy_probe_network+0x560/0x630 net/appletalk/aarp.c:493\nRead of size 4 at addr ffff8880123aa360 by task repro/13278\n\nCPU: 3 UID: 0 PID: 13278 Comm: repro Not tainted 6.15.2 #3 PREEMPT(full)\nCall Trace:\n <TASK>\n __dump_stack lib/dump_stack.c:94 [inline]\n dump_stack_lvl+0x116/0x1b0 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:408 [inline]\n print_report+0xc1/0x630 mm/kasan/report.c:521\n kasan_report+0xca/0x100 mm/kasan/report.c:634\n aarp_proxy_probe_network+0x560/0x630 net/appletalk/aarp.c:493\n atif_proxy_probe_device net/appletalk/ddp.c:332 [inline]\n atif_ioctl+0xb58/0x16c0 net/appletalk/ddp.c:857\n atalk_ioctl+0x198/0x2f0 net/appletalk/ddp.c:1818\n sock_do_ioctl+0xdc/0x260 net/socket.c:1190\n sock_ioctl+0x239/0x6a0 net/socket.c:1311\n vfs_ioctl fs/ioctl.c:51 [inline]\n __do_sys_ioctl fs/ioctl.c:906 [inline]\n __se_sys_ioctl fs/ioctl.c:892 [inline]\n __x64_sys_ioctl+0x194/0x200 fs/ioctl.c:892\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0xcb/0x250 arch/x86/entry/syscall_64.c:94\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n </TASK>\n\nAllocated:\n aarp_alloc net/appletalk/aarp.c:382 [inline]\n aarp_proxy_probe_network+0xd8/0x630 net/appletalk/aarp.c:468\n atif_proxy_probe_device net/appletalk/ddp.c:332 [inline]\n atif_ioctl+0xb58/0x16c0 net/appletalk/ddp.c:857\n atalk_ioctl+0x198/0x2f0 net/appletalk/ddp.c:1818\n\nFreed:\n kfree+0x148/0x4d0 mm/slub.c:4841\n __aarp_expire net/appletalk/aarp.c:90 [inline]\n __aarp_expire_timer net/appletalk/aarp.c:261 [inline]\n aarp_expire_timeout+0x480/0x6e0 net/appletalk/aarp.c:317\n\nThe buggy address belongs to the object at ffff8880123aa300\n which belongs to the cache kmalloc-192 of size 192\nThe buggy address is located 96 bytes inside of\n freed 192-byte region [ffff8880123aa300, ffff8880123aa3c0)\n\nMemory state around the buggy address:\n ffff8880123aa200: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n ffff8880123aa280: 00 00 00 00 fc fc fc fc fc fc fc fc fc fc fc fc\n>ffff8880123aa300: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb\n                                                       ^\n ffff8880123aa380: fb fb fb fb fb fb fb fb fc fc fc fc fc fc fc fc\n ffff8880123aa400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n==================================================================",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000220000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "2.6.12"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (26 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un contournement de la politique de sécurité et un déni de service.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1140/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2023-53641",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: ath9k: hif_usb: fix memory leak of remain_skbs\n\nhif_dev->remain_skb is allocated and used exclusively in\nath9k_hif_usb_rx_stream(). It is implied that an allocated remain_skb is\nprocessed and subsequently freed (in error paths) only during the next\ncall of ath9k_hif_usb_rx_stream().\n\nSo, if the urbs are deallocated between those two calls due to the device\ndeinitialization or suspend, it is possible that ath9k_hif_usb_rx_stream()\nis not called next time and the allocated remain_skb is leaked. Our local\nSyzkaller instance was able to trigger that.\n\nremain_skb makes sense when receiving two consecutive urbs which are\nlogically linked together, i.e. a specific data field from the first skb\nindicates a cached skb to be allocated, memcpy'd with some data and\nsubsequently processed in the next call to ath9k_hif_usb_rx_stream(). Urbs\ndeallocation supposedly makes that link irrelevant so we need to free the\ncached skb in those cases.\n\nFix the leak by introducing a function to explicitly free remain_skb (if\nit is not NULL) when the rx urbs have been deallocated. remain_skb is NULL\nwhen it has not been allocated at all (hif_dev struct is kzalloced) or\nwhen it has been processed in next call to ath9k_hif_usb_rx_stream().\n\nFound by Linux Verification Center (linuxtesting.org) with Syzkaller.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000360000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "2.6.35"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (26 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer un contournement de la politique de sécurité, un déni de service et un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1141/",
-            "date": "Fri, 26 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-39757",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nALSA: usb-audio: Validate UAC3 cluster segment descriptors\n\nUAC3 class segment descriptors need to be verified whether their sizes\nmatch with the declared lengths and whether they fit with the\nallocated buffer sizes, too.  Otherwise malicious firmware may lead to\nthe unexpected OOB accesses.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000220000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "4.19"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Moxa NPort (31 décembre 2025)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Moxa NPort. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-1142/",
-            "date": "Wed, 31 Dec 2025 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-15017",
-            "description": "A vulnerability exists in serial device servers where active debug code remains enabled in the UART interface. An attacker with physical access to the device can directly connect to the UART interface and, without authentication, user interaction, or execution conditions, gain unauthorized access to internal debug functionality. Exploitation is low complexity and allows an attacker to execute privileged operations and access sensitive system resources, resulting in a high impact to the confidentiality, integrity, and availability of the affected device. No security impact to external or dependent systems has been identified.",
-            "cwe": "CWE-489",
-            "nature de la faille": "CWE-489: Active Debug Code",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000450000",
-            "gravite_epss": "Faible",
-            "editeur": "Moxa",
-            "produit": "NPort IA5000-G2 Series",
-            "versions_affectees": [
-                "1.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (02 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Elles permettent à un attaquant de provoquer une atteinte à l'intégrité des données et un déni de service.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0001/",
-            "date": "Fri, 02 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-40154",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nASoC: Intel: bytcr_rt5640: Fix invalid quirk input mapping\n\nWhen an invalid value is passed via quirk option, currently\nbytcr_rt5640 driver only shows an error message but leaves as is.\nThis may lead to unepxected results like OOB access.\n\nThis patch corrects the input mapping to the certain default value if\nan invalid value is passed.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000510000",
-            "gravite_epss": "Faible",
-            "editeur": "Linux",
-            "produit": "Linux",
-            "versions_affectees": [
-                "4.18"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits IBM (02 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0002/",
-            "date": "Fri, 02 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-53057",
-            "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Security).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 5.9 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N).",
-            "cwe": "Non disponible",
-            "nature de la faille": "Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data.",
-            "cvss_score": 5.9,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000940000",
-            "gravite_epss": "Faible",
-            "editeur": "Oracle Corporation",
-            "produit": "Oracle GraalVM Enterprise Edition",
-            "versions_affectees": [
-                "21.3.15"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans les produits Qnap (05 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0003/",
-            "date": "Mon, 05 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-53589",
-            "description": "A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.\n\nWe have already fixed the vulnerability in the following versions:\nQTS 5.2.7.3256 build 20250913 and later\nQuTS hero h5.2.7.3256 build 20250913 and later\nQuTS hero h5.3.1.3250 build 20250912 and later",
-            "cwe": "CWE-476",
-            "nature de la faille": "CWE-476",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.001280000",
-            "gravite_epss": "Faible",
-            "editeur": "QNAP Systems Inc.",
-            "produit": "QuTS hero",
-            "versions_affectees": [
-                "h5.2.x",
-                "h5.3.x"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans MariaDB (05 janvier 2026)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans MariaDB. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0004/",
-            "date": "Mon, 05 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-13699",
-            "description": "MariaDB mariadb-dump Utility Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of MariaDB. Interaction with the mariadb-dump utility is required to exploit this vulnerability but attack vectors may vary depending on the implementation.\n\nThe specific flaw exists within the handling of view names. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-27000.",
-            "cwe": "CWE-22",
-            "nature de la faille": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.001240000",
-            "gravite_epss": "Faible",
-            "editeur": "MariaDB",
-            "produit": "MariaDB",
-            "versions_affectees": [
-                "11.8.3"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Centreon Open Tickets (06 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Centreon Open Tickets. Elles permettent à un attaquant de provoquer une injection SQL (SQLi) et une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0005/",
-            "date": "Tue, 06 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-54890",
-            "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon Infra Monitoring (Hostgroup configuration page) allows Stored \n\nXSS by users with elevated privileges.This issue affects Infra Monitoring: from 24.10.0 before 24.10.15, from 24.04.0 before 24.04.19, from 23.10.0 before 23.10.29.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
-            "cvss_score": 6.8,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.000200000",
-            "gravite_epss": "Faible",
-            "editeur": "Centreon",
-            "produit": "Infra Monitoring",
-            "versions_affectees": [
-                "24.10.0",
-                "24.04.0",
-                "23.10.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Veeam Backup & Replication (06 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Veeam Backup & Replication. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à l'intégrité des données.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0006/",
-            "date": "Tue, 06 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-55125",
-            "description": "This vulnerability allows a Backup or Tape Operator to perform remote code execution (RCE) as root by creating a malicious\r\nbackup configuration file.",
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
-            "cvss_score": 7.8,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.000610000",
-            "gravite_epss": "Faible",
-            "editeur": "Veeam",
-            "produit": "Backup And Recovery",
-            "versions_affectees": [
-                "13.0.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Stormshield Network Security (06 janvier 2026)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0007/",
-            "date": "Tue, 06 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-31115",
-            "description": "XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",
-            "cwe": "CWE-366",
-            "nature de la faille": "CWE-366: Race Condition within a Thread",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000770000",
-            "gravite_epss": "Faible",
-            "editeur": "tukaani-project",
-            "produit": "xz",
-            "versions_affectees": [
-                ">= 5.3.3alpha, < 5.8.1"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Joomla! (07 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Joomla!. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0008/",
-            "date": "Wed, 07 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-63083",
-            "description": "Lack of output escaping leads to a XSS vector in the pagebreak plugin.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000430000",
-            "gravite_epss": "Faible",
-            "editeur": "Joomla! Project",
-            "produit": "Joomla! CMS",
-            "versions_affectees": [
-                "3.9.0-5.4.1",
-                "6.0.0-6.0.1"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Google Chrome (07 janvier 2026)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans Google Chrome. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0009/",
-            "date": "Wed, 07 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2026-0628",
-            "description": "Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)",
-            "cwe": "Non disponible",
-            "nature de la faille": "Insufficient policy enforcement",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000170000",
-            "gravite_epss": "Faible",
-            "editeur": "Google",
-            "produit": "Chrome",
-            "versions_affectees": [
-                "143.0.7499.192"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Multiples vulnérabilités dans Curl (07 janvier 2026)",
-            "type": "Avis",
-            "description": "De multiples vulnérabilités ont été découvertes dans Curl. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0010/",
-            "date": "Wed, 07 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-13034",
-            "description": "When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedpubkey`\nwith the curl tool,curl should check the public key of the server certificate\nto verify the peer.\n\nThis check was skipped in a certain condition that would then make curl allow\nthe connection without performing the proper check, thus not noticing a\npossible impostor. To skip this check, the connection had to be done with QUIC\nwith ngtcp2 built to use GnuTLS and the user had to explicitly disable the\nstandard certificate verification.",
-            "cwe": "Non disponible",
-            "nature de la faille": "CWE-295 Improper Certificate Validation",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000160000",
-            "gravite_epss": "Faible",
-            "editeur": "curl",
-            "produit": "curl",
-            "versions_affectees": [
-                "8.17.0",
-                "8.16.0",
-                "8.15.0",
-                "8.14.1",
-                "8.14.0",
-                "8.13.0",
-                "8.12.1",
-                "8.12.0",
-                "8.11.1",
-                "8.11.0",
-                "8.10.1",
-                "8.10.0",
-                "8.9.1",
-                "8.9.0",
-                "8.8.0"
-            ]
-        }
-    },
-    {
-        "alerte": {
-            "titre": "Vulnérabilité dans Google Android (08 janvier 2026)",
-            "type": "Avis",
-            "description": "Une vulnérabilité a été découverte dans Google Android. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0011/",
-            "date": "Thu, 08 Jan 2026 00:00:00 +0000"
-        },
-        "cve_enrichi": {
-            "cve_id": "CVE-2025-54957",
-            "description": "An issue was discovered in Dolby UDC 4.5 through 4.13. A crash of the DD+ decoder process can occur when a malformed DD+ bitstream is processed. When Evolution data is processed by evo_priv.c from the DD+ bitstream, the decoder writes that data into a buffer. The length calculation for a write can overflow due to an integer wraparound. This can lead to the allocated buffer being too small, and the out-of-bounds check of the subsequent write to be ineffective, leading to an out-of-bounds write.",
-            "cwe": "Non disponible",
-            "nature de la faille": "n/a",
-            "cvss_score": null,
-            "gravite_cvss": "Non disponible",
-            "epss_score": "0.000470000",
-            "gravite_epss": "Faible",
-            "editeur": "n/a",
-            "produit": "n/a",
-            "versions_affectees": [
-                "n/a"
-            ]
-        }
-    },
-    {
-        "alerte": {
             "titre": "Multiples vulnérabilités dans Trend Micro Apex Central (08 janvier 2026)",
             "type": "Avis",
             "description": "De multiples vulnérabilités ont été découvertes dans Trend Micro Apex Central. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
@@ -750,7 +14,7 @@
             "nature de la faille": "CWE-346: Origin Validation Error",
             "cvss_score": 7.5,
             "gravite_cvss": "Élevée",
-            "epss_score": "0.000870000",
+            "epss_score": "0.001040000",
             "gravite_epss": "Faible",
             "editeur": "Trend Micro, Inc.",
             "produit": "Trend Micro Apex Central",
@@ -769,17 +33,18 @@
         },
         "cve_enrichi": {
             "cve_id": "CVE-2025-36640",
-            "description": null,
-            "cwe": "Non disponible",
-            "nature de la faille": "Non disponible",
+            "description": "A vulnerability has been identified in the installation/uninstallation of the Nessus Agent Tray App on Windows Hosts which could lead to escalation of privileges.",
+            "cwe": "CWE-269",
+            "nature de la faille": "CWE-269 Improper Privilege Management",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": null,
-            "gravite_epss": "Non disponible",
-            "editeur": "Trend Micro, Inc.",
-            "produit": "Trend Micro Apex Central",
+            "epss_score": "0.000120000",
+            "gravite_epss": "Faible",
+            "editeur": "Tenable",
+            "produit": "Nessus Agent",
             "versions_affectees": [
-                "2019 (14.0)"
+                "0",
+                "11.0.0"
             ]
         }
     },
@@ -792,19 +57,18 @@
             "date": "Thu, 08 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-13761",
-            "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.6 before 18.6.3, and 18.7 before 18.7.1 that could have allowed an unauthenticated user to execute arbitrary code in the context of an  authenticated user's browser by convincing the legitimate user to visit a specially crafted webpage.",
-            "cwe": "CWE-79",
-            "nature de la faille": "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
-            "cvss_score": 8,
+            "cve_id": "CVE-2025-64720",
+            "description": "LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. From version 1.6.0 to before 1.6.51, an out-of-bounds read vulnerability exists in png_image_read_composite when processing palette images with PNG_FLAG_OPTIMIZE_ALPHA enabled. The palette compositing code in png_init_read_transformations incorrectly applies background compositing during premultiplication, violating the invariant component ≤ alpha × 257 required by the simplified PNG API. This issue has been patched in version 1.6.51.",
+            "cwe": "CWE-125",
+            "nature de la faille": "CWE-125: Out-of-bounds Read",
+            "cvss_score": 7.1,
             "gravite_cvss": "Élevée",
-            "epss_score": "0.000380000",
+            "epss_score": "0.000740000",
             "gravite_epss": "Faible",
-            "editeur": "GitLab",
-            "produit": "GitLab",
+            "editeur": "pnggroup",
+            "produit": "libpng",
             "versions_affectees": [
-                "18.6",
-                "18.7"
+                ">= 1.6.0, < 1.6.51"
             ]
         }
     },
@@ -867,18 +131,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-39981",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: MGMT: Fix possible UAFs\n\nThis attemps to fix possible UAFs caused by struct mgmt_pending being\nfreed while still being processed like in the following trace, in order\nto fix mgmt_pending_valid is introduce and use to check if the\nmgmt_pending hasn't been removed from the pending list, on the complete\ncallbacks it is used to check and in addtion remove the cmd from the list\nwhile holding mgmt_pending_lock to avoid TOCTOU problems since if the cmd\nis left on the list it can still be accessed and freed.\n\nBUG: KASAN: slab-use-after-free in mgmt_add_adv_patterns_monitor_sync+0x35/0x50 net/bluetooth/mgmt.c:5223\nRead of size 8 at addr ffff8880709d4dc0 by task kworker/u11:0/55\n\nCPU: 0 UID: 0 PID: 55 Comm: kworker/u11:0 Not tainted 6.16.4 #2 PREEMPT(full)\nHardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.10.2-1ubuntu1 04/01/2014\nWorkqueue: hci0 hci_cmd_sync_work\nCall Trace:\n <TASK>\n dump_stack_lvl+0x189/0x250 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:378 [inline]\n print_report+0xca/0x240 mm/kasan/report.c:482\n kasan_report+0x118/0x150 mm/kasan/report.c:595\n mgmt_add_adv_patterns_monitor_sync+0x35/0x50 net/bluetooth/mgmt.c:5223\n hci_cmd_sync_work+0x210/0x3a0 net/bluetooth/hci_sync.c:332\n process_one_work kernel/workqueue.c:3238 [inline]\n process_scheduled_works+0xade/0x17b0 kernel/workqueue.c:3321\n worker_thread+0x8a0/0xda0 kernel/workqueue.c:3402\n kthread+0x711/0x8a0 kernel/kthread.c:464\n ret_from_fork+0x3fc/0x770 arch/x86/kernel/process.c:148\n ret_from_fork_asm+0x1a/0x30 home/kwqcheii/source/fuzzing/kernel/kasan/linux-6.16.4/arch/x86/entry/entry_64.S:245\n </TASK>\n\nAllocated by task 12210:\n kasan_save_stack mm/kasan/common.c:47 [inline]\n kasan_save_track+0x3e/0x80 mm/kasan/common.c:68\n poison_kmalloc_redzone mm/kasan/common.c:377 [inline]\n __kasan_kmalloc+0x93/0xb0 mm/kasan/common.c:394\n kasan_kmalloc include/linux/kasan.h:260 [inline]\n __kmalloc_cache_noprof+0x230/0x3d0 mm/slub.c:4364\n kmalloc_noprof include/linux/slab.h:905 [inline]\n kzalloc_noprof include/linux/slab.h:1039 [inline]\n mgmt_pending_new+0x65/0x1e0 net/bluetooth/mgmt_util.c:269\n mgmt_pending_add+0x35/0x140 net/bluetooth/mgmt_util.c:296\n __add_adv_patterns_monitor+0x130/0x200 net/bluetooth/mgmt.c:5247\n add_adv_patterns_monitor+0x214/0x360 net/bluetooth/mgmt.c:5364\n hci_mgmt_cmd+0x9c9/0xef0 net/bluetooth/hci_sock.c:1719\n hci_sock_sendmsg+0x6ca/0xef0 net/bluetooth/hci_sock.c:1839\n sock_sendmsg_nosec net/socket.c:714 [inline]\n __sock_sendmsg+0x219/0x270 net/socket.c:729\n sock_write_iter+0x258/0x330 net/socket.c:1133\n new_sync_write fs/read_write.c:593 [inline]\n vfs_write+0x5c9/0xb30 fs/read_write.c:686\n ksys_write+0x145/0x250 fs/read_write.c:738\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0xfa/0x3b0 arch/x86/entry/syscall_64.c:94\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n\nFreed by task 12221:\n kasan_save_stack mm/kasan/common.c:47 [inline]\n kasan_save_track+0x3e/0x80 mm/kasan/common.c:68\n kasan_save_free_info+0x46/0x50 mm/kasan/generic.c:576\n poison_slab_object mm/kasan/common.c:247 [inline]\n __kasan_slab_free+0x62/0x70 mm/kasan/common.c:264\n kasan_slab_free include/linux/kasan.h:233 [inline]\n slab_free_hook mm/slub.c:2381 [inline]\n slab_free mm/slub.c:4648 [inline]\n kfree+0x18e/0x440 mm/slub.c:4847\n mgmt_pending_free net/bluetooth/mgmt_util.c:311 [inline]\n mgmt_pending_foreach+0x30d/0x380 net/bluetooth/mgmt_util.c:257\n __mgmt_power_off+0x169/0x350 net/bluetooth/mgmt.c:9444\n hci_dev_close_sync+0x754/0x1330 net/bluetooth/hci_sync.c:5290\n hci_dev_do_close net/bluetooth/hci_core.c:501 [inline]\n hci_dev_close+0x108/0x200 net/bluetooth/hci_core.c:526\n sock_do_ioctl+0xd9/0x300 net/socket.c:1192\n sock_ioctl+0x576/0x790 net/socket.c:1313\n vfs_ioctl fs/ioctl.c:51 [inline]\n __do_sys_ioctl fs/ioctl.c:907 [inline]\n __se_sys_ioctl+0xf9/0x170 fs/ioctl.c:893\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0xf\n---truncated---",
+            "cve_id": "CVE-2023-53393",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/mlx5: Fix mlx5_ib_get_hw_stats when used for device\n\nCurrently, when mlx5_ib_get_hw_stats() is used for device (port_num = 0),\nthere is a special handling in order to use the correct counters, but,\nport_num is being passed down the stack without any change.  Also, some\nfunctions assume that port_num >=1. As a result, the following oops can\noccur.\n\n BUG: unable to handle page fault for address: ffff89510294f1a8\n #PF: supervisor write access in kernel mode\n #PF: error_code(0x0002) - not-present page\n PGD 0 P4D 0\n Oops: 0002 [#1] SMP\n CPU: 8 PID: 1382 Comm: devlink Tainted: G W          6.1.0-rc4_for_upstream_base_2022_11_10_16_12 #1\n Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS rel-1.13.0-0-gf21b5a4aeb02-prebuilt.qemu.org 04/01/2014\n RIP: 0010:_raw_spin_lock+0xc/0x20\n Call Trace:\n  <TASK>\n  mlx5_ib_get_native_port_mdev+0x73/0xe0 [mlx5_ib]\n  do_get_hw_stats.constprop.0+0x109/0x160 [mlx5_ib]\n  mlx5_ib_get_hw_stats+0xad/0x180 [mlx5_ib]\n  ib_setup_device_attrs+0xf0/0x290 [ib_core]\n  ib_register_device+0x3bb/0x510 [ib_core]\n  ? atomic_notifier_chain_register+0x67/0x80\n  __mlx5_ib_add+0x2b/0x80 [mlx5_ib]\n  mlx5r_probe+0xb8/0x150 [mlx5_ib]\n  ? auxiliary_match_id+0x6a/0x90\n  auxiliary_bus_probe+0x3c/0x70\n  ? driver_sysfs_add+0x6b/0x90\n  really_probe+0xcd/0x380\n  __driver_probe_device+0x80/0x170\n  driver_probe_device+0x1e/0x90\n  __device_attach_driver+0x7d/0x100\n  ? driver_allows_async_probing+0x60/0x60\n  ? driver_allows_async_probing+0x60/0x60\n  bus_for_each_drv+0x7b/0xc0\n  __device_attach+0xbc/0x200\n  bus_probe_device+0x87/0xa0\n  device_add+0x404/0x940\n  ? dev_set_name+0x53/0x70\n  __auxiliary_device_add+0x43/0x60\n  add_adev+0x99/0xe0 [mlx5_core]\n  mlx5_attach_device+0xc8/0x120 [mlx5_core]\n  mlx5_load_one_devl_locked+0xb2/0xe0 [mlx5_core]\n  devlink_reload+0x133/0x250\n  devlink_nl_cmd_reload+0x480/0x570\n  ? devlink_nl_pre_doit+0x44/0x2b0\n  genl_family_rcv_msg_doit.isra.0+0xc2/0x110\n  genl_rcv_msg+0x180/0x2b0\n  ? devlink_nl_cmd_region_read_dumpit+0x540/0x540\n  ? devlink_reload+0x250/0x250\n  ? devlink_put+0x50/0x50\n  ? genl_family_rcv_msg_doit.isra.0+0x110/0x110\n  netlink_rcv_skb+0x54/0x100\n  genl_rcv+0x24/0x40\n  netlink_unicast+0x1f6/0x2c0\n  netlink_sendmsg+0x237/0x490\n  sock_sendmsg+0x33/0x40\n  __sys_sendto+0x103/0x160\n  ? handle_mm_fault+0x10e/0x290\n  ? do_user_addr_fault+0x1c0/0x5f0\n  __x64_sys_sendto+0x25/0x30\n  do_syscall_64+0x3d/0x90\n  entry_SYSCALL_64_after_hwframe+0x46/0xb0\n\nFix it by setting port_num to 1 in order to get device status and remove\nunused variable.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000250000",
+            "epss_score": "0.000170000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "5.17"
+                "4.16"
             ]
         }
     },
@@ -891,18 +155,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-38666",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: appletalk: Fix use-after-free in AARP proxy probe\n\nThe AARP proxy‐probe routine (aarp_proxy_probe_network) sends a probe,\nreleases the aarp_lock, sleeps, then re-acquires the lock.  During that\nwindow an expire timer thread (__aarp_expire_timer) can remove and\nkfree() the same entry, leading to a use-after-free.\n\nrace condition:\n\n         cpu 0                          |            cpu 1\n    atalk_sendmsg()                     |   atif_proxy_probe_device()\n    aarp_send_ddp()                     |   aarp_proxy_probe_network()\n    mod_timer()                         |   lock(aarp_lock) // LOCK!!\n    timeout around 200ms                |   alloc(aarp_entry)\n    and then call                       |   proxies[hash] = aarp_entry\n    aarp_expire_timeout()               |   aarp_send_probe()\n                                        |   unlock(aarp_lock) // UNLOCK!!\n    lock(aarp_lock) // LOCK!!           |   msleep(100);\n    __aarp_expire_timer(&proxies[ct])   |\n    free(aarp_entry)                    |\n    unlock(aarp_lock) // UNLOCK!!       |\n                                        |   lock(aarp_lock) // LOCK!!\n                                        |   UAF aarp_entry !!\n\n==================================================================\nBUG: KASAN: slab-use-after-free in aarp_proxy_probe_network+0x560/0x630 net/appletalk/aarp.c:493\nRead of size 4 at addr ffff8880123aa360 by task repro/13278\n\nCPU: 3 UID: 0 PID: 13278 Comm: repro Not tainted 6.15.2 #3 PREEMPT(full)\nCall Trace:\n <TASK>\n __dump_stack lib/dump_stack.c:94 [inline]\n dump_stack_lvl+0x116/0x1b0 lib/dump_stack.c:120\n print_address_description mm/kasan/report.c:408 [inline]\n print_report+0xc1/0x630 mm/kasan/report.c:521\n kasan_report+0xca/0x100 mm/kasan/report.c:634\n aarp_proxy_probe_network+0x560/0x630 net/appletalk/aarp.c:493\n atif_proxy_probe_device net/appletalk/ddp.c:332 [inline]\n atif_ioctl+0xb58/0x16c0 net/appletalk/ddp.c:857\n atalk_ioctl+0x198/0x2f0 net/appletalk/ddp.c:1818\n sock_do_ioctl+0xdc/0x260 net/socket.c:1190\n sock_ioctl+0x239/0x6a0 net/socket.c:1311\n vfs_ioctl fs/ioctl.c:51 [inline]\n __do_sys_ioctl fs/ioctl.c:906 [inline]\n __se_sys_ioctl fs/ioctl.c:892 [inline]\n __x64_sys_ioctl+0x194/0x200 fs/ioctl.c:892\n do_syscall_x64 arch/x86/entry/syscall_64.c:63 [inline]\n do_syscall_64+0xcb/0x250 arch/x86/entry/syscall_64.c:94\n entry_SYSCALL_64_after_hwframe+0x77/0x7f\n </TASK>\n\nAllocated:\n aarp_alloc net/appletalk/aarp.c:382 [inline]\n aarp_proxy_probe_network+0xd8/0x630 net/appletalk/aarp.c:468\n atif_proxy_probe_device net/appletalk/ddp.c:332 [inline]\n atif_ioctl+0xb58/0x16c0 net/appletalk/ddp.c:857\n atalk_ioctl+0x198/0x2f0 net/appletalk/ddp.c:1818\n\nFreed:\n kfree+0x148/0x4d0 mm/slub.c:4841\n __aarp_expire net/appletalk/aarp.c:90 [inline]\n __aarp_expire_timer net/appletalk/aarp.c:261 [inline]\n aarp_expire_timeout+0x480/0x6e0 net/appletalk/aarp.c:317\n\nThe buggy address belongs to the object at ffff8880123aa300\n which belongs to the cache kmalloc-192 of size 192\nThe buggy address is located 96 bytes inside of\n freed 192-byte region [ffff8880123aa300, ffff8880123aa3c0)\n\nMemory state around the buggy address:\n ffff8880123aa200: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n ffff8880123aa280: 00 00 00 00 fc fc fc fc fc fc fc fc fc fc fc fc\n>ffff8880123aa300: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb\n                                                       ^\n ffff8880123aa380: fb fb fb fb fb fb fb fb fc fc fc fc fc fc fc fc\n ffff8880123aa400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n==================================================================",
+            "cve_id": "CVE-2024-50067",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nuprobe: avoid out-of-bounds memory access of fetching args\n\nUprobe needs to fetch args into a percpu buffer, and then copy to ring\nbuffer to avoid non-atomic context problem.\n\nSometimes user-space strings, arrays can be very large, but the size of\npercpu buffer is only page size. And store_trace_args() won't check\nwhether these data exceeds a single page or not, caused out-of-bounds\nmemory access.\n\nIt could be reproduced by following steps:\n1. build kernel with CONFIG_KASAN enabled\n2. save follow program as test.c\n\n```\n\\#include <stdio.h>\n\\#include <stdlib.h>\n\\#include <string.h>\n\n// If string length large than MAX_STRING_SIZE, the fetch_store_strlen()\n// will return 0, cause __get_data_size() return shorter size, and\n// store_trace_args() will not trigger out-of-bounds access.\n// So make string length less than 4096.\n\\#define STRLEN 4093\n\nvoid generate_string(char *str, int n)\n{\n    int i;\n    for (i = 0; i < n; ++i)\n    {\n        char c = i % 26 + 'a';\n        str[i] = c;\n    }\n    str[n-1] = '\\0';\n}\n\nvoid print_string(char *str)\n{\n    printf(\"%s\\n\", str);\n}\n\nint main()\n{\n    char tmp[STRLEN];\n\n    generate_string(tmp, STRLEN);\n    print_string(tmp);\n\n    return 0;\n}\n```\n3. compile program\n`gcc -o test test.c`\n\n4. get the offset of `print_string()`\n```\nobjdump -t test | grep -w print_string\n0000000000401199 g     F .text  000000000000001b              print_string\n```\n\n5. configure uprobe with offset 0x1199\n```\noff=0x1199\n\ncd /sys/kernel/debug/tracing/\necho \"p /root/test:${off} arg1=+0(%di):ustring arg2=\\$comm arg3=+0(%di):ustring\"\n > uprobe_events\necho 1 > events/uprobes/enable\necho 1 > tracing_on\n```\n\n6. run `test`, and kasan will report error.\n==================================================================\nBUG: KASAN: use-after-free in strncpy_from_user+0x1d6/0x1f0\nWrite of size 8 at addr ffff88812311c004 by task test/499CPU: 0 UID: 0 PID: 499 Comm: test Not tainted 6.12.0-rc3+ #18\nHardware name: Red Hat KVM, BIOS 1.16.0-4.al8 04/01/2014\nCall Trace:\n <TASK>\n dump_stack_lvl+0x55/0x70\n print_address_description.constprop.0+0x27/0x310\n kasan_report+0x10f/0x120\n ? strncpy_from_user+0x1d6/0x1f0\n strncpy_from_user+0x1d6/0x1f0\n ? rmqueue.constprop.0+0x70d/0x2ad0\n process_fetch_insn+0xb26/0x1470\n ? __pfx_process_fetch_insn+0x10/0x10\n ? _raw_spin_lock+0x85/0xe0\n ? __pfx__raw_spin_lock+0x10/0x10\n ? __pte_offset_map+0x1f/0x2d0\n ? unwind_next_frame+0xc5f/0x1f80\n ? arch_stack_walk+0x68/0xf0\n ? is_bpf_text_address+0x23/0x30\n ? kernel_text_address.part.0+0xbb/0xd0\n ? __kernel_text_address+0x66/0xb0\n ? unwind_get_return_address+0x5e/0xa0\n ? __pfx_stack_trace_consume_entry+0x10/0x10\n ? arch_stack_walk+0xa2/0xf0\n ? _raw_spin_lock_irqsave+0x8b/0xf0\n ? __pfx__raw_spin_lock_irqsave+0x10/0x10\n ? depot_alloc_stack+0x4c/0x1f0\n ? _raw_spin_unlock_irqrestore+0xe/0x30\n ? stack_depot_save_flags+0x35d/0x4f0\n ? kasan_save_stack+0x34/0x50\n ? kasan_save_stack+0x24/0x50\n ? mutex_lock+0x91/0xe0\n ? __pfx_mutex_lock+0x10/0x10\n prepare_uprobe_buffer.part.0+0x2cd/0x500\n uprobe_dispatcher+0x2c3/0x6a0\n ? __pfx_uprobe_dispatcher+0x10/0x10\n ? __kasan_slab_alloc+0x4d/0x90\n handler_chain+0xdd/0x3e0\n handle_swbp+0x26e/0x3d0\n ? __pfx_handle_swbp+0x10/0x10\n ? uprobe_pre_sstep_notifier+0x151/0x1b0\n irqentry_exit_to_user_mode+0xe2/0x1b0\n asm_exc_int3+0x39/0x40\nRIP: 0033:0x401199\nCode: 01 c2 0f b6 45 fb 88 02 83 45 fc 01 8b 45 fc 3b 45 e4 7c b7 8b 45 e4 48 98 48 8d 50 ff 48 8b 45 e8 48 01 d0 ce\nRSP: 002b:00007ffdf00576a8 EFLAGS: 00000206\nRAX: 00007ffdf00576b0 RBX: 0000000000000000 RCX: 0000000000000ff2\nRDX: 0000000000000ffc RSI: 0000000000000ffd RDI: 00007ffdf00576b0\nRBP: 00007ffdf00586b0 R08: 00007feb2f9c0d20 R09: 00007feb2f9c0d20\nR10: 0000000000000001 R11: 0000000000000202 R12: 0000000000401040\nR13: 00007ffdf0058780 R14: 0000000000000000 R15: 0000000000000000\n </TASK>\n\nThis commit enforces the buffer's maxlen less than a page-size to avoid\nstore_trace_args() out-of-memory access.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000220000",
+            "epss_score": "0.000310000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "2.6.12"
+                "3.14"
             ]
         }
     },
@@ -915,18 +179,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-53093",
-            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme-multipath: defer partition scanning\n\nWe need to suppress the partition scan from occuring within the\ncontroller's scan_work context. If a path error occurs here, the IO will\nwait until a path becomes available or all paths are torn down, but that\naction also occurs within scan_work, so it would deadlock. Defer the\npartion scan to a different context that does not block scan_work.",
+            "cve_id": "CVE-2023-53717",
+            "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: ath9k: Fix potential stack-out-of-bounds write in ath9k_wmi_rsp_callback()\n\nFix a stack-out-of-bounds write that occurs in a WMI response callback\nfunction that is called after a timeout occurs in ath9k_wmi_cmd().\nThe callback writes to wmi->cmd_rsp_buf, a stack-allocated buffer that\ncould no longer be valid when a timeout occurs. Set wmi->last_seq_id to\n0 when a timeout occurred.\n\nFound by a modified version of syzkaller.\n\nBUG: KASAN: stack-out-of-bounds in ath9k_wmi_ctrl_rx\nWrite of size 4\nCall Trace:\n memcpy\n ath9k_wmi_ctrl_rx\n ath9k_htc_rx_msg\n ath9k_hif_usb_reg_in_cb\n __usb_hcd_giveback_urb\n usb_hcd_giveback_urb\n dummy_timer\n call_timer_fn\n run_timer_softirq\n __do_softirq\n irq_exit_rcu\n sysvec_apic_timer_interrupt",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.000140000",
+            "epss_score": "0.000360000",
             "gravite_epss": "Faible",
             "editeur": "Linux",
             "produit": "Linux",
             "versions_affectees": [
-                "4.15"
+                "2.6.35"
             ]
         }
     },
@@ -939,18 +203,18 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-53057",
-            "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Security).  Supported versions that are affected are Oracle Java SE: 8u461, 8u461-perf, 11.0.28, 17.0.16, 21.0.8, 25; Oracle GraalVM for JDK: 17.0.16 and  21.0.8; Oracle GraalVM Enterprise Edition: 21.3.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. CVSS 3.1 Base Score 5.9 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N).",
-            "cwe": "Non disponible",
-            "nature de la faille": "Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data.",
-            "cvss_score": 5.9,
+            "cve_id": "CVE-2025-36000",
+            "description": "IBM WebSphere Application Server Liberty 17.0.0.3 through 25.0.0.8 \n\nis vulnerable to stored cross-site scripting. This vulnerability allows a privileged user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+            "cwe": "CWE-79",
+            "nature de la faille": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
+            "cvss_score": 4.4,
             "gravite_cvss": "Moyenne",
-            "epss_score": "0.000940000",
+            "epss_score": "0.000150000",
             "gravite_epss": "Faible",
-            "editeur": "Oracle Corporation",
-            "produit": "Oracle GraalVM Enterprise Edition",
+            "editeur": "IBM",
+            "produit": "WebSphere Application Server Liberty",
             "versions_affectees": [
-                "21.3.15"
+                "17.0.0.3"
             ]
         }
     },
@@ -969,7 +233,7 @@
             "nature de la faille": "CWE-451: User Interface (UI) Misrepresentation of Critical Information",
             "cvss_score": 5.5,
             "gravite_cvss": "Moyenne",
-            "epss_score": "0.000620000",
+            "epss_score": "0.000460000",
             "gravite_epss": "Faible",
             "editeur": "Microsoft",
             "produit": "Microsoft Edge for Android",
@@ -987,10 +251,10 @@
             "date": "Fri, 09 Jan 2026 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-11961",
-            "description": "pcap_ether_aton() is an auxiliary function in libpcap, it takes a string argument and returns a fixed-size allocated buffer.  The string argument must be a well-formed MAC-48 address in one of the supported formats, but this requirement has been poorly documented.  If an application calls the function with an argument that deviates from the expected format, the function can read data beyond the end of the provided string and write data beyond the end of the allocated buffer.",
-            "cwe": "CWE-126",
-            "nature de la faille": "CWE-126 Buffer Over-read",
+            "cve_id": "CVE-2025-11964",
+            "description": "On Windows only, if libpcap needs to convert a Windows error message to UTF-8 and the message includes characters that UTF-8 represents using 4 bytes, utf_16le_to_utf_8_truncated() can write data beyond the end of the provided buffer.",
+            "cwe": "CWE-787",
+            "nature de la faille": "CWE-787 Out-of-bounds Write",
             "cvss_score": 1.9,
             "gravite_cvss": "Faible",
             "epss_score": "0.000150000",
@@ -998,7 +262,733 @@
             "editeur": "The Tcpdump Group",
             "produit": "libpcap",
             "versions_affectees": [
+                "1.10.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Axis (12 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Axis. Elles permettent à un attaquant de provoquer une élévation de privilèges et un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0023/",
+            "date": "Mon, 12 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-30025",
+            "description": "The communication protocol used between the\nserver process and the service control had a flaw that could lead to a local privilege escalation.",
+            "cwe": "CWE-502",
+            "nature de la faille": "CWE-502 Deserialization of Untrusted Data",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000370000",
+            "gravite_epss": "Faible",
+            "editeur": "Axis Communications AB",
+            "produit": "AXIS Camera Station",
+            "versions_affectees": [
+                "<6"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans VMware Tanzu Greenplum Backup and Restore (12 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Greenplum Backup and Restore. Elles permettent à un attaquant de provoquer un déni de service à distance et un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0024/",
+            "date": "Mon, 12 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-58186",
+            "description": "Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.",
+            "cwe": "Non disponible",
+            "nature de la faille": "CWE-400: Uncontrolled Resource Consumption",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000300000",
+            "gravite_epss": "Faible",
+            "editeur": "Go standard library",
+            "produit": "net/http",
+            "versions_affectees": [
+                "0",
+                "1.25.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Microsoft Edge (12 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Microsoft Edge. Elle permet à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0025/",
+            "date": "Mon, 12 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0628",
+            "description": "Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)",
+            "cwe": "Non disponible",
+            "nature de la faille": "Insufficient policy enforcement",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000200000",
+            "gravite_epss": "Faible",
+            "editeur": "Google",
+            "produit": "Chrome",
+            "versions_affectees": [
+                "143.0.7499.192"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans Google Pixel (13 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans Google Pixel. Elle permet à un attaquant de provoquer une élévation de privilèges.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0026/",
+            "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-48647",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Google",
+            "produit": "Chrome",
+            "versions_affectees": [
+                "143.0.7499.192"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans NetApp ONTAP (13 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans NetApp ONTAP. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0027/",
+            "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-22050",
+            "description": "ONTAP versions 9.16.1 prior to 9.16.1P9 and 9.17.1 prior to 9.17.1P2 with snapshot locking enabled are susceptible to a vulnerability which could allow a privileged remote attacker to set the snapshot expiry time to none.",
+            "cwe": "Non disponible",
+            "nature de la faille": "639",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.001240000",
+            "gravite_epss": "Faible",
+            "editeur": "NETAPP",
+            "produit": "ONTAP 9",
+            "versions_affectees": [
+                "9.16.1",
+                "9.17.1"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans MariaDB (13 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans MariaDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0028/",
+            "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-30693",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are 8.0.0-8.0.41, 8.4.0-8.4.4 and  9.0.0-9.2.0. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as  unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).",
+            "cwe": "Non disponible",
+            "nature de la faille": "Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Cluster.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Cluster as well as  unauthorized update, insert or delete access to some of MySQL Cluster accessible data.",
+            "cvss_score": 5.5,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000860000",
+            "gravite_epss": "Faible",
+            "editeur": "Oracle Corporation",
+            "produit": "MySQL Server",
+            "versions_affectees": [
+                "8.0.0",
+                "8.4.0",
+                "9.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans VMware Tanzu Gemfire (13 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Gemfire. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une injection de requêtes illégitimes par rebond (CSRF) et un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0029/",
+            "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-41254",
+            "description": "STOMP over WebSocket applications may be vulnerable to a security bypass that allows an attacker to send unauthorized messages.\n\nAffected Spring Products and VersionsSpring Framework:\n\n  *  6.2.0 - 6.2.11\n  *  6.1.0 - 6.1.23\n  *  6.0.x - 6.0.29\n  *  5.3.0 - 5.3.45\n  *  Older, unsupported versions are also affected.\n\n\nMitigationUsers of affected versions should upgrade to the corresponding fixed version.\n\nAffected version(s)Fix versionAvailability6.2.x6.2.12OSS6.1.x6.1.24 Commercial https://enterprise.spring.io/ 6.0.xN/A Out of support https://spring.io/projects/spring-framework#support 5.3.x5.3.46 Commercial https://enterprise.spring.io/ No further mitigation steps are necessary.\n\nCreditThis vulnerability was discovered and responsibly reported by Jannis Kaiser.",
+            "cwe": "CWE-352",
+            "nature de la faille": "CWE-352: Cross-Site Request Forgery (CSRF)",
+            "cvss_score": 4.3,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000870000",
+            "gravite_epss": "Faible",
+            "editeur": "VMware",
+            "produit": "Spring Framework",
+            "versions_affectees": [
+                "5.3.x",
+                "6.0.x",
+                "6.1.x",
+                "6.2.x"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans MISP (13 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans MISP. Elle permet à un attaquant de provoquer une injection de code indirecte à distance (XSS).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0030/",
+            "date": "Tue, 13 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": null,
+            "description": null,
+            "cwe": null,
+            "nature de la faille": null,
+            "cvss_score": null,
+            "gravite_cvss": null,
+            "epss_score": null,
+            "gravite_epss": null,
+            "editeur": null,
+            "produit": null,
+            "versions_affectees": null
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Google Chrome (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0040/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0901",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "VMware",
+            "produit": "Spring Framework",
+            "versions_affectees": [
+                "5.3.x",
+                "6.0.x",
+                "6.1.x",
+                "6.2.x"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Elastic (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Elastic. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0041/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0530",
+            "description": "Allocation of Resources Without Limits or Throttling (CWE-770) in Kibana Fleet can lead to Excessive Allocation (CAPEC-130) via a specially crafted request. This causes the application to perform redundant processing operations that continuously consume system resources until service degradation or complete unavailability occurs.",
+            "cwe": "CWE-770",
+            "nature de la faille": "CWE-770 Allocation of Resources Without Limits or Throttling",
+            "cvss_score": 6.5,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000380000",
+            "gravite_epss": "Faible",
+            "editeur": "Elastic",
+            "produit": "Kibana",
+            "versions_affectees": [
+                "7.10.0",
+                "8.0.0",
+                "9.0.0",
+                "9.2.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits HPE Aruba Networking (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits HPE Aruba Networking. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0042/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-37165",
+            "description": "A vulnerability in the router mode configuration of HPE Instant On Access Points exposed certain network configuration details to unintended interfaces. A malicious actor could gain knowledge of internal network configuration details through inspecting impacted packets.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": 7.5,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000310000",
+            "gravite_epss": "Faible",
+            "editeur": "Hewlett Packard Enterprise (HPE)",
+            "produit": "Instant On",
+            "versions_affectees": [
+                "3.0.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Siemens (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Siemens. Elles permettent à un attaquant de provoquer un déni de service à distance et un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0032/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-40944",
+            "description": "A vulnerability has been identified in SIMATIC ET 200AL IM 157-1 PN (6ES7157-1AB00-0AB0) (All versions), SIMATIC ET 200MP IM 155-5 PN HF (6ES7155-5AA00-0AC0) (All versions >= V4.2.0), SIMATIC ET 200SP IM 155-6 MF HF (6ES7155-6MU00-0CN0) (All versions), SIMATIC ET 200SP IM 155-6 PN HA (incl. SIPLUS variants) (All versions < V1.3), SIMATIC ET 200SP IM 155-6 PN R1 (6ES7155-6AU00-0HM0) (All versions < V6.0.1), SIMATIC ET 200SP IM 155-6 PN/2 HF (6ES7155-6AU01-0CN0) (All versions >= V4.2.0), SIMATIC ET 200SP IM 155-6 PN/3 HF (6ES7155-6AU30-0CN0) (All versions < V4.2.2), SIMATIC PN/MF Coupler (6ES7158-3MU10-0XA0) (All versions), SIMATIC PN/PN Coupler (6ES7158-3AD10-0XA0) (All versions < V6.0.0), SIPLUS ET 200MP IM 155-5 PN HF (6AG1155-5AA00-2AC0) (All versions >= V4.2.0), SIPLUS ET 200MP IM 155-5 PN HF (6AG1155-5AA00-7AC0) (All versions >= V4.2.0), SIPLUS ET 200MP IM 155-5 PN HF T1 RAIL (6AG2155-5AA00-1AC0) (All versions >= V4.2.0), SIPLUS ET 200SP IM 155-6 PN HF (6AG1155-6AU01-2CN0) (All versions >= V4.2.0), SIPLUS ET 200SP IM 155-6 PN HF (6AG1155-6AU01-7CN0) (All versions >= V4.2.0), SIPLUS ET 200SP IM 155-6 PN HF T1 RAIL (6AG2155-6AU01-1CN0) (All versions >= V4.2.0), SIPLUS ET 200SP IM 155-6 PN HF TX RAIL (6AG2155-6AU01-4CN0) (All versions >= V4.2.0), SIPLUS NET PN/PN Coupler (6AG2158-3AD10-4XA0) (All versions < V6.0.0). Affected devices do not properly handle S7 protocol session disconnect requests. When receiving a valid S7 protocol Disconnect Request (COTP DR TPDU) on TCP port 102, the devices enter an improper session state.\r\n\r\nThis could allow an attacker to cause the device to become unresponsive, leading to a denial-of-service condition that requires a power cycle to restore normal operation.",
+            "cwe": "CWE-400",
+            "nature de la faille": "CWE-400: Uncontrolled Resource Consumption",
+            "cvss_score": 7.5,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000400000",
+            "gravite_epss": "Faible",
+            "editeur": "Siemens",
+            "produit": "SIPLUS NET PN/PN Coupler",
+            "versions_affectees": [
                 "0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Suricata (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Suricata. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0036/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-22259",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Siemens",
+            "produit": "SIPLUS NET PN/PN Coupler",
+            "versions_affectees": [
+                "0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Node.js (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Node.js. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0039/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-55132",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Siemens",
+            "produit": "SIPLUS NET PN/PN Coupler",
+            "versions_affectees": [
+                "0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans le greffon VSCode pour Spring CLI (14 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans le greffon VSCode pour Spring CLI. Elle permet à un attaquant de provoquer une exécution de code arbitraire.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0031/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-22718",
+            "description": "The VSCode extension for Spring CLI are vulnerable to command injection, resulting in command execution on the users machine.",
+            "cwe": "CWE-78",
+            "nature de la faille": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+            "cvss_score": 6.8,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000310000",
+            "gravite_epss": "Faible",
+            "editeur": "Spring",
+            "produit": "CLI VSCode Extension",
+            "versions_affectees": [
+                "0.9.0 and older"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Typo3 (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Typo3. Elles permettent à un attaquant de provoquer une exécution de code arbitraire et un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0037/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-59022",
+            "description": "Backend users who had access to the recycler module could delete arbitrary data from any database table defined in the TCA - regardless of whether they had permission to that particular table. This allowed attackers to purge and destroy critical site data, effectively rendering the website unavailable. This issue affects TYPO3 CMS versions 10.0.0-10.4.54, 11.0.0-11.5.48, 12.0.0-12.4.40, 13.0.0-13.4.22 and 14.0.0-14.0.1.",
+            "cwe": "CWE-862",
+            "nature de la faille": "CWE-862 Missing Authorization",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000120000",
+            "gravite_epss": "Faible",
+            "editeur": "TYPO3",
+            "produit": "TYPO3 CMS",
+            "versions_affectees": [
+                "10.0.0",
+                "11.0.0",
+                "12.0.0",
+                "13.0.0",
+                "14.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Fortinet (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Fortinet. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection SQL (SQLi).",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0035/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-67685",
+            "description": "A Server-Side Request Forgery (SSRF) vulnerability [CWE-918] vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.4, FortiSandbox 4.4 all versions, FortiSandbox 4.2 all versions, FortiSandbox 4.0 all versions may allow an authenticated attacker to proxy internal requests limited to plaintext endpoints only via crafted HTTP requests.",
+            "cwe": "CWE-918",
+            "nature de la faille": "Improper access control",
+            "cvss_score": 3.4,
+            "gravite_cvss": "Faible",
+            "epss_score": "0.000170000",
+            "gravite_epss": "Faible",
+            "editeur": "Fortinet",
+            "produit": "FortiSandbox",
+            "versions_affectees": [
+                "5.0.0",
+                "4.4.0",
+                "4.2.1",
+                "4.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits SAP (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0034/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0494",
+            "description": "Under certain conditions SAP Fiori App Intercompany Balance Reconciliation application allows an attacker to access information which would otherwise be restricted. This has low impact on confidentiality of the application, integrity and availability are not impacted.",
+            "cwe": "CWE-497",
+            "nature de la faille": "CWE-497: Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+            "cvss_score": 4.3,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000270000",
+            "gravite_epss": "Faible",
+            "editeur": "SAP_SE",
+            "produit": "SAP Fiori App (Intercompany Balance Reconciliation)",
+            "versions_affectees": [
+                "UIAPFI70 500",
+                "600",
+                "700",
+                "800",
+                "900",
+                "901",
+                "902",
+                "UIS4H 109"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Schneider Electric (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Schneider Electric. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0033/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-13905",
+            "description": null,
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "SAP_SE",
+            "produit": "SAP Fiori App (Intercompany Balance Reconciliation)",
+            "versions_affectees": [
+                "UIAPFI70 500",
+                "600",
+                "700",
+                "800",
+                "900",
+                "901",
+                "902",
+                "UIS4H 109"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Microsoft Office (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Office. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0043/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-20953",
+            "description": "Use after free in Microsoft Office allows an unauthorized attacker to execute code locally.",
+            "cwe": "CWE-416",
+            "nature de la faille": "CWE-416: Use After Free",
+            "cvss_score": 8.4,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000330000",
+            "gravite_epss": "Faible",
+            "editeur": "Microsoft",
+            "produit": "Microsoft Office 2016",
+            "versions_affectees": [
+                "16.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Microsoft Windows (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Windows. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance. Microsoft indique que la vulnérabilité CVE-2026-20805...",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0044/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-20828",
+            "description": "Out-of-bounds read in Windows Internet Connection Sharing (ICS) allows an unauthorized attacker to disclose information with a physical attack.",
+            "cwe": "CWE-125",
+            "nature de la faille": "CWE-125: Out-of-bounds Read",
+            "cvss_score": 4.6,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.000450000",
+            "gravite_epss": "Faible",
+            "editeur": "Microsoft",
+            "produit": "Windows Server 2012 R2 (Server Core installation)",
+            "versions_affectees": [
+                "6.3.9600.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Microsoft Azure (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Microsoft Azure. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et une élévation de privilèges.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0045/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-21226",
+            "description": "Deserialization of untrusted data in Azure Core shared client library for Python allows an authorized attacker to execute code over a network.",
+            "cwe": "CWE-502",
+            "nature de la faille": "CWE-502: Deserialization of Untrusted Data",
+            "cvss_score": 7.5,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.004520000",
+            "gravite_epss": "Faible",
+            "editeur": "Microsoft",
+            "produit": "Azure Core shared client library for Python",
+            "versions_affectees": [
+                "1.1.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Microsoft (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0046/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-20803",
+            "description": "Missing authentication for critical function in SQL Server allows an authorized attacker to elevate privileges over a network.",
+            "cwe": "CWE-306",
+            "nature de la faille": "CWE-306: Missing Authentication for Critical Function",
+            "cvss_score": 7.2,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.000680000",
+            "gravite_epss": "Faible",
+            "editeur": "Microsoft",
+            "produit": "Microsoft SQL Server 2022 for x64-based Systems (CU 22)",
+            "versions_affectees": [
+                "16.0.0.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Mozilla (14 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0038/",
+            "date": "Wed, 14 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0888",
+            "description": "Information disclosure in the XML component. This vulnerability affects Firefox < 147 and Thunderbird < 147.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000270000",
+            "gravite_epss": "Faible",
+            "editeur": "Mozilla",
+            "produit": "Thunderbird",
+            "versions_affectees": [
+                "unspecified"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Vulnérabilité dans F5 NGINX Ingress Controller (15 janvier 2026)",
+            "type": "Avis",
+            "description": "Une vulnérabilité a été découverte dans F5 NGINX Ingress Controller. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0047/",
+            "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-14727",
+            "description": "A vulnerability exists in NGINX Ingress Controller's nginx.org/rewrite-target annotation validation. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+            "cwe": "CWE-22",
+            "nature de la faille": "CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+            "cvss_score": 8.3,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.001240000",
+            "gravite_epss": "Faible",
+            "editeur": "F5",
+            "produit": "NGINX Ingress Controller",
+            "versions_affectees": [
+                "5.3.0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans Wireshark (15 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans Wireshark. Elles permettent à un attaquant de provoquer un déni de service à distance.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0048/",
+            "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": null,
+            "description": null,
+            "cwe": null,
+            "nature de la faille": null,
+            "cvss_score": null,
+            "gravite_cvss": null,
+            "epss_score": null,
+            "gravite_epss": null,
+            "editeur": null,
+            "produit": null,
+            "versions_affectees": null
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Palo Alto Networks (15 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Palo Alto Networks. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, un déni de service à distance et un contournement de la politique de sécurité. Palo Alto Networks a connaissance d'une...",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0049/",
+            "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2025-13640",
+            "description": "Inappropriate implementation in Passwords in Google Chrome prior to 143.0.7499.41 allowed a local attacker to bypass authentication via physical access to the device. (Chromium security severity: Low)",
+            "cwe": "Non disponible",
+            "nature de la faille": "Inappropriate implementation",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000220000",
+            "gravite_epss": "Faible",
+            "editeur": "Google",
+            "produit": "Chrome",
+            "versions_affectees": [
+                "143.0.7499.41"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Juniper Networks (15 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Juniper Networks. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0050/",
+            "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-21907",
+            "description": "A Use of a Broken or Risky Cryptographic Algorithm vulnerability in the TLS/SSL server of Juniper Networks Junos Space allows the use of static key ciphers (ssl-static-key-ciphers), reducing the confidentiality of on-path traffic communicated across the connection. These ciphers also do not support Perfect Forward Secrecy (PFS), affecting the long-term confidentiality of encrypted communications.This issue affects all versions of Junos Space before 24.1R5.",
+            "cwe": "CWE-327",
+            "nature de la faille": "CWE-327 Use of a Broken or Risky Cryptographic Algorithm",
+            "cvss_score": 5.9,
+            "gravite_cvss": "Moyenne",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Juniper Networks",
+            "produit": "Junos Space",
+            "versions_affectees": [
+                "0"
+            ]
+        }
+    },
+    {
+        "alerte": {
+            "titre": "Multiples vulnérabilités dans les produits Mozilla (15 janvier 2026)",
+            "type": "Avis",
+            "description": "De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, un déni de service à distance et une atteinte à la confidentialité des données.",
+            "lien": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0051/",
+            "date": "Thu, 15 Jan 2026 00:00:00 +0000"
+        },
+        "cve_enrichi": {
+            "cve_id": "CVE-2026-0888",
+            "description": "Information disclosure in the XML component. This vulnerability affects Firefox < 147 and Thunderbird < 147.",
+            "cwe": "Non disponible",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": "0.000270000",
+            "gravite_epss": "Faible",
+            "editeur": "Mozilla",
+            "produit": "Thunderbird",
+            "versions_affectees": [
+                "unspecified"
             ]
         }
     },
@@ -1011,13 +1001,13 @@
             "date": "Fri, 16 Dec 2022 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2022-2827",
-            "description": "AMI MegaRAC User Enumeration Vulnerability",
-            "cwe": "CWE-200",
-            "nature de la faille": "CWE-200 Exposure of Sensitive Information to an Unauthorized Actor",
-            "cvss_score": 7.5,
+            "cve_id": "CVE-2022-40259",
+            "description": "MegaRAC Default Credentials Vulnerability",
+            "cwe": "CWE-798",
+            "nature de la faille": "CWE-798 Use of Hard-coded Credentials",
+            "cvss_score": 8.3,
             "gravite_cvss": "Élevée",
-            "epss_score": "0.161080000",
+            "epss_score": "0.003020000",
             "gravite_epss": "Faible",
             "editeur": "AMI",
             "produit": "MegaRAC SPx13",
@@ -1041,7 +1031,7 @@
             "nature de la faille": "Execute unauthorized code or commands",
             "cvss_score": 9.2,
             "gravite_cvss": "Critique",
-            "epss_score": "0.899160000",
+            "epss_score": "0.906450000",
             "gravite_epss": "Critique",
             "editeur": "Fortinet",
             "produit": "FortiOS",
@@ -1160,18 +1150,18 @@
             "date": "Wed, 26 Jul 2023 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2023-35082",
-            "description": "An authentication bypass vulnerability in Ivanti EPMM 11.10 and older, allows unauthorized users to access restricted functionality or resources of the application without proper authentication. This vulnerability is unique to CVE-2023-35078 announced earlier.",
+            "cve_id": "CVE-2023-35081",
+            "description": "A path traversal vulnerability in Ivanti EPMM versions (11.10.x < 11.10.0.3,  11.9.x < 11.9.1.2 and 11.8.x < 11.8.1.2) allows an authenticated administrator to write arbitrary files onto the appliance.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.944230000",
+            "epss_score": "0.927200000",
             "gravite_epss": "Critique",
             "editeur": "Ivanti",
             "produit": "EPMM",
             "versions_affectees": [
-                "11.10"
+                "11.10.0.3"
             ]
         }
     },
@@ -1184,18 +1174,18 @@
             "date": "Mon, 02 Oct 2023 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2023-42116",
-            "description": "Exim SMTP Challenge Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Exim. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of NTLM challenge requests. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the service account.\n. Was ZDI-CAN-17515.",
-            "cwe": "CWE-121",
-            "nature de la faille": "CWE-121: Stack-based Buffer Overflow",
+            "cve_id": "CVE-2023-42119",
+            "description": "Exim dnsdb Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Exim. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the smtp service, which listens on TCP port 25 by default. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the service account.\n. Was ZDI-CAN-17643.",
+            "cwe": "CWE-125",
+            "nature de la faille": "CWE-125: Out-of-bounds Read",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.067340000",
+            "epss_score": "0.007310000",
             "gravite_epss": "Faible",
             "editeur": "Exim",
             "produit": "Exim",
             "versions_affectees": [
-                "exim 4.95"
+                "exim 4.96-RC0-14-24b8ed847-XX"
             ]
         }
     },
@@ -1468,19 +1458,20 @@
             "date": "Thu, 11 Jan 2024 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-21888",
-            "description": "A privilege escalation vulnerability in web component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) allows a user to elevate privileges to that of an administrator. ",
+            "cve_id": "CVE-2024-22024",
+            "description": "An XML external entity or XXE vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x), Ivanti Policy Secure (9.x, 22.x) and ZTA gateways which allows an attacker to access certain restricted resources without authentication.",
             "cwe": "Non disponible",
             "nature de la faille": "Non disponible",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.640040000",
-            "gravite_epss": "Élevée",
+            "epss_score": "0.942490000",
+            "gravite_epss": "Critique",
             "editeur": "Ivanti",
             "produit": "IPS",
             "versions_affectees": [
-                "9.1R18",
-                "22.6R1"
+                "9.1R18.4",
+                "9.1R17.3",
+                "22.5R1.2"
             ]
         }
     },
@@ -1769,14 +1760,14 @@
             "date": "Fri, 09 Aug 2024 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-42009",
-            "description": "A Cross-Site Scripting vulnerability in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.",
+            "cve_id": "CVE-2024-42008",
+            "description": "A Cross-Site Scripting vulnerability in rcmail_action_mail_get->run() in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a remote attacker to steal and send emails of a victim via a malicious e-mail attachment served with a dangerous Content-Type header.",
             "cwe": "Non disponible",
             "nature de la faille": "n/a",
             "cvss_score": null,
             "gravite_cvss": "Non disponible",
-            "epss_score": "0.904390000",
-            "gravite_epss": "Critique",
+            "epss_score": "0.585730000",
+            "gravite_epss": "Élevée",
             "editeur": "n/a",
             "produit": "n/a",
             "versions_affectees": [
@@ -1819,18 +1810,18 @@
             "date": "Fri, 27 Sep 2024 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-47076",
-            "description": "CUPS is a standards-based, open-source printing system, and `libcupsfilters` contains the code of the filters of the former `cups-filters` package as library functions to be used for the data format conversion tasks needed in Printer Applications. The `cfGetPrinterAttributes5` function in `libcupsfilters` does not sanitize IPP attributes returned from an IPP server. When these IPP attributes are used, for instance, to generate a PPD file, this can lead to attacker controlled data to be provided to the rest of the CUPS system.",
-            "cwe": "CWE-20",
-            "nature de la faille": "CWE-20: Improper Input Validation",
-            "cvss_score": 8.6,
-            "gravite_cvss": "Élevée",
-            "epss_score": "0.738750000",
-            "gravite_epss": "Élevée",
+            "cve_id": "CVE-2024-47176",
+            "description": "CUPS is a standards-based, open-source printing system, and `cups-browsed` contains network printing functionality including, but not limited to, auto-discovering print services and shared printers. `cups-browsed` binds to `INADDR_ANY:631`, causing it to trust any packet from any source, and can cause the `Get-Printer-Attributes` IPP request to an attacker controlled URL. When combined with other vulnerabilities, such as CVE-2024-47076, CVE-2024-47175, and CVE-2024-47177, an attacker can execute arbitrary commands remotely on the target machine without authentication when a malicious printer is printed to.",
+            "cwe": "CWE-1327",
+            "nature de la faille": "CWE-1327: Binding to an Unrestricted IP Address",
+            "cvss_score": 5.3,
+            "gravite_cvss": "Moyenne",
+            "epss_score": "0.875930000",
+            "gravite_epss": "Critique",
             "editeur": "OpenPrinting",
-            "produit": "libcupsfilters",
+            "produit": "cups-browsed",
             "versions_affectees": [
-                "<= 2.1b1"
+                "<= 2.0.1"
             ]
         }
     },
@@ -1843,14 +1834,14 @@
             "date": "Tue, 22 Oct 2024 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-9381",
-            "description": "Path traversal in Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges to bypass restrictions.",
-            "cwe": "CWE-22",
-            "nature de la faille": "CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+            "cve_id": "CVE-2024-9380",
+            "description": "An OS command injection vulnerability in the admin web console of Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges to obtain remote code execution.",
+            "cwe": "CWE-77",
+            "nature de la faille": "CWE-77 Improper Neutralization of Special Elements used in a Command ('Command Injection')",
             "cvss_score": 7.2,
             "gravite_cvss": "Élevée",
-            "epss_score": "0.012100000",
-            "gravite_epss": "Faible",
+            "epss_score": "0.881440000",
+            "gravite_epss": "Critique",
             "editeur": "Ivanti",
             "produit": "CSA (Cloud Services Appliance)",
             "versions_affectees": []
@@ -1865,23 +1856,19 @@
             "date": "Wed, 23 Oct 2024 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2024-47575",
-            "description": "A missing authentication for critical function in FortiManager 7.6.0, FortiManager 7.4.0 through 7.4.4, FortiManager 7.2.0 through 7.2.7, FortiManager 7.0.0 through 7.0.12, FortiManager 6.4.0 through 6.4.14, FortiManager 6.2.0 through 6.2.12, Fortinet FortiManager Cloud 7.4.1 through 7.4.4, FortiManager Cloud 7.2.1 through 7.2.7, FortiManager Cloud 7.0.1 through 7.0.12, FortiManager Cloud 6.4.1 through 6.4.7 allows attacker to execute arbitrary code or commands via specially crafted requests.",
-            "cwe": "CWE-306",
+            "cve_id": "CVE-2024-50566",
+            "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiManager Cloud 7.6.0 through 7.6.1, FortiManager Cloud 7.4.0 through 7.4.4, FortiManager Cloud 7.2.2 through 7.2.7, FortiManager 7.6.0 through 7.6.1, FortiManager 7.4.0 through 7.4.5, FortiManager 7.2.1 through 7.2.8 may allow an authenticated remote attacker to execute unauthorized code via FGFM crafted requests.",
+            "cwe": "CWE-78",
             "nature de la faille": "Execute unauthorized code or commands",
-            "cvss_score": 9.8,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.938460000",
-            "gravite_epss": "Critique",
+            "cvss_score": 7.2,
+            "gravite_cvss": "Élevée",
+            "epss_score": "0.006440000",
+            "gravite_epss": "Faible",
             "editeur": "Fortinet",
-            "produit": "FortiManager",
+            "produit": "FortiManager Cloud",
             "versions_affectees": [
-                "7.6.0",
-                "7.4.0",
-                "7.2.0",
-                "7.0.0",
-                "6.4.0",
-                "6.2.0"
+                "7.4.1",
+                "7.2.2"
             ]
         }
     },
@@ -1987,26 +1974,23 @@
             "date": "Fri, 11 Apr 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2022-42475",
-            "description": "A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier  and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests.",
-            "cwe": "CWE-197",
+            "cve_id": "CVE-2024-21762",
+            "description": "A out-of-bounds write in Fortinet FortiOS versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, 6.0.0 through 6.0.17, FortiProxy versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.8, 7.0.0 through 7.0.14, 2.0.0 through 2.0.13, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7 allows attacker to execute unauthorized code or commands via specifically crafted requests",
+            "cwe": "CWE-787",
             "nature de la faille": "Execute unauthorized code or commands",
-            "cvss_score": 9.3,
+            "cvss_score": 9.6,
             "gravite_cvss": "Critique",
-            "epss_score": "0.940620000",
+            "epss_score": "0.929100000",
             "gravite_epss": "Critique",
             "editeur": "Fortinet",
             "produit": "FortiOS",
             "versions_affectees": [
+                "7.4.0",
                 "7.2.0",
                 "7.0.0",
                 "6.4.0",
                 "6.2.0",
-                "6.0.0",
-                "5.6.0",
-                "5.4.0",
-                "5.2.0",
-                "5.0.0"
+                "6.0.0"
             ]
         }
     },
@@ -2044,19 +2028,20 @@
         },
         "cve_enrichi": {
             "cve_id": "CVE-2025-32756",
-            "description": "A stack-based buffer overflow vulnerability [CWE-121] in Fortinet FortiVoice versions 7.2.0, 7.0.0 through 7.0.6, 6.4.0 through 6.4.10, FortiRecorder versions 7.2.0 through 7.2.3, 7.0.0 through 7.0.5, 6.4.0 through 6.4.5, FortiMail versions 7.6.0 through 7.6.2, 7.4.0 through 7.4.4, 7.2.0 through 7.2.7, 7.0.0 through 7.0.8, FortiNDR versions 7.6.0, 7.4.0 through 7.4.7, 7.2.0 through 7.2.4, 7.0.0 through 7.0.6, FortiCamera versions 2.1.0 through 2.1.3, 2.0 all versions, 1.1 all versions, allows a remote unauthenticated attacker to execute arbitrary code or commands via sending HTTP requests with specially crafted hash cookie.",
+            "description": "A stack-based buffer overflow vulnerability [CWE-121] vulnerability in Fortinet FortiCamera 2.1.0 through 2.1.3, FortiCamera 2.0 all versions, FortiCamera 1.1 all versions, FortiMail 7.6.0 through 7.6.2, FortiMail 7.4.0 through 7.4.4, FortiMail 7.2.0 through 7.2.7, FortiMail 7.0.0 through 7.0.8, FortiNDR 7.6.0, FortiNDR 7.4.0 through 7.4.7, FortiNDR 7.2.0 through 7.2.4, FortiNDR 7.0.0 through 7.0.6, FortiRecorder 7.2.0 through 7.2.3, FortiRecorder 7.0.0 through 7.0.5, FortiRecorder 6.4.0 through 6.4.5, FortiVoice 7.2.0, FortiVoice 7.0.0 through 7.0.6, FortiVoice 6.4.0 through 6.4.10 allows a remote unauthenticated attacker to execute arbitrary code or commands via sending HTTP requests with specially crafted hash cookie.",
             "cwe": "CWE-121",
             "nature de la faille": "Execute unauthorized code or commands",
             "cvss_score": 9.6,
             "gravite_cvss": "Critique",
-            "epss_score": "0.304720000",
-            "gravite_epss": "Moyenne",
+            "epss_score": "0.137810000",
+            "gravite_epss": "Faible",
             "editeur": "Fortinet",
-            "produit": "FortiCamera",
+            "produit": "FortiMail",
             "versions_affectees": [
-                "2.1.0",
-                "2.0.0",
-                "1.1.0"
+                "7.6.0",
+                "7.4.0",
+                "7.2.0",
+                "7.0.0"
             ]
         }
     },
@@ -2097,7 +2082,7 @@
             "nature de la faille": "CWE-502 Deserialization of Untrusted Data",
             "cvss_score": 9.9,
             "gravite_cvss": "Critique",
-            "epss_score": "0.918350000",
+            "epss_score": "0.904050000",
             "gravite_epss": "Critique",
             "editeur": "Roundcube",
             "produit": "Webmail",
@@ -2218,14 +2203,14 @@
             "date": "Thu, 25 Sep 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-20362",
-            "description": "Update: On November 5, 2025, Cisco became aware of a new attack variant against devices running Cisco Secure ASA Software or Cisco Secure FTD Software releases that are affected by CVE-2025-20333 and CVE-2025-20362. This attack can cause unpatched devices to unexpectedly reload, leading to denial of service (DoS) conditions. Cisco strongly recommends that all customers upgrade to the fixed software releases that are listed in the Fixed Software [\"#fs\"] section of this advisory.\r\n\r A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to access restricted URL endpoints that are related to remote access VPN that should otherwise be inaccessible without authentication.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker could exploit this vulnerability by sending crafted HTTP requests to a targeted web server on a device. A successful exploit could allow the attacker to access a restricted URL without authentication.",
-            "cwe": "CWE-862",
-            "nature de la faille": "Missing Authorization",
-            "cvss_score": 6.5,
-            "gravite_cvss": "Moyenne",
-            "epss_score": "0.421890000",
-            "gravite_epss": "Moyenne",
+            "cve_id": "CVE-2025-20333",
+            "description": "A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code as root, possibly resulting in the complete compromise of the affected device.",
+            "cwe": "CWE-120",
+            "nature de la faille": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+            "cvss_score": 9.9,
+            "gravite_cvss": "Critique",
+            "epss_score": "0.086710000",
+            "gravite_epss": "Faible",
             "editeur": "Cisco",
             "produit": "Cisco Secure Firewall Threat Defense (FTD) Software",
             "versions_affectees": [
@@ -2311,8 +2296,6 @@
                 "7.2.5.2",
                 "7.2.8",
                 "7.2.8.1",
-                "7.2.9",
-                "7.2.10",
                 "7.3.0",
                 "7.3.1",
                 "7.3.1.1",
@@ -2324,11 +2307,7 @@
                 "7.4.2.1",
                 "7.4.2.2",
                 "7.4.2.3",
-                "7.6.0",
-                "7.6.1",
-                "7.6.2",
-                "7.7.0",
-                "7.7.10"
+                "7.6.0"
             ]
         }
     },
@@ -2341,20 +2320,111 @@
             "date": "Fri, 05 Dec 2025 00:00:00 +0000"
         },
         "cve_enrichi": {
-            "cve_id": "CVE-2025-55182",
-            "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
+            "cve_id": "CVE-2025-66478",
+            "description": null,
             "cwe": "Non disponible",
-            "nature de la faille": "Deserialization of Untrusted Data (CWE-502)",
-            "cvss_score": 10,
-            "gravite_cvss": "Critique",
-            "epss_score": "0.534640000",
-            "gravite_epss": "Élevée",
-            "editeur": "Meta",
-            "produit": "react-server-dom-parcel",
+            "nature de la faille": "Non disponible",
+            "cvss_score": null,
+            "gravite_cvss": "Non disponible",
+            "epss_score": null,
+            "gravite_epss": "Non disponible",
+            "editeur": "Cisco",
+            "produit": "Cisco Secure Firewall Threat Defense (FTD) Software",
             "versions_affectees": [
-                "19.0.0",
-                "19.1.0",
-                "19.2.0"
+                "6.2.3",
+                "6.2.3.1",
+                "6.2.3.2",
+                "6.2.3.3",
+                "6.2.3.4",
+                "6.2.3.5",
+                "6.2.3.6",
+                "6.2.3.7",
+                "6.2.3.8",
+                "6.2.3.10",
+                "6.2.3.11",
+                "6.2.3.9",
+                "6.2.3.12",
+                "6.2.3.13",
+                "6.2.3.14",
+                "6.2.3.15",
+                "6.2.3.16",
+                "6.2.3.17",
+                "6.2.3.18",
+                "6.6.0",
+                "6.6.0.1",
+                "6.6.1",
+                "6.6.3",
+                "6.6.4",
+                "6.6.5",
+                "6.6.5.1",
+                "6.6.5.2",
+                "6.6.7",
+                "6.6.7.1",
+                "6.6.7.2",
+                "6.4.0",
+                "6.4.0.1",
+                "6.4.0.3",
+                "6.4.0.2",
+                "6.4.0.4",
+                "6.4.0.5",
+                "6.4.0.6",
+                "6.4.0.7",
+                "6.4.0.8",
+                "6.4.0.9",
+                "6.4.0.10",
+                "6.4.0.11",
+                "6.4.0.12",
+                "6.4.0.13",
+                "6.4.0.14",
+                "6.4.0.15",
+                "6.4.0.16",
+                "6.4.0.17",
+                "6.4.0.18",
+                "7.0.0",
+                "7.0.0.1",
+                "7.0.1",
+                "7.0.1.1",
+                "7.0.2",
+                "7.0.2.1",
+                "7.0.3",
+                "7.0.4",
+                "7.0.5",
+                "7.0.6",
+                "7.0.6.1",
+                "7.0.6.2",
+                "7.0.6.3",
+                "7.0.7",
+                "7.0.8",
+                "7.1.0",
+                "7.1.0.1",
+                "7.1.0.2",
+                "7.1.0.3",
+                "7.2.0",
+                "7.2.0.1",
+                "7.2.1",
+                "7.2.2",
+                "7.2.3",
+                "7.2.4",
+                "7.2.4.1",
+                "7.2.5",
+                "7.2.5.1",
+                "7.2.6",
+                "7.2.7",
+                "7.2.5.2",
+                "7.2.8",
+                "7.2.8.1",
+                "7.3.0",
+                "7.3.1",
+                "7.3.1.1",
+                "7.3.1.2",
+                "7.4.0",
+                "7.4.1",
+                "7.4.1.1",
+                "7.4.2",
+                "7.4.2.1",
+                "7.4.2.2",
+                "7.4.2.3",
+                "7.6.0"
             ]
         }
     }
