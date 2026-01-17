@@ -33,7 +33,7 @@ Le fichier `notebook.ipynb` permet de transformer les données brutes consolidé
 
 **Dépendances** :
    ```bash
-   pip install requests feedparser pandas matplotlib
+   pip install requests feedparser re pandas matplotlib smtplib email.mime.text json datetime
 ```
    ### Script Principal (main.py)
 Lancez l'exécution pour mettre à jour la base de données locale et accéder au menu interactif :
